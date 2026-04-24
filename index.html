@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donkers Advies — Ruimtelijke Ordening</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    #hero {
+      background-color: var(--forest);
+      background-image: url('city-aerial.webp');
+      background-size: cover;
+      background-position: center 40%;
+    }
+    #hero::before { display: none; }
+
+    .landscape-band {
+      height: clamp(240px, 32vw, 440px);
+      background-image:
+        linear-gradient(to bottom,
+          rgba(255,255,255,0) 0%,
+          rgba(255,255,255,0) 60%,
+          var(--paper) 100%
+        ),
+        url('20240808_wonen-buitengebied.jpg');
+      background-size: cover;
+      background-position: center 45%;
+      background-attachment: fixed;
+    }
+    @media (max-width: 768px) {
+      .landscape-band { background-attachment: scroll; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ NAV ═══════════════════════════ -->
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">
+      <svg class="logo-svg" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0"  y="14" width="28" height="28" rx="1" fill="#A8C2B4"/>
+        <rect x="10" y="7"  width="28" height="28" rx="1" fill="#5A8A6A"/>
+        <rect x="20" y="0"  width="28" height="28" rx="1" fill="#1B3A2A"/>
+        <rect x="34" y="0"  width="8"  height="8"  rx="1" fill="#1B3A2A" opacity=".4"/>
+      </svg>
+      <div class="nav-wordmark">
+        <span class="wm-top">DONKERS</span>
+        <span class="wm-sub">ADVIES · RUIMTELIJKE ORDENING</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="has-dropdown" id="dienstenDrop">
+        <a href="#diensten" class="dropdown-trigger">
+          Diensten
+          <svg class="chevron-icon" viewBox="0 0 10 6"><polyline points="1 1 5 5 9 1"/></svg>
+        </a>
+        <ul class="dropdown">
+          <li><a href="principeverzoek.html">Principeverzoek <span class="dd-badge">Stap 1</span></a></li>
+          <div class="dd-sep"></div>
+          <li><a href="omgevingsplanactiviteit.html">Omgevingsplanactiviteit <span class="dd-badge">OPA</span></a></li>
+          <li><a href="buitenplanse-omgevingsplanactiviteit.html">Buitenplanse activiteit <span class="dd-badge">BOPA</span></a></li>
+          <li><a href="wijziging-omgevingsplan.html">Wijziging omgevingsplan <span class="dd-badge">WOP</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="#about">Over ons</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════ HERO ══════════════════════════ -->
+<section id="hero">
+  <div class="boxes-wrapper" id="heroBoxes"></div>
+  <div class="boxes-overlay"></div>
+  <svg class="hero-deco" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0"  y="14" width="28" height="28" rx="1" fill="#fff"/>
+    <rect x="10" y="7"  width="28" height="28" rx="1" fill="#fff"/>
+    <rect x="20" y="0"  width="28" height="28" rx="1" fill="#fff"/>
+  </svg>
+
+  <div class="container hero-inner">
+    <p class="label hero-label">Donkers Advies — Ruimtelijke Ordening</p>
+    <h1>Uw ruimtelijk plan,<br /><em>goed onderbouwd</em></h1>
+    <p class="hero-lead">
+      Onafhankelijk adviesbureau voor ruimtelijke ordening. Van principeverzoek
+      tot en met formele besluitvorming — wij begeleiden uw initiatief met
+      specialistische kennis en een persoonlijke aanpak.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Vrijblijvend contact</a>
+      <a href="#diensten" class="btn btn-outline">Onze diensten</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ DIENSTEN ══════════════════════ -->
+<section id="diensten" class="section">
+  <div class="container">
+    <div class="section-header" data-fade>
+      <p class="label">Dienstverlening</p>
+      <h2>Wat wij voor u doen</h2>
+      <p>Van eerste initiatief tot en met realisatie begeleiden wij ruimtelijke ontwikkelingen in elke fase van het proces. Wij zorgen voor een zorgvuldige voorbereiding, een heldere onderbouwing en een efficiënte afhandeling richting de overheid. Dit doen wij voor zowel particuliere initiatieven als zakelijke ontwikkelingen, in stedelijk gebied en in het buitengebied.</p>
+      <p>Onze dienstverlening richt zich op het verkrijgen van planologische medewerking, het begeleiden van vergunning- en wijzigingsprocedures en het opstellen van ruimtelijke onderbouwingen.</p>
+    </div>
+
+    <div class="grid-3">
+      <a href="principeverzoek.html" class="service-card" data-fade>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>
+        </div>
+        <h3>Principeverzoek</h3>
+        <p>Toets uw initiatief vooraf bij de gemeente en krijg duidelijkheid over de haalbaarheid — zonder direct een formele procedure te starten.</p>
+        <div class="service-tags">
+          <span class="tag">Eerste verkenning</span>
+          <span class="tag">Risicobeperking</span>
+        </div>
+      </a>
+
+      <a href="omgevingsplanactiviteit.html" class="service-card" data-fade>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Omgevingsvergunning</h3>
+        <p>Wij begeleiden vergunningaanvragen voor activiteiten die passen binnen het omgevingsplan (OPA) én voor activiteiten die daarvan afwijken (BOPA), inclusief de volledige ruimtelijke onderbouwing.</p>
+        <div class="service-tags">
+          <span class="tag">OPA</span>
+          <span class="tag">BOPA</span>
+        </div>
+      </a>
+
+      <a href="wijziging-omgevingsplan.html" class="service-card" data-fade>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Wijziging omgevingsplan</h3>
+        <p>Voor ontwikkelingen die niet passen binnen het omgevingsplan en niet mogelijk gemaakt kunnen worden met een BOPA. Wij begeleiden de procedure van begin tot eind.</p>
+        <div class="service-tags">
+          <span class="tag">Grootschalig</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ LANDSCAPE ═════════════════════ -->
+<div class="landscape-band" role="img" aria-label="Luchtfoto van Nederlands polderlandschap"></div>
+
+<!-- ═══════════════════════════════ ABOUT ═════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="grid-2">
+      <div class="about-text" data-fade>
+        <p class="label">Over Donkers Advies</p>
+        <h2>Specialist in ruimtelijke procedures</h2>
+        <p>
+          Donkers Advies is een adviesbureau op het gebied van ruimtelijke ordening.
+          Wij ondersteunen bedrijven en particulieren bij het planologisch mogelijk maken
+          van ruimtelijke ontwikkelingen — van eerste principeverzoek tot en met de
+          uiteindelijke besluitvorming.
+        </p>
+        <p>
+          Wij zijn gespecialiseerd in het opstellen van principeverzoeken en ruimtelijke
+          onderbouwingen voor omgevingsvergunningen (BOPA) en wijzigingen van het
+          omgevingsplan. Daarbij combineren wij inhoudelijke kennis met een praktische
+          aanpak, waarbij we continu sturen op haalbaarheid, duidelijkheid en voortgang.
+        </p>
+        <div class="usps">
+          <div class="usp-item">Specialistische kennis van beleid en regelgeving</div>
+          <div class="usp-item">Korte lijnen en persoonlijk contact</div>
+          <div class="usp-item">Praktische en resultaatgerichte aanpak</div>
+          <div class="usp-item">Ervaring stedelijk én landelijk gebied</div>
+        </div>
+      </div>
+
+      <div class="about-visual" data-fade>
+        <div class="stat-block">
+          <div class="num">OPA</div>
+          <p>Omgevingsvergunning omgevingsplanactiviteit — voor initiatieven die passen binnen het omgevingsplan</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-block">
+          <div class="num">BOPA</div>
+          <p>Omgevingsvergunning buitenplanse omgevingsplanactiviteit — voor initiatieven die afwijken van het omgevingsplan</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-block">
+          <div class="num">WOP</div>
+          <p>Wijziging omgevingsplan — voor grootschalige ontwikkelingen die niet mogelijk gemaakt kunnen worden met een BOPA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ WERKWIJZE ═════════════════════ -->
+<section id="werkwijze" class="section">
+  <div class="container">
+    <div class="section-header" data-fade>
+      <p class="label">Onze aanpak</p>
+      <h2>Gestructureerd en transparant</h2>
+    </div>
+    <div class="steps">
+      <div class="step" data-fade><div class="step-num">01</div><h3>Initiatiefanalyse</h3><p>Beoordeling van uw plan, kansen en aandachtspunten in kaart gebracht.</p></div>
+      <div class="step" data-fade><div class="step-num">02</div><h3>Strategisch advies</h3><p>Keuze van de juiste procedure en aanpak voor uw specifieke situatie.</p></div>
+      <div class="step" data-fade><div class="step-num">03</div><h3>Uitwerking</h3><p>Opstellen van de ruimtelijke onderbouwing en eventueel uitzetten van onderzoeken.</p></div>
+      <div class="step" data-fade><div class="step-num">04</div><h3>Begeleiding</h3><p>Afstemming met het bevoegd gezag en coördinatie van het traject.</p></div>
+      <div class="step" data-fade><div class="step-num">05</div><h3>Afronding</h3><p>Ondersteuning tot en met de formele besluitvorming.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ WAAROM ════════════════════════ -->
+<section id="waarom" class="section">
+  <div class="container">
+    <div class="section-header" data-fade>
+      <p class="label">Over ons</p>
+      <h2>Wat u van ons mag verwachten</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card" data-fade><h3>Specialistische kennis</h3><p>Diepgaande kennis van beleid, wet- en regelgeving onder de Omgevingswet.</p></div>
+      <div class="why-card" data-fade><h3>Persoonlijk contact</h3><p>Korte lijnen met uw vaste adviseur — geen groot kantoor, maar directe betrokkenheid.</p></div>
+      <div class="why-card" data-fade><h3>Resultaatgericht</h3><p>Pragmatische aanpak gericht op haalbaarheid en voortgang van uw project.</p></div>
+      <div class="why-card" data-fade><h3>Brede ervaring</h3><p>Ervaring met zowel stedelijke als landelijke ontwikkelingen bij diverse gemeenten.</p></div>
+      <div class="why-card" data-fade><h3>Heldere communicatie</h3><p>Wij communiceren duidelijk en transparant over stappen, kansen en risico's, zodat u steeds weet waar u aan toe bent.</p></div>
+      <div class="why-card" data-fade><h3>Efficiënte doorlooptijd</h3><p>Wij sturen actief op voortgang en zorgen voor een doelgerichte aanpak, zodat procedures niet onnodig vertragen.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACT ═══════════════════════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-text" data-fade>
+        <p class="label">Contact</p>
+        <h2>Bespreek uw initiatief</h2>
+        <p>Wilt u uw plan toetsen of meer weten over de mogelijkheden? Neem vrijblijvend contact op voor een eerste beoordeling. Wij reageren binnen één werkdag.</p>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@donkersadvies.nl
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.91 6.91l.76-.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Bel voor een vrijblijvend gesprek
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Werkzaam in heel Nederland
+        </div>
+      </div>
+
+      <div class="contact-form" data-fade>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row-2">
+            <div class="form-row">
+              <label for="naam">Naam</label>
+              <input type="text" id="naam" name="naam" placeholder="Uw naam" required />
+            </div>
+            <div class="form-row">
+              <label for="email">E-mailadres</label>
+              <input type="email" id="email" name="email" placeholder="uw@email.nl" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="dienst">Dienst</label>
+            <select id="dienst" name="dienst">
+              <option value="">Selecteer een dienst</option>
+              <option>Principeverzoek</option>
+              <option>OPA – Omgevingsplanactiviteit</option>
+              <option>BOPA – Buitenplanse activiteit</option>
+              <option>WOP – Wijziging omgevingsplan</option>
+              <option>Overig / Algemeen advies</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="bericht">Uw initiatief</label>
+            <textarea id="bericht" name="bericht" placeholder="Beschrijf kort uw plan of vraag…" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">Verstuur bericht</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg class="logo-svg" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0"  y="14" width="28" height="28" rx="1" fill="rgba(168,194,180,.4)"/>
+          <rect x="10" y="7"  width="28" height="28" rx="1" fill="rgba(168,194,180,.6)"/>
+          <rect x="20" y="0"  width="28" height="28" rx="1" fill="rgba(255,255,255,.15)"/>
+        </svg>
+        <div class="nav-wordmark">
+          <span class="wm-top">DONKERS</span>
+          <span class="wm-sub">ADVIES · RUIMTELIJKE ORDENING</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Diensten</span>
+        <a href="principeverzoek.html">Principeverzoek</a>
+        <a href="omgevingsplanactiviteit.html">OPA</a>
+        <a href="buitenplanse-omgevingsplanactiviteit.html">BOPA</a>
+        <a href="wijziging-omgevingsplan.html">Wijziging omgevingsplan</a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Navigatie</span>
+        <a href="#about">Over ons</a>
+        <a href="#werkwijze">Werkwijze</a>
+        <a href="#waarom">Waarom Donkers</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Donkers Advies — Ruimtelijke Ordening</span>
+      <span>KvK-nummer: —</span>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script>
+  (function() {
+    const wrapper = document.getElementById('heroBoxes');
+    if (!wrapper) return;
+    const COLS = 70, ROWS = 80;
+    const colors = [
+      'rgba(253,224,71,.35)',   /* geel        */
+      'rgba(250,204,21,.35)',   /* geel-donker */
+      'rgba(134,239,172,.35)',  /* groen-licht */
+      'rgba(74,222,128,.35)',   /* groen       */
+      'rgba(134,239,172,.35)',  /* groen-licht */
+      'rgba(216,180,254,.35)',  /* paars-licht */
+      'rgba(192,132,252,.35)',  /* paars       */
+      'rgba(216,180,254,.35)',  /* paars-licht */
+      'rgba(253,224,71,.35)',   /* geel        */
+    ];
+    const frag = document.createDocumentFragment();
+    for (let i = 0; i < COLS; i++) {
+      const col = document.createElement('div');
+      col.className = 'box-col';
+      for (let j = 0; j < ROWS; j++) {
+        const cell = document.createElement('div');
+        cell.className = 'box-cell';
+        cell.addEventListener('mouseenter', function() {
+          this.style.transition = 'none';
+          this.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        });
+        cell.addEventListener('mouseleave', function() {
+          this.style.transition = 'background-color 2s';
+          this.style.backgroundColor = 'transparent';
+        });
+        if (i % 2 === 0 && j % 2 === 0) {
+          const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+          svg.setAttribute('viewBox', '0 0 24 24');
+          const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          path.setAttribute('stroke-linecap', 'round');
+          path.setAttribute('stroke-linejoin', 'round');
+          path.setAttribute('d', 'M12 6v12m6-6H6');
+          svg.appendChild(path);
+          cell.appendChild(svg);
+        }
+        col.appendChild(cell);
+      }
+      frag.appendChild(col);
+    }
+    wrapper.appendChild(frag);
+  })();
+</script>
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = 'Verstuurd!';
+    btn.style.background = 'var(--sage)';
+    btn.disabled = true;
+    setTimeout(() => { btn.textContent = 'Verstuur bericht'; btn.style.background = ''; btn.disabled = false; e.target.reset(); }, 3000);
+  }
+</script>
+</body>
+</html>
