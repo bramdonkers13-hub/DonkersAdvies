@@ -4,24 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ═══ GOOGLE CONSENT MODE v2 — standaardwaarden ═══════════════════
-       Moet vóór alle andere scripts geladen worden: hierdoor kunnen
-       Google-tags (Analytics, en later eventueel Ads) nooit per
-       ongeluk zonder consent-status starten. -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('consent', 'default', {
-      ad_storage: 'denied',
-      analytics_storage: 'denied',
-      functionality_storage: 'denied',
-      personalization_storage: 'denied',
-      security_storage: 'granted',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied',
-      wait_for_update: 2000
-    });
-  </script>
   <!-- ═══ SEO ═══════════════════════════════════════════════════════ -->
   <title>BOPA aanvragen | Buitenplanse omgevingsplanactiviteit</title>
   <meta name="description" content="Wijkt uw initiatief af van het omgevingsplan? Donkers Advies stelt de ruimtelijke onderbouwing op en begeleidt uw volledige BOPA-procedure van A tot Z." />
@@ -46,7 +28,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="css/cookie-consent.css" />
   <link rel="icon" href="brand_assets/Standaard logo Donkers Advies.png" type="image/png" />
 
   <style>
@@ -210,9 +191,9 @@
           <li><a href="wijziging-omgevingsplan.html">Wijziging omgevingsplan <span class="dd-badge">WOP</span></a></li>
         </ul>
       </li>
-      <li><a href="blog/index.html">Blog</a></li>
       <li><a href="index.html#werkwijze">Werkwijze</a></li>
       <li><a href="index.html#about">Over Donkers Advies</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
       <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
     </ul>
   </div>
@@ -786,7 +767,6 @@
         <span class="footer-heading">Juridisch</span>
         <a href="privacy.html">Privacyverklaring</a>
         <a href="cookies.html">Cookieverklaring</a>
-        <button type="button" class="cc-footer-btn" data-cc-open-settings>Cookie-instellingen</button>
       </div>
     </div>
     <div class="footer-bottom">
@@ -797,7 +777,5 @@
 </footer>
 
 <script src="nav.js"></script>
-<script defer src="js/cookie-consent.js"></script>
-<script defer src="js/analytics.js"></script>
 </body>
 </html>

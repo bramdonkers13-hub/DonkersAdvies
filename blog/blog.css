@@ -38,7 +38,9 @@
 
 /* ─── Post cards ────────────────────────────────────────────────────── */
 .post-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--gap); }
-.featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--gap); margin-top: 2.5rem; }
+.featured-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); margin-top: 2.5rem; }
+@media (max-width: 900px) { .featured-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .featured-grid { grid-template-columns: 1fr; } }
 
 .post-card {
   display: flex;

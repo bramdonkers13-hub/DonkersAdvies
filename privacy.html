@@ -4,26 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ═══ GOOGLE CONSENT MODE v2 — standaardwaarden ═══════════════════
-       Moet vóór alle andere scripts geladen worden: hierdoor kunnen
-       Google-tags (Analytics, en later eventueel Ads) nooit per
-       ongeluk zonder consent-status starten. Alles staat standaard op
-       "denied", behalve security_storage (altijd noodzakelijk/toegestaan). -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('consent', 'default', {
-      ad_storage: 'denied',
-      analytics_storage: 'denied',
-      functionality_storage: 'denied',
-      personalization_storage: 'denied',
-      security_storage: 'granted',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied',
-      wait_for_update: 2000
-    });
-  </script>
-
   <!-- ═══ SEO ═══════════════════════════════════════════════════════ -->
   <title>Privacyverklaring | Donkers Advies</title>
   <meta name="description" content="Lees hoe Donkers Advies omgaat met persoonsgegevens: welke gegevens wij verzamelen, waarom, hoe lang wij ze bewaren en welke rechten u heeft onder de AVG." />
@@ -48,7 +28,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="css/cookie-consent.css" />
   <link rel="icon" href="brand_assets/Standaard logo Donkers Advies.png" type="image/png" />
 
   <style>
@@ -104,9 +83,9 @@
           <li><a href="wijziging-omgevingsplan.html">Wijziging omgevingsplan <span class="dd-badge">WOP</span></a></li>
         </ul>
       </li>
-      <li><a href="blog/index.html">Blog</a></li>
       <li><a href="index.html#werkwijze">Werkwijze</a></li>
       <li><a href="index.html#about">Over Donkers Advies</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
       <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
     </ul>
   </div>
@@ -141,14 +120,16 @@
       </p>
 
       <h2 id="welke-gegevens">Welke persoonsgegevens verwerken wij</h2>
-      <p>Donkers Advies verwerkt persoonsgegevens die u zelf aan ons verstrekt, en &mdash; uitsluitend met uw toestemming &mdash; gegevens over uw gebruik van de website.</p>
+      <p>Donkers Advies verwerkt persoonsgegevens die u zelf aan ons verstrekt.</p>
       <ul>
         <li><strong>Contactformulier:</strong> naam, e-mailadres, gekozen dienst en de inhoud van uw bericht, wanneer u het contactformulier op de website invult.</li>
         <li><strong>Nieuwsbrief:</strong> uw e-mailadres, wanneer u zich aanmeldt voor de nieuwsbrief via de blog.</li>
         <li><strong>Correspondentie:</strong> gegevens die u ons verstrekt via e-mail of telefoon in het kader van een adviesaanvraag of lopende opdracht.</li>
         <li><strong>Klant- en factuuradministratie:</strong> naam-, adres- en betaalgegevens, indien u klant wordt van Donkers Advies.</li>
-        <li><strong>Websitegebruik (analytics):</strong> geanonimiseerde/pseudonieme gebruiksstatistieken via Google Analytics 4, uitsluitend nadat u hiervoor toestemming heeft gegeven via de cookiebanner.</li>
       </ul>
+      <p>
+        Voor het meten van websitebezoek gebruikt Donkers Advies <strong>Vercel Web Analytics</strong> en <strong>Vercel Speed Insights</strong>. Deze diensten zijn privacyvriendelijk en cookieloos: ze plaatsen geen cookies, volgen bezoekers niet individueel en verwerken geen persoonsgegevens. Zie <a href="#statistieken">hieronder</a> voor meer uitleg.
+      </p>
 
       <h2 id="doeleinden-grondslagen">Doeleinden en grondslagen</h2>
       <p>Wij verwerken uw persoonsgegevens voor de volgende doeleinden, telkens op basis van een grondslag uit artikel 6 van de AVG:</p>
@@ -157,7 +138,6 @@
         <li><strong>Uitvoeren van een adviesopdracht</strong> &mdash; grondslag: uitvoering van de overeenkomst.</li>
         <li><strong>Financiële administratie en facturatie</strong> &mdash; grondslag: wettelijke verplichting (fiscale bewaarplicht).</li>
         <li><strong>Versturen van de nieuwsbrief</strong> &mdash; grondslag: uw toestemming, te allen tijde in te trekken via de afmeldlink in elke nieuwsbrief.</li>
-        <li><strong>Analyseren van websitegebruik (Google Analytics)</strong> &mdash; grondslag: uw toestemming via de cookiebanner.</li>
       </ul>
 
       <h2 id="bewaartermijnen">Bewaartermijnen</h2>
@@ -166,35 +146,32 @@
         <li><strong>Contactformulier-inzendingen</strong> die niet tot een opdracht leiden: maximaal 2 jaar na het laatste contact.</li>
         <li><strong>Klant- en factuurgegevens:</strong> 7 jaar, conform de wettelijke fiscale bewaarplicht.</li>
         <li><strong>Nieuwsbriefgegevens:</strong> tot het moment waarop u zich afmeldt.</li>
-        <li><strong>Analytics-gegevens (Google Analytics 4):</strong> maximaal 14 maanden, conform de bewaartermijn die is ingesteld in het Google Analytics-account van Donkers Advies.</li>
-        <li><strong>Cookievoorkeuren:</strong> 12 maanden, waarna opnieuw om een keuze wordt gevraagd.</li>
       </ul>
 
       <h2 id="ontvangers">Met wie delen wij uw gegevens</h2>
       <p>Donkers Advies deelt uw gegevens uitsluitend met partijen die noodzakelijk zijn voor de uitvoering van onze dienstverlening en de website. Met elke partij die als verwerker optreedt, is een verwerkersovereenkomst gesloten of zijn de standaardvoorwaarden van die partij van toepassing.</p>
       <ul>
-        <li><strong>Vercel Inc.</strong> &mdash; hostingprovider van www.donkersadvies.nl.</li>
+        <li><strong>Vercel Inc.</strong> &mdash; hostingprovider van www.donkersadvies.nl en leverancier van Vercel Web Analytics en Vercel Speed Insights.</li>
         <li><strong>Formspree</strong> &mdash; verwerkt de inzendingen van het contactformulier en stuurt deze per e-mail door naar Donkers Advies.</li>
-        <li><strong>Google LLC / Google Ireland Limited</strong> &mdash; levert Google Analytics 4 (en, zodra ingezet, Google Ads) en verwerkt in dat kader website-gebruiksgegevens, uitsluitend na uw toestemming.</li>
       </ul>
       <p>Wij verkopen uw gegevens nooit aan derden.</p>
 
-      <h2 id="google-analytics">Google Analytics</h2>
+      <h2 id="statistieken">Website-statistieken en Google Search Console</h2>
       <p>
-        Donkers Advies gebruikt Google Analytics 4 om te begrijpen hoe bezoekers de website gebruiken, zodat wij de website kunnen verbeteren. Google Analytics wordt pas geladen nadat u hiervoor expliciet toestemming heeft gegeven via de cookiebanner of het voorkeurenscherm; zonder die toestemming worden er geen analytics-cookies geplaatst en verstuurt uw browser geen gegevens naar Google Analytics.
+        Donkers Advies gebruikt <strong>Vercel Web Analytics</strong> en <strong>Vercel Speed Insights</strong> om te zien hoeveel bezoekers de website heeft en hoe snel de website laadt, zodat wij deze kunnen verbeteren. Beide diensten zijn cookieloos en werken zonder individuele bezoekers te volgen: er wordt geen unieke identifier aan uw browser gekoppeld en er worden geen persoonsgegevens opgeslagen.
       </p>
       <p>
-        Donkers Advies gebruikt daarbij <strong>Google Consent Mode v2</strong>: pas wanneer u toestemming geeft, wordt de betreffende opslag ("storage") voor Google vrijgegeven. Meer informatie over welke cookies hierbij worden geplaatst, vindt u in onze <a href="cookies.html">cookieverklaring</a>. Meer over hoe Google zelf met gegevens omgaat, leest u in het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid van Google</a>.
+        Daarnaast gebruikt Donkers Advies <strong>Google Search Console</strong> om te zien hoe de website presteert in de zoekresultaten van Google. Search Console verzamelt geen gegevens via uw browser; het toont uitsluitend geaggregeerde zoekstatistieken (zoals zoektermen en klikken) die Google al verzamelt op basis van uw interactie met de Google-zoekresultaten zelf, niet via onze website.
       </p>
 
       <h2 id="cookies">Cookies</h2>
       <p>
-        Voor het functioneren van de website en, met uw toestemming, voor analyse gebruiken wij cookies en vergelijkbare technieken. Een volledig overzicht van alle cookies, hun doel, bewaartermijn en leverancier vindt u in onze <a href="cookies.html">cookieverklaring</a>. Uw voorkeuren kunt u op elk moment aanpassen via de knop <button type="button" class="cc-btn-prefs" style="display:inline;padding:0;font-size:inherit;" data-cc-open-settings>Cookie-instellingen</button> onderaan iedere pagina.
+        Donkers Advies plaatst op dit moment geen cookies. Een volledig overzicht van de cookiesituatie vindt u in onze <a href="cookies.html">cookieverklaring</a>.
       </p>
 
       <h2 id="doorgifte">Doorgifte buiten de Europese Economische Ruimte</h2>
       <p>
-        Sommige door ons ingeschakelde partijen, waaronder Vercel en Google, zijn (mede) gevestigd in de Verenigde Staten. Voor zover persoonsgegevens hierdoor buiten de Europese Economische Ruimte (EER) worden doorgegeven, gebeurt dit op basis van de door de Europese Commissie goedgekeurde standaardcontractbepalingen en/of, waar van toepassing, deelname aan het EU-US Data Privacy Framework.
+        Vercel Inc. is gevestigd in de Verenigde Staten. Voor zover persoonsgegevens hierdoor buiten de Europese Economische Ruimte (EER) worden doorgegeven, gebeurt dit op basis van de door de Europese Commissie goedgekeurde standaardcontractbepalingen en/of, waar van toepassing, deelname aan het EU-US Data Privacy Framework.
       </p>
 
       <h2 id="beveiliging">Beveiliging</h2>
@@ -211,7 +188,7 @@
         <li><strong>Beperking van de verwerking</strong> &mdash; u kunt ons vragen de verwerking van uw gegevens tijdelijk te beperken.</li>
         <li><strong>Bezwaar</strong> &mdash; u kunt bezwaar maken tegen de verwerking van uw gegevens op basis van ons gerechtvaardigd belang.</li>
         <li><strong>Gegevensoverdraagbaarheid</strong> &mdash; u kunt een kopie van uw gegevens opvragen in een gestructureerd, gangbaar formaat.</li>
-        <li><strong>Intrekken van toestemming</strong> &mdash; voor verwerkingen die op toestemming zijn gebaseerd (zoals analytics of de nieuwsbrief), kunt u uw toestemming te allen tijde intrekken.</li>
+        <li><strong>Intrekken van toestemming</strong> &mdash; voor verwerkingen die op toestemming zijn gebaseerd (zoals de nieuwsbrief), kunt u uw toestemming te allen tijde intrekken.</li>
       </ul>
       <p>
         Wilt u een van deze rechten uitoefenen? Stuur een e-mail naar <a href="mailto:info@donkersadvies.nl">info@donkersadvies.nl</a>. Wij reageren binnen vier weken op uw verzoek. Bent u het niet eens met de manier waarop wij uw gegevens verwerken, dan heeft u het recht een klacht in te dienen bij de <a href="https://www.autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a>.
@@ -260,7 +237,6 @@
         <span class="footer-heading">Juridisch</span>
         <a href="privacy.html">Privacyverklaring</a>
         <a href="cookies.html">Cookieverklaring</a>
-        <button type="button" class="cc-footer-btn" data-cc-open-settings>Cookie-instellingen</button>
       </div>
     </div>
     <div class="footer-bottom">
@@ -271,7 +247,5 @@
 </footer>
 
 <script src="nav.js"></script>
-<script defer src="js/cookie-consent.js"></script>
-<script defer src="js/analytics.js"></script>
 </body>
 </html>
