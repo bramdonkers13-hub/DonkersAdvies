@@ -25,13 +25,3 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.1 });
 document.querySelectorAll('[data-fade]').forEach(el => observer.observe(el));
-
-// Werkwijze: animate connecting line when section enters view
-const stepsEl = document.querySelector('.steps');
-if (stepsEl) {
-  new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('steps-visible'); }
-    });
-  }, { threshold: 0.3 }).observe(stepsEl);
-}

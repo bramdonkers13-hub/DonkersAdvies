@@ -1,13 +1,115 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Principeverzoek — Donkers Advies</title>
+
+  <!-- ═══ SEO ═══════════════════════════════════════════════════════ -->
+  <title>Principeverzoek opstellen en indienen | Donkers Advies</title>
+  <meta name="description" content="Toets de haalbaarheid van uw bouwplan of functiewijziging vooraf bij de gemeente. Donkers Advies stelt uw principeverzoek op en begeleidt het volledige traject." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.donkersadvies.nl/principeverzoek.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.donkersadvies.nl/principeverzoek.html" />
+  <meta property="og:title" content="Principeverzoek opstellen en indienen | Donkers Advies" />
+  <meta property="og:description" content="Toets de haalbaarheid van uw bouwplan of functiewijziging vooraf bij de gemeente. Donkers Advies stelt uw principeverzoek op en begeleidt het volledige traject." />
+  <meta property="og:site_name" content="Donkers Advies" />
+  <meta property="og:locale" content="nl_NL" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Principeverzoek opstellen en indienen | Donkers Advies" />
+  <meta name="twitter:description" content="Toets de haalbaarheid van uw initiatief vooraf bij de gemeente. Donkers Advies — specialist in ruimtelijke ordening en de Omgevingswet." />
+
+  <!-- ═══ FONTS & STYLES ════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="brand_assets/Standaard logo Donkers Advies.png" type="image/png" />
+
+  <style>
+    /* FAQ accordion */
+    .faq-list { display: flex; flex-direction: column; gap: .875rem; margin-top: 2rem; }
+    .faq-item { border: 1px solid var(--sage-xl); border-radius: 8px; overflow: hidden; background: var(--white); }
+    .faq-item summary { cursor: pointer; padding: 1rem 1.25rem; font-weight: 600; font-size: .975rem; color: var(--forest); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; line-height: 1.4; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 1.25rem; font-weight: 300; flex-shrink: 0; color: var(--sage); }
+    .faq-item[open] > summary::after { content: '\2212'; }
+    .faq-item[open] > summary { border-bottom: 1px solid var(--sage-xl); }
+    .faq-body { padding: 1rem 1.25rem 1.25rem; color: var(--ink); line-height: 1.75; font-size: .975rem; }
+    .faq-body p { margin: 0; }
+    .faq-body p + p { margin-top: .6rem; }
+    .faq-body a { color: var(--forest); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
+  </style>
+
+  <!-- ═══ STRUCTURED DATA ═══════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home",      "item": "https://www.donkersadvies.nl/" },
+        { "@type": "ListItem", "position": 2, "name": "Diensten",  "item": "https://www.donkersadvies.nl/#diensten" },
+        { "@type": "ListItem", "position": 3, "name": "Principeverzoek", "item": "https://www.donkersadvies.nl/principeverzoek.html" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Principeverzoek opstellen en indienen",
+      "description": "Professionele begeleiding bij het opstellen en indienen van een principeverzoek bij de gemeente — van haalbaarheidsanalyse en strategisch advies tot volledige procedurebegeleiding onder de Omgevingswet.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Donkers Advies",
+        "url": "https://www.donkersadvies.nl",
+        "email": "info@donkersadvies.nl",
+        "identifier": "42100373"
+      },
+      "serviceType": "Ruimtelijke ordening advies",
+      "areaServed": { "@type": "Country", "name": "Nederland" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wat is het verschil tussen een principeverzoek en een vooroverleg?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Een principeverzoek is een schriftelijk verzoek aan het gemeentebestuur om een formeel standpunt in te nemen over een ruimtelijke ontwikkeling. Een vooroverleg is een informeel ambtelijk gesprek. In de praktijk worden beide gecombineerd: Donkers Advies bereidt het vooroverleg voor én stelt het formele principeverzoek op." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat is het verschil tussen een principeverzoek en een BOPA?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Een principeverzoek is een informeel, niet-bindend verzoek waarmee u toetst of de gemeente bereid is mee te werken aan uw initiatief. Een BOPA (buitenplanse omgevingsplanactiviteit) is een formele omgevingsvergunning voor een activiteit die afwijkt van het omgevingsplan. In de meeste gevallen gaat het principeverzoek vooraf aan de BOPA-aanvraag." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is een positief principeverzoek een garantie op een omgevingsvergunning?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nee. Een positief principeverzoek is juridisch niet bindend. Het geeft aan dat de gemeente in principe bereid is medewerking te verlenen, maar de formele vergunningverlening vindt pas plaats na de volledige aanvraagprocedure. Een positieve grondhouding verlaagt het risico aanzienlijk en versnelt de vervolgprocedure." }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoe lang duurt een principeverzoek?",
+          "acceptedAnswer": { "@type": "Answer", "text": "De behandeltijd door de gemeente bedraagt gemiddeld 4 tot 12 weken, afhankelijk van de complexiteit van het initiatief en de interne besluitvorming binnen de gemeente. Een zorgvuldig en volledig opgesteld principeverzoek verkort doorgaans de behandelingstijd." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat kost een principeverzoek?",
+          "acceptedAnswer": { "@type": "Answer", "text": "De kosten bestaan uit twee onderdelen: de advieskosten van Donkers Advies voor het opstellen, onderbouwen en begeleiden van het verzoek, en eventuele gemeentelijke leges voor de behandeling. De hoogte van de leges verschilt per gemeente. Neem contact op voor een vrijblijvende kostenestimatie." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat als de gemeente een negatieve grondhouding heeft?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Een negatieve reactie geeft duidelijkheid en heeft waarde. Op basis van de gemeentelijke motivering adviseert Donkers Advies over mogelijkheden: aanpassing van het plan, andere locatiekeuze of een aanvullend strategisch overleg. Soms is een negatieve grondhouding niet definitief en kan de gemeente worden overtuigd na aanpassing van het voorstel." }
+        }
+      ]
+    }
+  ]
+  </script>
 </head>
 <body>
 
@@ -15,36 +117,29 @@
 <nav>
   <div class="container nav-inner">
     <a href="index.html" class="nav-brand">
-      <svg class="logo-svg" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0"  y="14" width="28" height="28" rx="1" fill="#A8C2B4"/>
-        <rect x="10" y="7"  width="28" height="28" rx="1" fill="#5A8A6A"/>
-        <rect x="20" y="0"  width="28" height="28" rx="1" fill="#1B3A2A"/>
-        <rect x="34" y="0"  width="8"  height="8"  rx="1" fill="#1B3A2A" opacity=".4"/>
-      </svg>
-      <div class="nav-wordmark">
-        <span class="wm-top">DONKERS</span>
-        <span class="wm-sub">ADVIES · RUIMTELIJKE ORDENING</span>
+      <div class="nav-logo-wrap">
+        <img src="brand_assets/Standaard logo Donkers Advies.png" alt="Donkers Advies — ruimtelijke ordening" class="nav-logo-img" loading="lazy" />
       </div>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Menu openen">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
         <a href="index.html#diensten" class="dropdown-trigger">
           Diensten
-          <svg class="chevron-icon" viewBox="0 0 10 6"><polyline points="1 1 5 5 9 1"/></svg>
+          <svg class="chevron-icon" viewBox="0 0 10 6" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
         </a>
         <ul class="dropdown">
           <li><a href="principeverzoek.html">Principeverzoek <span class="dd-badge">Stap 1</span></a></li>
           <div class="dd-sep"></div>
           <li><a href="omgevingsplanactiviteit.html">Omgevingsplanactiviteit <span class="dd-badge">OPA</span></a></li>
-          <li><a href="buitenplanse-omgevingsplanactiviteit.html">Buitenplanse activiteit <span class="dd-badge">BOPA</span></a></li>
+          <li><a href="buitenplanse-omgevingsplanactiviteit.html">Buitenplanse omgevingsplanactiviteit <span class="dd-badge">BOPA</span></a></li>
           <li><a href="wijziging-omgevingsplan.html">Wijziging omgevingsplan <span class="dd-badge">WOP</span></a></li>
         </ul>
       </li>
-      <li><a href="index.html#about">Over ons</a></li>
+      <li><a href="index.html#werkwijze">Werkwijze</a></li>
+      <li><a href="index.html#about">Over Donkers Advies</a></li>
       <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
     </ul>
   </div>
@@ -53,9 +148,15 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container page-hero-inner">
-
+    <nav class="breadcrumb" aria-label="Broodkruimel">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="index.html#diensten">Diensten</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span>Principeverzoek</span>
+    </nav>
     <h1>Principeverzoek</h1>
-    <p class="page-sub">Toets uw initiatief vooraf bij de gemeente en krijg duidelijkheid over de haalbaarheid — zonder direct een formele procedure te starten.</p>
+    <p class="page-sub">Toets de planologische haalbaarheid van uw initiatief v&oacute;&oacute;r u investeert in onderzoeken of verdere planvorming &mdash; Donkers Advies begeleidt uw principeverzoek van analyse tot gemeentebeoordeling.</p>
   </div>
 </section>
 
@@ -65,33 +166,41 @@
     <div class="intro-grid">
       <div class="intro-text" data-fade>
         <p class="label">Wat is het</p>
-        <h2>Een principeverzoek</h2>
+        <h2>Wat is een principeverzoek?</h2>
         <p>
-          Een principeverzoek is een informeel verzoek aan de gemeente om een standpunt
-          in te nemen over een voorgenomen ruimtelijke ontwikkeling. De gemeente beoordeelt
-          uw initiatief op hoofdlijnen en geeft aan of zij bereid is medewerking te verlenen
-          aan verdere planvorming.
+          Een principeverzoek is een informeel verzoek aan de gemeente om vooraf een standpunt
+          in te nemen over een voorgenomen ruimtelijke ontwikkeling. Denk aan het realiseren
+          van een woning buiten het bouwvlak, een bedrijfsuitbreiding, een functiewijziging
+          van agrarisch naar wonen of een nieuwe stedelijke ontwikkeling.
         </p>
         <p>
-          Hoewel juridisch niet bindend, vormt een positief principeverzoek in de praktijk
-          een belangrijke basis voor een OPA-, BOPA- of WOP-procedure. Het is daarmee
-          de eerste stap in het ruimtelijk ordeningstraject.
+          De gemeente beoordeelt uw initiatief op hoofdlijnen aan de hand van het geldende
+          omgevingsplan, provinciaal beleid en gemeentelijk beleid. Zij geeft vervolgens aan
+          of zij in principe bereid is medewerking te verlenen aan verdere planvorming.
         </p>
         <p>
-          Donkers Advies ondersteunt bij het opstellen en indienen van een zorgvuldig
-          onderbouwd principeverzoek, waarmee u duidelijkheid krijgt over de kansen en
-          randvoorwaarden van uw initiatief.
+          Hoewel het principeverzoek juridisch niet bindend is, vormt een positieve
+          gemeentelijke grondhouding in de praktijk de onmisbare basis voor een formele
+          procedure: een <a href="buitenplanse-omgevingsplanactiviteit.html">buitenplanse omgevingsplanactiviteit (BOPA)</a>,
+          een <a href="omgevingsplanactiviteit.html">omgevingsplanactiviteit (OPA)</a> of een
+          <a href="wijziging-omgevingsplan.html">wijziging van het omgevingsplan</a>.
+        </p>
+        <p>
+          Donkers Advies stelt uw principeverzoek op, verzorgt de ruimtelijke onderbouwing,
+          begeleidt de afstemming met de gemeente en adviseert over de strategie die uw
+          initiatief de grootste kans op succes geeft.
         </p>
       </div>
 
       <div class="info-box" data-fade>
-        <div class="info-box-title">Voordelen principeverzoek</div>
+        <div class="info-box-title">Voordelen van een principeverzoek</div>
         <ul>
-          <li>Inzicht in haalbaarheid van uw plan in relatie tot beleid en regelgeving</li>
-          <li>Beperking van risico's — voorkom investeren in een kansarme aanvraag</li>
-          <li>Duidelijkheid over de randvoorwaarden waaronder medewerking mogelijk is</li>
-          <li>Versnelling van de vervolgprocedure (OPA, BOPA of WOP)</li>
+          <li>Duidelijkheid over planologische haalbaarheid v&oacute;&oacute;r grote investeringen</li>
+          <li>Inzicht in het gemeentelijk en provinciaal beleid dat op uw plan van toepassing is</li>
           <li>Verkenning van bestuurlijk draagvlak in een vroeg stadium</li>
+          <li>Lagere kosten dan direct een formele omgevingsvergunning aanvragen zonder zekerheid</li>
+          <li>Versnelling van de vervolgprocedure (<a href="buitenplanse-omgevingsplanactiviteit.html">BOPA</a> of <a href="wijziging-omgevingsplan.html">wijziging omgevingsplan</a>)</li>
+          <li>Inzicht in de randvoorwaarden waaronder de gemeente medewerking wil verlenen</li>
         </ul>
       </div>
     </div>
@@ -103,123 +212,121 @@
   <div class="container">
     <div data-fade>
       <p class="label">Toepassingsgebied</p>
-      <h2>Wanneer is een principeverzoek zinvol?</h2>
-      <p>Een principeverzoek is met name geschikt in de volgende situaties.</p>
+      <h2>Wanneer is een principeverzoek verstandig?</h2>
+      <p>Een principeverzoek onder de Omgevingswet is met name zinvol in de volgende situaties.</p>
     </div>
 
     <div class="feature-grid">
       <div class="feature-item" data-fade>
         <div class="feature-dot"></div>
         <div>
-          <h4>Niet passend in omgevingsplan</h4>
-          <p>Uw initiatief past niet (volledig) binnen het geldende omgevingsplan.</p>
+          <h3>Initiatief buiten het omgevingsplan</h3>
+          <p>Uw bouwplan of functiewijziging past niet (volledig) binnen het geldende omgevingsplan en vereist planologische medewerking van de gemeente.</p>
         </div>
       </div>
       <div class="feature-item" data-fade>
         <div class="feature-dot"></div>
         <div>
-          <h4>Beleidsmatige onzekerheid</h4>
-          <p>Er is sprake van onduidelijkheid over het gemeentelijk of provinciaal beleid.</p>
+          <h3>Beleidsmatige onzekerheid</h3>
+          <p>Er bestaat onduidelijkheid over het gemeentelijk, provinciaal of nationaal beleid dat van toepassing is op uw ruimtelijke ontwikkeling.</p>
         </div>
       </div>
       <div class="feature-item" data-fade>
         <div class="feature-dot"></div>
         <div>
-          <h4>Afstemming vóór investering</h4>
-          <p>U wilt afstemming zoeken voordat u kosten maakt voor onderzoeken of planvorming.</p>
+          <h3>Afstemming v&oacute;&oacute;r grote investeringen</h3>
+          <p>U wilt bestuurlijk draagvlak verkennen voordat u kosten maakt voor onderzoeken, architectentekeningen of verdere planvorming.</p>
         </div>
       </div>
       <div class="feature-item" data-fade>
         <div class="feature-dot"></div>
         <div>
-          <h4>Impact op de omgeving</h4>
-          <p>Het initiatief heeft mogelijk gevolgen voor de directe omgeving of het landschap.</p>
+          <h3>Ruimtelijke impact op de omgeving</h3>
+          <p>Uw initiatief heeft mogelijk gevolgen voor de directe omgeving, het landschap of de leefomgeving van omwonenden.</p>
         </div>
       </div>
       <div class="feature-item" data-fade>
         <div class="feature-dot"></div>
         <div>
-          <h4>Bestuurlijk draagvlak verkennen</h4>
-          <p>U wilt in een vroeg stadium peilen of de gemeente open staat voor uw plan.</p>
+          <h3>Bestuurlijk draagvlak peilen</h3>
+          <p>U wilt al in een vroeg stadium weten of het gemeentebestuur openstaat voor uw ruimtelijke ontwikkeling voordat u een formele aanvraag indient.</p>
         </div>
       </div>
       <div class="feature-item" data-fade>
         <div class="feature-dot"></div>
         <div>
-          <h4>Schakel naar formele aanvraag</h4>
-          <p>In veel gevallen vormt het principeverzoek de brug tussen uw idee en een formele procedure.</p>
+          <h3>Voorbereiding op formele procedure</h3>
+          <p>Het principeverzoek vormt de brug tussen uw idee en een formele procedure: een <a href="buitenplanse-omgevingsplanactiviteit.html">BOPA</a>, <a href="omgevingsplanactiviteit.html">OPA</a> of <a href="wijziging-omgevingsplan.html">wijziging van het omgevingsplan</a>.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ONZE AANPAK -->
+<!-- WERKWIJZE -->
 <section class="sp-section bg-forest">
   <div class="container">
     <div data-fade>
-      <p class="label">Onze aanpak</p>
-      <h2 style="color:var(--white); margin-bottom: 2.5rem;">Van idee tot principebesluit</h2>
+      <p class="label">Werkwijze</p>
+      <h2 style="color:var(--white); margin-bottom: 2.5rem;">Hoe begeleidt Donkers Advies uw principeverzoek?</h2>
     </div>
 
     <div class="grid-2" style="align-items:start;">
-      <div class="vsteps vsteps-forest">
-        <div class="vstep" data-fade>
+      <div class="vsteps vsteps-forest" data-fade>
+        <div class="vstep">
           <div class="vstep-num">01</div>
           <div class="vstep-body">
-            <h3>Initiatiefanalyse</h3>
-            <p>Wij beoordelen uw plan en signaleren kansen en aandachtspunten ten opzichte van het geldende beleid.</p>
+            <h3>Haalbaarheidsanalyse</h3>
+            <p>Wij beoordelen uw initiatief aan de hand van het geldende omgevingsplan en relevante beleidsregels. We brengen kansen, risico&apos;s en aandachtspunten in kaart &mdash; zodat u weet waar u aan toe bent.</p>
           </div>
         </div>
-        <div class="vstep" data-fade>
+        <div class="vstep">
           <div class="vstep-num">02</div>
           <div class="vstep-body">
             <h3>Strategisch advies</h3>
-            <p>Wij adviseren over de positionering van uw initiatief en de kansrijke insteek richting de gemeente.</p>
+            <p>Op basis van de analyse adviseren wij over de optimale positionering van uw initiatief en de meest kansrijke insteek richting de gemeente.</p>
           </div>
         </div>
-        <div class="vstep" data-fade>
+        <div class="vstep">
           <div class="vstep-num">03</div>
           <div class="vstep-body">
             <h3>Opstellen principeverzoek</h3>
-            <p>Wij stellen een helder en overtuigend verzoek op, inclusief ruimtelijke motivering en beleidstoetsing.</p>
+            <p>Wij stellen een helder, overtuigend en volledig onderbouwd principeverzoek op &mdash; inclusief ruimtelijke motivering, beleidstoetsing en alle relevante bijlagen.</p>
           </div>
         </div>
-        <div class="vstep" data-fade>
+        <div class="vstep">
           <div class="vstep-num">04</div>
           <div class="vstep-body">
-            <h3>Indienen en afstemming</h3>
-            <p>Wij dienen het verzoek in bij de gemeente en onderhouden gedurende de procedure contact.</p>
+            <h3>Indienen en afstemming met gemeente</h3>
+            <p>Wij dienen het verzoek in bij de gemeente en onderhouden gedurende de beoordelingsperiode het contact met de behandelend ambtenaar.</p>
           </div>
         </div>
-        <div class="vstep" data-fade>
+        <div class="vstep">
           <div class="vstep-num">05</div>
           <div class="vstep-body">
-            <h3>Beoordeling en vervolg</h3>
-            <p>Wij analyseren de reactie en het besluit van de gemeente en adviseren over de vervolgstappen (OPA, BOPA of WOP).</p>
+            <h3>Beoordeling en vervolgadvies</h3>
+            <p>Wij analyseren de gemeentelijke reactie en adviseren over de meest geschikte vervolgstap: een <a href="buitenplanse-omgevingsplanactiviteit.html">BOPA</a>, <a href="omgevingsplanactiviteit.html">OPA</a> of <a href="wijziging-omgevingsplan.html">wijziging van het omgevingsplan</a>.</p>
           </div>
         </div>
       </div>
 
       <div data-fade>
         <div class="info-box" style="margin-bottom: 1.25rem;">
-          <div class="info-box-title">Reactie van de gemeente</div>
-          <dl class="info-dl">
-            <dt>Positieve grondhouding</dt>
-            <dd>gemeente staat open voor het initiatief, vaak onder voorwaarden</dd>
-            <dt>Voorwaardelijke medewerking</dt>
-            <dd>aanpassing of aanvullende onderzoeken nodig</dd>
-            <dt>Negatieve grondhouding</dt>
-            <dd>gemeente ziet geen mogelijkheden binnen huidig beleid</dd>
-          </dl>
+          <div class="info-box-title">Mogelijke reacties van de gemeente</div>
+          <ul>
+            <li><strong style="color:var(--sage-lt);">Positieve grondhouding</strong> &mdash; gemeente staat open voor het initiatief, veelal onder randvoorwaarden</li>
+            <li><strong style="color:var(--sage-lt);">Voorwaardelijke medewerking</strong> &mdash; aanpassing van het plan of aanvullende onderzoeken vereist</li>
+            <li><strong style="color:var(--sage-lt);">Negatieve grondhouding</strong> &mdash; gemeente ziet geen mogelijkheden binnen huidig beleid</li>
+          </ul>
         </div>
 
         <div class="info-box">
-          <div class="info-box-title">Doorlooptijd</div>
+          <div class="info-box-title">Doorlooptijd en kosten</div>
           <ul>
-            <li>Gemiddeld 4 tot 12 weken, afhankelijk van de complexiteit van het initiatief</li>
-            <li>Afhankelijk van de interne afstemming binnen de gemeente</li>
-            <li>Eventuele bestuurlijke besluitvorming kan de doorlooptijd beïnvloeden</li>
+            <li>Gemeentelijke behandeltijd: gemiddeld <strong style="color:var(--sage-lt);">4 tot 12 weken</strong></li>
+            <li>Afhankelijk van complexiteit en interne gemeentelijke afstemming</li>
+            <li>Sommige gemeenten rekenen leges voor de behandeling van een principeverzoek</li>
+            <li>Donkers Advies geeft u vooraf inzicht in de verwachte kosten en doorlooptijd</li>
           </ul>
         </div>
       </div>
@@ -232,25 +339,86 @@
   <div class="container">
     <div data-fade>
       <p class="label">Vervolgstappen</p>
-      <h2>Van principeverzoek naar vergunning</h2>
-      <p style="margin-bottom: 2rem;">Na een positief principeverzoek kan het initiatief verder worden uitgewerkt in een formele procedure.</p>
+      <h2>Van principeverzoek naar omgevingsvergunning</h2>
+      <p style="margin-bottom: 2rem;">Na een positief principeverzoek werkt u het initiatief uit in een formele procedure. De meest passende route is afhankelijk van uw specifieke situatie.</p>
     </div>
     <div class="compare-grid">
       <div class="compare-card" data-fade>
-        <h4>OPA</h4>
-        <p>Omgevingsvergunning voor een activiteit die past binnen het omgevingsplan.</p>
-        <a href="omgevingsplanactiviteit.html" style="display:inline-block;margin-top:1rem;font-size:.85rem;font-weight:600;color:var(--forest);">Meer over OPA →</a>
+        <h3>OPA</h3>
+        <p>Omgevingsvergunning voor een activiteit die <em>past binnen</em> het omgevingsplan, maar waarvoor formele toestemming vereist is.</p>
+        <a href="omgevingsplanactiviteit.html" style="display:inline-block;margin-top:1rem;font-size:.85rem;font-weight:600;color:var(--forest);">Meer over de OPA-procedure &rarr;</a>
       </div>
       <div class="compare-card highlight" data-fade>
-        <h4>BOPA</h4>
-        <p>Omgevingsvergunning voor een activiteit die afwijkt van het omgevingsplan.</p>
-        <a href="buitenplanse-omgevingsplanactiviteit.html" style="display:inline-block;margin-top:1rem;font-size:.85rem;font-weight:600;color:var(--sage-lt);">Meer over BOPA →</a>
+        <h3>BOPA</h3>
+        <p>Omgevingsvergunning voor een activiteit die <em>afwijkt</em> van het omgevingsplan. Vereist een volledige ruimtelijke onderbouwing.</p>
+        <a href="buitenplanse-omgevingsplanactiviteit.html" style="display:inline-block;margin-top:1rem;font-size:.85rem;font-weight:600;color:var(--sage-lt);">Meer over de BOPA-procedure &rarr;</a>
       </div>
       <div class="compare-card" data-fade>
-        <h4>WOP</h4>
-        <p>Wijziging van het omgevingsplan voor structurele en grootschalige ontwikkelingen.</p>
-        <a href="wijziging-omgevingsplan.html" style="display:inline-block;margin-top:1rem;font-size:.85rem;font-weight:600;color:var(--forest);">Meer over WOP →</a>
+        <h3>Wijziging omgevingsplan</h3>
+        <p>Structurele aanpassing van het omgevingsplan &mdash; geschikt voor grootschalige of structurele ontwikkelingen.</p>
+        <a href="wijziging-omgevingsplan.html" style="display:inline-block;margin-top:1rem;font-size:.85rem;font-weight:600;color:var(--forest);">Meer over wijziging omgevingsplan &rarr;</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sp-section bg-white">
+  <div class="container">
+    <div data-fade>
+      <p class="label">Veelgestelde vragen</p>
+      <h2>Veelgestelde vragen over het principeverzoek</h2>
+      <p>Hieronder vindt u antwoord op de meest gestelde vragen over het principeverzoek onder de Omgevingswet.</p>
+    </div>
+
+    <div class="faq-list" data-fade>
+      <details class="faq-item">
+        <summary>Wat is het verschil tussen een principeverzoek en een vooroverleg?</summary>
+        <div class="faq-body">
+          <p>Een principeverzoek is een schriftelijk verzoek aan het gemeentebestuur om een formeel standpunt in te nemen over een ruimtelijke ontwikkeling. Een vooroverleg is een informeel ambtelijk gesprek om uw initiatief te bespreken.</p>
+          <p>In de praktijk worden beide gecombineerd: Donkers Advies bereidt het vooroverleg strategisch voor &eacute;n stelt het formele principeverzoek op dat hierop volgt.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Wat is het verschil tussen een principeverzoek en een BOPA?</summary>
+        <div class="faq-body">
+          <p>Een principeverzoek is een <em>informeel, niet-bindend</em> verzoek waarmee u toetst of de gemeente bereid is mee te werken aan uw initiatief. Een <a href="buitenplanse-omgevingsplanactiviteit.html">BOPA (buitenplanse omgevingsplanactiviteit)</a> is een <em>formele omgevingsvergunning</em> voor een activiteit die afwijkt van het omgevingsplan &mdash; inclusief volledige ruimtelijke onderbouwing en formele besluitvorming.</p>
+          <p>In de meeste trajecten gaat het principeverzoek vooraf aan de BOPA-aanvraag: eerst toetst u de haalbaarheid, dan werkt u het uit in een formele aanvraag.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is een positief principeverzoek een garantie op een omgevingsvergunning?</summary>
+        <div class="faq-body">
+          <p>Nee. Een positief principeverzoek is juridisch niet bindend. Het geeft aan dat de gemeente <em>in principe</em> bereid is medewerking te verlenen, maar de formele vergunningverlening vindt pas plaats na de volledige aanvraagprocedure.</p>
+          <p>Een positieve grondhouding verlaagt het risico aanzienlijk, versnelt de vervolgprocedure en vergroot de kans op een succesvolle vergunningverlening &mdash; maar biedt geen juridische zekerheid.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Hoe lang duurt een principeverzoek?</summary>
+        <div class="faq-body">
+          <p>De behandeltijd door de gemeente bedraagt gemiddeld <strong>4 tot 12 weken</strong>, afhankelijk van de complexiteit van het initiatief en de interne besluitvorming binnen de gemeente. Wanneer het college van B&amp;W formeel moet instemmen, kan de doorlooptijd langer zijn.</p>
+          <p>Een zorgvuldig en volledig opgesteld principeverzoek verkort doorgaans de behandelingstijd. Donkers Advies zorgt voor een zo compleet en overtuigend mogelijk dossier.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Wat kost een principeverzoek?</summary>
+        <div class="faq-body">
+          <p>De kosten bestaan uit twee onderdelen: de advieskosten van Donkers Advies voor het opstellen, onderbouwen en begeleiden van het verzoek, en eventuele gemeentelijke leges voor de behandeling.</p>
+          <p>De hoogte van de leges verschilt per gemeente. Donkers Advies geeft u vooraf een helder beeld van de verwachte kosten. <a href="index.html#contact">Neem contact op voor een vrijblijvende kostenestimatie.</a></p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Wat als de gemeente een negatieve grondhouding heeft?</summary>
+        <div class="faq-body">
+          <p>Een negatieve reactie geeft in elk geval d&uacute;idelijkheid &mdash; en dat heeft waarde. Op basis van de gemeentelijke motivering adviseert Donkers Advies over de mogelijkheden: aanpassing van het plan, een andere locatiekeuze of een strategisch overleg met een hogere bestuurslaag.</p>
+          <p>Soms is een negatieve grondhouding niet definitief. Door het plan te herzien of aanvullende informatie aan te leveren kan de gemeente worden overtuigd haar standpunt te heroverwegen.</p>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -258,9 +426,9 @@
 <!-- CTA -->
 <section class="cta-bar">
   <div class="container">
-    <h2>Klaar om uw initiatief te toetsen?</h2>
-    <p>Neem vrijblijvend contact op voor een eerste beoordeling van uw plan. Wij helpen u bij een zorgvuldig en kansrijk principeverzoek.</p>
-    <a href="index.html#contact" class="btn btn-primary">Neem contact op</a>
+    <h2>Wilt u weten of uw plan haalbaar is?</h2>
+    <p>Donkers Advies beoordeelt uw initiatief en stelt uw principeverzoek professioneel op. Neem vrijblijvend contact op voor een eerste gesprek over de mogelijkheden.</p>
+    <a href="index.html#contact" class="btn btn-primary">Vraag een vrijblijvend adviesgesprek aan</a>
   </div>
 </section>
 
@@ -269,14 +437,8 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
-        <svg class="logo-svg" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0"  y="14" width="28" height="28" rx="1" fill="rgba(168,194,180,.4)"/>
-          <rect x="10" y="7"  width="28" height="28" rx="1" fill="rgba(168,194,180,.6)"/>
-          <rect x="20" y="0"  width="28" height="28" rx="1" fill="rgba(255,255,255,.15)"/>
-        </svg>
-        <div class="nav-wordmark">
-          <span class="wm-top">DONKERS</span>
-          <span class="wm-sub">ADVIES · RUIMTELIJKE ORDENING</span>
+        <div class="nav-logo-wrap">
+          <img src="brand_assets/Wit logo Donkers Advies.png" alt="Donkers Advies" class="nav-logo-img" loading="lazy" />
         </div>
       </div>
       <div class="footer-links">
@@ -294,8 +456,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2025 Donkers Advies — Ruimtelijke Ordening</span>
-      <span>KvK-nummer: —</span>
+      <span>&copy; 2026 Donkers Advies &mdash; Ruimtelijke Ordening</span>
+      <span>KvK-nummer: 42100373</span>
     </div>
   </div>
 </footer>
@@ -303,3 +465,4 @@
 <script src="nav.js"></script>
 </body>
 </html>
+
