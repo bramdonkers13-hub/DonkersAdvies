@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ GOOGLE CONSENT MODE v2 — standaardwaarden ═══════════════════
+       Moet vóór alle andere scripts geladen worden: hierdoor kunnen
+       Google-tags (Analytics, en later eventueel Ads) nooit per
+       ongeluk zonder consent-status starten. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      functionality_storage: 'denied',
+      personalization_storage: 'denied',
+      security_storage: 'granted',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 2000
+    });
+  </script>
+  <!-- ═══ SEO ═══════════════════════════════════════════════════════ -->
+  <title>Blog | Ruimtelijke ordening en de Omgevingswet — Donkers Advies</title>
+  <meta name="description" content="Praktische kennis over BOPA, principeverzoeken, omgevingsvergunningen (OPA) en wijzigingen van het omgevingsplan. Actuele inzichten van Donkers Advies, specialist in de Omgevingswet." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.donkersadvies.nl/blog/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.donkersadvies.nl/blog/" />
+  <meta property="og:title" content="Blog | Ruimtelijke ordening en de Omgevingswet — Donkers Advies" />
+  <meta property="og:description" content="Praktische kennis over BOPA, principeverzoeken, omgevingsvergunningen (OPA) en wijzigingen van het omgevingsplan." />
+  <meta property="og:image" content="https://www.donkersadvies.nl/city-aerial.webp" />
+  <meta property="og:site_name" content="Donkers Advies" />
+  <meta property="og:locale" content="nl_NL" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog | Ruimtelijke ordening en de Omgevingswet — Donkers Advies" />
+  <meta name="twitter:description" content="Praktische kennis over BOPA, principeverzoeken, omgevingsvergunningen (OPA) en wijzigingen van het omgevingsplan." />
+  <meta name="twitter:image" content="https://www.donkersadvies.nl/city-aerial.webp" />
+
+  <!-- ═══ FONTS & STYLES ════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../css/cookie-consent.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="icon" href="../brand_assets/Standaard logo Donkers Advies.png" type="image/png" />
+
+  <!-- ═══ STRUCTURED DATA ═══════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.donkersadvies.nl/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.donkersadvies.nl/blog/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Donkers Advies Blog",
+      "description": "Praktische kennis over BOPA, principeverzoeken, omgevingsvergunningen (OPA) en wijzigingen van het omgevingsplan.",
+      "url": "https://www.donkersadvies.nl/blog/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Donkers Advies",
+        "url": "https://www.donkersadvies.nl",
+        "email": "info@donkersadvies.nl",
+        "identifier": "42100373"
+      }
+    }
+  ]
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <div class="nav-logo-wrap">
+        <img src="../brand_assets/Standaard logo Donkers Advies.png" alt="Donkers Advies — ruimtelijke ordening" class="nav-logo-img" loading="lazy" />
+      </div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li class="has-dropdown">
+        <a href="../index.html#diensten" class="dropdown-trigger">
+          Diensten
+          <svg class="chevron-icon" viewBox="0 0 10 6" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+        </a>
+        <ul class="dropdown">
+          <li><a href="../principeverzoek.html">Principeverzoek <span class="dd-badge">Stap 1</span></a></li>
+          <div class="dd-sep"></div>
+          <li><a href="../omgevingsplanactiviteit.html">Omgevingsplanactiviteit <span class="dd-badge">OPA</span></a></li>
+          <li><a href="../buitenplanse-omgevingsplanactiviteit.html">Buitenplanse omgevingsplanactiviteit <span class="dd-badge">BOPA</span></a></li>
+          <li><a href="../wijziging-omgevingsplan.html">Wijziging omgevingsplan <span class="dd-badge">WOP</span></a></li>
+        </ul>
+      </li>
+      <li><a href="index.html">Blog</a></li>
+      <li><a href="../index.html#werkwijze">Werkwijze</a></li>
+      <li><a href="../index.html#about">Over Donkers Advies</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Broodkruimel">
+      <a href="../index.html">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span>Blog</span>
+    </nav>
+    <h1>Blog</h1>
+    <p class="page-sub">Praktische kennis en actuele inzichten over BOPA, principeverzoeken, omgevingsvergunningen en wijzigingen van het omgevingsplan &mdash; geschreven door Donkers Advies.</p>
+    <form class="blog-search" role="search" onsubmit="return false;">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <label for="blogSearch" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Zoek in de blog</label>
+      <input type="search" id="blogSearch" placeholder="Zoek op onderwerp, bv. &lsquo;doorlooptijd&rsquo; of &lsquo;BOPA&rsquo;&hellip;" autocomplete="off" />
+    </form>
+  </div>
+</section>
+
+<!-- UITGELICHT -->
+<section class="sp-section bg-white" id="featuredSection">
+  <div class="container">
+    <div data-fade>
+      <p class="label">Uitgelicht</p>
+      <h2>Meest gelezen artikelen</h2>
+    </div>
+
+    <div class="featured-grid" data-fade>
+      <article class="post-card">
+        <a class="post-card-img" href="ruimtelijke-onderbouwing-opstellen.html">
+          <img src="../d03fc516-6c0f-4611-93d5-d5f163eabfbf_thumb1920.jpg" alt="Landschap met verspreide bebouwing in het buitengebied" loading="lazy" width="640" height="400" />
+        </a>
+        <div class="post-card-body">
+          <span class="tag">Ruimtelijke onderbouwing</span>
+          <h3><a href="ruimtelijke-onderbouwing-opstellen.html">Ruimtelijke onderbouwing opstellen: de kern van een succesvolle aanvraag</a></h3>
+          <p>Of het nu gaat om een BOPA, een OPA of een wijziging van het omgevingsplan: een sterke ruimtelijke onderbouwing bepaalt in grote mate de kans van slagen.</p>
+          <div class="post-card-meta">
+            <span>14 juli 2026</span><span>&middot;</span><span>8 min leestijd</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <a class="post-card-img" href="wat-is-een-bopa.html">
+          <img src="../landscape-buitengebied.webp" alt="Agrarisch buitengebied met boerderij" loading="lazy" width="640" height="400" />
+        </a>
+        <div class="post-card-body">
+          <span class="tag">BOPA</span>
+          <h3><a href="wat-is-een-bopa.html">Wat is een BOPA? Procedure, termijnen en kosten uitgelegd</a></h3>
+          <p>Een BOPA is de omgevingsvergunning voor een activiteit die afwijkt van het omgevingsplan. Wanneer heeft u er één nodig en hoe verloopt de procedure?</p>
+          <div class="post-card-meta">
+            <span>2 juni 2026</span><span>&middot;</span><span>7 min leestijd</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <a class="post-card-img" href="omgevingsplan-wijzigen-stappenplan.html">
+          <img src="../20250617-Buitengebied-Enschede-Broekheurne.webp" alt="Luchtfoto van buitengebied nabij Enschede" loading="lazy" width="640" height="400" />
+        </a>
+        <div class="post-card-body">
+          <span class="tag">Omgevingsplan</span>
+          <h3><a href="omgevingsplan-wijzigen-stappenplan.html">Omgevingsplan wijzigen: procedure, doorlooptijd en kosten</a></h3>
+          <p>Voor grootschalige of structurele initiatieven is een wijziging van het omgevingsplan de aangewezen route. Wat komt daarbij kijken?</p>
+          <div class="post-card-meta">
+            <span>30 juni 2026</span><span>&middot;</span><span>7 min leestijd</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ALLE ARTIKELEN -->
+<section class="sp-section bg-paper">
+  <div class="container">
+    <div data-fade>
+      <p class="label">Overzicht</p>
+      <h2>Alle artikelen</h2>
+      <p>Filter op onderwerp of zoek naar een specifieke procedure, termijn of kostenvraag.</p>
+    </div>
+
+    <div class="filter-bar" data-fade role="group" aria-label="Filter op categorie">
+      <button type="button" class="filter-chip active" data-category="alle">Alle artikelen</button>
+      <button type="button" class="filter-chip" data-category="ruimtelijke-onderbouwing">Ruimtelijke onderbouwing</button>
+      <button type="button" class="filter-chip" data-category="bopa">BOPA</button>
+      <button type="button" class="filter-chip" data-category="opa">OPA</button>
+      <button type="button" class="filter-chip" data-category="omgevingsplan">Omgevingsplan</button>
+      <button type="button" class="filter-chip" data-category="principeverzoek">Principeverzoek</button>
+    </div>
+
+    <div class="post-grid" id="postGrid" data-fade>
+
+      <article class="post-card" data-category="ruimtelijke-onderbouwing" data-title="Ruimtelijke onderbouwing opstellen: de kern van een succesvolle aanvraag" data-excerpt="Of het nu gaat om een BOPA, een OPA of een wijziging van het omgevingsplan: een sterke ruimtelijke onderbouwing bepaalt in grote mate de kans van slagen. Zo bouwt u er één op." data-tags="ruimtelijke onderbouwing bopa wijziging omgevingsplan">
+        <a class="post-card-img" href="ruimtelijke-onderbouwing-opstellen.html">
+          <img src="../d03fc516-6c0f-4611-93d5-d5f163eabfbf_thumb1920.jpg" alt="Landschap met verspreide bebouwing in het buitengebied" loading="lazy" width="640" height="400" />
+        </a>
+        <div class="post-card-body">
+          <span class="tag">Ruimtelijke onderbouwing</span>
+          <h3><a href="ruimtelijke-onderbouwing-opstellen.html">Ruimtelijke onderbouwing opstellen: de kern van een succesvolle aanvraag</a></h3>
+          <p>Of het nu gaat om een BOPA, een OPA of een wijziging van het omgevingsplan: een sterke ruimtelijke onderbouwing bepaalt in grote mate de kans van slagen.</p>
+          <div class="post-card-meta">
+            <span>14 juli 2026</span><span>&middot;</span><span>8 min leestijd</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card" data-category="opa" data-title="Omgevingsvergunning binnen het omgevingsplan (OPA) aanvragen: zo werkt het" data-excerpt="Past uw activiteit binnen het omgevingsplan, maar heeft u toch een vergunning nodig? Dit is de OPA-procedure: termijnen, kosten en de rol van de ruimtelijke onderbouwing." data-tags="opa omgevingsvergunning omgevingswet">
+        <a class="post-card-img" href="omgevingsvergunning-opa-aanvragen.html">
+          <img src="../city-aerial.webp" alt="Luchtfoto van een dorpskern" loading="lazy" width="640" height="400" />
+        </a>
+        <div class="post-card-body">
+          <span class="tag">OPA</span>
+          <h3><a href="omgevingsvergunning-opa-aanvragen.html">Omgevingsvergunning binnen het omgevingsplan (OPA) aanvragen: zo werkt het</a></h3>
+          <p>Past uw activiteit binnen het omgevingsplan, maar heeft u toch een vergunning nodig? Dit is de OPA-procedure: termijnen, kosten en de rol van de ruimtelijke onderbouwing.</p>
+          <div class="post-card-meta">
+            <span>7 juli 2026</span><span>&middot;</span><span>6 min leestijd</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card" data-category="omgevingsplan" data-title="Omgevingsplan wijzigen: procedure, doorlooptijd en kosten" data-excerpt="Voor grootschalige of structurele initiatieven is een wijziging van het omgevingsplan de aangewezen route. Wat komt er kijken bij deze procedure van gemiddeld 1 tot 2 jaar?" data-tags="wijziging omgevingsplan wop gemeenteraad">
+        <a class="post-card-img" href="omgevingsplan-wijzigen-stappenplan.html">
+          <img src="../20250617-Buitengebied-Enschede-Broekheurne.webp" alt="Luchtfoto van buitengebied nabij Enschede" loading="lazy" width="640" height="400" />
+        </a>
+        <div class="post-card-body">
+          <span class="tag">Omgevingsplan</span>
+          <h3><a href="omgevingsplan-wijzigen-stappenplan.html">Omgevingsplan wijzigen: procedure, doorlooptijd en kosten</a></h3>
+          <p>Voor grootschalige of structurele initiatieven is een wijziging van het omgevingsplan de aangewezen route. Wat komt daarbij kijken?</p>
+          <div class="post-card-meta">
+            <span>30 juni 2026</span><span>&middot;</span><span>7 min leestijd</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card" data-category="principeverzoek" data-title="Principeverzoek indienen: het stappenplan voor 2026" data-excerpt="Een principeverzoek toetst de haalbaarheid van uw initiatief vóórdat u investeert in een formele aanvraag. Dit stappenplan laat zien hoe u het traject succesvol doorloopt." data-tags="principeverzoek haalbaarheid omgevingswet">
+        <a class="post-card-img" href="principeverzoek-indienen-stappenplan.html">
+          <img src="../20240808_wonen-buitengebied.jpg" alt="Woning in het buitengebied" loading="lazy" width="640" height="400" />
+        </a>
+        <div class="post-card-body">
+          <span class="tag">Principeverzoek</span>
+          <h3><a href="principeverzoek-indienen-stappenplan.html">Principeverzoek indienen: het stappenplan voor 2026</a></h3>
+          <p>Een principeverzoek toetst de haalbaarheid van uw initiatief vóórdat u investeert in een formele aanvraag.</p>
+          <div class="post-card-meta">
+            <span>16 juni 2026</span><span>&middot;</span><span>6 min leestijd</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card" data-category="bopa" data-title="Wat is een BOPA? Procedure, termijnen en kosten uitgelegd" data-excerpt="Een BOPA is de omgevingsvergunning voor een activiteit die afwijkt van het omgevingsplan. Lees wanneer u een BOPA nodig heeft, welke procedure geldt en wat de doorlooptijd en kosten zijn." data-tags="bopa omgevingsvergunning omgevingswet">
+        <a class="post-card-img" href="wat-is-een-bopa.html">
+          <img src="../landscape-buitengebied.webp" alt="Agrarisch buitengebied met boerderij" loading="lazy" width="640" height="400" />
+        </a>
+        <div class="post-card-body">
+          <span class="tag">BOPA</span>
+          <h3><a href="wat-is-een-bopa.html">Wat is een BOPA? Procedure, termijnen en kosten uitgelegd</a></h3>
+          <p>Een BOPA is de omgevingsvergunning voor een activiteit die afwijkt van het omgevingsplan. Wanneer heeft u er één nodig?</p>
+          <div class="post-card-meta">
+            <span>2 juni 2026</span><span>&middot;</span><span>7 min leestijd</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="no-results" id="noResults">
+      <p><strong>Geen artikelen gevonden voor deze zoekopdracht of categorie.</strong></p>
+      <button type="button" class="btn btn-forest" id="resetFilters">Wis filters</button>
+    </div>
+
+    <div class="pagination" id="pagination" aria-label="Paginering"></div>
+  </div>
+</section>
+
+<!-- NIEUWSBRIEF -->
+<section class="sp-section bg-white">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;">
+      <div data-fade>
+        <p class="label">Nieuwsbrief</p>
+        <h2>Blijf op de hoogte van de Omgevingswet</h2>
+        <p>Ontvang nieuwe artikelen over BOPA, principeverzoeken en wijzigingen van het omgevingsplan rechtstreeks in uw inbox. Geen spam, u kunt zich altijd afmelden.</p>
+      </div>
+      <div class="contact-form" data-fade>
+        <form class="newsletter-form" id="newsletterForm" action="#" method="POST" novalidate>
+          <!-- Vervang action="#" door het endpoint van uw e-mailmarketing-provider
+               (bv. Mailchimp, Brevo, of een Vercel serverless function) om deze
+               inschrijving daadwerkelijk te verwerken. Tot die tijd opent het
+               formulier de mail-client van de bezoeker als fallback. -->
+          <input type="text" name="company" class="newsletter-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="form-row">
+            <label for="newsletterEmail">E-mailadres</label>
+            <input type="email" id="newsletterEmail" name="email" placeholder="naam@voorbeeld.nl" required />
+          </div>
+          <button type="submit" class="btn-submit">Aanmelden</button>
+        </form>
+        <div id="newsletterMsg" class="newsletter-msg" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-bar">
+  <div class="container">
+    <h2>Heeft u een concreet initiatief?</h2>
+    <p>Donkers Advies beoordeelt uw plan en adviseert over de te volgen procedure. Neem vrijblijvend contact op voor een eerste gesprek.</p>
+    <a href="../index.html#contact" class="btn btn-primary">Vraag een vrijblijvend adviesgesprek aan</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sp-section bg-paper">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;">
+      <div data-fade>
+        <p class="label">Contact</p>
+        <h2>Rechtstreeks contact met Donkers Advies</h2>
+        <p>Heeft u een vraag over een artikel of wilt u uw eigen initiatief bespreken? Neem gerust contact op.</p>
+      </div>
+      <div data-fade>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:info@donkersadvies.nl">info@donkersadvies.nl</a>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.91 6.91l.76-.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:0652880692">06 52 88 06 92</a>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Actief in Noord-Brabant, Gelderland en Limburg
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo-wrap">
+          <img src="../brand_assets/Wit logo Donkers Advies.png" alt="Donkers Advies" class="nav-logo-img" loading="lazy" />
+        </div>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Diensten</span>
+        <a href="../principeverzoek.html">Principeverzoek</a>
+        <a href="../omgevingsplanactiviteit.html">OPA</a>
+        <a href="../buitenplanse-omgevingsplanactiviteit.html">BOPA</a>
+        <a href="../wijziging-omgevingsplan.html">Wijziging omgevingsplan</a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Navigatie</span>
+        <a href="index.html">Blog</a>
+        <a href="../index.html#about">Over ons</a>
+        <a href="../index.html#werkwijze">Werkwijze</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Juridisch</span>
+        <a href="../privacy.html">Privacyverklaring</a>
+        <a href="../cookies.html">Cookieverklaring</a>
+        <button type="button" class="cc-footer-btn" data-cc-open-settings>Cookie-instellingen</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Donkers Advies &mdash; Ruimtelijke Ordening</span>
+      <span>KvK-nummer: 42100373</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../nav.js"></script>
+<script defer src="../js/cookie-consent.js"></script>
+<script defer src="../js/analytics.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>

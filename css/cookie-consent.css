@@ -1,0 +1,222 @@
+/* ═══════════════════════════════════════════════════════════════════
+   cookie-consent.css
+   Stijl voor de cookiebanner en het cookievoorkeurenscherm (modal).
+   Bouwt voort op de kleur- en spacingtokens uit ../styles.css
+   (--forest, --sage, --sage-xl, --paper, --white, --radius, …).
+   De DOM voor beide onderdelen wordt dynamisch opgebouwd door
+   js/cookie-consent.js — deze bestanden horen dus altijd samen.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ─── Cookiebanner (onderin het scherm) ────────────────────────────── */
+.cc-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: var(--white);
+  border-top: 1px solid var(--sage-xl);
+  box-shadow: 0 -8px 32px rgba(10, 36, 24, .14);
+  padding: 1.25rem clamp(1.25rem, 5vw, 3rem);
+  /* Verborgen tot .cc-visible wordt toegevoegd (na keuze: verdwijnt weer) */
+  transform: translateY(110%);
+  opacity: 0;
+  transition: transform .4s ease, opacity .4s ease;
+}
+.cc-banner.cc-visible { transform: translateY(0); opacity: 1; }
+
+.cc-banner-inner {
+  max-width: 1140px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cc-text { flex: 1 1 380px; }
+.cc-text p { margin: 0; font-size: .9rem; color: var(--text-md); max-width: 68ch; }
+.cc-text a { color: var(--forest); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
+
+.cc-actions { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
+
+/* ─── Knoppen (gedeeld door banner en modal) ───────────────────────── */
+.cc-btn {
+  font-family: inherit;
+  font-size: .875rem;
+  font-weight: 600;
+  padding: .7rem 1.4rem;
+  border-radius: var(--radius);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.cc-btn-accept { background: var(--forest); color: var(--white); }
+.cc-btn-accept:hover { background: var(--forest2); }
+.cc-btn-reject { background: var(--white); color: var(--forest); border-color: var(--sage-xl); }
+.cc-btn-reject:hover { border-color: var(--forest); }
+.cc-btn-prefs {
+  background: none;
+  border-color: transparent;
+  padding: .7rem .25rem;
+  color: var(--text-md);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cc-btn-prefs:hover { color: var(--forest); }
+
+.cc-btn:focus-visible,
+.cc-switch input:focus-visible + .cc-slider,
+.cc-close:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .cc-banner-inner { flex-direction: column; align-items: stretch; }
+  .cc-actions { flex-direction: column; align-items: stretch; }
+  .cc-btn-prefs { text-align: center; }
+}
+
+/* ─── Voorkeurenmodal (overlay + kaart) ─────────────────────────────── */
+.cc-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: rgba(10, 36, 24, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .25s ease, visibility .25s ease;
+}
+.cc-modal-overlay.cc-visible { opacity: 1; visibility: visible; }
+
+.cc-modal {
+  background: var(--white);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 88vh;
+  overflow-y: auto;
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  transform: translateY(16px) scale(.98);
+  transition: transform .25s ease;
+}
+.cc-modal-overlay.cc-visible .cc-modal { transform: translateY(0) scale(1); }
+
+.cc-modal-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: .35rem; }
+.cc-modal-head h2 { font-size: 1.4rem; margin: 0; }
+
+.cc-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: .4rem;
+  color: var(--text-lt);
+  border-radius: 50%;
+  line-height: 0;
+  flex-shrink: 0;
+  transition: color .2s, background .2s;
+}
+.cc-close:hover { color: var(--forest); background: var(--paper); }
+.cc-close svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; }
+
+.cc-modal-intro { font-size: .875rem; color: var(--text-md); max-width: none; margin-bottom: 1.5rem; }
+.cc-modal-intro a { color: var(--forest); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
+
+.cc-category {
+  border: 1px solid var(--sage-xl);
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: .85rem;
+}
+.cc-category-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.cc-category-title { font-weight: 700; font-size: .95rem; color: var(--forest); }
+.cc-category p { font-size: .85rem; color: var(--text-md); margin: .5rem 0 0; max-width: none; }
+
+.cc-locked-label {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--sage);
+  background: var(--sage-xl);
+  padding: .3rem .6rem;
+  border-radius: 2rem;
+  flex-shrink: 0;
+}
+
+/* Toggle switch — gebruikt een echte, focusbare <input type="checkbox">;
+   alleen de visuele weergave (.cc-slider) wordt aangepast. */
+.cc-switch { position: relative; display: inline-block; width: 42px; height: 24px; flex-shrink: 0; }
+.cc-switch input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.cc-slider {
+  position: absolute;
+  inset: 0;
+  background: var(--sage-xl);
+  border-radius: 2rem;
+  transition: background .2s;
+  pointer-events: none;
+}
+.cc-slider::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  background: var(--white);
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  transition: transform .2s;
+}
+.cc-switch input:checked + .cc-slider { background: var(--forest); }
+.cc-switch input:checked + .cc-slider::before { transform: translateX(18px); }
+.cc-switch input:disabled + .cc-slider { background: var(--sage); opacity: .55; }
+.cc-switch input:disabled { cursor: not-allowed; }
+
+.cc-modal-footer { display: flex; justify-content: flex-end; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+
+@media (max-width: 480px) {
+  .cc-modal-footer { flex-direction: column-reverse; }
+  .cc-modal-footer .cc-btn { width: 100%; text-align: center; }
+}
+
+/* ─── "Cookie-instellingen" knop in de footer ──────────────────────── */
+.footer-links button.cc-footer-btn {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: .875rem;
+  text-align: left;
+  color: rgba(255, 255, 255, .6);
+  cursor: pointer;
+  transition: color .2s;
+}
+.footer-links button.cc-footer-btn:hover { color: var(--white); }
+
+/* ─── Verminderde beweging: respecteer voorkeur van de bezoeker ────── */
+@media (prefers-reduced-motion: reduce) {
+  .cc-banner,
+  .cc-modal-overlay,
+  .cc-modal,
+  .cc-slider,
+  .cc-slider::before {
+    transition: none !important;
+  }
+}

@@ -3,32 +3,93 @@
 
   <url>
     <loc>https://www.donkersadvies.nl/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.donkersadvies.nl/buitenplanse-omgevingsplanactiviteit</loc>
+    <loc>https://www.donkersadvies.nl/principeverzoek.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.donkersadvies.nl/omgevingsplanactiviteit</loc>
+    <loc>https://www.donkersadvies.nl/omgevingsplanactiviteit.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.donkersadvies.nl/principeverzoek</loc>
+    <loc>https://www.donkersadvies.nl/buitenplanse-omgevingsplanactiviteit.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.donkersadvies.nl/wijziging-omgevingsplan</loc>
+    <loc>https://www.donkersadvies.nl/wijziging-omgevingsplan.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.donkersadvies.nl/bedankt</loc>
-    <priority>0.1</priority>
+    <loc>https://www.donkersadvies.nl/blog/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.donkersadvies.nl/blog/ruimtelijke-onderbouwing-opstellen.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.donkersadvies.nl/blog/omgevingsvergunning-opa-aanvragen.html</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.donkersadvies.nl/blog/omgevingsplan-wijzigen-stappenplan.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.donkersadvies.nl/blog/principeverzoek-indienen-stappenplan.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.donkersadvies.nl/blog/wat-is-een-bopa.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.donkersadvies.nl/privacy.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.donkersadvies.nl/cookies.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>

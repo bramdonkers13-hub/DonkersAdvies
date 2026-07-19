@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ GOOGLE CONSENT MODE v2 — standaardwaarden ═══════════════════
+       Moet vóór alle andere scripts geladen worden: hierdoor kunnen
+       Google-tags (Analytics, en later eventueel Ads) nooit per
+       ongeluk zonder consent-status starten. Alles staat standaard op
+       "denied", behalve security_storage (altijd noodzakelijk/toegestaan). -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      functionality_storage: 'denied',
+      personalization_storage: 'denied',
+      security_storage: 'granted',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 2000
+    });
+  </script>
+
+  <!-- ═══ SEO ═══════════════════════════════════════════════════════ -->
+  <title>Privacyverklaring | Donkers Advies</title>
+  <meta name="description" content="Lees hoe Donkers Advies omgaat met persoonsgegevens: welke gegevens wij verzamelen, waarom, hoe lang wij ze bewaren en welke rechten u heeft onder de AVG." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.donkersadvies.nl/privacy.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.donkersadvies.nl/privacy.html" />
+  <meta property="og:title" content="Privacyverklaring | Donkers Advies" />
+  <meta property="og:description" content="Lees hoe Donkers Advies omgaat met persoonsgegevens: welke gegevens wij verzamelen, waarom, hoe lang wij ze bewaren en welke rechten u heeft onder de AVG." />
+  <meta property="og:site_name" content="Donkers Advies" />
+  <meta property="og:locale" content="nl_NL" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Privacyverklaring | Donkers Advies" />
+  <meta name="twitter:description" content="Hoe Donkers Advies omgaat met persoonsgegevens, cookies en uw rechten onder de AVG." />
+
+  <!-- ═══ FONTS & STYLES ════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/cookie-consent.css" />
+  <link rel="icon" href="brand_assets/Standaard logo Donkers Advies.png" type="image/png" />
+
+  <style>
+    /* Bredere leeskolom en tabelstijl voor deze juridische pagina */
+    .legal-content { max-width: 76ch; margin-inline: auto; }
+    .legal-content h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+    .legal-content h2:first-of-type { margin-top: 0; }
+    .legal-content h3 { margin-top: 1.5rem; margin-bottom: .6rem; color: var(--forest); font-size: 1rem; }
+    .legal-content p { max-width: none; margin-bottom: 1.1rem; }
+    .legal-content ul { margin: 0 0 1.1rem 1.25rem; }
+    .legal-content li { margin-bottom: .5rem; line-height: 1.65; color: var(--text-md); }
+    .legal-content a { color: var(--forest); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
+    .legal-content strong { color: var(--text); }
+    .legal-meta { font-size: .85rem; color: var(--text-lt); margin-bottom: 2.5rem; }
+  </style>
+
+  <!-- ═══ STRUCTURED DATA ═══════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.donkersadvies.nl/" },
+      { "@type": "ListItem", "position": 2, "name": "Privacyverklaring", "item": "https://www.donkersadvies.nl/privacy.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-wrap">
+        <img src="brand_assets/Standaard logo Donkers Advies.png" alt="Donkers Advies — ruimtelijke ordening" class="nav-logo-img" loading="lazy" />
+      </div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li class="has-dropdown">
+        <a href="index.html#diensten" class="dropdown-trigger">
+          Diensten
+          <svg class="chevron-icon" viewBox="0 0 10 6" aria-hidden="true"><polyline points="1 1 5 5 9 1"/></svg>
+        </a>
+        <ul class="dropdown">
+          <li><a href="principeverzoek.html">Principeverzoek <span class="dd-badge">Stap 1</span></a></li>
+          <div class="dd-sep"></div>
+          <li><a href="omgevingsplanactiviteit.html">Omgevingsplanactiviteit <span class="dd-badge">OPA</span></a></li>
+          <li><a href="buitenplanse-omgevingsplanactiviteit.html">Buitenplanse omgevingsplanactiviteit <span class="dd-badge">BOPA</span></a></li>
+          <li><a href="wijziging-omgevingsplan.html">Wijziging omgevingsplan <span class="dd-badge">WOP</span></a></li>
+        </ul>
+      </li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="index.html#werkwijze">Werkwijze</a></li>
+      <li><a href="index.html#about">Over Donkers Advies</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Broodkruimel">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span>Privacyverklaring</span>
+    </nav>
+    <h1>Privacyverklaring</h1>
+    <p class="page-sub">Hoe Donkers Advies omgaat met uw persoonsgegevens, welke rechten u heeft en hoe u die kunt uitoefenen.</p>
+  </div>
+</section>
+
+<!-- INHOUD -->
+<section class="sp-section bg-white">
+  <div class="container">
+    <div class="legal-content" data-fade>
+      <p class="legal-meta">Laatst bijgewerkt: 19 juli 2026</p>
+
+      <p>
+        Donkers Advies (KvK-nummer 42100373), gevestigd in Nederland en actief in Noord-Brabant, Gelderland en Limburg, hecht veel waarde aan de bescherming van uw persoonsgegevens. In deze privacyverklaring leest u welke persoonsgegevens wij verzamelen, waarom, hoe lang wij deze bewaren en welke rechten u als betrokkene heeft. Deze verklaring is van toepassing op alle diensten van Donkers Advies en op het gebruik van de website www.donkersadvies.nl.
+      </p>
+
+      <h2 id="verwerkingsverantwoordelijke">Verwerkingsverantwoordelijke</h2>
+      <p>
+        Donkers Advies is de verwerkingsverantwoordelijke voor de verwerking van uw persoonsgegevens zoals beschreven in deze verklaring. Heeft u vragen over deze verklaring of over de verwerking van uw gegevens? Neem dan contact op via de gegevens onderaan deze pagina.
+      </p>
+
+      <h2 id="welke-gegevens">Welke persoonsgegevens verwerken wij</h2>
+      <p>Donkers Advies verwerkt persoonsgegevens die u zelf aan ons verstrekt, en &mdash; uitsluitend met uw toestemming &mdash; gegevens over uw gebruik van de website.</p>
+      <ul>
+        <li><strong>Contactformulier:</strong> naam, e-mailadres, gekozen dienst en de inhoud van uw bericht, wanneer u het contactformulier op de website invult.</li>
+        <li><strong>Nieuwsbrief:</strong> uw e-mailadres, wanneer u zich aanmeldt voor de nieuwsbrief via de blog.</li>
+        <li><strong>Correspondentie:</strong> gegevens die u ons verstrekt via e-mail of telefoon in het kader van een adviesaanvraag of lopende opdracht.</li>
+        <li><strong>Klant- en factuuradministratie:</strong> naam-, adres- en betaalgegevens, indien u klant wordt van Donkers Advies.</li>
+        <li><strong>Websitegebruik (analytics):</strong> geanonimiseerde/pseudonieme gebruiksstatistieken via Google Analytics 4, uitsluitend nadat u hiervoor toestemming heeft gegeven via de cookiebanner.</li>
+      </ul>
+
+      <h2 id="doeleinden-grondslagen">Doeleinden en grondslagen</h2>
+      <p>Wij verwerken uw persoonsgegevens voor de volgende doeleinden, telkens op basis van een grondslag uit artikel 6 van de AVG:</p>
+      <ul>
+        <li><strong>Afhandelen van uw aanvraag of contactverzoek</strong> &mdash; grondslag: uitvoering van (voorbereidingen tot) een overeenkomst, dan wel ons gerechtvaardigd belang om uw vraag te kunnen beantwoorden.</li>
+        <li><strong>Uitvoeren van een adviesopdracht</strong> &mdash; grondslag: uitvoering van de overeenkomst.</li>
+        <li><strong>Financiële administratie en facturatie</strong> &mdash; grondslag: wettelijke verplichting (fiscale bewaarplicht).</li>
+        <li><strong>Versturen van de nieuwsbrief</strong> &mdash; grondslag: uw toestemming, te allen tijde in te trekken via de afmeldlink in elke nieuwsbrief.</li>
+        <li><strong>Analyseren van websitegebruik (Google Analytics)</strong> &mdash; grondslag: uw toestemming via de cookiebanner.</li>
+      </ul>
+
+      <h2 id="bewaartermijnen">Bewaartermijnen</h2>
+      <p>Donkers Advies bewaart persoonsgegevens niet langer dan noodzakelijk voor de doeleinden waarvoor ze zijn verzameld:</p>
+      <ul>
+        <li><strong>Contactformulier-inzendingen</strong> die niet tot een opdracht leiden: maximaal 2 jaar na het laatste contact.</li>
+        <li><strong>Klant- en factuurgegevens:</strong> 7 jaar, conform de wettelijke fiscale bewaarplicht.</li>
+        <li><strong>Nieuwsbriefgegevens:</strong> tot het moment waarop u zich afmeldt.</li>
+        <li><strong>Analytics-gegevens (Google Analytics 4):</strong> maximaal 14 maanden, conform de bewaartermijn die is ingesteld in het Google Analytics-account van Donkers Advies.</li>
+        <li><strong>Cookievoorkeuren:</strong> 12 maanden, waarna opnieuw om een keuze wordt gevraagd.</li>
+      </ul>
+
+      <h2 id="ontvangers">Met wie delen wij uw gegevens</h2>
+      <p>Donkers Advies deelt uw gegevens uitsluitend met partijen die noodzakelijk zijn voor de uitvoering van onze dienstverlening en de website. Met elke partij die als verwerker optreedt, is een verwerkersovereenkomst gesloten of zijn de standaardvoorwaarden van die partij van toepassing.</p>
+      <ul>
+        <li><strong>Vercel Inc.</strong> &mdash; hostingprovider van www.donkersadvies.nl.</li>
+        <li><strong>Formspree</strong> &mdash; verwerkt de inzendingen van het contactformulier en stuurt deze per e-mail door naar Donkers Advies.</li>
+        <li><strong>Google LLC / Google Ireland Limited</strong> &mdash; levert Google Analytics 4 (en, zodra ingezet, Google Ads) en verwerkt in dat kader website-gebruiksgegevens, uitsluitend na uw toestemming.</li>
+      </ul>
+      <p>Wij verkopen uw gegevens nooit aan derden.</p>
+
+      <h2 id="google-analytics">Google Analytics</h2>
+      <p>
+        Donkers Advies gebruikt Google Analytics 4 om te begrijpen hoe bezoekers de website gebruiken, zodat wij de website kunnen verbeteren. Google Analytics wordt pas geladen nadat u hiervoor expliciet toestemming heeft gegeven via de cookiebanner of het voorkeurenscherm; zonder die toestemming worden er geen analytics-cookies geplaatst en verstuurt uw browser geen gegevens naar Google Analytics.
+      </p>
+      <p>
+        Donkers Advies gebruikt daarbij <strong>Google Consent Mode v2</strong>: pas wanneer u toestemming geeft, wordt de betreffende opslag ("storage") voor Google vrijgegeven. Meer informatie over welke cookies hierbij worden geplaatst, vindt u in onze <a href="cookies.html">cookieverklaring</a>. Meer over hoe Google zelf met gegevens omgaat, leest u in het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid van Google</a>.
+      </p>
+
+      <h2 id="cookies">Cookies</h2>
+      <p>
+        Voor het functioneren van de website en, met uw toestemming, voor analyse gebruiken wij cookies en vergelijkbare technieken. Een volledig overzicht van alle cookies, hun doel, bewaartermijn en leverancier vindt u in onze <a href="cookies.html">cookieverklaring</a>. Uw voorkeuren kunt u op elk moment aanpassen via de knop <button type="button" class="cc-btn-prefs" style="display:inline;padding:0;font-size:inherit;" data-cc-open-settings>Cookie-instellingen</button> onderaan iedere pagina.
+      </p>
+
+      <h2 id="doorgifte">Doorgifte buiten de Europese Economische Ruimte</h2>
+      <p>
+        Sommige door ons ingeschakelde partijen, waaronder Vercel en Google, zijn (mede) gevestigd in de Verenigde Staten. Voor zover persoonsgegevens hierdoor buiten de Europese Economische Ruimte (EER) worden doorgegeven, gebeurt dit op basis van de door de Europese Commissie goedgekeurde standaardcontractbepalingen en/of, waar van toepassing, deelname aan het EU-US Data Privacy Framework.
+      </p>
+
+      <h2 id="beveiliging">Beveiliging</h2>
+      <p>
+        Donkers Advies neemt passende technische en organisatorische maatregelen om uw persoonsgegevens te beveiligen tegen verlies of onrechtmatige verwerking. De website wordt uitsluitend via een beveiligde HTTPS-verbinding aangeboden, toegang tot systemen is beperkt tot wat noodzakelijk is en gegevens worden niet langer bewaard dan nodig.
+      </p>
+
+      <h2 id="rechten">Uw rechten</h2>
+      <p>Op grond van de AVG heeft u de volgende rechten met betrekking tot uw persoonsgegevens:</p>
+      <ul>
+        <li><strong>Inzage</strong> &mdash; u kunt opvragen welke gegevens wij van u verwerken.</li>
+        <li><strong>Rectificatie</strong> &mdash; u kunt onjuiste of onvolledige gegevens laten corrigeren.</li>
+        <li><strong>Verwijdering</strong> &mdash; u kunt ons vragen uw gegevens te verwijderen, voor zover er geen wettelijke bewaarplicht geldt.</li>
+        <li><strong>Beperking van de verwerking</strong> &mdash; u kunt ons vragen de verwerking van uw gegevens tijdelijk te beperken.</li>
+        <li><strong>Bezwaar</strong> &mdash; u kunt bezwaar maken tegen de verwerking van uw gegevens op basis van ons gerechtvaardigd belang.</li>
+        <li><strong>Gegevensoverdraagbaarheid</strong> &mdash; u kunt een kopie van uw gegevens opvragen in een gestructureerd, gangbaar formaat.</li>
+        <li><strong>Intrekken van toestemming</strong> &mdash; voor verwerkingen die op toestemming zijn gebaseerd (zoals analytics of de nieuwsbrief), kunt u uw toestemming te allen tijde intrekken.</li>
+      </ul>
+      <p>
+        Wilt u een van deze rechten uitoefenen? Stuur een e-mail naar <a href="mailto:info@donkersadvies.nl">info@donkersadvies.nl</a>. Wij reageren binnen vier weken op uw verzoek. Bent u het niet eens met de manier waarop wij uw gegevens verwerken, dan heeft u het recht een klacht in te dienen bij de <a href="https://www.autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a>.
+      </p>
+
+      <h2 id="wijzigingen">Wijzigingen in deze privacyverklaring</h2>
+      <p>
+        Donkers Advies kan deze privacyverklaring van tijd tot tijd wijzigen, bijvoorbeeld bij wijzigingen in de dienstverlening of in de wetgeving. De datum bovenaan deze pagina geeft aan wanneer de verklaring voor het laatst is bijgewerkt.
+      </p>
+
+      <h2 id="contact">Contact</h2>
+      <p>Heeft u vragen over deze privacyverklaring of over de verwerking van uw persoonsgegevens door Donkers Advies?</p>
+      <ul>
+        <li>E-mail: <a href="mailto:info@donkersadvies.nl">info@donkersadvies.nl</a></li>
+        <li>Telefoon: <a href="tel:0652880692">06 52 88 06 92</a></li>
+        <li>KvK-nummer: 42100373</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo-wrap">
+          <img src="brand_assets/Wit logo Donkers Advies.png" alt="Donkers Advies" class="nav-logo-img" loading="lazy" />
+        </div>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Diensten</span>
+        <a href="principeverzoek.html">Principeverzoek</a>
+        <a href="omgevingsplanactiviteit.html">OPA</a>
+        <a href="buitenplanse-omgevingsplanactiviteit.html">BOPA</a>
+        <a href="wijziging-omgevingsplan.html">Wijziging omgevingsplan</a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Navigatie</span>
+        <a href="blog/index.html">Blog</a>
+        <a href="index.html#about">Over ons</a>
+        <a href="index.html#werkwijze">Werkwijze</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Juridisch</span>
+        <a href="privacy.html">Privacyverklaring</a>
+        <a href="cookies.html">Cookieverklaring</a>
+        <button type="button" class="cc-footer-btn" data-cc-open-settings>Cookie-instellingen</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Donkers Advies &mdash; Ruimtelijke Ordening</span>
+      <span>KvK-nummer: 42100373</span>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script defer src="js/cookie-consent.js"></script>
+<script defer src="js/analytics.js"></script>
+</body>
+</html>
