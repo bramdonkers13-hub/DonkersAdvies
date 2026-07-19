@@ -1,3 +1,9 @@
 {
-  "cleanUrls": true
+  "redirects": [
+    {
+      "source": "/blog/ruimtelijke-onderbouwing-opstellen.html",
+      "destination": "/blog/ruimtelijke-onderbouwing-bopa.html",
+      "permanent": true
+    }
+  ]
 }
