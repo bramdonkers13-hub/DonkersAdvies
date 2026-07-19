@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bedankt voor uw bericht — Donkers Advies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="brand_assets/Standaard logo Donkers Advies.png" type="image/png" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-wrap">
+        <img src="brand_assets/Standaard logo Donkers Advies.png" alt="Donkers Advies" class="nav-logo-img" />
+      </div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li class="has-dropdown">
+        <a href="index.html#diensten" class="dropdown-trigger">
+          Diensten
+          <svg class="chevron-icon" viewBox="0 0 10 6"><polyline points="1 1 5 5 9 1"/></svg>
+        </a>
+        <ul class="dropdown">
+          <li><a href="principeverzoek.html">Principeverzoek <span class="dd-badge">Stap 1</span></a></li>
+          <div class="dd-sep"></div>
+          <li><a href="omgevingsplanactiviteit.html">Omgevingsplanactiviteit <span class="dd-badge">OPA</span></a></li>
+          <li><a href="buitenplanse-omgevingsplanactiviteit.html">Buitenplanse omgevingsplanactiviteit <span class="dd-badge">BOPA</span></a></li>
+          <li><a href="wijziging-omgevingsplan.html">Wijziging omgevingsplan <span class="dd-badge">WOP</span></a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#werkwijze">Werkwijze</a></li>
+      <li><a href="index.html#about">Over Donkers Advies</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- BEDANKT -->
+<section class="section" style="min-height: 60vh; display: flex; align-items: center;">
+  <div class="container" style="text-align: center; max-width: 600px; margin-inline: auto;">
+    <div data-fade>
+      <svg viewBox="0 0 24 24" style="width:56px;height:56px;margin:0 auto 1.5rem;display:block;" fill="none" stroke="var(--sage)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+        <polyline points="22 4 12 14.01 9 11.01"/>
+      </svg>
+      <p class="label" style="text-align:center;">Ontvangen</p>
+      <h1 style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem;">Bedankt voor uw bericht</h1>
+      <p style="max-width: 48ch; margin-inline: auto; margin-bottom: 2.5rem;">Uw aanvraag is in goede orde ontvangen. Donkers Advies neemt binnen één werkdag contact met u op.</p>
+      <a href="index.html" class="btn btn-primary">Terug naar de homepage</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo-wrap">
+          <img src="brand_assets/Wit logo Donkers Advies.png" alt="Donkers Advies" class="nav-logo-img" />
+        </div>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Diensten</span>
+        <a href="principeverzoek.html">Principeverzoek</a>
+        <a href="omgevingsplanactiviteit.html">OPA</a>
+        <a href="buitenplanse-omgevingsplanactiviteit.html">BOPA</a>
+        <a href="wijziging-omgevingsplan.html">Wijziging omgevingsplan</a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Navigatie</span>
+        <a href="index.html#about">Over ons</a>
+        <a href="index.html#werkwijze">Werkwijze</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Donkers Advies — Ruimtelijke Ordening</span>
+      <span>KvK-nummer: 42100373</span>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
+
+
