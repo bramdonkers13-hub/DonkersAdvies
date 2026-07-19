@@ -1,0 +1,21 @@
+{
+  "name": "donkers-advies-wkep",
+  "version": "1.0.0",
+  "description": "Donkers Advies - Ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet",
+  "private": true,
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "lint": "echo 'No linting configured for static HTML project'",
+    "test": "echo 'No tests configured for static HTML project'"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.15"
+  },
+  "keywords": [
+    "omgevingswet",
+    "ruimtelijke-ordening",
+    "adviesbureau"
+  ],
+  "author": "Donkers Advies",
+  "license": "UNLICENSED"
+}
