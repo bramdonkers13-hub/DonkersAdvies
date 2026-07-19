@@ -1,0 +1,27 @@
+{
+  "name": "donkers-advies-website",
+  "version": "1.0.0",
+  "description": "Donkers Advies - Ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet",
+  "main": "nav.js",
+  "scripts": {
+    "build": "esbuild speed-insights.js --bundle --outfile=js/speed-insights-bundle.js --format=iife",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bramdonkers13-hub/DonkersAdvies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bramdonkers13-hub/DonkersAdvies/issues"
+  },
+  "homepage": "https://github.com/bramdonkers13-hub/DonkersAdvies#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}
