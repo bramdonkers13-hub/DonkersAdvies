@@ -1,0 +1,28 @@
+{
+  "name": "donkers-advies",
+  "version": "1.0.0",
+  "description": "Donkers Advies website - Ruimtelijk adviesbureau Omgevingswet",
+  "main": "nav.js",
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "lint": "echo \"No linter configured\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bramdonkers13-hub/DonkersAdvies.git"
+  },
+  "keywords": [
+    "omgevingswet",
+    "ruimtelijke-ordening",
+    "adviesbureau"
+  ],
+  "author": "Donkers Advies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bramdonkers13-hub/DonkersAdvies/issues"
+  },
+  "homepage": "https://github.com/bramdonkers13-hub/DonkersAdvies#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
