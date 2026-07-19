@@ -112,6 +112,32 @@
 }
 .post-meta-row .dot { opacity: .5; }
 
+/* Data tables within article content (e.g. bedragen-/normtabellen) */
+.post-content .table-wrap { max-width: 72ch; margin: 0 auto 1.5rem; overflow-x: auto; border: 1px solid var(--sage-xl); border-radius: 8px; }
+.post-content table { width: 100%; border-collapse: collapse; font-size: .875rem; min-width: 440px; }
+.post-content table th {
+  background: var(--paper);
+  text-align: left;
+  padding: .75rem 1rem;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--forest);
+  font-weight: 700;
+  border-bottom: 1px solid var(--sage-xl);
+  white-space: nowrap;
+}
+.post-content table td { padding: .75rem 1rem; border-bottom: 1px solid var(--sage-xl); color: var(--text-md); vertical-align: top; }
+.post-content table tr:last-child td { border-bottom: none; }
+.post-content table strong { color: var(--forest); }
+
+/* Bronnen (sources) list */
+.sources-list { max-width: 72ch; margin: 0 auto 1.5rem; padding-left: 1.25rem; }
+.sources-list li { font-size: .85rem; margin-bottom: .5rem; }
+.sources-list a { color: var(--forest); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
+
+.post-disclaimer { max-width: 72ch; margin: 1.5rem auto 0; font-size: .8rem; color: var(--text-lt); font-style: italic; }
+
 /* Table of contents */
 .toc { max-width: 72ch; margin: 0 auto 2.5rem; background: var(--paper); border: 1px solid var(--sage-xl); border-radius: 8px; padding: 1.5rem 1.75rem; }
 .toc-title { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--sage); margin-bottom: 1rem; }

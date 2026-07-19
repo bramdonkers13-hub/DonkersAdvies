@@ -4,6 +4,21 @@
       "source": "/blog/ruimtelijke-onderbouwing-opstellen.html",
       "destination": "/blog/ruimtelijke-onderbouwing-bopa.html",
       "permanent": true
+    },
+    {
+      "source": "/blog/omgevingsplan-wijzigen-stappenplan.html",
+      "destination": "/blog/omgevingsplan-wijzigen.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/principeverzoek-indienen-stappenplan.html",
+      "destination": "/blog/principeverzoek-indienen.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/omgevingsvergunning-opa-aanvragen.html",
+      "destination": "/blog/opa-aanvragen.html",
+      "permanent": true
     }
   ]
 }

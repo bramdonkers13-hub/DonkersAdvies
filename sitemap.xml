@@ -51,29 +51,36 @@
   </url>
 
   <url>
-    <loc>https://www.donkersadvies.nl/blog/omgevingsvergunning-opa-aanvragen.html</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://www.donkersadvies.nl/blog/opa-aanvragen.html</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.donkersadvies.nl/blog/omgevingsplan-wijzigen-stappenplan.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://www.donkersadvies.nl/blog/omgevingsplan-wijzigen.html</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.donkersadvies.nl/blog/principeverzoek-indienen-stappenplan.html</loc>
-    <lastmod>2026-06-16</lastmod>
+    <loc>https://www.donkersadvies.nl/blog/principeverzoek-indienen.html</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.donkersadvies.nl/blog/wat-is-een-bopa.html</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.donkersadvies.nl/blog/maatwerkregeling-omgevingskwaliteit.html</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
