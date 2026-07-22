@@ -1,0 +1,13 @@
+{
+  "name": "donkers-advies-wkep",
+  "version": "1.0.0",
+  "description": "Donkers Advies website - Ruimtelijk adviesbureau Omgevingswet",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Static HTML site - open index.html in browser'",
+    "build": "echo 'Static HTML site - no build step required'"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0"
+  }
+}
