@@ -1,0 +1,488 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import InfoBox from '../components/InfoBox.astro';
+import FeatureGrid from '../components/FeatureGrid.astro';
+import StepList from '../components/StepList.astro';
+import CompareGrid from '../components/CompareGrid.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+import { serviceSchema } from '../lib/schema';
+
+const title = 'Omgevingsplan wijzigen | WOP procedure en begeleiding';
+const description =
+	'Wilt u het omgevingsplan wijzigen? Donkers Advies begeleidt het volledige WOP-traject: van haalbaarheidsanalyse tot vaststelling door de gemeenteraad.';
+
+const service = serviceSchema({
+	name: 'Wijziging omgevingsplan (WOP)',
+	description:
+		'Professionele begeleiding bij het wijzigen van het omgevingsplan: van haalbaarheidsanalyse, planologische onderbouwing en coördinatie van onderzoeken tot en met vaststelling door de gemeenteraad.',
+	path: '/wijziging-omgevingsplan/',
+});
+
+const aanpakSteps = [
+	{
+		number: '01',
+		title: 'Haalbaarheidsanalyse',
+		descriptionHtml:
+			"Wij toetsen uw initiatief aan het omgevingsplan, provinciaal beleid en gemeentelijk omgevingsbeleid. Wij brengen de kansen, risico's en aandachtspunten in kaart.",
+	},
+	{
+		number: '02',
+		title: 'Strategisch advies en principeverzoek',
+		descriptionHtml:
+			'Wij adviseren over de meest effectieve route. Indien gewenst dienen wij eerst een <a href="/principeverzoek/">principeverzoek</a> in om bestuurlijk draagvlak te verkennen.',
+	},
+	{
+		number: '03',
+		title: 'Afstemming gemeente en provincie',
+		descriptionHtml:
+			'Wij stemmen het initiatief af met de gemeente en, indien vereist, met de provincie om bestuurlijk en politiek draagvlak op te bouwen.',
+	},
+	{
+		number: '04',
+		title: 'Opstellen planologische onderbouwing',
+		descriptionHtml: 'Wij verzorgen de volledige toelichting, planregels, verbeelding en coördinatie van alle sectorale onderzoeken.',
+	},
+	{
+		number: '05',
+		title: 'Procedurebegeleiding tot vaststelling',
+		descriptionHtml:
+			'Wij begeleiden het formele traject tot en met de vaststelling door de gemeenteraad en adviseren bij een eventuele beroepsprocedure.',
+	},
+];
+
+const formeleProcedureSteps = [
+	{
+		number: 'I',
+		title: 'Initiatieffase en participatie',
+		descriptionHtml:
+			'Afstemming met gemeente, provincie en belanghebbenden. Participatie met omwonenden en andere betrokkenen is een verplicht onderdeel van de procedure.',
+	},
+	{
+		number: 'II',
+		title: 'Ontwerpbesluit',
+		descriptionHtml: 'Het ontwerp van het gewijzigde omgevingsplan wordt opgesteld en aangeboden aan de gemeente voor formele behandeling.',
+	},
+	{
+		number: 'III',
+		title: 'Terinzagelegging (6 weken)',
+		descriptionHtml: 'Het ontwerpbesluit wordt 6 weken ter inzage gelegd. Iedereen kan in deze periode een zienswijze indienen.',
+	},
+	{
+		number: 'IV',
+		title: 'Zienswijzen en vaststelling',
+		descriptionHtml: 'Ingediende zienswijzen worden beoordeeld en beantwoord. De gemeenteraad stelt het gewijzigde omgevingsplan vervolgens vast.',
+	},
+	{
+		number: 'V',
+		title: 'Beroepsfase (indien van toepassing)',
+		descriptionHtml: 'Belanghebbenden kunnen binnen 6 weken beroep instellen bij de Afdeling bestuursrechtspraak van de Raad van State.',
+	},
+];
+
+const faqItems = [
+	{
+		question: 'Wat is een wijziging van het omgevingsplan?',
+		answerHtml:
+			'<p>Een wijziging van het omgevingsplan (WOP) is een aanpassing van de planregels en/of de verbeelding (kaart) van het gemeentelijke omgevingsplan. Hiermee wordt een nieuwe functie, bouwmogelijkheid of gebruik planologisch permanent mogelijk gemaakt.</p><p>Anders dan een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a>, waarbij een vergunning een eenmalige afwijking mogelijk maakt, wordt bij een WOP het plan zelf structureel aangepast. De ontwikkeling is daarna voor iedereen en voor altijd planologisch toegestaan op die locatie.</p>',
+		answerText:
+			'Een wijziging van het omgevingsplan (WOP) is een aanpassing van de planregels en/of de verbeelding (kaart) van het gemeentelijke omgevingsplan. Anders dan een BOPA, waarbij een vergunning een eenmalige afwijking mogelijk maakt, wordt bij een WOP het plan zelf structureel aangepast.',
+	},
+	{
+		question: 'Wanneer is een wijziging van het omgevingsplan noodzakelijk?',
+		answerHtml:
+			'<p>Een WOP is noodzakelijk wanneer uw initiatief structureel of grootschalig van aard is en niet via een BOPA of OPA kan worden gerealiseerd. Voorbeelden:</p><ul><li>Grootschalige woningbouwontwikkelingen</li><li>Permanente functiewijzigingen van agrarisch naar wonen of bedrijvigheid</li><li>Herontwikkeling van bedrijventerreinen of leegstaande locaties</li><li>Nieuwe stedelijke of landschappelijke uitbreidingen</li><li>Gebiedsontwikkelingen met meerdere functies of eigenaren</li></ul>',
+		answerText:
+			'Een WOP is noodzakelijk wanneer uw initiatief structureel of grootschalig van aard is en niet via een BOPA of OPA kan worden gerealiseerd. Voorbeelden zijn grootschalige woningbouwontwikkelingen, permanente functiewijzigingen, herontwikkeling van bedrijventerreinen en nieuwe stedelijke uitbreidingen.',
+	},
+	{
+		question: 'Wat is het verschil tussen een WOP en een BOPA?',
+		answerHtml:
+			'<p>Bij een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> wordt via een omgevingsvergunning een eenmalige afwijking van het omgevingsplan mogelijk gemaakt. Het omgevingsplan zelf blijft ongewijzigd.</p><p>Bij een WOP worden de planregels en/of de verbeelding structureel aangepast. Een WOP is juridisch robuuster voor grootschalige of permanente ontwikkelingen. Een BOPA is sneller en minder kostbaar voor kleinschalige of incidentele afwijkingen.</p>',
+		answerText:
+			'Bij een BOPA wordt via een vergunning een eenmalige en incidentele afwijking van het omgevingsplan mogelijk gemaakt. Het plan zelf blijft ongewijzigd. Bij een WOP worden de planregels en/of de verbeelding structureel aangepast. Bij grootschalige of permanente ontwikkelingen is een wijziging van het omgevingsplan doorgaans beter passend.',
+	},
+	{
+		question: 'Wat is het verschil met het vroegere bestemmingsplan?',
+		answerHtml:
+			'<p>Onder de Wet ruimtelijke ordening (Wro) gold er een afzonderlijk bestemmingsplan per kern of gebied. Onder de Omgevingswet is er één omgevingsplan per gemeente dat alle ruimtelijke regels bundelt.</p><p>De voormalige bestemmingsplannen zijn van rechtswege omgezet naar het tijdelijk deel van het omgevingsplan. Een wijziging van het omgevingsplan vervangt daarmee de vroegere bestemmingsplanherziening. De systematiek en het toetsingskader zijn wel veranderd: het ETFAL-criterium vervangt &ldquo;goede ruimtelijke ordening&rdquo;.</p>',
+		answerText:
+			'Onder de Wet ruimtelijke ordening (Wro) werden ruimtelijke regels vastgelegd in afzonderlijke bestemmingsplannen per gebied of kern. Onder de Omgevingswet geldt er één omgevingsplan per gemeente dat alle ruimtelijke regels bundelt. Een wijziging van het omgevingsplan vervangt daarmee de vroegere bestemmingsplanherziening.',
+	},
+	{
+		question: 'Wie beslist over een wijziging van het omgevingsplan?',
+		answerHtml:
+			'<p>De gemeenteraad stelt het omgevingsplan vast. Het college van burgemeester en wethouders bereidt het besluit voor en coördineert de procedure. De definitieve vaststelling is een bevoegdheid van de gemeenteraad, tenzij de raad bepaalde bevoegdheden heeft gedelegeerd aan het college.</p><p>Politiek-bestuurlijk draagvlak binnen de gemeenteraad is daarmee een bepalende factor voor een succesvolle WOP-procedure. Donkers Advies bouwt dit draagvlak samen met u op.</p>',
+		answerText:
+			'De gemeenteraad stelt het omgevingsplan vast. Het college van burgemeester en wethouders bereidt het besluit voor en is in de meeste gemeenten bevoegd om wijzigingen voor te bereiden. De definitieve vaststelling is een bevoegdheid van de gemeenteraad, tenzij de raad bevoegdheden heeft gedelegeerd aan het college.',
+	},
+	{
+		question: 'Hoe lang duurt een wijziging van het omgevingsplan?',
+		answerHtml:
+			'<p>Een WOP duurt gemiddeld 1 tot 2 jaar, afhankelijk van:</p><ul><li>De complexiteit van het initiatief en de benodigde onderzoeken</li><li>De mate van politiek-bestuurlijk draagvlak</li><li>Het aantal en de aard van ingediende zienswijzen</li><li>De snelheid van ambtelijke behandeling door de gemeente</li></ul><p>Een goed voorbereide aanvraag met breed draagvlak en een volledig onderbouwingsdossier kan de doorlooptijd aanzienlijk verkorten.</p>',
+		answerText:
+			'Een wijziging van het omgevingsplan duurt gemiddeld 1 tot 2 jaar, afhankelijk van de complexiteit van het initiatief, de mate van politiek-bestuurlijk draagvlak en het aantal ingediende zienswijzen. Een goed voorbereide aanvraag met breed draagvlak kan de doorlooptijd aanzienlijk verkorten.',
+	},
+	{
+		question: 'Wat kost een wijziging van het omgevingsplan?',
+		answerHtml:
+			'<p>De kosten bestaan uit drie onderdelen:</p><ul><li><strong>Gemeentelijke leges:</strong> per gemeente bepaald, afhankelijk van het type en de omvang van de wijziging</li><li><strong>Advieskosten Donkers Advies:</strong> voor haalbaarheidsanalyse, onderbouwing en procedurebegeleiding, afhankelijk van complexiteit</li><li><strong>Onderzoekskosten:</strong> voor sectorale onderzoeken, afhankelijk van de benodigde onderzoeken</li></ul><p>Donkers Advies geeft u vooraf een helder overzicht van alle te verwachten kosten. <a href="/#contact">Neem contact op voor een vrijblijvende indicatie.</a></p>',
+		answerText:
+			'De kosten bestaan uit gemeentelijke leges, advieskosten en kosten voor sectorale onderzoeken. De gemeentelijke leges worden bepaald per gemeente. De advies- en onderzoekskosten zijn afhankelijk van de complexiteit van het initiatief.',
+	},
+	{
+		question: 'Is participatie verplicht bij een wijziging van het omgevingsplan?',
+		answerHtml:
+			'<p>Ja. De gemeente is verplicht aan te geven hoe participatie heeft plaatsgevonden bij de voorbereiding van een WOP. Omwonenden, maatschappelijke organisaties en andere belanghebbenden moeten in de gelegenheid worden gesteld om te reageren.</p><p>Een goed participatieproces vergroot het draagvlak, verkleint de kans op zienswijzen en versnelt de procedure. Donkers Advies adviseert over een effectieve participatieaanpak die past bij uw initiatief en de lokale context.</p>',
+		answerText:
+			'Ja. De gemeente is verplicht aan te geven hoe participatie heeft plaatsgevonden bij de voorbereiding van een wijziging van het omgevingsplan. De gemeente kan aanvullende eisen stellen aan het participatieproces. Donkers Advies adviseert over een effectieve participatieaanpak.',
+	},
+	{
+		question: 'Heb ik een ruimtelijke onderbouwing nodig voor een WOP?',
+		answerHtml:
+			'<p>Ja. Een wijziging van het omgevingsplan moet worden onderbouwd met een planologische toelichting waaruit blijkt dat de wijziging leidt tot een evenwichtige toedeling van functies aan locaties (ETFAL). Deze toelichting bevat:</p><ul><li>Een beschrijving van het initiatief en de planologische context</li><li>Toetsing aan gemeentelijk, provinciaal en rijksbeleid</li><li>Toetsing van omgevingsaspecten (geluid, stikstof, bodem, etc.)</li><li>Motivering van de ruimtelijke aanvaardbaarheid</li></ul>',
+		answerText:
+			'Ja. Een wijziging van het omgevingsplan moet worden onderbouwd met een planologische toelichting waaruit blijkt dat de wijziging leidt tot een evenwichtige toedeling van functies aan locaties (ETFAL). Deze toelichting omvat een beleidsmatige toetsing, een beschrijving van het initiatief en de toetsing van omgevingsaspecten.',
+	},
+	{
+		question: 'Wat is ETFAL en wat betekent het voor een WOP?',
+		answerHtml:
+			'<p>ETFAL staat voor <em>evenwichtige toedeling van functies aan locaties</em>. Dit is het centrale beoordelingscriterium onder de Omgevingswet, dat het vroegere begrip &ldquo;goede ruimtelijke ordening&rdquo; vervangt.</p><p>De gemeente moet bij een WOP motiveren dat de wijziging leidt tot een evenwichtige toedeling van functies aan locaties, rekening houdend met alle betrokken belangen: ruimtelijke kwaliteit, veiligheid, gezondheid, milieu en omgevingskwaliteit. Een sterke ETFAL-onderbouwing is de kern van iedere succesvolle WOP-aanvraag.</p>',
+		answerText:
+			"ETFAL staat voor 'evenwichtige toedeling van functies aan locaties'. Dit is het centrale beoordelingscriterium onder de Omgevingswet. De gemeente moet motiveren dat de wijziging van het omgevingsplan leidt tot een evenwichtige toedeling van functies. Dit vervangt het vroegere criterium 'goede ruimtelijke ordening'.",
+	},
+	{
+		question: 'Wat is een ontwerpbesluit en terinzagelegging?',
+		answerHtml:
+			'<p>Voordat de gemeenteraad een wijziging vaststelt, wordt het ontwerp van het gewijzigde omgevingsplan ter inzage gelegd. Dit is een verplichte stap in de procedure.</p><p>Gedurende 6 weken kan iedereen een zienswijze indienen. Na afloop van de terinzagetermijn worden alle ingediende zienswijzen beoordeeld en beantwoord in een zienswijzennota. De gemeenteraad stelt het omgevingsplan vervolgens al dan niet gewijzigd vast. Donkers Advies verzorgt de zienswijzennota en begeleidt de besluitvorming.</p>',
+		answerText:
+			'Voordat de gemeenteraad een wijziging vaststelt, wordt het ontwerp van het gewijzigde omgevingsplan ter inzage gelegd. Iedereen kan gedurende 6 weken een zienswijze indienen. Na verwerking van de zienswijzen stelt de gemeenteraad het omgevingsplan vast. Dit ontwerpbesluit is een verplichte stap in de procedure.',
+	},
+	{
+		question: 'Kan de gemeente een WOP weigeren?',
+		answerHtml:
+			'<p>Ja. De gemeenteraad heeft de bevoegdheid een wijziging te weigeren als het initiatief niet voldoet aan het ETFAL-criterium, niet past binnen provinciaal of rijksbeleid, of als er onvoldoende politiek draagvlak is.</p><p>Provinciale instructieregels kunnen bovendien bindend voorschrijven welke regels het omgevingsplan moet bevatten. Donkers Advies toetst uw initiatief aan alle relevante beleidskaders om teleurstellingen te voorkomen.</p>',
+		answerText:
+			'Ja. De gemeenteraad heeft de bevoegdheid om een wijziging te weigeren als het initiatief niet voldoet aan het ETFAL-criterium, niet past binnen provinciaal of rijksbeleid, of als er onvoldoende draagvlak is. Bestuurlijk draagvlak en een solide onderbouwing zijn bepalend voor een positief besluit.',
+	},
+	{
+		question: 'Kan ik beroep instellen tegen een vastgesteld omgevingsplan?',
+		answerHtml:
+			'<p>Ja. Belanghebbenden die een zienswijze hebben ingediend, kunnen binnen 6 weken na bekendmaking van het vaststellingsbesluit beroep instellen bij de Afdeling bestuursrechtspraak van de Raad van State.</p><p>Beroep schorst het besluit in beginsel niet. U kunt een verzoek om voorlopige voorziening indienen als u schorsing wenst. Donkers Advies adviseert over de kansen en begeleidt eventuele beroepsprocedures.</p>',
+		answerText:
+			'Ja. Belanghebbenden die een zienswijze hebben ingediend kunnen beroep instellen bij de Afdeling bestuursrechtspraak van de Raad van State. De beroepstermijn bedraagt 6 weken na bekendmaking van het vaststellingsbesluit.',
+	},
+	{
+		question: 'Wanneer is een BOPA beter dan een WOP?',
+		answerHtml:
+			'<p>Een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> is in de volgende situaties doorgaans beter passend:</p><ul><li>Het initiatief is kleinschalig of incidenteel van aard</li><li>U heeft snel resultaat nodig (BOPA is sneller dan een WOP)</li><li>De gemeente is terughoudend om het plan structureel te wijzigen</li><li>Een incidentele afwijking volstaat juridisch</li></ul><p>Een WOP is beter wanneer de ontwikkeling structureel, grootschalig of permanent is, of wanneer een BOPA juridisch onvoldoende robuust is.</p>',
+		answerText:
+			'Een BOPA is beter wanneer het gaat om een incidentele of kleinschalige afwijking, wanneer u snel resultaat nodig heeft, of wanneer de gemeente niet bereid is het omgevingsplan te wijzigen. Een WOP is beter voor structurele, grootschalige of permanente ontwikkelingen waarbij juridische robuustheid vereist is.',
+	},
+	{
+		question: 'Is een principeverzoek verstandig voorafgaand aan een WOP?',
+		answerHtml:
+			'<p>Ja, zeker bij complexe of kostbare initiatieven. Via een <a href="/principeverzoek/">principeverzoek</a> verkent u vooraf de bereidheid van de gemeente om mee te werken aan de wijziging.</p><p>Dit bespaart u de aanzienlijke kosten van een volledige planologische onderbouwing en bijbehorende onderzoeken als de gemeente al in een vroeg stadium aangeeft dat medewerking niet mogelijk is. Donkers Advies stelt principeverzoeken op en begeleidt de afstemming met de gemeente.</p>',
+		answerText:
+			'Ja, zeker bij complexe of kostbare initiatieven. Via een principeverzoek verkent u de bereidheid van de gemeente om mee te werken aan de wijziging, voordat u investeert in een volledige planologische onderbouwing en alle benodigde onderzoeken.',
+	},
+	{
+		question: 'Welke rol speelt de provincie bij een WOP?',
+		answerHtml:
+			'<p>De provincie stelt instructieregels vast die bindend zijn voor de inhoud van het gemeentelijke omgevingsplan. Als uw initiatief in strijd is met provinciale instructieregels, kan de gemeente de WOP niet vaststellen zonder dat de provincie hiervoor ontheffing verleent of de regels aanpast.</p><p>Donkers Advies toetst uw initiatief aan het provinciale omgevingsbeleid en de geldende instructieregels. Indien nodig verzorgen wij ook de afstemming met de provincie.</p>',
+		answerText:
+			'De provincie stelt instructieregels vast die bindend zijn voor de inhoud van het gemeentelijke omgevingsplan. Als uw initiatief in strijd is met provinciale instructieregels, kan de gemeente de WOP niet vaststellen zonder dat de provincie hiervoor ontheffing verleent of de regels aanpast.',
+	},
+];
+---
+
+<BaseLayout title={title} description={description} path="/wijziging-omgevingsplan/" jsonLd={[service]}>
+	<PageHero
+		breadcrumbs={[
+			{ name: 'Home', path: '/' },
+			{ name: 'Diensten', path: '/#diensten' },
+			{ name: 'Wijziging omgevingsplan (WOP)', path: '/wijziging-omgevingsplan/' },
+		]}
+		title="Wijziging omgevingsplan (WOP)"
+		subtitle="Structurele aanpassing van het omgevingsplan voor initiatieven die planologisch verankerd moeten worden. Donkers Advies begeleidt het volledige traject van eerste haalbaarheidsanalyse tot vaststelling door de gemeenteraad."
+	/>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="intro-grid">
+				<div class="intro-text" data-fade>
+					<p class="label">Wat is het</p>
+					<h2>Wat is een wijziging van het omgevingsplan?</h2>
+					<p>
+						Een wijziging van het omgevingsplan is een aanpassing van de planregels en/of de verbeelding (kaart)
+						van het gemeentelijke omgevingsplan. Hiermee wordt een nieuwe functie, bouwmogelijkheid of gebruik
+						<strong>planologisch permanent mogelijk gemaakt</strong>.
+					</p>
+					<p>
+						Anders dan een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a>, waarbij een vergunning een
+						eenmalige afwijking mogelijk maakt, wordt bij een wijziging van het omgevingsplan het plan zelf
+						structureel aangepast. De ontwikkeling is daarna voor iedereen en voor altijd planologisch
+						toegestaan op die locatie.
+					</p>
+					<p>
+						Donkers Advies begeleidt het volledige traject: van eerste haalbaarheidsanalyse en strategisch
+						advies tot en met de vaststelling door de gemeenteraad en de eventuele beroepsfase.
+					</p>
+
+					<div class="highlight-box">
+						<strong>Verschil met het vroegere bestemmingsplan</strong>
+						Onder de Wet ruimtelijke ordening (Wro) gold er een afzonderlijk bestemmingsplan per kern of gebied.
+						Onder de Omgevingswet is er één omgevingsplan per gemeente dat alle ruimtelijke regels bundelt. De
+						voormalige bestemmingsplannen zijn automatisch omgezet naar het tijdelijk deel van het
+						omgevingsplan. Een wijziging van het omgevingsplan vervangt daarmee de vroegere
+						bestemmingsplanherziening.
+					</div>
+				</div>
+
+				<InfoBox
+					fade
+					title="Wanneer is een WOP nodig?"
+					items={[
+						'Grootschalige woningbouwontwikkelingen',
+						'Permanente functiewijzigingen, zoals agrarisch naar wonen of bedrijvigheid',
+						'Herontwikkeling van bedrijventerreinen of leegstaande locaties',
+						'Nieuwe stedelijke of landschappelijke ontwikkelingen',
+						'Situaties waarbij een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> juridisch onvoldoende robuust is',
+						'Initiatieven waarvoor structurele planologische verankering vereist is',
+						'Gebiedsontwikkelingen met meerdere functies of fasen',
+					]}
+				/>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Toepassingsgebied</p>
+				<h2>Wanneer is een wijziging van het omgevingsplan de juiste keuze?</h2>
+				<p>Een WOP is niet altijd de snelste of goedkoopste route. De keuze hangt af van de aard, omvang en permanentie van uw initiatief.</p>
+			</div>
+
+			<FeatureGrid
+				items={[
+					{
+						title: 'Structurele of grootschalige ontwikkeling',
+						descriptionHtml:
+							'Gaat het om een permanente of omvangrijke ontwikkeling waarbij u juridische robuustheid nodig heeft? Dan is een WOP de juiste route.',
+					},
+					{
+						title: 'Meerdere partijen of fasen',
+						descriptionHtml:
+							'Bij gebiedsontwikkelingen met meerdere eigenaren, gebruikers of uitvoeringsfasen biedt een WOP de planologische basis voor het gehele gebied.',
+					},
+					{
+						title: 'BOPA juridisch onvoldoende → WOP',
+						descriptionHtml:
+							'Bij initiatieven waarbij een rechter of provincie een BOPA als onvoldoende robuust beschouwt, biedt een WOP de benodigde juridische basis.',
+					},
+					{
+						title: 'Activiteit past al in het plan → OPA of BOPA',
+						descriptionHtml:
+							'Past uw initiatief (deels) al in het omgevingsplan? Dan is een <a href="/omgevingsplanactiviteit/">OPA</a> of <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> vaak sneller en goedkoper dan een WOP.',
+					},
+					{
+						title: 'Twijfel over medewerking → eerst principeverzoek',
+						descriptionHtml:
+							'Weet u niet of de gemeente bereid is het plan te wijzigen? Begin dan met een <a href="/principeverzoek/">principeverzoek</a> voordat u investeert in een volledige onderbouwing.',
+					},
+					{
+						title: 'Provinciale instructieregels',
+						descriptionHtml:
+							'Houd bij een WOP rekening met provinciale instructieregels die bindend zijn voor de inhoud van het omgevingsplan. Donkers Advies toetst uw initiatief aan het provinciale omgevingsbeleid.',
+					},
+				]}
+			/>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Onze dienstverlening</p>
+				<h2>Wat verzorgt Donkers Advies bij een WOP?</h2>
+				<p>Een WOP-traject vereist planologische, juridische en strategische expertise. Donkers Advies biedt een integraal pakket dat aansluit op de specifieke eisen van uw initiatief en de gemeente.</p>
+			</div>
+
+			<FeatureGrid
+				items={[
+					{
+						title: 'Planologische onderbouwing',
+						descriptionHtml:
+							'Motivering van de ruimtelijke aanvaardbaarheid op basis van het ETFAL-criterium, inclusief toetsing aan gemeentelijk, provinciaal en rijksbeleid.',
+					},
+					{
+						title: 'Planregels en verbeelding',
+						descriptionHtml: 'Opstellen of aanpassen van de planregels en de bijbehorende verbeelding (kaart) voor het gewijzigde omgevingsplan.',
+					},
+					{
+						title: 'Coördinatie sectorale onderzoeken',
+						descriptionHtml:
+							'Aansturing en coördinatie van alle benodigde onderzoeken: geluid, stikstof, ecologie, bodem, water, archeologie, externe veiligheid en verkeer.',
+					},
+					{
+						title: 'Bestuurlijk draagvlak',
+						descriptionHtml:
+							'Afstemming met de gemeente, provincie en eventuele andere stakeholders om politiek-bestuurlijk draagvlak op te bouwen voor uw initiatief.',
+					},
+					{
+						title: 'Participatiebegeleiding',
+						descriptionHtml: 'Advies en ondersteuning bij het participatieproces met omwonenden, maatschappelijke organisaties en andere belanghebbenden.',
+					},
+					{
+						title: 'Volledige procedurebegeleiding',
+						descriptionHtml:
+							'Begeleiding van het gehele formele traject: van terinzagelegging en zienswijzenbehandeling tot vaststelling door de gemeenteraad en eventuele beroepsfase.',
+					},
+				]}
+			/>
+		</div>
+	</section>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Sectorale onderzoeken</p>
+				<h2>Welke onderzoeken kunnen nodig zijn bij een WOP?</h2>
+				<p>De benodigde onderzoeken zijn afhankelijk van uw initiatief en de locatie. Donkers Advies bepaalt welke onderzoeken vereist zijn en coördineert de uitvoering ervan.</p>
+			</div>
+
+			<FeatureGrid
+				items={[
+					{
+						title: 'Geluid',
+						descriptionHtml: 'Bij nieuwe geluidsgevoelige functies nabij wegen, spoorwegen of industrie is een akoestisch onderzoek vereist. Toetsing aan de geluidsnormen uit het Bkl.',
+					},
+					{
+						title: 'Stikstof',
+						descriptionHtml: 'Nabij Natura 2000-gebieden is een AERIUS-berekening nodig om significante effecten op stikstofdepositie uit te sluiten.',
+					},
+					{
+						title: 'Flora en fauna',
+						descriptionHtml: 'Een ecologische quickscan of soortgericht onderzoek is nodig bij mogelijke effecten op beschermde soorten of Natura 2000-gebieden.',
+					},
+					{
+						title: 'Bodem',
+						descriptionHtml: 'Bij gevoelig gebruik (wonen, moestuinen) is een verkennend bodemonderzoek conform NEN 5740 nodig om verontreiniging te beoordelen.',
+					},
+					{
+						title: 'Water',
+						descriptionHtml: 'Een watertoets is nodig bij nieuwe verharding of invloed op het watersysteem. Afstemming met het waterschap over compensatie en maatregelen.',
+					},
+					{
+						title: 'Archeologie',
+						descriptionHtml: 'In gebieden met een hoge of middelhoge archeologische verwachtingswaarde is een bureauonderzoek of veldonderzoek vereist.',
+					},
+					{
+						title: 'Externe veiligheid',
+						descriptionHtml: 'Nabij risicobronnen (LPG-stations, buisleidingen, Bevi-inrichtingen) is een externe veiligheidstoets nodig om het risico te beoordelen.',
+					},
+					{
+						title: 'Geur',
+						descriptionHtml: 'Bij agrarische of industriële geurbelasting op geurgevoelige functies is een geuronderzoek nodig om aan de normen te toetsen.',
+					},
+					{
+						title: 'Verkeer',
+						descriptionHtml: 'Nieuwe functies die extra verkeer genereren vereisen een verkeerskundige onderbouwing: verkeersaantrekking, parkeerbehoefte en infrastructuurimpact.',
+					},
+				]}
+			/>
+		</div>
+	</section>
+
+	<section class="sp-section bg-forest">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Aanpak en procedure</p>
+				<h2 style="color:var(--white); margin-bottom: 2.5rem;">Hoe begeleidt Donkers Advies uw WOP-traject?</h2>
+			</div>
+
+			<div class="grid-2" style="align-items:start;">
+				<div data-fade>
+					<p style="color:rgba(255,255,255,.6); font-size:.85rem; letter-spacing:.1em; text-transform:uppercase; font-weight:600; margin-bottom:1.25rem;">
+						Onze aanpak
+					</p>
+					<StepList items={aanpakSteps} variant="vertical" dark />
+				</div>
+
+				<div data-fade>
+					<p style="color:rgba(255,255,255,.6); font-size:.85rem; letter-spacing:.1em; text-transform:uppercase; font-weight:600; margin-bottom:1.25rem;">
+						Formele procedure
+					</p>
+					<StepList items={formeleProcedureSteps} variant="vertical" dark />
+
+					<div style="margin-top:2rem;">
+						<InfoBox
+							title="Doorlooptijd en kosten"
+							items={[
+								'<strong style="color:var(--sage-lt);">Doorlooptijd:</strong> gemiddeld 1 tot 2 jaar, afhankelijk van complexiteit en bestuurlijk draagvlak',
+								'<strong style="color:var(--sage-lt);">Leges:</strong> bepaald per gemeente, afhankelijk van type en omvang van de wijziging',
+								'<strong style="color:var(--sage-lt);">Advieskosten:</strong> afhankelijk van complexiteit en benodigde stukken',
+								'Een goede voorbereiding en breed draagvlak verkorten de doorlooptijd aanzienlijk. <a href="/#contact">Vraag een vrijblijvende indicatie.</a>',
+							]}
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-sand">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Procedure kiezen</p>
+				<h2>WOP, BOPA of OPA: wat past bij uw initiatief?</h2>
+				<p style="margin-bottom: 2rem;">De keuze voor de juiste procedure is bepalend voor de doorlooptijd, kosten en kans van slagen. Donkers Advies adviseert u over de meest passende route.</p>
+			</div>
+			<CompareGrid
+				items={[
+					{
+						title: 'OPA',
+						descriptionHtml: 'Uw activiteit past binnen het omgevingsplan en is vergunningplichtig. Geen ruimtelijke onderbouwing nodig. Eenvoudigste procedure.',
+						linkLabel: 'Meer over de OPA-procedure',
+						linkHref: '/omgevingsplanactiviteit/',
+					},
+					{
+						title: 'BOPA',
+						descriptionHtml: 'Uw activiteit wijkt af van het omgevingsplan. Een vergunning maakt een incidentele afwijking mogelijk. Vereist een ruimtelijke onderbouwing.',
+						linkLabel: 'Meer over de BOPA-procedure',
+						linkHref: '/buitenplanse-omgevingsplanactiviteit/',
+					},
+					{
+						title: 'WOP',
+						descriptionHtml: 'Het omgevingsplan wordt structureel aangepast. Geschikt voor grootschalige of permanente ontwikkelingen waarbij juridische robuustheid vereist is.',
+						highlight: true,
+					},
+				]}
+			/>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Veelgestelde vragen</p>
+				<h2>Veelgestelde vragen over het wijzigen van het omgevingsplan</h2>
+				<p>
+					Hieronder vindt u antwoord op de meest gestelde vragen over de wijziging van het omgevingsplan (WOP)
+					onder de Omgevingswet. Lees ook ons blogartikel <a href="/blog/omgevingsplan-wijzigen/">Omgevingsplan
+						wijzigen: procedure, doorlooptijd en kosten</a>.
+				</p>
+			</div>
+			<FAQ items={faqItems} />
+		</div>
+	</section>
+
+	<CTA
+		title="Wilt u het omgevingsplan laten wijzigen?"
+		description="Donkers Advies beoordeelt de haalbaarheid van uw initiatief en begeleidt het volledige WOP-traject van begin tot eind. Neem vrijblijvend contact op voor een eerste gesprek."
+		buttonLabel="Vraag een vrijblijvend adviesgesprek aan"
+		buttonHref="/#contact"
+	/>
+</BaseLayout>

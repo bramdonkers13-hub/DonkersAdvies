@@ -1,0 +1,43 @@
+---
+interface StepItem {
+	number: string;
+	title: string;
+	descriptionHtml: string;
+}
+
+interface Props {
+	items: StepItem[];
+	/** 'horizontal' = homepage werkwijze (.steps), 'vertical' = dienstpagina-proces (.vsteps) */
+	variant?: 'horizontal' | 'vertical';
+	/** Lichte tekstkleuren voor gebruik op een donkere (forest) achtergrond, alleen bij variant="vertical" */
+	dark?: boolean;
+}
+
+const { items, variant = 'horizontal', dark = false } = Astro.props;
+---
+
+{
+	variant === 'horizontal' ? (
+		<div class="steps">
+			{items.map((item) => (
+				<div class="step" data-fade>
+					<div class="step-num">{item.number}</div>
+					<h3>{item.title}</h3>
+					<p set:html={item.descriptionHtml} />
+				</div>
+			))}
+		</div>
+	) : (
+		<div class:list={['vsteps', dark && 'vsteps-forest']} data-fade>
+			{items.map((item) => (
+				<div class="vstep">
+					<div class="vstep-num">{item.number}</div>
+					<div class="vstep-body">
+						<h3>{item.title}</h3>
+						<p set:html={item.descriptionHtml} />
+					</div>
+				</div>
+			))}
+		</div>
+	)
+}

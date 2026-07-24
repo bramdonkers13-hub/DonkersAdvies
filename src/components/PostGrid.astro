@@ -1,0 +1,20 @@
+---
+import PostCard, { type PostCardProps } from './PostCard.astro';
+
+interface Props {
+	posts: PostCardProps[];
+}
+
+const { posts } = Astro.props;
+---
+
+<div class="post-grid" id="postGrid">
+	{posts.map((post) => <PostCard {...post} />)}
+</div>
+
+<div class="no-results" id="noResults">
+	<p><strong>Geen artikelen gevonden voor deze zoekopdracht of categorie.</strong></p>
+	<button type="button" class="btn btn-forest" id="resetFilters">Wis filters</button>
+</div>
+
+<div class="pagination" id="pagination" aria-label="Paginering"></div>

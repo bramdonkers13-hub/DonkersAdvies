@@ -1,0 +1,74 @@
+---
+import { business } from '../data/business';
+---
+
+<div class="contact-form" data-fade>
+	<form id="contactForm" data-formspree-endpoint={business.formspreeEndpoint} data-redirect="/bedankt/">
+		<input type="hidden" name="_subject" value={`Nieuwe aanvraag via ${business.url.replace('https://www.', '')}`} />
+		<div class="form-row-2">
+			<div class="form-row">
+				<label for="naam">Naam</label>
+				<input type="text" id="naam" name="naam" placeholder="Uw naam" required />
+			</div>
+			<div class="form-row">
+				<label for="email">E-mailadres</label>
+				<input type="email" id="email" name="email" placeholder="uw@email.nl" required />
+			</div>
+		</div>
+		<div class="form-row">
+			<label for="dienst">Dienst</label>
+			<select id="dienst" name="dienst">
+				<option value="">Selecteer een dienst</option>
+				<option>Principeverzoek</option>
+				<option>OPA – Omgevingsplanactiviteit</option>
+				<option>BOPA – Buitenplanse omgevingsplanactiviteit</option>
+				<option>WOP – Wijziging omgevingsplan</option>
+				<option>Overig / Algemeen advies</option>
+			</select>
+		</div>
+		<div class="form-row">
+			<label for="bericht">Uw initiatief</label>
+			<textarea
+				id="bericht"
+				name="bericht"
+				placeholder="Beschrijf uw initiatief. Denk bijvoorbeeld aan de locatie, de gewenste ontwikkeling en uw vraag."
+				required></textarea>
+		</div>
+		<button type="submit" class="btn-submit">Vraag een vrijblijvend adviesgesprek aan</button>
+	</form>
+	<div class="contact-trust">
+		<span>✓ Vrijblijvend eerste gesprek</span>
+		<span>✓ Reactie binnen één werkdag</span>
+		<span>✓ Eén vast aanspreekpunt</span>
+	</div>
+</div>
+
+<script>
+	const form = document.getElementById('contactForm') as HTMLFormElement | null;
+	if (form) {
+		const endpoint = form.dataset.formspreeEndpoint!;
+		const redirect = form.dataset.redirect!;
+		form.addEventListener('submit', async (e) => {
+			e.preventDefault();
+			const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+			btn.textContent = 'Verzenden…';
+			btn.disabled = true;
+			try {
+				const res = await fetch(endpoint, {
+					method: 'POST',
+					body: new FormData(form),
+					headers: { Accept: 'application/json' },
+				});
+				if (res.ok) {
+					window.location.href = redirect;
+				} else {
+					btn.textContent = 'Er ging iets mis, probeer opnieuw';
+					btn.disabled = false;
+				}
+			} catch {
+				btn.textContent = 'Er ging iets mis, probeer opnieuw';
+				btn.disabled = false;
+			}
+		});
+	}
+</script>

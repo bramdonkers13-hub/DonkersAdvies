@@ -1,0 +1,80 @@
+---
+import { getImage } from 'astro:assets';
+import heroImage from '../assets/images/hero-buitengebied.jpg';
+
+interface Props {
+	label: string;
+}
+
+const { label } = Astro.props;
+
+const optimizedHero = await getImage({ src: heroImage, width: 1920, format: 'webp', quality: 80 });
+---
+
+<section id="hero" style={`background-image:url(${optimizedHero.src})`}>
+	<div class="boxes-wrapper" id="heroBoxes"></div>
+	<div class="boxes-overlay"></div>
+
+	<div class="container hero-inner">
+		<p class="label hero-label">{label}</p>
+		<slot />
+	</div>
+</section>
+
+<script>
+	function initHeroBoxes() {
+		const wrapper = document.getElementById('heroBoxes');
+		if (!wrapper) return;
+		const COLS = 70;
+		const ROWS = 80;
+		const colors = [
+			'rgba(253,224,71,.35)',
+			'rgba(250,204,21,.35)',
+			'rgba(134,239,172,.35)',
+			'rgba(74,222,128,.35)',
+			'rgba(134,239,172,.35)',
+			'rgba(216,180,254,.35)',
+			'rgba(192,132,252,.35)',
+			'rgba(216,180,254,.35)',
+			'rgba(253,224,71,.35)',
+		];
+		const frag = document.createDocumentFragment();
+		for (let i = 0; i < COLS; i++) {
+			const col = document.createElement('div');
+			col.className = 'box-col';
+			for (let j = 0; j < ROWS; j++) {
+				const cell = document.createElement('div');
+				cell.className = 'box-cell';
+				cell.addEventListener('mouseenter', function (this: HTMLElement) {
+					this.style.transition = 'none';
+					this.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+				});
+				cell.addEventListener('mouseleave', function (this: HTMLElement) {
+					this.style.transition = 'background-color 2s';
+					this.style.backgroundColor = 'transparent';
+				});
+				if (i % 2 === 0 && j % 2 === 0) {
+					const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+					svg.setAttribute('viewBox', '0 0 24 24');
+					const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+					path.setAttribute('stroke-linecap', 'round');
+					path.setAttribute('stroke-linejoin', 'round');
+					path.setAttribute('d', 'M12 6v12m6-6H6');
+					svg.appendChild(path);
+					cell.appendChild(svg);
+				}
+				col.appendChild(cell);
+			}
+			frag.appendChild(col);
+		}
+		wrapper.appendChild(frag);
+	}
+
+	// Decoratief hover-effect: pas na idle initialiseren zodat het geen
+	// LCP/TBT-budget van de eigenlijke hero-inhoud opeet.
+	if ('requestIdleCallback' in window) {
+		requestIdleCallback(initHeroBoxes, { timeout: 2000 });
+	} else {
+		setTimeout(initHeroBoxes, 200);
+	}
+</script>

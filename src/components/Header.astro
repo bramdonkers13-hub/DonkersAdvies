@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets';
+import logoStandaard from '../assets/images/logo-standaard.png';
+import { business } from '../data/business';
+import Navigation from './Navigation.astro';
+---
+
+<nav>
+	<div class="container nav-inner">
+		<a href="/" class="nav-brand">
+			<div class="nav-logo-wrap">
+				<Image
+					src={logoStandaard}
+					alt={`${business.name}, ${business.tagline.toLowerCase()}`}
+					class="nav-logo-img"
+					width={252}
+					height={252}
+					loading="eager"
+					fetchpriority="high"
+				/>
+			</div>
+		</a>
+
+		<button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false" aria-controls="navLinks">
+			<span></span><span></span><span></span>
+		</button>
+
+		<Navigation />
+	</div>
+</nav>
+
+<script>
+	const toggle = document.getElementById('navToggle');
+	const links = document.getElementById('navLinks');
+	if (toggle && links) {
+		toggle.addEventListener('click', () => {
+			const isOpen = links.classList.toggle('open');
+			toggle.setAttribute('aria-expanded', String(isOpen));
+		});
+		links.querySelectorAll('a:not(.dropdown-trigger)').forEach((a) =>
+			a.addEventListener('click', () => {
+				links.classList.remove('open');
+				toggle.setAttribute('aria-expanded', 'false');
+			})
+		);
+	}
+
+	document.querySelectorAll('.dropdown-trigger').forEach((trigger) => {
+		trigger.addEventListener('click', (e) => {
+			if (window.innerWidth <= 720) {
+				e.preventDefault();
+				trigger.closest('.has-dropdown')?.classList.toggle('open');
+			}
+		});
+	});
+</script>

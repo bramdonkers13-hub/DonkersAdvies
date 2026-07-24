@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+	title="Bedankt voor uw bericht — Donkers Advies"
+	description="Uw aanvraag is in goede orde ontvangen. Donkers Advies neemt binnen één werkdag contact met u op."
+	path="/bedankt/"
+	noindex
+>
+	<section class="section" style="min-height: 60vh; display: flex; align-items: center;">
+		<div class="container" style="text-align: center; max-width: 600px; margin-inline: auto;">
+			<div data-fade>
+				<svg
+					viewBox="0 0 24 24"
+					style="width:56px;height:56px;margin:0 auto 1.5rem;display:block;"
+					fill="none"
+					stroke="var(--sage)"
+					stroke-width="1.8"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+					<polyline points="22 4 12 14.01 9 11.01"></polyline>
+				</svg>
+				<p class="label" style="text-align:center;">Ontvangen</p>
+				<h1 style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem;">Bedankt voor uw bericht</h1>
+				<p style="max-width: 48ch; margin-inline: auto; margin-bottom: 2.5rem;">
+					Uw aanvraag is in goede orde ontvangen. Donkers Advies neemt binnen één werkdag contact met u op.
+				</p>
+				<a href="/" class="btn btn-primary">Terug naar de homepage</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>

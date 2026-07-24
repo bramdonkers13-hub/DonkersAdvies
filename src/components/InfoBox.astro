@@ -1,0 +1,18 @@
+---
+interface Props {
+	title: string;
+	/** Rijke HTML per lijstitem (mag <a>/<strong> bevatten). */
+	items: string[];
+	fade?: boolean;
+	style?: string;
+}
+
+const { title, items, fade = false, style } = Astro.props;
+---
+
+<div class="info-box" data-fade={fade} style={style}>
+	<div class="info-box-title">{title}</div>
+	<ul>
+		{items.map((item) => <li set:html={item} />)}
+	</ul>
+</div>

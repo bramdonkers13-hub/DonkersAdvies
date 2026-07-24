@@ -1,0 +1,20 @@
+---
+import type { Service } from '../data/services';
+
+interface Props {
+	service: Service;
+}
+
+const { service } = Astro.props;
+---
+
+<a href={service.path} class="service-card" data-fade>
+	<div class="service-icon" aria-hidden="true">
+		<svg viewBox="0 0 24 24" set:html={service.icon} />
+	</div>
+	<h3>{service.title}</h3>
+	<p>{service.cardDescription}</p>
+	<div class="service-tags">
+		{service.tags.map((tag) => <span class="tag">{tag}</span>)}
+	</div>
+</a>

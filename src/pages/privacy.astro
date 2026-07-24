@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import { business } from '../data/business';
+---
+
+<BaseLayout
+	title="Privacyverklaring | Donkers Advies"
+	description="Lees hoe Donkers Advies omgaat met persoonsgegevens: welke gegevens wij verzamelen, waarom, hoe lang wij ze bewaren en welke rechten u heeft onder de AVG."
+	path="/privacy/"
+	jsonLd={[]}
+>
+	<PageHero
+		breadcrumbs={[
+			{ name: 'Home', path: '/' },
+			{ name: 'Privacyverklaring', path: '/privacy/' },
+		]}
+		title="Privacyverklaring"
+		subtitle="Hoe Donkers Advies omgaat met uw persoonsgegevens, welke rechten u heeft en hoe u die kunt uitoefenen."
+	/>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="legal-content" data-fade>
+				<p class="legal-meta">Laatst bijgewerkt: 19 juli 2026</p>
+
+				<p>
+					Donkers Advies (KvK-nummer {business.kvk}), gevestigd in Nederland en actief in {business.areaServed.join(', ')},
+					hecht veel waarde aan de bescherming van uw persoonsgegevens. In deze privacyverklaring leest u welke
+					persoonsgegevens wij verzamelen, waarom, hoe lang wij deze bewaren en welke rechten u als betrokkene
+					heeft. Deze verklaring is van toepassing op alle diensten van Donkers Advies en op het gebruik van de
+					website www.donkersadvies.nl.
+				</p>
+
+				<h2 id="verwerkingsverantwoordelijke">Verwerkingsverantwoordelijke</h2>
+				<p>
+					Donkers Advies is de verwerkingsverantwoordelijke voor de verwerking van uw persoonsgegevens zoals
+					beschreven in deze verklaring. Heeft u vragen over deze verklaring of over de verwerking van uw
+					gegevens? Neem dan contact op via de gegevens onderaan deze pagina.
+				</p>
+
+				<h2 id="welke-gegevens">Welke persoonsgegevens verwerken wij</h2>
+				<p>Donkers Advies verwerkt persoonsgegevens die u zelf aan ons verstrekt.</p>
+				<ul>
+					<li><strong>Contactformulier:</strong> naam, e-mailadres, gekozen dienst en de inhoud van uw bericht, wanneer u het contactformulier op de website invult.</li>
+					<li><strong>Nieuwsbrief:</strong> uw e-mailadres, wanneer u zich aanmeldt voor de nieuwsbrief via de blog.</li>
+					<li><strong>Correspondentie:</strong> gegevens die u ons verstrekt via e-mail of telefoon in het kader van een adviesaanvraag of lopende opdracht.</li>
+					<li><strong>Klant- en factuuradministratie:</strong> naam-, adres- en betaalgegevens, indien u klant wordt van Donkers Advies.</li>
+				</ul>
+				<p>
+					Voor het meten van websitebezoek gebruikt Donkers Advies <strong>Vercel Web Analytics</strong> en
+					<strong>Vercel Speed Insights</strong>. Deze diensten zijn privacyvriendelijk en cookieloos: ze
+					plaatsen geen cookies, volgen bezoekers niet individueel en verwerken geen persoonsgegevens. Zie
+					<a href="#statistieken">hieronder</a> voor meer uitleg.
+				</p>
+
+				<h2 id="doeleinden-grondslagen">Doeleinden en grondslagen</h2>
+				<p>Wij verwerken uw persoonsgegevens voor de volgende doeleinden, telkens op basis van een grondslag uit artikel 6 van de AVG:</p>
+				<ul>
+					<li><strong>Afhandelen van uw aanvraag of contactverzoek</strong> — grondslag: uitvoering van (voorbereidingen tot) een overeenkomst, dan wel ons gerechtvaardigd belang om uw vraag te kunnen beantwoorden.</li>
+					<li><strong>Uitvoeren van een adviesopdracht</strong> — grondslag: uitvoering van de overeenkomst.</li>
+					<li><strong>Financiële administratie en facturatie</strong> — grondslag: wettelijke verplichting (fiscale bewaarplicht).</li>
+					<li><strong>Versturen van de nieuwsbrief</strong> — grondslag: uw toestemming, te allen tijde in te trekken via de afmeldlink in elke nieuwsbrief.</li>
+				</ul>
+
+				<h2 id="bewaartermijnen">Bewaartermijnen</h2>
+				<p>Donkers Advies bewaart persoonsgegevens niet langer dan noodzakelijk voor de doeleinden waarvoor ze zijn verzameld:</p>
+				<ul>
+					<li><strong>Contactformulier-inzendingen</strong> die niet tot een opdracht leiden: maximaal 2 jaar na het laatste contact.</li>
+					<li><strong>Klant- en factuurgegevens:</strong> 7 jaar, conform de wettelijke fiscale bewaarplicht.</li>
+					<li><strong>Nieuwsbriefgegevens:</strong> tot het moment waarop u zich afmeldt.</li>
+				</ul>
+
+				<h2 id="ontvangers">Met wie delen wij uw gegevens</h2>
+				<p>Donkers Advies deelt uw gegevens uitsluitend met partijen die noodzakelijk zijn voor de uitvoering van onze dienstverlening en de website. Met elke partij die als verwerker optreedt, is een verwerkersovereenkomst gesloten of zijn de standaardvoorwaarden van die partij van toepassing.</p>
+				<ul>
+					<li><strong>Vercel Inc.</strong> — hostingprovider van www.donkersadvies.nl en leverancier van Vercel Web Analytics en Vercel Speed Insights.</li>
+					<li><strong>Formspree</strong> — verwerkt de inzendingen van het contactformulier en stuurt deze per e-mail door naar Donkers Advies.</li>
+				</ul>
+				<p>Wij verkopen uw gegevens nooit aan derden.</p>
+
+				<h2 id="statistieken">Website-statistieken en Google Search Console</h2>
+				<p>
+					Donkers Advies gebruikt <strong>Vercel Web Analytics</strong> en <strong>Vercel Speed Insights</strong>
+					om te zien hoeveel bezoekers de website heeft en hoe snel de website laadt, zodat wij deze kunnen
+					verbeteren. Beide diensten zijn cookieloos en werken zonder individuele bezoekers te volgen: er wordt
+					geen unieke identifier aan uw browser gekoppeld en er worden geen persoonsgegevens opgeslagen.
+				</p>
+				<p>
+					Daarnaast gebruikt Donkers Advies <strong>Google Search Console</strong> om te zien hoe de website
+					presteert in de zoekresultaten van Google. Search Console verzamelt geen gegevens via uw browser; het
+					toont uitsluitend geaggregeerde zoekstatistieken (zoals zoektermen en klikken) die Google al verzamelt
+					op basis van uw interactie met de Google-zoekresultaten zelf, niet via onze website.
+				</p>
+
+				<h2 id="cookies">Cookies</h2>
+				<p>
+					Donkers Advies plaatst op dit moment geen cookies. Een volledig overzicht van de cookiesituatie vindt
+					u in onze <a href="/cookies/">cookieverklaring</a>.
+				</p>
+
+				<h2 id="doorgifte">Doorgifte buiten de Europese Economische Ruimte</h2>
+				<p>
+					Vercel Inc. is gevestigd in de Verenigde Staten. Voor zover persoonsgegevens hierdoor buiten de
+					Europese Economische Ruimte (EER) worden doorgegeven, gebeurt dit op basis van de door de Europese
+					Commissie goedgekeurde standaardcontractbepalingen en/of, waar van toepassing, deelname aan het EU-US
+					Data Privacy Framework.
+				</p>
+
+				<h2 id="beveiliging">Beveiliging</h2>
+				<p>
+					Donkers Advies neemt passende technische en organisatorische maatregelen om uw persoonsgegevens te
+					beveiligen tegen verlies of onrechtmatige verwerking. De website wordt uitsluitend via een beveiligde
+					HTTPS-verbinding aangeboden, toegang tot systemen is beperkt tot wat noodzakelijk is en gegevens
+					worden niet langer bewaard dan nodig.
+				</p>
+
+				<h2 id="rechten">Uw rechten</h2>
+				<p>Op grond van de AVG heeft u de volgende rechten met betrekking tot uw persoonsgegevens:</p>
+				<ul>
+					<li><strong>Inzage</strong> — u kunt opvragen welke gegevens wij van u verwerken.</li>
+					<li><strong>Rectificatie</strong> — u kunt onjuiste of onvolledige gegevens laten corrigeren.</li>
+					<li><strong>Verwijdering</strong> — u kunt ons vragen uw gegevens te verwijderen, voor zover er geen wettelijke bewaarplicht geldt.</li>
+					<li><strong>Beperking van de verwerking</strong> — u kunt ons vragen de verwerking van uw gegevens tijdelijk te beperken.</li>
+					<li><strong>Bezwaar</strong> — u kunt bezwaar maken tegen de verwerking van uw gegevens op basis van ons gerechtvaardigd belang.</li>
+					<li><strong>Gegevensoverdraagbaarheid</strong> — u kunt een kopie van uw gegevens opvragen in een gestructureerd, gangbaar formaat.</li>
+					<li><strong>Intrekken van toestemming</strong> — voor verwerkingen die op toestemming zijn gebaseerd (zoals de nieuwsbrief), kunt u uw toestemming te allen tijde intrekken.</li>
+				</ul>
+				<p>
+					Wilt u een van deze rechten uitoefenen? Stuur een e-mail naar <a href={`mailto:${business.email}`}>{business.email}</a>.
+					Wij reageren binnen vier weken op uw verzoek. Bent u het niet eens met de manier waarop wij uw gegevens
+					verwerken, dan heeft u het recht een klacht in te dienen bij de
+					<a href="https://www.autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a>.
+				</p>
+
+				<h2 id="wijzigingen">Wijzigingen in deze privacyverklaring</h2>
+				<p>
+					Donkers Advies kan deze privacyverklaring van tijd tot tijd wijzigen, bijvoorbeeld bij wijzigingen in
+					de dienstverlening of in de wetgeving. De datum bovenaan deze pagina geeft aan wanneer de verklaring
+					voor het laatst is bijgewerkt.
+				</p>
+
+				<h2 id="contact">Contact</h2>
+				<p>Heeft u vragen over deze privacyverklaring of over de verwerking van uw persoonsgegevens door Donkers Advies?</p>
+				<ul>
+					<li>E-mail: <a href={`mailto:${business.email}`}>{business.email}</a></li>
+					<li>Telefoon: <a href={business.phoneHref}>{business.phoneDisplay}</a></li>
+					<li>KvK-nummer: {business.kvk}</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</BaseLayout>

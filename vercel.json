@@ -1,0 +1,51 @@
+{
+	"redirects": [
+		{ "source": "/index.html", "destination": "/", "permanent": true },
+		{ "source": "/principeverzoek.html", "destination": "/principeverzoek/", "permanent": true },
+		{ "source": "/omgevingsplanactiviteit.html", "destination": "/omgevingsplanactiviteit/", "permanent": true },
+		{
+			"source": "/buitenplanse-omgevingsplanactiviteit.html",
+			"destination": "/buitenplanse-omgevingsplanactiviteit/",
+			"permanent": true
+		},
+		{ "source": "/wijziging-omgevingsplan.html", "destination": "/wijziging-omgevingsplan/", "permanent": true },
+		{ "source": "/privacy.html", "destination": "/privacy/", "permanent": true },
+		{ "source": "/cookies.html", "destination": "/cookies/", "permanent": true },
+		{ "source": "/bedankt.html", "destination": "/bedankt/", "permanent": true },
+		{ "source": "/blog/index.html", "destination": "/blog/", "permanent": true },
+		{ "source": "/blog/principeverzoek-indienen.html", "destination": "/blog/principeverzoek-indienen/", "permanent": true },
+		{ "source": "/blog/omgevingsplan-wijzigen.html", "destination": "/blog/omgevingsplan-wijzigen/", "permanent": true },
+		{ "source": "/blog/opa-aanvragen.html", "destination": "/blog/opa-aanvragen/", "permanent": true },
+		{ "source": "/blog/wat-is-een-bopa.html", "destination": "/blog/wat-is-een-bopa/", "permanent": true },
+		{
+			"source": "/blog/ruimtelijke-onderbouwing-bopa.html",
+			"destination": "/blog/ruimtelijke-onderbouwing-bopa/",
+			"permanent": true
+		},
+		{
+			"source": "/blog/maatwerkregeling-omgevingskwaliteit.html",
+			"destination": "/blog/maatwerkregeling-omgevingskwaliteit/",
+			"permanent": true
+		},
+		{
+			"source": "/blog/ruimtelijke-onderbouwing-opstellen.html",
+			"destination": "/blog/ruimtelijke-onderbouwing-bopa/",
+			"permanent": true
+		},
+		{
+			"source": "/blog/omgevingsplan-wijzigen-stappenplan.html",
+			"destination": "/blog/omgevingsplan-wijzigen/",
+			"permanent": true
+		},
+		{
+			"source": "/blog/principeverzoek-indienen-stappenplan.html",
+			"destination": "/blog/principeverzoek-indienen/",
+			"permanent": true
+		},
+		{
+			"source": "/blog/omgevingsvergunning-opa-aanvragen.html",
+			"destination": "/blog/opa-aanvragen/",
+			"permanent": true
+		}
+	]
+}

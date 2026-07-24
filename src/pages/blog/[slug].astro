@@ -1,0 +1,173 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { getImage } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import PostCard, { type PostCardProps } from '../../components/PostCard.astro';
+import CTA from '../../components/CTA.astro';
+import { formatDateNL } from '../../utils/formatDate';
+import { absoluteUrl } from '../../utils/seo';
+import { blogPostingSchema, faqSchema } from '../../lib/schema';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+interface Props {
+	post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const allPosts = await getCollection('blog');
+const relatedPosts = post.data.relatedSlugs
+	.map((slug) => allPosts.find((p) => p.id === slug))
+	.filter((p): p is CollectionEntry<'blog'> => Boolean(p));
+
+function toCompactCardProps(relatedPost: CollectionEntry<'blog'>): PostCardProps {
+	return {
+		href: `/blog/${relatedPost.id}/`,
+		image: relatedPost.data.image,
+		imageAlt: relatedPost.data.imageAlt,
+		tag: relatedPost.data.categoryLabel,
+		title: relatedPost.data.title,
+	};
+}
+
+const path = `/blog/${post.id}/`;
+const ogImage = await getImage({ src: post.data.image, width: 1200 });
+
+const postingSchema = blogPostingSchema({
+	headline: post.data.title,
+	description: post.data.description,
+	image: absoluteUrl(ogImage.src, Astro.site),
+	datePublished: post.data.publishedDate.toISOString().slice(0, 10),
+	dateModified: post.data.updatedDate.toISOString().slice(0, 10),
+	wordCount: post.data.wordCount,
+	timeRequired: `PT${post.data.readingTimeMinutes}M`,
+	path,
+});
+
+const faq = faqSchema(post.data.faq);
+const showUpdated = post.data.updatedDate.getTime() !== post.data.publishedDate.getTime();
+---
+
+<BaseLayout
+	title={post.data.metaTitle}
+	description={post.data.description}
+	path={path}
+	ogType="article"
+	ogImage={ogImage.src}
+	articlePublishedTime={post.data.publishedDate.toISOString()}
+	articleModifiedTime={post.data.updatedDate.toISOString()}
+	jsonLd={[postingSchema, faq]}
+>
+	<PageHero
+		breadcrumbs={[
+			{ name: 'Home', path: '/' },
+			{ name: 'Blog', path: '/blog/' },
+			{ name: post.data.breadcrumbLabel, path },
+		]}
+		label={post.data.categoryLabel}
+		title={post.data.title}
+	>
+		<div class="post-meta-row">
+			<span>Donkers Advies</span><span class="dot">&middot;</span>
+			<span>Gepubliceerd {formatDateNL(post.data.publishedDate)}</span>
+			{
+				showUpdated && (
+					<>
+						<span class="dot">&middot;</span>
+						<span>Laatst bijgewerkt {formatDateNL(post.data.updatedDate)}</span>
+					</>
+				)
+			}
+			<span class="dot">&middot;</span>
+			<span>{post.data.readingTimeMinutes} min leestijd</span>
+		</div>
+	</PageHero>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<p class="post-lead post-content">{post.data.lead}</p>
+
+			<nav class="toc" aria-label="Inhoudsopgave">
+				<p class="toc-title">Inhoudsopgave</p>
+				<ol>
+					{
+						post.data.toc.map((item) => (
+							<li>
+								<a href={`#${item.anchor}`}>{item.label}</a>
+							</li>
+						))
+					}
+				</ol>
+			</nav>
+
+			<div class="post-content">
+				<Content />
+			</div>
+
+			<div class="author-box">
+				<div class="author-avatar" aria-hidden="true">DA</div>
+				<div class="author-info">
+					<div class="author-name">Donkers Advies</div>
+					<p>
+						Ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Begeleidt particulieren, ondernemers en
+						projectontwikkelaars bij principeverzoeken, OPA, BOPA en wijzigingen van het omgevingsplan.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<CTA title={post.data.ctaTitle} description={post.data.ctaDescription} buttonLabel={post.data.ctaButtonLabel} buttonHref={post.data.ctaButtonHref}>
+		{post.data.ctaExtra && <p style="margin-top:1.5rem;">{post.data.ctaExtra}</p>}
+	</CTA>
+
+	{
+		relatedPosts.length > 0 && (
+			<section class="sp-section bg-paper">
+				<div class="container">
+					<div data-fade>
+						<p class="label">Verder lezen</p>
+						<h2>Gerelateerde artikelen</h2>
+					</div>
+					<div class="related-grid" data-fade>
+						{relatedPosts.map((relatedPost) => (
+							<PostCard {...toCompactCardProps(relatedPost)} />
+						))}
+					</div>
+				</div>
+			</section>
+		)
+	}
+</BaseLayout>
+
+<script>
+	// Inhoudsopgave: markeer de sectie die momenteel in beeld is
+	const tocLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>('.toc a'));
+	if (tocLinks.length) {
+		const targets = tocLinks
+			.map((a) => document.querySelector(a.getAttribute('href') ?? ''))
+			.filter((el): el is Element => Boolean(el));
+
+		const spy = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					const link = tocLinks.find((a) => a.getAttribute('href') === '#' + entry.target.id);
+					if (!link) return;
+					if (entry.isIntersecting) {
+						tocLinks.forEach((a) => a.classList.remove('active'));
+						link.classList.add('active');
+					}
+				});
+			},
+			{ rootMargin: '-20% 0px -70% 0px' }
+		);
+
+		targets.forEach((t) => spy.observe(t));
+	}
+</script>

@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import { business } from '../data/business';
+---
+
+<BaseLayout
+	title="Cookieverklaring | Donkers Advies"
+	description="Donkers Advies plaatst geen cookies. Lees hoe wij met cookieloze technieken (Vercel Web Analytics en Speed Insights) omgaan met websitebezoek."
+	path="/cookies/"
+>
+	<PageHero
+		breadcrumbs={[
+			{ name: 'Home', path: '/' },
+			{ name: 'Cookieverklaring', path: '/cookies/' },
+		]}
+		title="Cookieverklaring"
+		subtitle="Donkers Advies plaatst geen cookies. Hieronder leest u hoe wij websitebezoek meten zonder cookies te gebruiken."
+	/>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="legal-content" data-fade>
+				<p class="legal-meta">Laatst bijgewerkt: 19 juli 2026</p>
+
+				<p>
+					Een cookie is een klein tekstbestand dat bij een bezoek aan een website op uw computer, tablet of
+					smartphone kan worden opgeslagen, bijvoorbeeld om voorkeuren te onthouden of websitebezoek te meten.
+				</p>
+
+				<div class="cookie-note">
+					<strong>Donkers Advies plaatst op dit moment geen cookies</strong> op www.donkersadvies.nl. Voor het
+					meten van websitebezoek en -prestaties gebruiken wij uitsluitend cookieloze technieken, zoals
+					hieronder beschreven.
+				</div>
+
+				<h2 id="statistieken">Vercel Web Analytics en Speed Insights</h2>
+				<p>
+					Om te zien hoeveel bezoekers de website heeft en hoe snel pagina's laden, gebruikt Donkers Advies
+					<strong>Vercel Web Analytics</strong> en <strong>Vercel Speed Insights</strong>. Beide diensten zijn
+					ontworpen om cookieloos en privacyvriendelijk te zijn: er wordt geen cookie of vergelijkbare
+					identifier op uw apparaat geplaatst en bezoekers worden niet individueel gevolgd, ook niet over
+					meerdere bezoeken heen. Wij ontvangen uitsluitend geaggregeerde, niet tot een individu herleidbare
+					statistieken.
+				</p>
+
+				<h2 id="search-console">Google Search Console</h2>
+				<p>
+					Donkers Advies gebruikt Google Search Console om de vindbaarheid van de website in Google te
+					monitoren. Search Console plaatst geen cookies via onze website en verzamelt geen gegevens van
+					individuele bezoekers rechtstreeks via donkersadvies.nl; het toont uitsluitend geaggregeerde
+					zoekstatistieken die Google al vastlegt op basis van interacties met de Google-zoekresultaten zelf.
+				</p>
+
+				<h2 id="toekomst">Wijzigingen in de toekomst</h2>
+				<p>
+					Mocht Donkers Advies in de toekomst alsnog cookies gaan gebruiken (bijvoorbeeld voor
+					marketingdoeleinden), dan wordt deze cookieverklaring bijgewerkt en wordt daar — waar wettelijk
+					vereist — vooraf toestemming voor gevraagd.
+				</p>
+
+				<h2 id="browserinstellingen">Cookies beheren via uw browser</h2>
+				<p>
+					Ook al plaatst Donkers Advies zelf geen cookies, u kunt via de instellingen van uw browser altijd
+					zelf bepalen of en welke cookies van andere websites worden geaccepteerd, en eerder geplaatste
+					cookies verwijderen.
+				</p>
+
+				<h2 id="meer-informatie">Meer informatie</h2>
+				<p>
+					Meer over hoe wij omgaan met persoonsgegevens leest u in onze <a href="/privacy/">privacyverklaring</a>.
+					Heeft u vragen over deze cookieverklaring? Neem contact op via <a href={`mailto:${business.email}`}>{business.email}</a>.
+				</p>
+			</div>
+		</div>
+	</section>
+</BaseLayout>

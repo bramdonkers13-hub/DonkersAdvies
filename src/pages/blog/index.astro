@@ -1,0 +1,336 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import PostCard, { type PostCardProps } from '../../components/PostCard.astro';
+import PostGrid from '../../components/PostGrid.astro';
+import CTA from '../../components/CTA.astro';
+import { formatDateNL } from '../../utils/formatDate';
+import { blogSchema } from '../../lib/schema';
+import { business } from '../../data/business';
+
+const allPosts = (await getCollection('blog')).sort(
+	(a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf()
+);
+const featuredPosts = allPosts.filter((post) => post.data.featured);
+
+function toPostCardProps(post: CollectionEntry<'blog'>, filterable = false): PostCardProps {
+	return {
+		href: `/blog/${post.id}/`,
+		image: post.data.image,
+		imageAlt: post.data.imageAlt,
+		tag: post.data.categoryLabel,
+		title: post.data.title,
+		excerpt: post.data.cardExcerpt,
+		date: formatDateNL(post.data.publishedDate),
+		readingTime: `${post.data.readingTimeMinutes} min leestijd`,
+		filter: filterable
+			? {
+					category: post.data.category,
+					title: post.data.title,
+					excerpt: post.data.description,
+					tags: post.data.searchTags.join(' '),
+				}
+			: undefined,
+	};
+}
+
+const categories = [
+	{ id: 'alle', label: 'Alle artikelen' },
+	{ id: 'ruimtelijke-onderbouwing', label: 'Ruimtelijke onderbouwing' },
+	{ id: 'bopa', label: 'BOPA' },
+	{ id: 'opa', label: 'OPA' },
+	{ id: 'omgevingsplan', label: 'Omgevingsplan' },
+	{ id: 'principeverzoek', label: 'Principeverzoek' },
+	{ id: 'maatwerkregeling', label: 'Maatwerkregeling' },
+];
+---
+
+<BaseLayout
+	title="Blog | Ruimtelijke ordening en de Omgevingswet — Donkers Advies"
+	description="Praktische kennis over BOPA, principeverzoeken, omgevingsvergunningen (OPA) en wijzigingen van het omgevingsplan. Actuele inzichten van Donkers Advies, specialist in de Omgevingswet."
+	path="/blog/"
+	ogImage="/images/blog-og-city-aerial.webp"
+	jsonLd={[blogSchema()]}
+>
+	<PageHero
+		breadcrumbs={[
+			{ name: 'Home', path: '/' },
+			{ name: 'Blog', path: '/blog/' },
+		]}
+		title="Blog"
+		subtitle="Praktische kennis en actuele inzichten over BOPA, principeverzoeken, omgevingsvergunningen en wijzigingen van het omgevingsplan — geschreven door Donkers Advies."
+	>
+		<form class="blog-search" role="search" onsubmit="return false;">
+			<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+			<label for="blogSearch" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Zoek in de blog</label>
+			<input type="search" id="blogSearch" placeholder="Zoek op onderwerp, bv. 'doorlooptijd' of 'BOPA'…" autocomplete="off" />
+		</form>
+	</PageHero>
+
+	{
+		featuredPosts.length > 0 && (
+			<section class="sp-section bg-white" id="featuredSection">
+				<div class="container">
+					<div data-fade>
+						<p class="label">Uitgelicht</p>
+						<h2>Meest gelezen artikelen</h2>
+					</div>
+					<div class="featured-grid" data-fade>
+						{featuredPosts.map((post) => (
+							<PostCard {...toPostCardProps(post)} />
+						))}
+					</div>
+				</div>
+			</section>
+		)
+	}
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Overzicht</p>
+				<h2>Alle artikelen</h2>
+				<p>Filter op onderwerp of zoek naar een specifieke procedure, termijn of kostenvraag.</p>
+			</div>
+
+			<div class="filter-bar" data-fade role="group" aria-label="Filter op categorie">
+				{
+					categories.map((cat) => (
+						<button type="button" class:list={['filter-chip', cat.id === 'alle' && 'active']} data-category={cat.id}>
+							{cat.label}
+						</button>
+					))
+				}
+			</div>
+
+			<PostGrid posts={allPosts.map((post) => toPostCardProps(post, true))} />
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="grid-2" style="align-items:center;">
+				<div data-fade>
+					<p class="label">Nieuwsbrief</p>
+					<h2>Blijf op de hoogte van de Omgevingswet</h2>
+					<p>Ontvang nieuwe artikelen over BOPA, principeverzoeken en wijzigingen van het omgevingsplan rechtstreeks in uw inbox. Geen spam, u kunt zich altijd afmelden.</p>
+				</div>
+				<div class="contact-form" data-fade>
+					<form class="newsletter-form" id="newsletterForm" action="#" method="POST" novalidate>
+						<input type="text" name="company" class="newsletter-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+						<div class="form-row">
+							<label for="newsletterEmail">E-mailadres</label>
+							<input type="email" id="newsletterEmail" name="email" placeholder="naam@voorbeeld.nl" required />
+						</div>
+						<button type="submit" class="btn-submit">Aanmelden</button>
+					</form>
+					<div id="newsletterMsg" class="newsletter-msg" role="status" aria-live="polite"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<CTA
+		title="Heeft u een concreet initiatief?"
+		description="Donkers Advies beoordeelt uw plan en adviseert over de te volgen procedure. Neem vrijblijvend contact op voor een eerste gesprek."
+		buttonLabel="Vraag een vrijblijvend adviesgesprek aan"
+		buttonHref="/#contact"
+	/>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div class="grid-2" style="align-items:center;">
+				<div data-fade>
+					<p class="label">Contact</p>
+					<h2>Rechtstreeks contact met Donkers Advies</h2>
+					<p>Heeft u een vraag over een artikel of wilt u uw eigen initiatief bespreken? Neem gerust contact op.</p>
+				</div>
+				<div data-fade>
+					<div class="contact-detail">
+						<svg viewBox="0 0 24 24" aria-hidden="true"
+							><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline
+								points="22,6 12,13 2,6"></polyline></svg
+						>
+						<a href={`mailto:${business.email}`}>{business.email}</a>
+					</div>
+					<div class="contact-detail">
+						<svg viewBox="0 0 24 24" aria-hidden="true"
+							><path
+								d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.91 6.91l.76-.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+							></path></svg
+						>
+						<a href={business.phoneHref}>{business.phoneDisplay}</a>
+					</div>
+					<div class="contact-detail">
+						<svg viewBox="0 0 24 24" aria-hidden="true"
+							><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"
+							></circle></svg
+						>
+						{business.areaServedText}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<script>
+	// Blogoverzicht: zoeken, categoriefilter en paginering
+	const grid = document.getElementById('postGrid');
+	if (grid) {
+		const cards = Array.from(grid.querySelectorAll('.post-card')) as HTMLElement[];
+		const chips = Array.from(document.querySelectorAll('.filter-chip')) as HTMLButtonElement[];
+		const searchInput = document.getElementById('blogSearch') as HTMLInputElement | null;
+		const pagination = document.getElementById('pagination');
+		const noResults = document.getElementById('noResults');
+		const featuredSection = document.getElementById('featuredSection');
+		const resetBtn = document.getElementById('resetFilters');
+		const PER_PAGE = 6;
+
+		const params = new URLSearchParams(location.search);
+		let state = {
+			category: params.get('categorie') || 'alle',
+			query: (params.get('zoeken') || '').toLowerCase(),
+			page: 1,
+		};
+
+		if (searchInput) searchInput.value = params.get('zoeken') || '';
+		chips.forEach((chip) => chip.classList.toggle('active', chip.dataset.category === state.category));
+
+		function matches(card: HTMLElement) {
+			const inCategory = state.category === 'alle' || card.dataset.category === state.category;
+			const haystack = `${card.dataset.title} ${card.dataset.excerpt} ${card.dataset.tags}`.toLowerCase();
+			const inQuery = !state.query || haystack.includes(state.query);
+			return inCategory && inQuery;
+		}
+
+		function render() {
+			const filtered = cards.filter(matches);
+			const hasFilter = state.category !== 'alle' || !!state.query;
+			if (featuredSection) (featuredSection as HTMLElement).hidden = hasFilter;
+
+			const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+			if (state.page > totalPages) state.page = totalPages;
+			const start = (state.page - 1) * PER_PAGE;
+			const visible = new Set(filtered.slice(start, start + PER_PAGE));
+
+			cards.forEach((card) => {
+				card.hidden = !visible.has(card);
+			});
+			if (noResults) noResults.classList.toggle('visible', filtered.length === 0);
+
+			renderPagination(totalPages);
+
+			const url = new URL(location.href);
+			state.category === 'alle' ? url.searchParams.delete('categorie') : url.searchParams.set('categorie', state.category);
+			state.query ? url.searchParams.set('zoeken', state.query) : url.searchParams.delete('zoeken');
+			history.replaceState(null, '', url.pathname + url.search);
+		}
+
+		function renderPagination(totalPages: number) {
+			if (!pagination) return;
+			pagination.innerHTML = '';
+			if (totalPages <= 1) return;
+
+			const makeBtn = (label: string, page: number, opts: { active?: boolean; disabled?: boolean } = {}) => {
+				const b = document.createElement('button');
+				b.className = 'page-btn' + (opts.active ? ' active' : '');
+				b.type = 'button';
+				b.textContent = label;
+				b.disabled = !!opts.disabled;
+				b.addEventListener('click', () => {
+					state.page = page;
+					render();
+					pagination.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+				});
+				return b;
+			};
+
+			pagination.appendChild(makeBtn('←', state.page - 1, { disabled: state.page === 1 }));
+			for (let i = 1; i <= totalPages; i++) {
+				pagination.appendChild(makeBtn(String(i), i, { active: i === state.page }));
+			}
+			pagination.appendChild(makeBtn('→', state.page + 1, { disabled: state.page === totalPages }));
+		}
+
+		chips.forEach((chip) => {
+			chip.addEventListener('click', () => {
+				state.category = chip.dataset.category ?? 'alle';
+				state.page = 1;
+				chips.forEach((c) => c.classList.toggle('active', c === chip));
+				render();
+			});
+		});
+
+		if (searchInput) {
+			let debounce: ReturnType<typeof setTimeout>;
+			searchInput.addEventListener('input', () => {
+				clearTimeout(debounce);
+				debounce = setTimeout(() => {
+					state.query = searchInput.value.toLowerCase().trim();
+					state.page = 1;
+					render();
+				}, 200);
+			});
+		}
+
+		if (resetBtn) {
+			resetBtn.addEventListener('click', () => {
+				state = { category: 'alle', query: '', page: 1 };
+				if (searchInput) searchInput.value = '';
+				chips.forEach((c) => c.classList.toggle('active', c.dataset.category === 'alle'));
+				render();
+			});
+		}
+
+		render();
+	}
+</script>
+
+<script define:vars={{ contactEmail: business.email }}>
+	// Nieuwsbrief-aanmelding
+	const form = document.getElementById('newsletterForm');
+	if (form) {
+		const msg = document.getElementById('newsletterMsg');
+		const emailInput = form.querySelector('input[type="email"]');
+
+		form.addEventListener('submit', async (e) => {
+			e.preventDefault();
+			const email = emailInput.value.trim();
+			const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+			if (!valid) {
+				msg.textContent = 'Vul een geldig e-mailadres in.';
+				msg.className = 'newsletter-msg error';
+				return;
+			}
+
+			const endpoint = form.getAttribute('action');
+			// Zodra een echt formulier-endpoint is ingevuld (Mailchimp, Brevo, een Vercel
+			// serverless function, etc.) via action="...", wordt hier naartoe gepost.
+			if (endpoint && endpoint !== '#') {
+				try {
+					await fetch(endpoint, { method: 'POST', body: new FormData(form), mode: 'no-cors' });
+					msg.textContent = 'Bedankt! U ontvangt een bevestiging per e-mail.';
+					msg.className = 'newsletter-msg ok';
+					form.reset();
+					return;
+				} catch {
+					/* val terug op mailto hieronder */
+				}
+			}
+
+			// Fallback zolang er nog geen provider is gekoppeld: open de mail-client.
+			window.location.href =
+				'mailto:' +
+				contactEmail +
+				'?subject=' +
+				encodeURIComponent('Aanmelding nieuwsbrief') +
+				'&body=' +
+				encodeURIComponent('Meld dit e-mailadres aan voor de nieuwsbrief: ' + email);
+			msg.textContent = 'Uw e-mailprogramma wordt geopend om de aanmelding te versturen.';
+			msg.className = 'newsletter-msg ok';
+		});
+	}
+</script>

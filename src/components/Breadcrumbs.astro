@@ -1,0 +1,26 @@
+---
+import { breadcrumbSchema, type BreadcrumbItem } from '../lib/schema';
+
+interface Props {
+	items: BreadcrumbItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav class="breadcrumb" aria-label="Broodkruimel">
+	{
+		items.map((item, i) => (
+			<>
+				{i > 0 && (
+					<span class="breadcrumb-sep" aria-hidden="true">
+						/
+					</span>
+				)}
+				{i === items.length - 1 ? <span>{item.name}</span> : <a href={item.path}>{item.name}</a>}
+			</>
+		))
+	}
+</nav>
+
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema(items))} />

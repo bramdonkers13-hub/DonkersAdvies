@@ -1,0 +1,31 @@
+---
+import { faqSchema, type FaqItem } from '../lib/schema';
+
+export interface FaqEntry {
+	question: string;
+	/** Rijke HTML voor de zichtbare accordion (mag meerdere <p>, <strong>, <a> bevatten). */
+	answerHtml: string;
+	/** Platte tekst voor de FAQPage JSON-LD (schema.org-conventie). */
+	answerText: string;
+}
+
+interface Props {
+	items: FaqEntry[];
+}
+
+const { items } = Astro.props;
+const schemaItems: FaqItem[] = items.map((item) => ({ question: item.question, answer: item.answerText }));
+---
+
+<div class="faq-list" data-fade>
+	{
+		items.map((item) => (
+			<details class="faq-item">
+				<summary>{item.question}</summary>
+				<div class="faq-body" set:html={item.answerHtml} />
+			</details>
+		))
+	}
+</div>
+
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema(schemaItems))} />

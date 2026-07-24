@@ -1,0 +1,26 @@
+---
+interface FeatureItem {
+	title: string;
+	descriptionHtml: string;
+}
+
+interface Props {
+	items: FeatureItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="feature-grid">
+	{
+		items.map((item) => (
+			<div class="feature-item" data-fade>
+				<div class="feature-dot" />
+				<div>
+					<h3>{item.title}</h3>
+					<p set:html={item.descriptionHtml} />
+				</div>
+			</div>
+		))
+	}
+</div>

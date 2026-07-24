@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import logoWit from '../assets/images/logo-wit.png';
+import { business } from '../data/business';
+import { services } from '../data/services';
+import { footerNav, footerLegalNav } from '../data/navigation';
+
+const year = new Date().getFullYear();
+---
+
+<footer>
+	<div class="container">
+		<div class="footer-inner">
+			<div class="footer-brand">
+				<div class="nav-logo-wrap">
+					<Image src={logoWit} alt={business.name} class="nav-logo-img" width={252} height={252} loading="lazy" />
+				</div>
+			</div>
+			<div class="footer-links">
+				<span class="footer-heading">Diensten</span>
+				{services.map((service) => <a href={service.path}>{service.navLabel}</a>)}
+			</div>
+			<div class="footer-links">
+				<span class="footer-heading">Navigatie</span>
+				{footerNav.map((item) => <a href={item.href}>{item.label}</a>)}
+			</div>
+			<div class="footer-links">
+				<span class="footer-heading">Juridisch</span>
+				{footerLegalNav.map((item) => <a href={item.href}>{item.label}</a>)}
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<span>&copy; {year} {business.legalName}</span>
+			<span>KvK-nummer: {business.kvk}</span>
+		</div>
+	</div>
+</footer>

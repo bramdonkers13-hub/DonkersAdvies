@@ -1,0 +1,382 @@
+---
+import { getImage } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ServicesGrid from '../components/ServicesGrid.astro';
+import StepList from '../components/StepList.astro';
+import FAQ from '../components/FAQ.astro';
+import ContactForm from '../components/ContactForm.astro';
+import landscapeImage from '../assets/images/landscape-buitengebied.jpg';
+import { organizationSchema, professionalServiceSchema, websiteSchema } from '../lib/schema';
+import { business } from '../data/business';
+
+const title = 'Donkers Advies | Ruimtelijk adviesbureau Omgevingswet';
+const description =
+	'Ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Donkers Advies begeleidt principeverzoeken, OPA, BOPA en wijzigingen van het omgevingsplan.';
+
+const optimizedLandscape = await getImage({ src: landscapeImage, width: 1600, format: 'webp', quality: 78 });
+
+const werkwijzeSteps = [
+	{
+		number: '01',
+		title: 'Kennismaking',
+		descriptionHtml: 'Bespreken van uw initiatief, de locatie en de gewenste ontwikkeling. Wij luisteren en stellen de juiste vragen.',
+	},
+	{
+		number: '02',
+		title: 'Haalbaarheidsanalyse',
+		descriptionHtml:
+			"Toetsing aan het omgevingsplan, gemeentelijk en provinciaal beleid en de Omgevingswet. Wij brengen de kansen en risico's in kaart.",
+	},
+	{
+		number: '03',
+		title: 'Strategisch advies',
+		descriptionHtml:
+			'Wij adviseren over de meest passende procedure: <a href="/principeverzoek/">principeverzoek</a>, <a href="/omgevingsplanactiviteit/">OPA</a>, <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> of <a href="/wijziging-omgevingsplan/">wijziging omgevingsplan</a>.',
+	},
+	{
+		number: '04',
+		title: 'Onderbouwing en procedure',
+		descriptionHtml:
+			'Opstellen van de ruimtelijke onderbouwing, planregels en benodigde onderzoeken. Volledige procedurebegeleiding inclusief afstemming met de gemeente.',
+	},
+	{
+		number: '05',
+		title: 'Besluitvorming',
+		descriptionHtml:
+			'Begeleiding tot en met het definitieve besluit van het college van B&amp;W of de gemeenteraad. Inclusief eventuele bezwaar- en beroepsfase.',
+	},
+];
+
+const faqItems = [
+	{
+		question: 'Wat doet Donkers Advies?',
+		answerHtml:
+			'<p>Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Wij begeleiden particulieren, ondernemers en projectontwikkelaars bij alle planologische procedures: van <a href="/principeverzoek/">principeverzoek</a> en <a href="/omgevingsplanactiviteit/">OPA</a> tot <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> en <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>. Van eerste haalbaarheidsanalyse tot definitieve vergunningverlening.</p>',
+		answerText:
+			'Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Wij begeleiden particulieren, ondernemers en projectontwikkelaars bij principeverzoeken, omgevingsvergunningen (OPA en BOPA) en wijzigingen van het omgevingsplan. Van eerste haalbaarheidsanalyse tot definitieve vergunningverlening.',
+	},
+	{
+		question: 'Wanneer heb ik een principeverzoek nodig?',
+		answerHtml:
+			'<p>Een <a href="/principeverzoek/">principeverzoek</a> is verstandig wanneer u wilt weten of uw initiatief planologisch haalbaar is vóórdat u investeert in een formele procedure. De gemeente geeft een niet-bindende reactie op uw plan. Als de gemeente positief staat tegenover uw initiatief, verhoogt dat de kans op een succesvolle formele aanvraag aanzienlijk. Donkers Advies stelt het principeverzoek op en regelt de afstemming met de gemeente.</p>',
+		answerText:
+			'Een principeverzoek is verstandig wanneer u wilt weten of uw initiatief planologisch haalbaar is voordat u investeert in een formele procedure. Donkers Advies adviseert u over de kansen en stelt het principeverzoek op.',
+	},
+	{
+		question: 'Wat is het verschil tussen een OPA en een BOPA?',
+		answerHtml:
+			'<p>Het verschil zit in de verhouding tot het omgevingsplan:</p><p><strong>OPA:</strong> uw activiteit past <em>binnen</em> het geldende omgevingsplan en is vergunningplichtig. Geen ruimtelijke onderbouwing nodig.</p><p><strong>BOPA:</strong> uw activiteit wijkt <em>af</em> van het omgevingsplan. Een volledige ruimtelijke onderbouwing met ETFAL-motivering is verplicht. De gemeente heeft meer beoordelingsruimte. Donkers Advies adviseert u welke procedure op uw situatie van toepassing is.</p>',
+		answerText:
+			'Bij een OPA past uw activiteit binnen het geldende omgevingsplan en is een formele vergunning nodig. Bij een BOPA wijkt uw activiteit af van het omgevingsplan en is een ruimtelijke onderbouwing met ETFAL-motivering vereist. Donkers Advies adviseert u over de juiste procedure.',
+	},
+	{
+		question: 'Wanneer is een wijziging van het omgevingsplan nodig?',
+		answerHtml:
+			'<p>Een <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan (WOP)</a> is nodig bij grootschalige of permanente ontwikkelingen waarbij een BOPA juridisch onvoldoende robuust is. Voorbeelden zijn grootschalige woningbouwprojecten, permanente functiewijzigingen en gebiedsontwikkelingen waarbij het omgevingsplan structureel moet worden aangepast. De gemeenteraad stelt het gewijzigde omgevingsplan vast.</p>',
+		answerText:
+			'Een wijziging van het omgevingsplan (WOP) is nodig bij grootschalige of permanente ontwikkelingen waarbij een BOPA juridisch onvoldoende robuust is. Voorbeelden zijn grootschalige woningbouw, permanente functiewijzigingen en gebiedsontwikkelingen.',
+	},
+	{
+		question: "In welke regio's is Donkers Advies actief?",
+		answerHtml:
+			'<p>Donkers Advies is actief in Noord-Brabant, Gelderland en Limburg. Voor initiatieven buiten deze regio\'s kunt u contact opnemen om te bespreken of begeleiding mogelijk is. <a href="#contact">Neem vrijblijvend contact op.</a></p>',
+		answerText:
+			"Donkers Advies is actief in Noord-Brabant, Gelderland en Limburg. Voor initiatieven buiten deze regio's kunt u contact opnemen om te bespreken of begeleiding mogelijk is.",
+	},
+	{
+		question: 'Hoe lang duurt een planologische procedure?',
+		answerHtml:
+			'<p>De doorlooptijd hangt af van de procedure:</p><p><strong>Principeverzoek:</strong> 4 tot 8 weken (niet formeel gebonden aan termijnen).</p><p><strong>OPA of BOPA via de reguliere procedure:</strong> maximaal 14 weken.</p><p><strong>BOPA via de uitgebreide procedure:</strong> maximaal 32 weken.</p><p><strong>Wijziging omgevingsplan:</strong> gemiddeld 1 tot 2 jaar, afhankelijk van complexiteit en bestuurlijk draagvlak.</p>',
+		answerText:
+			'De doorlooptijd hangt af van de procedure. Een principeverzoek duurt doorgaans 4 tot 8 weken. Een OPA of BOPA via de reguliere procedure duurt maximaal 14 weken. Een BOPA via de uitgebreide procedure duurt maximaal 32 weken. Een wijziging van het omgevingsplan duurt gemiddeld 1 tot 2 jaar.',
+	},
+	{
+		question: 'Wat kost begeleiding door Donkers Advies?',
+		answerHtml:
+			'<p>De kosten zijn afhankelijk van de aard van het initiatief, de benodigde procedure en de complexiteit van de onderbouwing. Donkers Advies geeft u altijd vooraf een helder beeld van de verwachte kosten, inclusief eventuele gemeentelijke leges en onderzoekskosten. <a href="#contact">Neem contact op voor een vrijblijvende indicatie.</a></p>',
+		answerText:
+			'De kosten zijn afhankelijk van de aard van het initiatief, de benodigde procedure en de complexiteit van de onderbouwing. Donkers Advies geeft u altijd vooraf een helder beeld van de verwachte kosten. Neem contact op voor een vrijblijvende indicatie.',
+	},
+	{
+		question: 'Wat is het verschil tussen een omgevingsplan en een bestemmingsplan?',
+		answerHtml:
+			'<p>Onder de Wet ruimtelijke ordening (Wro) gold er een afzonderlijk bestemmingsplan per kern of gebied. Onder de Omgevingswet is er één omgevingsplan per gemeente dat alle ruimtelijke regels bundelt. De voormalige bestemmingsplannen zijn automatisch omgezet naar het tijdelijk deel van het omgevingsplan.</p>',
+		answerText:
+			'Onder de Wet ruimtelijke ordening (Wro) gold er een afzonderlijk bestemmingsplan per kern of gebied. Onder de Omgevingswet is er één omgevingsplan per gemeente dat alle ruimtelijke regels bundelt. De voormalige bestemmingsplannen zijn automatisch omgezet naar het tijdelijk deel van het omgevingsplan. Een bestemmingsplanherziening heet nu een wijziging van het omgevingsplan.',
+	},
+];
+---
+
+<BaseLayout
+	title={title}
+	description={description}
+	path="/"
+	jsonLd={[organizationSchema(), professionalServiceSchema(), websiteSchema()]}
+>
+	<Hero label={`${business.name} — ${business.tagline}`}>
+		<h1>Van initiatief<br /><em>naar vergunning</em></h1>
+		<p class="hero-lead">
+			Donkers Advies begeleidt particulieren en ondernemers bij
+			<a href="/principeverzoek/">principeverzoeken</a>,
+			<a href="/omgevingsplanactiviteit/">omgevingsvergunningen</a>
+			en <a href="/wijziging-omgevingsplan/">wijzigingen van het omgevingsplan</a>.
+			Van initiatief tot definitieve besluitvorming.
+		</p>
+		<div class="hero-actions">
+			<a href="#contact" class="btn btn-primary">Vrijblijvend adviesgesprek</a>
+			<a href="#diensten" class="btn btn-outline">Bekijk onze diensten</a>
+		</div>
+	</Hero>
+
+	<section id="diensten" class="section">
+		<div class="container">
+			<div class="section-header" data-fade>
+				<p class="label">Dienstverlening</p>
+				<h2>Ruimtelijk advies onder de Omgevingswet</h2>
+				<p>
+					Past uw initiatief niet binnen het geldende omgevingsplan? Of weet u niet zeker welke procedure u nodig
+					heeft? Donkers Advies analyseert uw situatie en begeleidt de meest passende planologische procedure.
+					Van <a href="/principeverzoek/">principeverzoek</a> en <a href="/omgevingsplanactiviteit/">omgevingsvergunning</a>
+					tot <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> en
+					<a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>.
+				</p>
+			</div>
+			<ServicesGrid />
+		</div>
+	</section>
+
+	<div
+		class="landscape-band"
+		role="img"
+		aria-label="Luchtfoto van Nederlands polderlandschap met weilanden en bewoning"
+		style={`background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, var(--paper) 100%), url(${optimizedLandscape.src})`}
+	>
+	</div>
+
+	<section id="about" class="section">
+		<div class="container">
+			<div class="grid-2">
+				<div class="about-text" data-fade>
+					<p class="label">Over Donkers Advies</p>
+					<h2>Specialist in ruimtelijke ordening</h2>
+					<p>
+						Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Wij begeleiden
+						particulieren, ondernemers en projectontwikkelaars bij alle planologische procedures: van een eerste
+						haalbaarheidsanalyse tot het verkrijgen van een
+						<a href="/buitenplanse-omgevingsplanactiviteit/">omgevingsvergunning</a> of een
+						<a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>.
+					</p>
+					<p>
+						Dankzij ervaring binnen de gemeentelijke praktijk krijgt u snel inzicht in de planologische
+						mogelijkheden en de kans van slagen van uw initiatief. Wij werken met een vaste adviseur, korte
+						lijnen en heldere communicatie gedurende het hele traject.
+					</p>
+					<p>Actief in {business.areaServed.join(', ')}.</p>
+					<div class="usps">
+						<div class="usp-item">Persoonlijk contact en korte lijnen</div>
+						<div class="usp-item">Ervaring met gemeentelijke besluitvorming</div>
+						<div class="usp-item">Specialist in ruimtelijke onderbouwingen</div>
+						<div class="usp-item">Van initiatief tot definitieve vergunning</div>
+					</div>
+				</div>
+
+				<div class="about-visual" data-fade>
+					<div class="stat-block">
+						<div class="num"><a href="/principeverzoek/">Principeverzoek</a></div>
+						<p>
+							Toets uw initiatief vooraf bij de gemeente. Zo weet u of uw plan planologisch haalbaar is voordat u
+							investeert in een formele procedure.
+						</p>
+					</div>
+					<div class="stat-divider"></div>
+					<div class="stat-block">
+						<div class="num">
+							<a href="/omgevingsplanactiviteit/">OPA</a> &amp; <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a>
+						</div>
+						<p>
+							Omgevingsvergunning voor activiteiten die passen binnen het omgevingsplan (OPA) of daarvan afwijken
+							(BOPA). Donkers Advies verzorgt de volledige aanvraag.
+						</p>
+					</div>
+					<div class="stat-divider"></div>
+					<div class="stat-block">
+						<div class="num"><a href="/wijziging-omgevingsplan/">Wijziging omgevingsplan</a></div>
+						<p>
+							Voor structurele en grootschalige ontwikkelingen die planologisch verankerd moeten worden in het
+							omgevingsplan van de gemeente.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="voor-wie" class="section" style="background: var(--paper);">
+		<div class="container">
+			<div class="section-header" data-fade>
+				<p class="label">Doelgroepen</p>
+				<h2>Voor wie werkt Donkers Advies?</h2>
+				<p>
+					Ruimtelijke vraagstukken zijn er in alle soorten en maten. Of u nu een woning wilt uitbreiden, een
+					bedrijfslocatie zoekt of een woningbouwproject wilt ontwikkelen: Donkers Advies biedt passend advies.
+				</p>
+			</div>
+
+			<div class="voor-wie-grid">
+				<div class="voor-wie-card" data-fade>
+					<div class="vw-label">Particulieren</div>
+					<h3>Woningbouw en verbouw buiten het plan</h3>
+					<ul>
+						<li>Woning bouwen of uitbreiden buiten het bouwvlak</li>
+						<li>Bijgebouw, schuur of garage op een afwijkende locatie</li>
+						<li>Mantelzorgwoning op een bestaand perceel</li>
+						<li>Functiewijziging van agrarisch naar wonen</li>
+						<li>Bed &amp; breakfast of recreatieve nevenactiviteit</li>
+					</ul>
+				</div>
+
+				<div class="voor-wie-card" data-fade>
+					<div class="vw-label">Ondernemers</div>
+					<h3>Bedrijfsuitbreiding en nieuwe locaties</h3>
+					<ul>
+						<li>Bedrijfsuitbreiding buiten het bouwvlak of bebouwingsgrens</li>
+						<li>Nieuwe bedrijfslocatie met een afwijkende bestemming</li>
+						<li>Functiewijziging van agrarisch naar bedrijvigheid</li>
+						<li>Zorgfunctie, horeca of recreatie op een nieuwe locatie</li>
+						<li>Tijdelijke of permanente uitbreiding van activiteiten</li>
+					</ul>
+				</div>
+
+				<div class="voor-wie-card" data-fade>
+					<div class="vw-label">Projectontwikkelaars</div>
+					<h3>Woningbouw en gebiedsontwikkeling</h3>
+					<ul>
+						<li>Woningbouwontwikkeling buiten de bebouwde kom</li>
+						<li>Herontwikkeling van leegstaand vastgoed of bedrijventerreinen</li>
+						<li>Transformatie van agrarische locaties naar woon- of werkgebieden</li>
+						<li>Gebiedsontwikkeling met meerdere functies of eigenaren</li>
+						<li>BOPA of WOP als planologisch kader voor nieuwbouw</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="werkwijze" class="section">
+		<div class="container">
+			<div class="section-header" data-fade>
+				<p class="label">Onze aanpak</p>
+				<h2>Van initiatief tot vergunning</h2>
+				<p style="color: rgba(255,255,255,.7);">
+					Een ruimtelijk traject bestaat uit meerdere stappen. Donkers Advies begeleidt het volledige proces:
+					van de eerste haalbaarheidsbeoordeling tot de definitieve besluitvorming door de gemeente of
+					gemeenteraad.
+				</p>
+			</div>
+			<StepList items={werkwijzeSteps} variant="horizontal" />
+		</div>
+	</section>
+
+	<section id="waarom" class="section">
+		<div class="container">
+			<div class="section-header" data-fade>
+				<p class="label">Waarom Donkers Advies</p>
+				<h2>Waarom initiatiefnemers kiezen voor Donkers Advies</h2>
+			</div>
+			<div class="why-grid">
+				<div class="why-card" data-fade>
+					<h3>Specialist in de Omgevingswet</h3>
+					<p>
+						Diepgaande kennis van het omgevingsplan, ETFAL-toetsing, planologische procedures en de vereisten van
+						het bevoegd gezag.
+					</p>
+				</div>
+				<div class="why-card" data-fade>
+					<h3>Gemeentelijke ervaring</h3>
+					<p>
+						Inzicht in hoe gemeenten plannen beoordelen, welke argumenten werken en hoe bestuurlijk draagvlak
+						wordt opgebouwd.
+					</p>
+				</div>
+				<div class="why-card" data-fade>
+					<h3>Eén vast aanspreekpunt</h3>
+					<p>Geen wisselende contactpersonen. Gedurende het hele traject werkt u samen met dezelfde adviseur.</p>
+				</div>
+				<div class="why-card" data-fade>
+					<h3>Maatwerk per initiatief</h3>
+					<p>
+						Iedere locatie en ontwikkeling is anders. Donkers Advies past de aanpak aan op uw specifieke
+						situatie, gemeente en planologische context.
+					</p>
+				</div>
+				<div class="why-card" data-fade>
+					<h3>Heldere communicatie</h3>
+					<p>Geen onnodige jargon of dikke rapporten. Duidelijke uitleg, korte lijnen en transparantie over kosten en doorlooptijd.</p>
+				</div>
+				<div class="why-card" data-fade>
+					<h3>Volledig ontzorgd</h3>
+					<p>
+						Van haalbaarheidsanalyse en strategisch advies tot de volledige procedurebegeleiding. Donkers Advies
+						regelt het traject van begin tot eind.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="faq" class="section" style="background: var(--paper);">
+		<div class="container">
+			<div class="section-header" data-fade>
+				<p class="label">Veelgestelde vragen</p>
+				<h2>Vragen over ruimtelijke ordening en de Omgevingswet</h2>
+				<p>
+					Hieronder vindt u antwoord op veelgestelde vragen over planologische procedures, de Omgevingswet en de
+					dienstverlening van Donkers Advies. Meer weten? Bekijk onze <a href="/blog/">blog</a> voor uitgebreide
+					artikelen per procedure.
+				</p>
+			</div>
+			<FAQ items={faqItems} />
+		</div>
+	</section>
+
+	<section id="contact" class="section">
+		<div class="container">
+			<div class="contact-inner">
+				<div class="contact-text" data-fade>
+					<p class="label">Contact</p>
+					<h2>Bespreek uw initiatief</h2>
+					<p>
+						Wilt u weten of uw plan haalbaar is of welke procedure u nodig heeft? Donkers Advies beoordeelt uw
+						initiatief en adviseert over de mogelijkheden. Neem vrijblijvend contact op. U ontvangt binnen één
+						werkdag een reactie.
+					</p>
+					<div class="contact-detail">
+						<svg viewBox="0 0 24 24" aria-hidden="true"
+							><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline
+								points="22,6 12,13 2,6"></polyline></svg
+						>
+						<a href={`mailto:${business.email}`}>{business.email}</a>
+					</div>
+					<div class="contact-detail">
+						<svg viewBox="0 0 24 24" aria-hidden="true"
+							><path
+								d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.91 6.91l.76-.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+							></path></svg
+						>
+						<a href={business.phoneHref}>{business.phoneDisplay}</a>
+					</div>
+					<div class="contact-detail">
+						<svg viewBox="0 0 24 24" aria-hidden="true"
+							><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"
+							></circle></svg
+						>
+						{business.areaServedText}
+					</div>
+				</div>
+
+				<ContactForm />
+			</div>
+		</div>
+	</section>
+</BaseLayout>

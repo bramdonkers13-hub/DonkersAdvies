@@ -1,0 +1,31 @@
+---
+interface CompareItem {
+	title: string;
+	descriptionHtml: string;
+	linkLabel?: string;
+	linkHref?: string;
+	highlight?: boolean;
+}
+
+interface Props {
+	items: CompareItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="compare-grid">
+	{
+		items.map((item) => (
+			<div class:list={['compare-card', item.highlight && 'highlight']} data-fade>
+				<h3>{item.title}</h3>
+				<p set:html={item.descriptionHtml} />
+				{item.linkHref && item.linkLabel && (
+					<a href={item.linkHref} class="compare-card-link">
+						{item.linkLabel} →
+					</a>
+				)}
+			</div>
+		))
+	}
+</div>

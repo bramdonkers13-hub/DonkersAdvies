@@ -1,0 +1,53 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+export interface FilterData {
+	category: string;
+	title: string;
+	excerpt: string;
+	tags: string;
+}
+
+export interface PostCardProps {
+	href: string;
+	image: ImageMetadata;
+	imageAlt: string;
+	tag: string;
+	title: string;
+	excerpt?: string;
+	date?: string;
+	readingTime?: string;
+	filter?: FilterData;
+}
+
+type Props = PostCardProps;
+
+const { href, image, imageAlt, tag, title, excerpt, date, readingTime, filter } = Astro.props;
+---
+
+<article
+	class="post-card"
+	data-category={filter?.category}
+	data-title={filter?.title}
+	data-excerpt={filter?.excerpt}
+	data-tags={filter?.tags}
+>
+	<a class="post-card-img" href={href}>
+		<Image src={image} alt={imageAlt} loading="lazy" width={640} height={400} />
+	</a>
+	<div class="post-card-body">
+		<span class="tag">{tag}</span>
+		<h3><a href={href}>{title}</a></h3>
+		{excerpt && <p>{excerpt}</p>}
+		{
+			(date || readingTime) && (
+				<div class="post-card-meta">
+					{date && <span>{date}</span>}
+					{date && readingTime && <span>&middot;</span>}
+					{readingTime && <span>{readingTime}</span>}
+				</div>
+			)
+		}
+	</div>
+</article>
