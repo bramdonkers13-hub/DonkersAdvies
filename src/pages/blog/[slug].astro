@@ -124,7 +124,7 @@ const showUpdated = post.data.updatedDate.getTime() !== post.data.publishedDate.
 	</section>
 
 	<CTA title={post.data.ctaTitle} description={post.data.ctaDescription} buttonLabel={post.data.ctaButtonLabel} buttonHref={post.data.ctaButtonHref}>
-		{post.data.ctaExtra && <p style="margin-top:1.5rem;">{post.data.ctaExtra}</p>}
+		{post.data.ctaExtra && <p style="margin-top:1.5rem;" set:html={post.data.ctaExtra} />}
 	</CTA>
 
 	{
