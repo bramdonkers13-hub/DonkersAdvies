@@ -21,8 +21,8 @@ image: "../../assets/images/blog/maatwerkregeling-header.jpg"
 imageAlt: "Boerenerf in het Brabantse buitengebied, bestemd voor de Maatwerkregeling omgevingskwaliteit"
 publishedDate: 2026-07-19
 updatedDate: 2026-07-19
-readingTimeMinutes: 11
-wordCount: 2009
+readingTimeMinutes: 10
+wordCount: 2030
 relatedSlugs: ["wat-is-een-bopa", "ruimtelijke-onderbouwing-bopa", "omgevingsplan-wijzigen"]
 breadcrumbLabel: "Maatwerkregeling omgevingskwaliteit"
 ctaTitle: "Vrijblijvend haalbaarheidsgesprek"
@@ -47,7 +47,7 @@ faq:
 
 Die route is kansrijk, maar ook technisch. U krijgt te maken met artikel 5.14 van de Omgevingsverordening, met paragraaf 7.1 van de Beleidsregel omgevingsrecht, met een provinciale rekenmodule en met een gemeentelijke procedure die meestal via een [BOPA](/blog/wat-is-een-bopa/) (buitenplanse omgevingsplanactiviteit) of een [wijziging van het omgevingsplan](/blog/omgevingsplan-wijzigen/) loopt. In dit artikel leest u precies hoe de regeling in elkaar zit, welke bedragen gelden en waar plannen in de praktijk op stuklopen.
 
-**Donkers Advies** begeleidt initiatiefnemers, agrariërs en ontwikkelaars in heel Noord-Brabant bij deze aanvragen. [Vraag een vrijblijvend haalbaarheidsgesprek aan](/#contact) en u weet binnen een week of uw locatie kansrijk is.
+Donkers Advies begeleidt initiatiefnemers, agrariërs en ontwikkelaars in heel Noord-Brabant bij deze aanvragen. [Vraag een vrijblijvend haalbaarheidsgesprek aan](/#contact) en u weet binnen een week of uw locatie kansrijk is.
 
 <h2 id="wat-is-het">Wat is de Maatwerkregeling omgevingskwaliteit?</h2>
 
@@ -61,28 +61,28 @@ Belangrijk om te weten: de provincie benadrukt uitdrukkelijk dat dit geen beëin
 
 De regeling is met name relevant voor:
 
-- **Stoppende agrariërs** met veel overtollige bedrijfsbebouwing op het erf
-- **Glastuinbouwers** die kassen willen saneren buiten een concentratiegebied
-- **Eigenaren van niet-agrarische bedrijven** in het buitengebied die de bedrijfsfunctie beëindigen
-- **Eigenaren van karakteristieke of cultuurhistorische bebouwing** die inpandig woningen willen realiseren
-- **Ontwikkelaars** die een bebouwingsconcentratie of lintbebouwing willen afronden
+- Stoppende agrariërs met veel overtollige bedrijfsbebouwing op het erf
+- Glastuinbouwers die kassen willen saneren buiten een concentratiegebied
+- Eigenaren van niet-agrarische bedrijven in het buitengebied die de bedrijfsfunctie beëindigen
+- Eigenaren van karakteristieke of cultuurhistorische bebouwing die inpandig woningen willen realiseren
+- Ontwikkelaars die een bebouwingsconcentratie of lintbebouwing willen afronden
 
 <h2 id="voorwaarden">De vier voorwaarden waaraan uw plan moet voldoen</h2>
 
 Artikel 7.1.2 van de beleidsregel noemt vier voorwaarden. Gedeputeerde Staten kunnen meewerken aan het toevoegen van een woning als:
 
-1. Er een **voldoende fysieke tegenprestatie** wordt geleverd die qua omvang in verhouding staat tot het woningtype dat u wilt bouwen.
-2. De ingezette maatregelen **voldoen aan de uitgangspunten** van paragraaf 7.1.
-3. Er sprake is van een **passende locatie** in de zin van artikel 5.14, vierde lid, van de Omgevingsverordening.
-4. Bij meerdere woningen de ontwikkeling past in de **ontwikkelingsrichting van het gebied**, met aandacht voor effecten op het landelijk gebied, de woningbouwopgave in stedelijk gebied, bereikbaarheid van voorzieningen en mobiliteit.
+1. Er een voldoende fysieke tegenprestatie wordt geleverd die qua omvang in verhouding staat tot het woningtype dat u wilt bouwen.
+2. De ingezette maatregelen voldoen aan de uitgangspunten van paragraaf 7.1.
+3. Er sprake is van een passende locatie in de zin van artikel 5.14, vierde lid, van de Omgevingsverordening.
+4. Bij meerdere woningen de ontwikkeling past in de ontwikkelingsrichting van het gebied, met aandacht voor effecten op het landelijk gebied, de woningbouwopgave in stedelijk gebied, bereikbaarheid van voorzieningen en mobiliteit.
 
 ### Wanneer is er sprake van een passende locatie?
 
 Dit is in de praktijk de meest onderschatte horde. De provincie beschouwt een locatie als passend wanneer:
 
-- de ontwikkeling in een **bebouwingsconcentratie** ligt;
-- de ontwikkeling een **logische afronding** vormt van Stedelijk gebied, Bebouwd gebied of een bebouwingsconcentratie; of
-- de woning **inpandig** wordt gerealiseerd binnen karakteristieke bebouwing.
+- de ontwikkeling in een bebouwingsconcentratie ligt;
+- de ontwikkeling een logische afronding vormt van Stedelijk gebied, Bebouwd gebied of een bebouwingsconcentratie; of
+- de woning inpandig wordt gerealiseerd binnen karakteristieke bebouwing.
 
 Ligt uw slooplocatie solitair in het open landschap, dan kunt u de woning daar dus doorgaans niet bouwen. Wel kunt u de tegenprestatie vaak inzetten op een andere, wél passende locatie. Dat vraagt om een goede locatie-analyse vooraf, en om vroegtijdig overleg met de provincie. Dat overleg is volgens de toelichting bij de beleidsregel altijd nodig.
 
@@ -114,27 +114,27 @@ Het bedrag van € 125.000 is afgeleid van de oude Ruimte-voor-Ruimte-kavel. Bij
 
 De beleidsregel onderscheidt vier situaties, elk met een eigen drempelwaarde en normbedrag per vierkante meter.
 
-**Beëindiging van een agrarisch bedrijf**
+Beëindiging van een agrarisch bedrijf
 
-- Drempelwaarde: ten minste **1.000 m² bedrijfsgebouw** slopen, waarvan de eerste 250 m² opgaat aan de omzetting van bedrijfswoning naar burgerwoning
+- Drempelwaarde: ten minste 1.000 m² bedrijfsgebouw slopen, waarvan de eerste 250 m² opgaat aan de omzetting van bedrijfswoning naar burgerwoning
 - € 45 per m² gesloopt bedrijfsgebouw
 - € 80 per m² gesloopt dierenverblijf, uitsluitend wanneer géén sprake is van een passende locatie
 - € 8,50 per m² verwijderde voorziening (geen gebouw of teeltondersteunende voorziening)
 
-**Beëindiging van een glastuinbouwbedrijf**
+Beëindiging van een glastuinbouwbedrijf
 
-- Drempelwaarde: ten minste **4.000 m² glasopstand**, waarbij de eerste 750 m² glas of 250 m² bedrijfsgebouw opgaat aan de woningomzetting
+- Drempelwaarde: ten minste 4.000 m² glasopstand, waarbij de eerste 750 m² glas of 250 m² bedrijfsgebouw opgaat aan de woningomzetting
 - € 17,75 per m² gesloopte kas
 - € 45 per m² gesloopt bedrijfsgebouw
 - € 8,50 per m² verwijderde voorziening
 
-**Beëindiging van een niet-agrarisch bedrijf**
+Beëindiging van een niet-agrarisch bedrijf
 
-- Drempelwaarde: ten minste **750 m² bedrijfsgebouw**, waarvan de eerste 250 m² opgaat aan de woningomzetting
+- Drempelwaarde: ten minste 750 m² bedrijfsgebouw, waarvan de eerste 250 m² opgaat aan de woningomzetting
 - € 56 per m² gesloopt bedrijfsgebouw
 - € 17,50 per m² verwijderde voorziening
 
-**Overige gevallen**
+Overige gevallen
 
 - € 25 per m² sloop van gebouwen
 - € 5 per m² verwijderde verharding en voorzieningen
@@ -148,13 +148,13 @@ Trekt u de rechten voor een milieubelastende activiteit in, dan kan € 15 per k
 
 ### Overige maatregelen (artikel 7.1.5)
 
-- Afwaarderen van gronden voor natuur binnen of aansluitend op het Natuur Netwerk Brabant: tot **€ 8 per m²**
-- Extensivering voor doelen uit de Vogel- en Habitatrichtlijn of de Kaderrichtlijn Water: tot **€ 2,50 per m²** bij geborgd behoud als grasland, of tot **€ 4 per m²** bij water- en bodemsysteemherstel met 5% groenblauwe dooradering
+- Afwaarderen van gronden voor natuur binnen of aansluitend op het Natuur Netwerk Brabant: tot € 8 per m²
+- Extensivering voor doelen uit de Vogel- en Habitatrichtlijn of de Kaderrichtlijn Water: tot € 2,50 per m² bij geborgd behoud als grasland, of tot € 4 per m² bij water- en bodemsysteemherstel met 5% groenblauwe dooradering
 - Aanleg van landschapselementen, mits de kosten inzichtelijk zijn en aanleg en instandhouding juridisch geborgd zijn
-- Behoud of terugbrengen van cultuurhistorische elementen: tot maximaal **€ 62.500**
-- Onderhoud en beheer van beplanting en natuurontwikkeling: maximaal **zes jaar**
+- Behoud of terugbrengen van cultuurhistorische elementen: tot maximaal € 62.500
+- Onderhoud en beheer van beplanting en natuurontwikkeling: maximaal zes jaar
 - Meerkosten asbestsanering: tot € 2 per m² voor asbesthoudende daken en tot € 7,50 per m² voor verspreid aanwezig asbest
-- Aanvoer van grond voor het dempen van mestputten: tot **€ 5 per m³**
+- Aanvoer van grond voor het dempen van mestputten: tot € 5 per m³
 - Inbreng van oude maatwerktitels van de Ontwikkelingsmaatschappij Ruimte voor Ruimte
 
 Daarnaast kan de tegenprestatie onder voorwaarden worden geleverd via een afdracht in een gemeentelijk fonds voor omgevingskwaliteit, mits de bijdrage is gekoppeld aan concrete maatregelen met een realisatietermijn van maximaal vijf jaar.
@@ -163,15 +163,15 @@ Daarnaast kan de tegenprestatie onder voorwaarden worden geleverd via een afdrac
 
 Artikel 7.1.2, derde lid, sluit een aantal veelgebruikte posten uit. Dit is waar plannen het vaakst op sneuvelen:
 
-- maatregelen waarvoor **subsidie** is verkregen;
-- maatregelen gericht op reguliere, goede **landschappelijke inpassing**;
-- de **boekwaarde of vervangingswaarde** van bebouwing;
-- **plankosten, leges en advieskosten**;
+- maatregelen waarvoor subsidie is verkregen;
+- maatregelen gericht op reguliere, goede landschappelijke inpassing;
+- de boekwaarde of vervangingswaarde van bebouwing;
+- plankosten, leges en advieskosten;
 - het afzien van het oprichten van vergunde bebouwing;
-- sloop van glasopstanden in een **glastuinbouwconcentratiegebied**;
-- sloop waarvoor al een **sloopverplichting** geldt vanuit deelname aan een regeling, zoals de Lbv, Lbv+ of de Maatregel Gerichte Opkoop;
-- sloop van een gebouw dat is ingezet voor **stalderen**;
-- sloop van glasopstanden die zijn ingezet voor de **glas-voor-glasregeling**.
+- sloop van glasopstanden in een glastuinbouwconcentratiegebied;
+- sloop waarvoor al een sloopverplichting geldt vanuit deelname aan een regeling, zoals de Lbv, Lbv+ of de Maatregel Gerichte Opkoop;
+- sloop van een gebouw dat is ingezet voor stalderen;
+- sloop van glasopstanden die zijn ingezet voor de glas-voor-glasregeling.
 
 Vooral dat laatste punt over opkoopregelingen verrast veel initiatiefnemers. Heeft u deelgenomen aan een landelijke beëindigingsregeling, dan is de tegenprestatie in de ogen van de provincie al geleverd en kunt u dezelfde sloop niet nogmaals inzetten voor een woning.
 
@@ -185,8 +185,8 @@ De ingevulde rekenmodule maakt verplicht onderdeel uit van de onderbouwing van h
 
 De maatwerkregeling regelt óf een woning mag worden toegevoegd. De gemeente moet dat vervolgens juridisch mogelijk maken. Onder de Omgevingswet zijn er twee routes:
 
-1. **Wijziging van het omgevingsplan.** De klassieke route, vergelijkbaar met het oude bestemmingsplan. Deze duurt langer, maar is soms de voorkeursroute van de gemeente bij grotere ontwikkelingen.
-2. **Buitenplanse omgevingsplanactiviteit (BOPA).** Een omgevingsvergunning waarmee de gemeente afwijkt van het omgevingsplan. Veel Brabantse gemeenten hebben een maatwerkwoning in het buitengebied expliciet aangewezen als geval waarvoor een BOPA kan worden verleend. Voor een BOPA geldt in beginsel de reguliere procedure van acht weken, al kiest het bevoegd gezag bij complexe gevallen soms voor de uitgebreide procedure.
+1. Wijziging van het omgevingsplan. De klassieke route, vergelijkbaar met het oude bestemmingsplan. Deze duurt langer, maar is soms de voorkeursroute van de gemeente bij grotere ontwikkelingen.
+2. Buitenplanse omgevingsplanactiviteit (BOPA). Een omgevingsvergunning waarmee de gemeente afwijkt van het omgevingsplan. Veel Brabantse gemeenten hebben een maatwerkwoning in het buitengebied expliciet aangewezen als geval waarvoor een BOPA kan worden verleend. Voor een BOPA geldt in beginsel de reguliere procedure van acht weken, al kiest het bevoegd gezag bij complexe gevallen soms voor de uitgebreide procedure.
 
 In beide gevallen moet u aantonen dat het initiatief voldoet aan een evenwichtige toedeling van functies aan locaties. Dat vraagt om een motivering waarin niet alleen de tegenprestatie is uitgewerkt, maar ook milieuaspecten als geur, geluid, luchtkwaliteit, endotoxinen, gewasbeschermingsmiddelen, stikstof, water en verkeer zijn onderbouwd. Bovendien is gelijktijdige besluitvorming over de woning én de tegenprestatie een harde voorwaarde, met uitzondering van de fondsafdracht.
 
@@ -196,12 +196,12 @@ Zoekt u een [adviesbureau voor een BOPA](/buitenplanse-omgevingsplanactiviteit/)
 
 Een maatwerkaanvraag is geen invuloefening. Het is een samenspel tussen provinciaal beleid, gemeentelijk maatwerk, milieuonderzoek en onderhandeling. Donkers Advies begeleidt het hele traject:
 
-1. **Haalbaarheidstoets.** Wij beoordelen of uw locatie kwalificeert als passende locatie, welke bebouwing en voorzieningen kunnen worden ingezet en of er uitsluitingsgronden spelen. U weet snel of doorgaan zinvol is, en desgewenst [toetst u de haalbaarheid met een principeverzoek](/blog/principeverzoek-indienen/) bij de gemeente.
-2. **Rekenmodule en tegenprestatie.** Wij vullen de provinciale rekenmodule in, optimaliseren de mix van maatregelen en zorgen dat de tegenprestatie aantoonbaar voldoende is voor het gewenste woningtype.
-3. **Vooroverleg met gemeente en provincie.** Vroegtijdig overleg is volgens de beleidsregel altijd nodig. Wij voeren dat gesprek, kennen de vraagstelling van de provincie en voorkomen dat uw plan halverwege spaak loopt.
-4. **Ruimtelijke onderbouwing en milieuonderzoek.** Wij stellen de [ruimtelijke onderbouwing](/blog/ruimtelijke-onderbouwing-bopa/) op voor de BOPA of de omgevingsplanwijziging, inclusief de milieuparagrafen en de afstemming met bijlagen zoals AERIUS-berekeningen.
-5. **Juridische borging.** Sloop, herbestemming, perceelsverkleining en instandhouding van landschapselementen moeten juridisch geborgd worden. Wij regelen de anterieure overeenkomst, kettingbedingen en planregels.
-6. **Begeleiding tot en met het besluit.** Van indiening tot besluit, inclusief reactie op zienswijzen en aanvullende vragen van het bevoegd gezag.
+1. Haalbaarheidstoets. Wij beoordelen of uw locatie kwalificeert als passende locatie, welke bebouwing en voorzieningen kunnen worden ingezet en of er uitsluitingsgronden spelen. U weet snel of doorgaan zinvol is, en desgewenst [toetst u de haalbaarheid met een principeverzoek](/blog/principeverzoek-indienen/) bij de gemeente.
+2. Rekenmodule en tegenprestatie. Wij vullen de provinciale rekenmodule in, optimaliseren de mix van maatregelen en zorgen dat de tegenprestatie aantoonbaar voldoende is voor het gewenste woningtype.
+3. Vooroverleg met gemeente en provincie. Vroegtijdig overleg is volgens de beleidsregel altijd nodig. Wij voeren dat gesprek, kennen de vraagstelling van de provincie en voorkomen dat uw plan halverwege spaak loopt.
+4. Ruimtelijke onderbouwing en milieuonderzoek. Wij stellen de [ruimtelijke onderbouwing](/blog/ruimtelijke-onderbouwing-bopa/) op voor de BOPA of de omgevingsplanwijziging, inclusief de milieuparagrafen en de afstemming met bijlagen zoals AERIUS-berekeningen.
+5. Juridische borging. Sloop, herbestemming, perceelsverkleining en instandhouding van landschapselementen moeten juridisch geborgd worden. Wij regelen de anterieure overeenkomst, kettingbedingen en planregels.
+6. Begeleiding tot en met het besluit. Van indiening tot besluit, inclusief reactie op zienswijzen en aanvullende vragen van het bevoegd gezag.
 
 <h2 id="faq">Veelgestelde vragen</h2>
 

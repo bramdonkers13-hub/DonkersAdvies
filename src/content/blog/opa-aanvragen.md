@@ -23,8 +23,8 @@ image: "../../assets/images/blog/opa-laptop.jpg"
 imageAlt: "Tablet met de OPA-pagina van Donkers Advies, met een illustratie van een woning en de omgevingsvergunning"
 publishedDate: 2026-07-07
 updatedDate: 2026-07-24
-readingTimeMinutes: 14
-wordCount: 2934
+readingTimeMinutes: 13
+wordCount: 2811
 relatedSlugs: ["wat-is-een-bopa", "principeverzoek-indienen", "ruimtelijke-onderbouwing-bopa"]
 breadcrumbLabel: "OPA aanvragen"
 ctaTitle: "Uw aanvraag laten opstellen"
@@ -55,14 +55,14 @@ Toch is "binnenplans" niet hetzelfde als "vanzelfsprekend". De gemeente toetst u
 
 Hieronder leest u wat een OPA precies is, hoe die zich verhoudt tot een BOPA, hoe de knip tussen ruimtelijk en technisch bouwen uitpakt, hoe de procedure verloopt en wat u aan termijnen en kosten kunt verwachten. Met de blik van een adviseur die dagelijks in de Noord-Brabantse vergunningpraktijk werkt.
 
-**Wettelijke stand: 24 juli 2026.**
+Wettelijke stand: 24 juli 2026.
 
 <h2 id="wat-is-het">Wat is een omgevingsplanactiviteit?</h2>
 
 Eerst het begrip zelf, want daar ontstaat de meeste verwarring. "Omgevingsplanactiviteit" is de overkoepelende term voor activiteiten die met het omgevingsplan te maken hebben. Die term valt uiteen in twee varianten:
 
-- de **binnenplanse** variant, waarbij uw plan binnen de regels van het omgevingsplan past;
-- de **buitenplanse** variant, de [BOPA](/blog/wat-is-een-bopa/), waarbij uw plan van die regels afwijkt.
+- de binnenplanse variant, waarbij uw plan binnen de regels van het omgevingsplan past;
+- de buitenplanse variant, de [BOPA](/blog/wat-is-een-bopa/), waarbij uw plan van die regels afwijkt.
 
 In het dagelijks spraakgebruik, en op deze pagina, staat "OPA" voor die eerste, binnenplanse variant. Strikt genomen is dat niet helemaal zuiver, want de afkorting dekt beide, maar het is de manier waarop gemeenten en adviseurs het gebruiken.
 
@@ -74,13 +74,13 @@ Anders dan bij een BOPA is er geen sprake van een planologische afwijking. U vra
 
 Dit is het onderdeel dat de meeste uitleg over de OPA overslaat, en het is precies het onderdeel dat het verschil maakt tussen wel of niet vergund krijgen.
 
-De beoordelingsregel voor de binnenplanse OPA staat in **artikel 8.0a lid 1 van het Besluit kwaliteit leefomgeving**. Kort samengevat: de vergunning wordt verleend als de activiteit niet in strijd is met de regels die in het omgevingsplan over het verlenen van die vergunning zijn gesteld.
+De beoordelingsregel voor de binnenplanse OPA staat in artikel 8.0a lid 1 van het Besluit kwaliteit leefomgeving. Kort samengevat: de vergunning wordt verleend als de activiteit niet in strijd is met de regels die in het omgevingsplan over het verlenen van die vergunning zijn gesteld.
 
-Twee woorden in die bepaling zijn juridisch beslissend: **limitatief** en **imperatief**.
+Twee woorden in die bepaling zijn juridisch beslissend: limitatief en imperatief.
 
 *Limitatief* betekent dat de gemeente uw aanvraag uitsluitend beoordeelt aan de hand van de beoordelingsregels in het omgevingsplan zelf. Buiten dat gelimiteerde stelsel kan zij geen andere gronden aanvoeren om te weigeren. Zij mag er dus geen algemene ruimtelijke bezwaren, beleidswensen of "evenwichtige toedeling"-overwegingen bijhalen die niet in de planregels staan. Bij een BOPA mag dat wel, bij een binnenplanse OPA niet.
 
-*Imperatief* betekent dat de gemeente de vergunning **moet** verlenen zodra uw activiteit aan de planregels voldoet, eventueel onder het stellen van voorschriften. Zij heeft dan geen ruimte om alsnog nee te zeggen omdat het plan haar onwelgevallig is.
+*Imperatief* betekent dat de gemeente de vergunning moet verlenen zodra uw activiteit aan de planregels voldoet, eventueel onder het stellen van voorschriften. Zij heeft dan geen ruimte om alsnog nee te zeggen omdat het plan haar onwelgevallig is.
 
 Voor u betekent dit iets concreets. Zolang u aantoont dat uw plan binnen de regels van het omgevingsplan valt, ligt de vergunning in principe vast. De discussie gaat dan niet over de vraag óf het mag, maar alleen over de vraag of u aan de specifieke planregels voldoet. Dat is een fundamenteel andere en veel sterkere uitgangspositie dan bij een BOPA, waar het college beleidsruimte heeft en de belangen afweegt.
 
@@ -115,23 +115,23 @@ Precies daarom loont het om vóór alles uit te zoeken welke route werkelijk van
 
 ### Let op het tijdelijke deel van het omgevingsplan
 
-Sinds 1 januari 2024 bestaat elk omgevingsplan uit een nieuw deel en een **tijdelijk deel**. Dat tijdelijke deel bevat de van rechtswege omgezette bestemmingsplannen en de bruidsschat: de regels die het Rijk aan gemeenten heeft overgedragen. De vergunningplicht voor het bouwen valt in veel gevallen nog onder dat tijdelijke deel, met de beoordelingsregel in artikel 22.281 van de bruidsschat.
+Sinds 1 januari 2024 bestaat elk omgevingsplan uit een nieuw deel en een tijdelijk deel. Dat tijdelijke deel bevat de van rechtswege omgezette bestemmingsplannen en de bruidsschat: de regels die het Rijk aan gemeenten heeft overgedragen. De vergunningplicht voor het bouwen valt in veel gevallen nog onder dat tijdelijke deel, met de beoordelingsregel in artikel 22.281 van de bruidsschat.
 
 Voor uw praktijk betekent dit dat u niet mag uitgaan van het oude bestemmingsplan zoals u dat kende, en ook niet van een op het eerste gezicht strijdige planverbeelding. Ga altijd uit van de actuele regels zoals die in het Omgevingsloket staan. Een plan dat op papier lijkt af te wijken, kan binnen de overgangsregels of binnen een binnenplanse afwijkmogelijkheid alsnog binnenplans vergunbaar zijn.
 
 <h2 id="de-knip">De knip: ruimtelijk en technisch bouwen zijn twee losse vergunningen</h2>
 
-Wie gaat bouwen, krijgt met een tweede eigenaardigheid van de Omgevingswet te maken: de **knip**. De vroegere bouwvergunning is opgesplitst in twee volledig losstaande activiteiten.
+Wie gaat bouwen, krijgt met een tweede eigenaardigheid van de Omgevingswet te maken: de knip. De vroegere bouwvergunning is opgesplitst in twee volledig losstaande activiteiten.
 
-De **omgevingsplanactiviteit voor een bouwwerk** is het ruimtelijke deel. Die gaat over de vraag of uw bouwwerk op deze plek past: maatvoering, situering, gebruik, en de regels van het omgevingsplan. Dit is de OPA waar deze pagina over gaat.
+De *omgevingsplanactiviteit voor een bouwwerk* is het ruimtelijke deel. Die gaat over de vraag of uw bouwwerk op deze plek past: maatvoering, situering, gebruik, en de regels van het omgevingsplan. Dit is de OPA waar deze pagina over gaat.
 
-De **technische bouwactiviteit** is het bouwtechnische deel. Die gaat over constructieve veiligheid, brandveiligheid, energiezuinigheid en gezondheid, getoetst aan het Besluit bouwwerken leefomgeving (Bbl).
+De *technische bouwactiviteit* is het bouwtechnische deel. Die gaat over constructieve veiligheid, brandveiligheid, energiezuinigheid en gezondheid, getoetst aan het Besluit bouwwerken leefomgeving (Bbl).
 
 De twee zijn ontkoppeld. Elk kan afzonderlijk vergunningplichtig, meldingsplichtig of vergunningvrij zijn, in elke combinatie. Dat leidt tot situaties die op het eerste gezicht tegenstrijdig lijken:
 
 - Een dakkapel op het achterdakvlak die aan de maatvoering voldoet, is ruimtelijk én technisch vergunningvrij. U hoeft niets aan te vragen.
 - Dezelfde dakkapel op het voordakvlak is ruimtelijk vergunningplichtig (een OPA), maar technisch nog steeds vergunningvrij.
-- Een grondgebonden woning valt onder gevolgklasse 1 van de Wet kwaliteitsborging voor het bouwen. Daarvoor geldt geen technische vergunning maar een **bouwmelding** met een gereedmelding, terwijl het ruimtelijke deel wél een OPA kan vereisen.
+- Een grondgebonden woning valt onder gevolgklasse 1 van de Wet kwaliteitsborging voor het bouwen. Daarvoor geldt geen technische vergunning maar een bouwmelding met een gereedmelding, terwijl het ruimtelijke deel wél een OPA kan vereisen.
 
 Voor u zijn twee dingen van belang. Controleer altijd beide kanten van de knip apart, want vergunningvrij aan de ene kant zegt niets over de andere. En u mag de twee vergunningen los of samen aanvragen: er is geen verplichte volgorde. Bij een strak tijdpad kan het lonen om beide gelijktijdig als meervoudige aanvraag in te dienen.
 
@@ -141,7 +141,7 @@ Een misverstand dat hardnekkig is: ook als u vergunningvrij bouwt, blijft u gebo
 
 Onder de Omgevingswet is het uitgangspunt dat een activiteit vergunningvrij is, tenzij zij is aangewezen als vergunningplichtig. Of u een OPA nodig heeft, hangt dus af van wat het omgevingsplan en het Bbl over uw specifieke activiteit bepalen.
 
-**Meestal wél een OPA:**
+Meestal wél een OPA:
 
 - een uitrit of inrit aanleggen of veranderen, als het plan dat vergunningplichtig maakt
 - een houtopstand kappen, waar een vergunningplicht geldt
@@ -150,13 +150,13 @@ Onder de Omgevingswet is het uitgangspunt dat een activiteit vergunningvrij is, 
 - een gebruikswijziging die het plan toestaat onder een vergunningplicht
 - een reclame-uiting of ander object waarvoor het plan een vergunning vraagt
 
-**Meestal géén OPA nodig:**
+Meestal géén OPA nodig:
 
 - de activiteit staat op de landelijke lijst van vergunningvrije gevallen in het Bbl
 - de activiteit is vergunningvrij op grond van de bruidsschat en past binnen het tijdelijke deel
 - het plan bevat een binnenplanse afwijkmogelijkheid die uw plan al toelaat
 
-**Geen OPA maar een BOPA:**
+Geen OPA maar een BOPA:
 
 - uw activiteit is in strijd met het omgevingsplan: [dan is het een BOPA](/blog/wat-is-een-bopa/) en komt u in het [buitenplanse spoor](/buitenplanse-omgevingsplanactiviteit/) terecht
 
@@ -172,28 +172,28 @@ De behandelend ambtenaar toetst uw aanvraag, waar nodig met intern advies van bi
 
 <h2 id="kosten">Termijnen en kosten</h2>
 
-**Termijn.** Voor de OPA geldt de reguliere voorbereidingsprocedure. De gemeente beslist binnen **acht weken** na ontvangst van een complete aanvraag, met een eenmalige verlenging van maximaal zes weken. De maximale doorlooptijd is daarmee veertien weken. Anders dan bij de uitgebreide procedure van sommige BOPA's komt er geen ontwerpbesluit ter inzage.
+Termijn. Voor de OPA geldt de reguliere voorbereidingsprocedure. De gemeente beslist binnen acht weken na ontvangst van een complete aanvraag, met een eenmalige verlenging van maximaal zes weken. De maximale doorlooptijd is daarmee veertien weken. Anders dan bij de uitgebreide procedure van sommige BOPA's komt er geen ontwerpbesluit ter inzage.
 
-Let op één belangrijk gevolg van de Omgevingswet: de **vergunning van rechtswege bestaat niet meer**. Beslist de gemeente te laat, dan ontstaat er géén vergunning automatisch. U kunt de gemeente wel in gebreke stellen en eventueel een dwangsom vorderen, maar dat levert geen toestemming op. Een complete aanvraag bij de eerste indiening is dus ook hier het belangrijkste dat u zelf in de hand heeft.
+Let op één belangrijk gevolg van de Omgevingswet: de vergunning van rechtswege bestaat niet meer. Beslist de gemeente te laat, dan ontstaat er géén vergunning automatisch. U kunt de gemeente wel in gebreke stellen en eventueel een dwangsom vorderen, maar dat levert geen toestemming op. Een complete aanvraag bij de eerste indiening is dus ook hier het belangrijkste dat u zelf in de hand heeft.
 
-**Kosten.** Die vallen in twee delen uiteen:
+Kosten. Die vallen in twee delen uiteen:
 
-- **Gemeentelijke leges** voor de behandeling van de aanvraag. Deze verschillen per gemeente en hangen doorgaans af van de bouwsom of het type activiteit. Ze zijn verschuldigd voor het in behandeling nemen van de aanvraag, ongeacht de uitkomst. Raadpleeg de legesverordening van uw gemeente, en houd er rekening mee dat bij bouwen zowel voor het ruimtelijke als voor het technische spoor leges verschuldigd kunnen zijn.
-- **Advieskosten** als u de aanvraag laat opstellen en begeleiden. Omdat een OPA geen volledige ruimtelijke onderbouwing vereist, liggen die doorgaans aanzienlijk lager dan bij een BOPA.
+- Gemeentelijke leges voor de behandeling van de aanvraag. Deze verschillen per gemeente en hangen doorgaans af van de bouwsom of het type activiteit. Ze zijn verschuldigd voor het in behandeling nemen van de aanvraag, ongeacht de uitkomst. Raadpleeg de legesverordening van uw gemeente, en houd er rekening mee dat bij bouwen zowel voor het ruimtelijke als voor het technische spoor leges verschuldigd kunnen zijn.
+- Advieskosten als u de aanvraag laat opstellen en begeleiden. Omdat een OPA geen volledige ruimtelijke onderbouwing vereist, liggen die doorgaans aanzienlijk lager dan bij een BOPA.
 
-Wat u bij een OPA doorgaans **niet** heeft, is kostenverhaal. Dat speelt vooral bij nieuwe, in het Omgevingsbesluit aangewezen bouwactiviteiten die via een BOPA of een planwijziging mogelijk worden gemaakt. Bij een reguliere binnenplanse OPA is dat zelden aan de orde.
+Wat u bij een OPA doorgaans niet heeft, is kostenverhaal. Dat speelt vooral bij nieuwe, in het Omgevingsbesluit aangewezen bouwactiviteiten die via een BOPA of een planwijziging mogelijk worden gemaakt. Bij een reguliere binnenplanse OPA is dat zelden aan de orde.
 
 <h2 id="fouten">De meest gemaakte fouten</h2>
 
-**Uitgaan van een BOPA waar een OPA volstaat.** De kostbaarste. Wie zonder toets aanneemt dat het plan afwijkt, betaalt voor een onderbouwing en onderzoeken die niet nodig waren. Toets eerst de route.
+Uitgaan van een BOPA waar een OPA volstaat. De kostbaarste. Wie zonder toets aanneemt dat het plan afwijkt, betaalt voor een onderbouwing en onderzoeken die niet nodig waren. Toets eerst de route.
 
-**De knip over het hoofd zien.** Vergunningvrij aan de technische kant betekent niet vergunningvrij aan de ruimtelijke kant, en omgekeerd. Wie maar één kant controleert, komt voor verrassingen te staan.
+De knip over het hoofd zien. Vergunningvrij aan de technische kant betekent niet vergunningvrij aan de ruimtelijke kant, en omgekeerd. Wie maar één kant controleert, komt voor verrassingen te staan.
 
-**Een onvolledige aanvraag indienen.** Ontbrekende gegevens leiden tot een verzoek om aanvulling en opschorting van de termijn. Bij een op zichzelf eenvoudige OPA is dat zonde van de weken.
+Een onvolledige aanvraag indienen. Ontbrekende gegevens leiden tot een verzoek om aanvulling en opschorting van de termijn. Bij een op zichzelf eenvoudige OPA is dat zonde van de weken.
 
-**Zich laten weigeren op gronden die niet in het plan staan.** Omdat de toets limitatief is, mag de gemeente niet weigeren op algemene ruimtelijke bezwaren die geen basis hebben in de planregels. Gebeurt dat toch, dan is dat een reëel aanknopingspunt in bezwaar. Herken het.
+Zich laten weigeren op gronden die niet in het plan staan. Omdat de toets limitatief is, mag de gemeente niet weigeren op algemene ruimtelijke bezwaren die geen basis hebben in de planregels. Gebeurt dat toch, dan is dat een reëel aanknopingspunt in bezwaar. Herken het.
 
-**Het tijdelijke deel negeren.** Uitgaan van het oude bestemmingsplan in plaats van de actuele regels in het Omgevingsloket leidt tot een verkeerde routekeuze.
+Het tijdelijke deel negeren. Uitgaan van het oude bestemmingsplan in plaats van de actuele regels in het Omgevingsloket leidt tot een verkeerde routekeuze.
 
 <h2 id="faq">Veelgestelde vragen</h2>
 

@@ -29,8 +29,8 @@ image: "../../assets/images/blog/ruimtelijke-onderbouwing-laptop.jpg"
 imageAlt: "Laptop met een ruimtelijke onderbouwing en checklist op het bureau"
 publishedDate: 2026-07-14
 updatedDate: 2026-07-24
-readingTimeMinutes: 22
-wordCount: 5695
+readingTimeMinutes: 26
+wordCount: 5723
 relatedSlugs: ["wat-is-een-bopa", "omgevingsplan-wijzigen", "opa-aanvragen"]
 breadcrumbLabel: "Ruimtelijke onderbouwing (BOPA)"
 ctaTitle: "Uw plan laten toetsen"
@@ -67,13 +67,13 @@ In de praktijk stranden aanvragen zelden op onwil. Ze stranden op een onderbouwi
 
 Deze pagina behandelt de ruimtelijke onderbouwing bij een buitenplanse omgevingsplanactiviteit (BOPA) zoals die er in de dagelijkse vergunningpraktijk uitziet: welk document u nodig heeft, welke onderdelen erin horen, hoe de beoordelaar aan de andere kant van de tafel ernaar kijkt, welke fouten het vaakst terugkomen, en wat het kost. Met bijzondere aandacht voor Noord-Brabant, waar het provinciale spoor vaak bepalender is dan het gemeentelijke.
 
-**Wettelijke stand: 24 juli 2026.**
+Wettelijke stand: 24 juli 2026.
 
 <h2 id="wat-is-het">Wat is een ruimtelijke onderbouwing?</h2>
 
 Een ruimtelijke onderbouwing is het document waarin u aantoont dat uw initiatief aanvaardbaar is op de beoogde locatie, ook al wijkt het af van het geldende omgevingsplan. Het is geen formaliteit en geen samenvatting van uw bouwplan. Het is de motivering waarop het college zijn besluit baseert, en waarop een bestuursrechter dat besluit later toetst.
 
-De kern is eenvoudig te formuleren en moeilijk goed te doen. U moet aannemelijk maken dat het toestaan van deze activiteit op deze plek leidt tot een **evenwichtige toedeling van functies aan locaties**. Dat criterium heeft "een goede ruimtelijke ordening" vervangen. Het is breder: waar de oude toets vooral op ruimtelijke effecten zag, omvat de nieuwe ook gezondheid, veiligheid, milieukwaliteit en omgevingskwaliteit.
+De kern is eenvoudig te formuleren en moeilijk goed te doen. U moet aannemelijk maken dat het toestaan van deze activiteit op deze plek leidt tot een evenwichtige toedeling van functies aan locaties. Dat criterium heeft "een goede ruimtelijke ordening" vervangen. Het is breder: waar de oude toets vooral op ruimtelijke effecten zag, omvat de nieuwe ook gezondheid, veiligheid, milieukwaliteit en omgevingskwaliteit.
 
 Een goede onderbouwing doet daarom drie dingen tegelijk. Zij beschrijft wat u wilt, zij onderzoekt wat dat betekent voor de omgeving, en zij weegt die twee tegen elkaar af tot een conclusie die iemand anders kan navolgen. Dat laatste is waar de meeste onderbouwingen tekortschieten: ze inventariseren wel, maar wegen niet.
 
@@ -108,19 +108,19 @@ Die laatste twee regels leveren in de praktijk de meeste verrassingen op. Een ge
 
 In offertes, gemeentelijke formulieren en op adviseurswebsites lopen vier termen door elkaar. Ze betekenen niet hetzelfde, en het verschil is niet academisch: het bepaalt waarop de gemeente uw stuk beoordeelt.
 
-**Ruimtelijke onderbouwing** is de verzamelnaam voor het motiveringsdocument. Geen wettelijke term meer, wel de meest gebruikte.
+*Ruimtelijke onderbouwing* is de verzamelnaam voor het motiveringsdocument. Geen wettelijke term meer, wel de meest gebruikte.
 
-**Ruimtelijke motivering** is een synoniem dat sommige bureaus en gemeenten verkiezen omdat het beter aansluit bij de nieuwe systematiek. Inhoudelijk is er geen verschil.
+*Ruimtelijke motivering* is een synoniem dat sommige bureaus en gemeenten verkiezen omdat het beter aansluit bij de nieuwe systematiek. Inhoudelijk is er geen verschil.
 
-**ETFAL** is geen document maar het **criterium**. De afkorting staat voor evenwichtige toedeling van functies aan locaties. Voor de BOPA is dit vastgelegd in artikel 8.0a lid 2 van het Besluit kwaliteit leefomgeving: een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit wordt alleen verleend met het oog op een evenwichtige toedeling van functies aan locaties. Daarnaast gelden de specifieke beoordelingsregels van de artikelen 8.0b tot en met 8.0e Bkl, waaronder de instructieregels uit hoofdstuk 5 Bkl en de instructieregels van de provincie.
+*ETFAL* is geen document maar het criterium. De afkorting staat voor evenwichtige toedeling van functies aan locaties. Voor de BOPA is dit vastgelegd in artikel 8.0a lid 2 van het Besluit kwaliteit leefomgeving: een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit wordt alleen verleend met het oog op een evenwichtige toedeling van functies aan locaties. Daarnaast gelden de specifieke beoordelingsregels van de artikelen 8.0b tot en met 8.0e Bkl, waaronder de instructieregels uit hoofdstuk 5 Bkl en de instructieregels van de provincie.
 
-Let op een verwarring die vaak voorkomt: artikel 4.2 van de Omgevingswet noemt hetzelfde criterium, maar richt zich tot de gemeente bij het opstellen van het **omgevingsplan**. Voor de beoordeling van uw vergunningaanvraag is artikel 8.0a lid 2 Bkl de juiste grondslag.
+Let op een verwarring die vaak voorkomt: artikel 4.2 van de Omgevingswet noemt hetzelfde criterium, maar richt zich tot de gemeente bij het opstellen van het omgevingsplan. Voor de beoordeling van uw vergunningaanvraag is artikel 8.0a lid 2 Bkl de juiste grondslag.
 
-**GoFLO** staat voor "Goede Onderbouwing van de effecten op de Fysieke LeefOmgeving". Hier is precisie op zijn plaats, omdat op dit punt veel onjuiste informatie circuleert.
+*GoFLO* staat voor "Goede Onderbouwing van de effecten op de Fysieke LeefOmgeving". Hier is precisie op zijn plaats, omdat op dit punt veel onjuiste informatie circuleert.
 
-GoFLO is **geen wettelijk begrip**. De term komt uit een stappenplan dat adviesbureau BRO in opdracht van een aantal Brabantse gemeenten ontwikkelde, en is via de VNG breed verspreid. Gemeenten hanteren het als naam voor hun eigen invulformat. Gemeente Waalwijk, een van de opdrachtgevers van dat stappenplan, zegt het zelf expliciet: het begrip GoFlo is geen wettelijk begrip, maar een begrip dat wordt gehanteerd om de onderbouwing van een BOPA te duiden.
+GoFLO is geen wettelijk begrip. De term komt uit een stappenplan dat adviesbureau BRO in opdracht van een aantal Brabantse gemeenten ontwikkelde, en is via de VNG breed verspreid. Gemeenten hanteren het als naam voor hun eigen invulformat. Gemeente Waalwijk, een van de opdrachtgevers van dat stappenplan, zegt het zelf expliciet: het begrip GoFlo is geen wettelijk begrip, maar een begrip dat wordt gehanteerd om de onderbouwing van een BOPA te duiden.
 
-Belangrijker nog is een inhoudelijke kanttekening. De naam suggereert dat "de effecten op de fysieke leefomgeving" het toetsingscriterium zijn. Dat is niet zo. Het aanvraagvereiste staat in **artikel 7.207b lid 2 van de Omgevingsregeling** en bepaalt dat u de gegevens en bescheiden verstrekt die nodig zijn om de gevolgen van de activiteit te beoordelen voor een evenwichtige toedeling van functies aan locaties, voor de instructieregels van Rijk en provincie, en voor een eventueel projectbesluit. Het criterium is dus ETFAL. De effecten op de fysieke leefomgeving zijn wat u in kaart brengt om die vraag te kunnen beantwoorden.
+Belangrijker nog is een inhoudelijke kanttekening. De naam suggereert dat "de effecten op de fysieke leefomgeving" het toetsingscriterium zijn. Dat is niet zo. Het aanvraagvereiste staat in artikel 7.207b lid 2 van de Omgevingsregeling en bepaalt dat u de gegevens en bescheiden verstrekt die nodig zijn om de gevolgen van de activiteit te beoordelen voor een evenwichtige toedeling van functies aan locaties, voor de instructieregels van Rijk en provincie, en voor een eventueel projectbesluit. Het criterium is dus ETFAL. De effecten op de fysieke leefomgeving zijn wat u in kaart brengt om die vraag te kunnen beantwoorden.
 
 Voor u als initiatiefnemer betekent dit iets heel praktisch. Levert uw gemeente een GoFLO-format aan, gebruik dat dan. Het is de vorm waarin de behandelend ambtenaar wil lezen, en dat scheelt vragen. Maar behandel het format niet als de norm. Een ingevuld sjabloon dat nergens tot een afweging komt, voldoet niet aan artikel 7.207b Omgevingsregeling, hoe netjes het er ook uitziet.
 
@@ -143,13 +143,13 @@ Voor u als initiatiefnemer betekent dit iets heel praktisch. Levert uw gemeente 
 
 Dat hangt volledig af van de verhouding tussen uw plan en het omgevingsplan. Vier situaties, van licht naar zwaar.
 
-**Uw plan past en er geldt geen vergunningplicht.** U kunt in beginsel aan de slag. Wel blijft de algemene zorgplicht gelden, en let op de landelijke regels die los van het omgevingsplan van toepassing kunnen zijn. Controleer dit via de vergunningcheck in het Omgevingsloket voordat u begint.
+Uw plan past en er geldt geen vergunningplicht. U kunt in beginsel aan de slag. Wel blijft de algemene zorgplicht gelden, en let op de landelijke regels die los van het omgevingsplan van toepassing kunnen zijn. Controleer dit via de vergunningcheck in het Omgevingsloket voordat u begint.
 
-**Uw plan past, maar er is een vergunning nodig.** Dan is sprake van een binnenplanse omgevingsplanactiviteit. De gemeente toetst aan de beoordelingsregels in het omgevingsplan zelf. Een volwaardige onderbouwing is meestal niet nodig, maar het omgevingsplan kan wel om specifieke gegevens vragen, bijvoorbeeld een parkeerbalans of een akoestisch rapport.
+Uw plan past, maar er is een vergunning nodig. Dan is sprake van een binnenplanse omgevingsplanactiviteit. De gemeente toetst aan de beoordelingsregels in het omgevingsplan zelf. Een volwaardige onderbouwing is meestal niet nodig, maar het omgevingsplan kan wel om specifieke gegevens vragen, bijvoorbeeld een parkeerbalans of een akoestisch rapport.
 
-**Uw plan wijkt af van het omgevingsplan.** Nu komt de ruimtelijke onderbouwing in beeld. Voor een individueel initiatief loopt dat via een BOPA. U moet dan aannemelijk maken dat vergunningverlening past binnen een evenwichtige toedeling van functies aan locaties.
+Uw plan wijkt af van het omgevingsplan. Nu komt de ruimtelijke onderbouwing in beeld. Voor een individueel initiatief loopt dat via een BOPA. U moet dan aannemelijk maken dat vergunningverlening past binnen een evenwichtige toedeling van functies aan locaties.
 
-**Uw plan is groter, gebiedsgericht of moet structureel worden vastgelegd.** Dan kiest de gemeente doorgaans voor een [wijziging van het omgevingsplan](/wijziging-omgevingsplan/). De onderbouwing wordt dan onderdeel van de toelichting bij dat besluit, en de gemeenteraad stelt het vast.
+Uw plan is groter, gebiedsgericht of moet structureel worden vastgelegd. Dan kiest de gemeente doorgaans voor een [wijziging van het omgevingsplan](/wijziging-omgevingsplan/). De onderbouwing wordt dan onderdeel van de toelichting bij dat besluit, en de gemeenteraad stelt het vast.
 
 Een begripsmatig punt dat vaak fout gaat: "omgevingsplanactiviteit" is het overkoepelende begrip. Het omvat zowel de binnenplanse als de buitenplanse variant. De BOPA is specifiek de buitenplanse. Wie in het Omgevingsloket zoekt naar "BOPA" vindt niets: de aanvraag verloopt via de activiteit *afwijken van de regels omgevingsplan*.
 
@@ -166,7 +166,7 @@ Een BOPA is aan de orde zodra uw activiteit in strijd is met het omgevingsplan e
 - tijdelijke huisvesting, bijvoorbeeld van arbeidsmigranten of statushouders
 - transformatie van leegstaand vastgoed naar een nieuwe functie
 
-Een BOPA is een **bevoegdheid**, geen plicht. Het college mag afwijken, het moet niet. Zowel een verlening als een weigering moet worden gemotiveerd, en het college heeft bij die afweging beleidsruimte. Dat verklaart waarom twee vergelijkbare plannen in twee buurgemeenten verschillend kunnen aflopen: het verschil zit in beleid en in de kwaliteit van de motivering, niet in de wet.
+Een BOPA is een bevoegdheid, geen plicht. Het college mag afwijken, het moet niet. Zowel een verlening als een weigering moet worden gemotiveerd, en het college heeft bij die afweging beleidsruimte. Dat verklaart waarom twee vergelijkbare plannen in twee buurgemeenten verschillend kunnen aflopen: het verschil zit in beleid en in de kwaliteit van de motivering, niet in de wet.
 
 Er is één grens die in de praktijk regelmatig wordt overzien. Een BOPA maakt een activiteit mogelijk in afwijking van het omgevingsplan, maar kan geen bestaande rechten van derden wegnemen. Is het evenwicht alleen te bereiken door elders een bestaande activiteit of functie te beëindigen, dan is de BOPA niet het juiste instrument en moet het omgevingsplan worden gewijzigd.
 
@@ -180,11 +180,11 @@ Een binnenplanse [omgevingsplanactiviteit (OPA)](/omgevingsplanactiviteit/) vols
 
 Drie punten die hierbij vaak worden gemist:
 
-Het omgevingsplan bevat sinds 1 januari 2024 ook het **tijdelijk deel**: de van rechtswege omgezette bestemmingsplannen en de bruidsschat, de regels die het Rijk aan gemeenten heeft overgedragen. Uw plan kan binnen die overgangsregels passen ook al lijkt het op het eerste gezicht in strijd met het oude bestemmingsplan.
+Het omgevingsplan bevat sinds 1 januari 2024 ook het tijdelijk deel: de van rechtswege omgezette bestemmingsplannen en de bruidsschat, de regels die het Rijk aan gemeenten heeft overgedragen. Uw plan kan binnen die overgangsregels passen ook al lijkt het op het eerste gezicht in strijd met het oude bestemmingsplan.
 
-Veel omgevingsplannen kennen **binnenplanse afwijkmogelijkheden**, vaak overgenomen uit de oude afwijkingsbevoegdheden. Past uw plan daarbinnen, dan blijft u binnenplans en is een BOPA niet nodig.
+Veel omgevingsplannen kennen binnenplanse afwijkmogelijkheden, vaak overgenomen uit de oude afwijkingsbevoegdheden. Past uw plan daarbinnen, dan blijft u binnenplans en is een BOPA niet nodig.
 
-Gemeenten die hun omgevingsplan hebben herzien, hebben soms **ruimere of juist strengere regels** vastgesteld dan het oude bestemmingsplan. Ga daarom altijd uit van de actuele regels in het Omgevingsloket, niet van een eerder ingewonnen advies of een oude planverbeelding.
+Gemeenten die hun omgevingsplan hebben herzien, hebben soms ruimere of juist strengere regels vastgesteld dan het oude bestemmingsplan. Ga daarom altijd uit van de actuele regels in het Omgevingsloket, niet van een eerder ingewonnen advies of een oude planverbeelding.
 
 <div class="table-wrap">
 <table>
@@ -217,7 +217,7 @@ Toets van boven naar beneden, en maak per beleidskader de vertaling naar uw plan
 
 Op rijksniveau geldt de Nationale Omgevingsvisie (NOVI) uit 2020 als de vigerende nationale omgevingsvisie. De Nota Ruimte is in voorbereiding en zal de NOVI vervangen; de ontwerpversie lag eind 2025 ter inzage en de parlementaire behandeling liep in de eerste helft van 2026 nog. Controleer bij het opstellen van uw onderbouwing wat op dat moment het vigerende kader is.
 
-Voor Noord-Brabant is het provinciale spoor doorgaans doorslaggevend. De Omgevingsverordening Noord-Brabant stelt instructieregels waaraan de gemeente is gebonden, en die op grond van artikel 8.0c Bkl ook doorwerken in de beoordeling van uw BOPA. In het landelijk gebied gaat het onder meer om de begrenzing van stedelijk en landelijk gebied, het Natuur Netwerk Brabant, de regels voor veehouderijen, en de verplichting om ruimtelijke ontwikkelingen te laten samengaan met een investering in de **kwaliteitsverbetering van het landschap**. Voor woningbouw in het buitengebied bestaan daarnaast specifieke sporen, zoals Ruimte voor Ruimte en de [Maatwerkregeling omgevingskwaliteit](/blog/maatwerkregeling-omgevingskwaliteit/).
+Voor Noord-Brabant is het provinciale spoor doorgaans doorslaggevend. De Omgevingsverordening Noord-Brabant stelt instructieregels waaraan de gemeente is gebonden, en die op grond van artikel 8.0c Bkl ook doorwerken in de beoordeling van uw BOPA. In het landelijk gebied gaat het onder meer om de begrenzing van stedelijk en landelijk gebied, het Natuur Netwerk Brabant, de regels voor veehouderijen, en de verplichting om ruimtelijke ontwikkelingen te laten samengaan met een investering in de kwaliteitsverbetering van het landschap. Voor woningbouw in het buitengebied bestaan daarnaast specifieke sporen, zoals Ruimte voor Ruimte en de [Maatwerkregeling omgevingskwaliteit](/blog/maatwerkregeling-omgevingskwaliteit/).
 
 Wie deze provinciale eisen in de onderbouwing overslaat, loopt vast. Niet omdat de gemeente moeilijk doet, maar omdat de gemeente de vergunning dan simpelweg niet mag verlenen.
 
@@ -229,7 +229,7 @@ Dit is het hart van het document en het onderdeel dat het vaakst te dun is. Hier
 
 Denk aan geluid, geur, luchtkwaliteit, bodemkwaliteit, water, externe veiligheid, natuur, archeologie en cultuurhistorie, verkeer en parkeren, gezondheid, en ruimtelijke en landschappelijke inpassing. Welke aspecten relevant zijn, verschilt per plan en per locatie. Een volledige inventarisatie van alle denkbare thema's maakt een onderbouwing niet sterker, alleen dikker.
 
-Een terminologisch punt dat gemeenten opvalt: onder de Omgevingswet spreekt u van een **geluidgevoelig gebouw** of een geluidgevoelige locatie, niet van een geluidsgevoelige bestemming of functie. Hetzelfde geldt voor geurgevoelige gebouwen en voor kwetsbare gebouwen en locaties. Verouderde terminologie is geen weigeringsgrond, maar het is wel het eerste signaal dat de opsteller met een oud sjabloon werkt.
+Een terminologisch punt dat gemeenten opvalt: onder de Omgevingswet spreekt u van een geluidgevoelig gebouw of een geluidgevoelige locatie, niet van een geluidsgevoelige bestemming of functie. Hetzelfde geldt voor geurgevoelige gebouwen en voor kwetsbare gebouwen en locaties. Verouderde terminologie is geen weigeringsgrond, maar het is wel het eerste signaal dat de opsteller met een oud sjabloon werkt.
 
 ### Participatie
 
@@ -239,7 +239,7 @@ Zie de aparte paragraaf hieronder. Verwerk de opzet, het verloop en de uitkomste
 
 Twee kanten. Financieel gaat het om het kostenverhaal en om de vraag of het plan realiseerbaar is. Maatschappelijk gaat het om draagvlak en om de vraag of het plan binnen een redelijke termijn kan worden uitgevoerd.
 
-Het kostenverhaal is in de praktijk het onderdeel waar trajecten het vaakst op stilvallen, en het wordt in onderbouwingen zelden goed behandeld. Afdeling 13.6 van de Omgevingswet verplicht de gemeente kosten te verhalen wanneer zij een aangewezen bouwactiviteit toelaat. Welke activiteiten dat zijn, staat in artikel 8.13 van het Omgevingsbesluit: onder meer het bouwen van woningen, bedrijfspanden, kantoren en winkels. Verhaal via een **anterieure overeenkomst** heeft de voorkeur en is geregeld in de artikelen 13.11 en 13.13 Ow. Lukt dat niet, dan volgt de publiekrechtelijke weg met een kostenverhaalsbeschikking op grond van artikel 13.18 Ow.
+Het kostenverhaal is in de praktijk het onderdeel waar trajecten het vaakst op stilvallen, en het wordt in onderbouwingen zelden goed behandeld. Afdeling 13.6 van de Omgevingswet verplicht de gemeente kosten te verhalen wanneer zij een aangewezen bouwactiviteit toelaat. Welke activiteiten dat zijn, staat in artikel 8.13 van het Omgevingsbesluit: onder meer het bouwen van woningen, bedrijfspanden, kantoren en winkels. Verhaal via een anterieure overeenkomst heeft de voorkeur en is geregeld in de artikelen 13.11 en 13.13 Ow. Lukt dat niet, dan volgt de publiekrechtelijke weg met een kostenverhaalsbeschikking op grond van artikel 13.18 Ow.
 
 Twee praktische gevolgen die geld schelen. Zolang de verschuldigde kostenverhaalsbijdrage niet is betaald, geldt op grond van artikel 13.12 Ow een verbod om de bouwactiviteit uit te voeren. En als kostenverhaal verplicht is, mogen de plankosten die daaronder vallen niet óók nog via de leges in rekening worden gebracht. Controleer daarom altijd hoe uw gemeente leges en kostenverhaal van elkaar scheidt.
 
@@ -285,11 +285,11 @@ Praktisch advies: laat een ecologische quickscan uitvoeren zodra u serieus bent 
 
 Op dit punt staat veel onjuiste informatie op internet, ook op websites van adviesbureaus. De hoofdregel is genuanceerder dan "participatie is verplicht geworden".
 
-**Melden is verplicht, participeren in beginsel niet.** Op grond van artikel 16.55 lid 6 Omgevingswet en artikel 7.4 lid 1 Omgevingsregeling moet u bij de aanvraag kenbaar maken óf participatie heeft plaatsgevonden en zo ja, wat de resultaten waren. Dat aanvraagvereiste dwingt tot melden, niet tot doen.
+Melden is verplicht, participeren in beginsel niet. Op grond van artikel 16.55 lid 6 Omgevingswet en artikel 7.4 lid 1 Omgevingsregeling moet u bij de aanvraag kenbaar maken óf participatie heeft plaatsgevonden en zo ja, wat de resultaten waren. Dat aanvraagvereiste dwingt tot melden, niet tot doen.
 
-**Op die regel bestaat één uitzondering.** De gemeenteraad kan gevallen aanwijzen waarin participatie wél verplicht is voordat een BOPA-aanvraag kan worden ingediend. Dat staat in artikel 16.55 lid 7 Omgevingswet, en het kan uitsluitend bij de BOPA waarvoor het college bevoegd gezag is. Heeft de raad uw type plan aangewezen en heeft u geen of onvoldoende participatie gedaan, dan kan het college de aanvraag buiten behandeling laten op grond van artikel 4:5 Awb. Wel moet u eerst de gelegenheid krijgen dat gebrek te herstellen. Sommige gemeenten hebben alle BOPA's aangewezen, andere alleen specifieke categorieën. Controleer dit dus per gemeente.
+Op die regel bestaat één uitzondering. De gemeenteraad kan gevallen aanwijzen waarin participatie wél verplicht is voordat een BOPA-aanvraag kan worden ingediend. Dat staat in artikel 16.55 lid 7 Omgevingswet, en het kan uitsluitend bij de BOPA waarvoor het college bevoegd gezag is. Heeft de raad uw type plan aangewezen en heeft u geen of onvoldoende participatie gedaan, dan kan het college de aanvraag buiten behandeling laten op grond van artikel 4:5 Awb. Wel moet u eerst de gelegenheid krijgen dat gebrek te herstellen. Sommige gemeenten hebben alle BOPA's aangewezen, andere alleen specifieke categorieën. Controleer dit dus per gemeente.
 
-**De gemeente mag de vorm niet voorschrijven.** Dit wordt het vaakst verkeerd weergegeven. De wetgever heeft de keuze voor de vorm van participatie bewust bij de aanvrager gelaten. Gemeenten, provincies en waterschappen mogen daarover geen eisen stellen: niet via een extra aanvraagvereiste, niet via een participatieverordening en niet via beleidsregels. Ook niet bij de verplichte gevallen. Wat de gemeente wél mag verwachten, is dat de participatie inhoud heeft. Enkel een aanvraag toesturen aan de buren is onvoldoende.
+De gemeente mag de vorm niet voorschrijven. Dit wordt het vaakst verkeerd weergegeven. De wetgever heeft de keuze voor de vorm van participatie bewust bij de aanvrager gelaten. Gemeenten, provincies en waterschappen mogen daarover geen eisen stellen: niet via een extra aanvraagvereiste, niet via een participatieverordening en niet via beleidsregels. Ook niet bij de verplichte gevallen. Wat de gemeente wél mag verwachten, is dat de participatie inhoud heeft. Enkel een aanvraag toesturen aan de buren is onvoldoende.
 
 Los van de juridische vraag is er een praktische. Bij een BOPA staat na verlening bezwaar en beroep open voor belanghebbenden. Een omwonende die pas via de bekendmaking van uw plan hoort, wordt sneller een bezwaarmaker dan iemand die u vooraf heeft gesproken. Participatie is in dit type traject vooral risicomanagement.
 
@@ -297,21 +297,21 @@ Los van de juridische vraag is er een praktische. Bij een BOPA staat na verlenin
 
 Wie weet hoe de beoordeling aan de andere kant verloopt, schrijft een beter document. In grote lijnen doorloopt uw aanvraag deze stappen.
 
-**Ontvankelijkheid.** Eerst wordt gekeken of de aanvraag compleet is: zijn alle gegevens uit artikel 7.207b lid 2 Omgevingsregeling geleverd en is de participatievraag beantwoord? Ontbreekt er iets, dan volgt een verzoek om aanvulling en wordt de beslistermijn opgeschort. Dit is verreweg de meest voorkomende oorzaak van vertraging, en volledig te voorkomen.
+Ontvankelijkheid. Eerst wordt gekeken of de aanvraag compleet is: zijn alle gegevens uit artikel 7.207b lid 2 Omgevingsregeling geleverd en is de participatievraag beantwoord? Ontbreekt er iets, dan volgt een verzoek om aanvulling en wordt de beslistermijn opgeschort. Dit is verreweg de meest voorkomende oorzaak van vertraging, en volledig te voorkomen.
 
-**Interne en externe advisering.** Vakspecialisten binnen de gemeente beoordelen hun eigen aspect: milieu, verkeer, stedenbouw, water, erfgoed. Extern kunnen de omgevingsdienst, het waterschap, de veiligheidsregio of de provincie adviseren. Ieder van hen leest alleen zijn eigen hoofdstuk. Een onderbouwing waarin de aspecten helder gescheiden en compleet zijn, wordt daarom sneller behandeld dan een lopend betoog waarin alles door elkaar staat.
+Interne en externe advisering. Vakspecialisten binnen de gemeente beoordelen hun eigen aspect: milieu, verkeer, stedenbouw, water, erfgoed. Extern kunnen de omgevingsdienst, het waterschap, de veiligheidsregio of de provincie adviseren. Ieder van hen leest alleen zijn eigen hoofdstuk. Een onderbouwing waarin de aspecten helder gescheiden en compleet zijn, wordt daarom sneller behandeld dan een lopend betoog waarin alles door elkaar staat.
 
-**Toets aan beleid en instructieregels.** Past het plan binnen de gemeentelijke beleidsregels en binnen de provinciale instructieregels? In Noord-Brabant is dit voor het buitengebied vaak het beslissende moment.
+Toets aan beleid en instructieregels. Past het plan binnen de gemeentelijke beleidsregels en binnen de provinciale instructieregels? In Noord-Brabant is dit voor het buitengebied vaak het beslissende moment.
 
-**Beoordeling van de evenwichtige toedeling.** Het college weegt de betrokken belangen. Hier ligt beleidsruimte, en hier maakt de kwaliteit van uw motivering het verschil.
+Beoordeling van de evenwichtige toedeling. Het college weegt de betrokken belangen. Hier ligt beleidsruimte, en hier maakt de kwaliteit van uw motivering het verschil.
 
-**Eventueel advies van de gemeenteraad.** De raad kan gevallen hebben aangewezen waarin hij een bindend advies uitbrengt over een BOPA (artikel 16.15a Omgevingswet). Dat advies moet het college volgen. Belangrijk voor uw planning: de beslistermijn wordt hierdoor niet verlengd, terwijl de raad niet wekelijks vergadert. Weet u dat uw plan onder het adviesrecht valt, houd dan rekening met de vergadercyclus.
+Eventueel advies van de gemeenteraad. De raad kan gevallen hebben aangewezen waarin hij een bindend advies uitbrengt over een BOPA (artikel 16.15a Omgevingswet). Dat advies moet het college volgen. Belangrijk voor uw planning: de beslistermijn wordt hierdoor niet verlengd, terwijl de raad niet wekelijks vergadert. Weet u dat uw plan onder het adviesrecht valt, houd dan rekening met de vergadercyclus.
 
-**Besluit.** Verlening of weigering, in beide gevallen gemotiveerd.
+Besluit. Verlening of weigering, in beide gevallen gemotiveerd.
 
 ### Waar de rechter op let
 
-De bestuursrechter toetst de beoordeling van de evenwichtige toedeling **terughoudend**. Het college heeft beleidsruimte en moet de betrokken belangen afwegen; de rechter beoordeelt of het college zich in redelijkheid op zijn standpunt heeft kunnen stellen. Dat is gunstig voor een goed gemotiveerd besluit en ongunstig voor een dun gemotiveerd besluit: een besluit valt zelden op de inhoud, maar wel op een motiveringsgebrek.
+De bestuursrechter toetst de beoordeling van de evenwichtige toedeling terughoudend. Het college heeft beleidsruimte en moet de betrokken belangen afwegen; de rechter beoordeelt of het college zich in redelijkheid op zijn standpunt heeft kunnen stellen. Dat is gunstig voor een goed gemotiveerd besluit en ongunstig voor een dun gemotiveerd besluit: een besluit valt zelden op de inhoud, maar wel op een motiveringsgebrek.
 
 Praktische consequentie: uw onderbouwing beschermt niet alleen uw aanvraag, maar ook het besluit dat erop volgt. Colleges nemen een besluit liever op basis van een document dat een procedure kan doorstaan.
 
@@ -321,9 +321,9 @@ Artikel 12.27a Bkl bevat een tijdelijke beoordelingsregel voor opvolgende BOPA's
 
 <h2 id="procedure-doorlooptijd">De procedure en de doorlooptijd</h2>
 
-Voor een BOPA geldt in beginsel de **reguliere voorbereidingsprocedure**. Het college beslist binnen acht weken na ontvangst van een complete aanvraag, met een eenmalige verlenging van maximaal zes weken. Tegen het besluit staat binnen zes weken bezwaar open, daarna beroep bij de rechtbank en hoger beroep bij de Afdeling bestuursrechtspraak van de Raad van State.
+Voor een BOPA geldt in beginsel de reguliere voorbereidingsprocedure. Het college beslist binnen acht weken na ontvangst van een complete aanvraag, met een eenmalige verlenging van maximaal zes weken. Tegen het besluit staat binnen zes weken bezwaar open, daarna beroep bij de rechtbank en hoger beroep bij de Afdeling bestuursrechtspraak van de Raad van State.
 
-De **uitgebreide procedure** geldt in drie situaties:
+De *uitgebreide procedure* geldt in drie situaties:
 
 1. bij de gevallen die zijn aangewezen in artikel 10.24 van het Omgevingsbesluit, zoals bepaalde milieubelastende activiteiten, rijksmonumenten en Natura 2000-activiteiten;
 2. wanneer u er zelf om verzoekt of ermee instemt (artikel 16.65 lid 1 onder b Omgevingswet);
@@ -333,27 +333,27 @@ Bij de uitgebreide procedure beslist het college binnen zes maanden. Er komt een
 
 Steeds meer gemeenten hebben beleidsregels vastgesteld waarin staat welke categorieën zij via de uitgebreide procedure willen behandelen, bijvoorbeeld nieuwbouw vanaf tien woningen of grootschalige infrastructuur. Controleer dat vooraf: het verschil tussen veertien weken en achtendertig weken is voor uw planning aanzienlijk.
 
-**Belangrijk om te weten:** onder de Omgevingswet bestaat de vergunning van rechtswege niet meer. Beslist de gemeente te laat, dan ontstaat er géén vergunning. U kunt de gemeente in gebreke stellen en eventueel een dwangsom vorderen, maar u krijgt daarmee geen toestemming. Dat maakt een complete aanvraag bij de eerste indiening des te belangrijker.
+Belangrijk om te weten: onder de Omgevingswet bestaat de vergunning van rechtswege niet meer. Beslist de gemeente te laat, dan ontstaat er géén vergunning. U kunt de gemeente in gebreke stellen en eventueel een dwangsom vorderen, maar u krijgt daarmee geen toestemming. Dat maakt een complete aanvraag bij de eerste indiening des te belangrijker.
 
 <h2 id="fouten">Welke fouten worden het meest gemaakt?</h2>
 
 Uit de beoordelingspraktijk komt steeds dezelfde top acht naar boven.
 
-**1. Geen vooroverleg of principeverzoek.** Verreweg de grootste. Wie zonder ambtelijke afstemming een volledige onderbouwing laat maken, investeert duizenden euro's in een document waarvan de uitgangspunten niet zijn getoetst. Een [principeverzoek](/principeverzoek/) kost een fractie daarvan en levert de randvoorwaarden op waarbinnen u kunt werken.
+1. Geen vooroverleg of principeverzoek. Verreweg de grootste. Wie zonder ambtelijke afstemming een volledige onderbouwing laat maken, investeert duizenden euro's in een document waarvan de uitgangspunten niet zijn getoetst. Een [principeverzoek](/principeverzoek/) kost een fractie daarvan en levert de randvoorwaarden op waarbinnen u kunt werken.
 
-**2. Beleid samenvatten in plaats van toetsen.** Een hoofdstuk dat de omgevingsvisie parafraseert zonder de koppeling naar het plan te maken, overtuigt niemand. De vraag is niet wat het beleid zegt, maar wat het beleid betekent voor dít plan op déze plek.
+2. Beleid samenvatten in plaats van toetsen. Een hoofdstuk dat de omgevingsvisie parafraseert zonder de koppeling naar het plan te maken, overtuigt niemand. De vraag is niet wat het beleid zegt, maar wat het beleid betekent voor dít plan op déze plek.
 
-**3. Provinciale instructieregels overslaan.** In Noord-Brabant funest. De kwaliteitsverbetering van het landschap, de begrenzing van stedelijk en landelijk gebied en het Natuur Netwerk Brabant zijn geen wensen van de provincie maar regels waaraan de gemeente gebonden is.
+3. Provinciale instructieregels overslaan. In Noord-Brabant funest. De kwaliteitsverbetering van het landschap, de begrenzing van stedelijk en landelijk gebied en het Natuur Netwerk Brabant zijn geen wensen van de provincie maar regels waaraan de gemeente gebonden is.
 
-**4. Onderzoek te laat of in de verkeerde volgorde.** Zie de paragraaf over soortenbescherming. Een verkeerde volgorde kost meestal een heel seizoen.
+4. Onderzoek te laat of in de verkeerde volgorde. Zie de paragraaf over soortenbescherming. Een verkeerde volgorde kost meestal een heel seizoen.
 
-**5. Inventariseren zonder wegen.** Twintig pagina's omgevingsaspecten die eindigen zonder conclusie. De gemeente moet dan zelf de afweging maken, en dat vertraagt of leidt tot aanvullende vragen.
+5. Inventariseren zonder wegen. Twintig pagina's omgevingsaspecten die eindigen zonder conclusie. De gemeente moet dan zelf de afweging maken, en dat vertraagt of leidt tot aanvullende vragen.
 
-**6. Participatie vergeten, of te laat starten.** Bij aangewezen gevallen leidt dat tot een aanvraag die buiten behandeling kan worden gelaten. In alle andere gevallen tot bezwaarmakers die u had kunnen voorkomen.
+6. Participatie vergeten, of te laat starten. Bij aangewezen gevallen leidt dat tot een aanvraag die buiten behandeling kan worden gelaten. In alle andere gevallen tot bezwaarmakers die u had kunnen voorkomen.
 
-**7. Kostenverhaal niet geregeld.** Zonder gesloten anterieure overeenkomst of publiekrechtelijke regeling kan het college in veel gevallen niet tot vergunningverlening overgaan. Dit komt in de praktijk vaak pas laat aan het licht.
+7. Kostenverhaal niet geregeld. Zonder gesloten anterieure overeenkomst of publiekrechtelijke regeling kan het college in veel gevallen niet tot vergunningverlening overgaan. Dit komt in de praktijk vaak pas laat aan het licht.
 
-**8. Werken met een verouderd sjabloon.** Verwijzingen naar de Wabo, het Bevi, de Wet geluidhinder, "goede ruimtelijke ordening" of "geluidsgevoelige bestemming" verraden een document dat op een oud model is gebaseerd. Inhoudelijk hoeft dat niet fataal te zijn, maar het kost geloofwaardigheid bij precies de mensen die uw stuk beoordelen.
+8. Werken met een verouderd sjabloon. Verwijzingen naar de Wabo, het Bevi, de Wet geluidhinder, "goede ruimtelijke ordening" of "geluidsgevoelige bestemming" verraden een document dat op een oud model is gebaseerd. Inhoudelijk hoeft dat niet fataal te zijn, maar het kost geloofwaardigheid bij precies de mensen die uw stuk beoordelen.
 
 <h2 id="doorlooptijd-opstellen">Hoe lang duurt het opstellen van een ruimtelijke onderbouwing?</h2>
 
@@ -378,25 +378,25 @@ De doorlooptijd wordt vrijwel nooit bepaald door het schrijven. Zij wordt bepaal
 </table>
 </div>
 
-Realistisch beeld: een eenvoudig traject zonder zware onderzoeken loopt van eerste gesprek tot vergunning in ongeveer **vier tot zes maanden**. Een traject met soortenonderzoek, stikstofberekening en een gevoelige omgeving loopt eerder in de **twaalf tot achttien maanden**. Wie in oktober begint en een vleermuizenonderzoek nodig heeft, moet ervan uitgaan dat de vergunning niet vóór het najaar daarna rond is.
+Realistisch beeld: een eenvoudig traject zonder zware onderzoeken loopt van eerste gesprek tot vergunning in ongeveer vier tot zes maanden. Een traject met soortenonderzoek, stikstofberekening en een gevoelige omgeving loopt eerder in de twaalf tot achttien maanden. Wie in oktober begint en een vleermuizenonderzoek nodig heeft, moet ervan uitgaan dat de vergunning niet vóór het najaar daarna rond is.
 
 <h2 id="kosten">Wat kost een ruimtelijke onderbouwing?</h2>
 
 De kosten vallen in drie posten uiteen, en het is verstandig ze gescheiden te houden.
 
-**Advieskosten** voor het opstellen van de onderbouwing en de procedurebegeleiding. In de markt liggen deze voor een eenvoudig, goed voorbereid plan doorgaans in de orde van enkele duizenden euro's. Voor een complexe ontwikkeling in het buitengebied, met meerdere onderzoeken en provinciale toetsing, loopt dat op tot een veelvoud daarvan. De grootste kostenbepaler is niet de omvang van het bouwplan maar het aantal gevoeligheden op de locatie.
+Advieskosten voor het opstellen van de onderbouwing en de procedurebegeleiding. In de markt liggen deze voor een eenvoudig, goed voorbereid plan doorgaans in de orde van enkele duizenden euro's. Voor een complexe ontwikkeling in het buitengebied, met meerdere onderzoeken en provinciale toetsing, loopt dat op tot een veelvoud daarvan. De grootste kostenbepaler is niet de omvang van het bouwplan maar het aantal gevoeligheden op de locatie.
 
-**Onderzoekskosten**, die u rechtstreeks aan de betreffende bureaus betaalt. Deze zijn zeer variabel. Een ecologische quickscan is een beperkte post, een volledig soortenonderzoek over een heel seizoen een aanzienlijke.
+Onderzoekskosten, die u rechtstreeks aan de betreffende bureaus betaalt. Deze zijn zeer variabel. Een ecologische quickscan is een beperkte post, een volledig soortenonderzoek over een heel seizoen een aanzienlijke.
 
-**Gemeentelijke kosten**: leges voor de behandeling van de aanvraag, en bij aangewezen bouwactiviteiten het kostenverhaal. Deze verschillen sterk per gemeente. Vraag de legesverordening op en vraag expliciet hoe de gemeente leges en kostenverhaal van elkaar scheidt, want de plankosten die onder verplicht kostenverhaal vallen mogen niet dubbel in rekening worden gebracht.
+Gemeentelijke kosten: leges voor de behandeling van de aanvraag, en bij aangewezen bouwactiviteiten het kostenverhaal. Deze verschillen sterk per gemeente. Vraag de legesverordening op en vraag expliciet hoe de gemeente leges en kostenverhaal van elkaar scheidt, want de plankosten die onder verplicht kostenverhaal vallen mogen niet dubbel in rekening worden gebracht.
 
 Drie manieren om de kosten reëel te beperken:
 
-Begin met een **haalbaarheidstoets**. Blijkt het plan kansloos of blijkt een binnenplanse route mogelijk, dan bespaart u de hele onderbouwing.
+Begin met een haalbaarheidstoets. Blijkt het plan kansloos of blijkt een binnenplanse route mogelijk, dan bespaart u de hele onderbouwing.
 
-Doe een **principeverzoek** voordat u onderzoek laat uitvoeren. De gemeentelijke reactie bepaalt welke onderzoeken werkelijk nodig zijn. Zonder die reactie laat u vaak meer onderzoeken doen dan strikt vereist.
+Doe een principeverzoek voordat u onderzoek laat uitvoeren. De gemeentelijke reactie bepaalt welke onderzoeken werkelijk nodig zijn. Zonder die reactie laat u vaak meer onderzoeken doen dan strikt vereist.
 
-**Stem de onderzoeksopdracht af** met de behandelend ambtenaar en, waar relevant, met de omgevingsdienst. Een onderzoek dat op de verkeerde uitgangspunten is uitgevoerd, moet over.
+Stem de onderzoeksopdracht af met de behandelend ambtenaar en, waar relevant, met de omgevingsdienst. Een onderzoek dat op de verkeerde uitgangspunten is uitgevoerd, moet over.
 
 <h2 id="faq">Veelgestelde vragen</h2>
 

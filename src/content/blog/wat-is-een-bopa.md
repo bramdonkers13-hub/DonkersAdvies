@@ -23,8 +23,8 @@ image: "../../assets/images/blog/bopa-laptop.jpg"
 imageAlt: "Laptop met de website van Donkers Advies, met notitieblok over BOPA en ruimtelijke onderbouwing"
 publishedDate: 2026-06-02
 updatedDate: 2026-07-24
-readingTimeMinutes: 14
-wordCount: 3011
+readingTimeMinutes: 13
+wordCount: 2875
 relatedSlugs: ["ruimtelijke-onderbouwing-bopa", "principeverzoek-indienen", "omgevingsplan-wijzigen"]
 breadcrumbLabel: "Wat is een BOPA?"
 ctaTitle: "Uw BOPA laten voorbereiden"
@@ -53,15 +53,15 @@ faq:
 
 Een BOPA is geen formaliteit. De gemeente moet gemotiveerd besluiten waarom zij een uitzondering op haar eigen plan wil maken, en dat besluit moet een bezwaar- of beroepsprocedure kunnen doorstaan. Wat u aanlevert, bepaalt of dat lukt. Deze pagina legt uit wat een BOPA is, wanneer u er een nodig heeft, hoe de procedure verloopt, wat het kost, en welke twee dingen in de praktijk het vaakst worden onderschat: het adviesrecht van de gemeenteraad en, in Noord-Brabant, het provinciale beleid.
 
-**Wettelijke stand: 24 juli 2026.**
+Wettelijke stand: 24 juli 2026.
 
 <h2 id="wat-is-het">Wat is een BOPA?</h2>
 
 Een buitenplanse omgevingsplanactiviteit, afgekort BOPA, is een omgevingsvergunning voor een activiteit die in strijd is met het geldende omgevingsplan. Het begrip komt uit de Omgevingswet en is per 1 januari 2024 in de plaats gekomen van de manieren waarop onder de oude Wabo van het bestemmingsplan kon worden afgeweken.
 
-De kern in één zin: omdat uw plan niet binnen de regels van het omgevingsplan past, mag de gemeente de vergunning alleen verlenen als zij kan motiveren dat het toestaan van deze activiteit op deze locatie leidt tot een **evenwichtige toedeling van functies aan locaties**. Dat is het toetsingscriterium dat "een goede ruimtelijke ordening" heeft vervangen, en het is breder: het omvat naast ruimtelijke effecten ook gezondheid, veiligheid, milieukwaliteit en omgevingskwaliteit.
+De kern in één zin: omdat uw plan niet binnen de regels van het omgevingsplan past, mag de gemeente de vergunning alleen verlenen als zij kan motiveren dat het toestaan van deze activiteit op deze locatie leidt tot een evenwichtige toedeling van functies aan locaties. Dat is het toetsingscriterium dat "een goede ruimtelijke ordening" heeft vervangen, en het is breder: het omvat naast ruimtelijke effecten ook gezondheid, veiligheid, milieukwaliteit en omgevingskwaliteit.
 
-Een precisiepunt dat vaak fout gaat, ook op andere adviessites: de grondslag voor de beoordeling van de BOPA is **artikel 8.0a lid 2 van het Besluit kwaliteit leefomgeving**, aangevuld met de beoordelingsregels in de artikelen 8.0b tot en met 8.0e Bkl. Het criterium wordt ook in artikel 4.2 van de Omgevingswet genoemd, maar dat artikel richt zich tot de gemeente bij het opstellen van het omgevingsplan zelf, niet tot de beoordeling van uw vergunningaanvraag. Voor uw aanvraag is 8.0a lid 2 Bkl de juiste verwijzing.
+Een precisiepunt dat vaak fout gaat, ook op andere adviessites: de grondslag voor de beoordeling van de BOPA is artikel 8.0a lid 2 van het Besluit kwaliteit leefomgeving, aangevuld met de beoordelingsregels in de artikelen 8.0b tot en met 8.0e Bkl. Het criterium wordt ook in artikel 4.2 van de Omgevingswet genoemd, maar dat artikel richt zich tot de gemeente bij het opstellen van het omgevingsplan zelf, niet tot de beoordeling van uw vergunningaanvraag. Voor uw aanvraag is 8.0a lid 2 Bkl de juiste verwijzing.
 
 ### Wat verving de BOPA precies?
 
@@ -69,8 +69,8 @@ De veelgehoorde formulering is dat de BOPA "de kruimelgevallen en de uitgebreide
 
 Twee verschillen met vroeger hebben directe gevolgen voor uw planning:
 
-- **De vergunning van rechtswege bestaat niet meer.** Beslist de gemeente te laat, dan ontstaat er geen vergunning automatisch. Onder de oude reguliere afwijking kon dat wel.
-- **De reguliere procedure is nu de hoofdregel**, ook bij afwijkingen. Onder de Wabo gold voor de meeste buitenplanse afwijkingen juist de uitgebreide procedure van 26 weken.
+- De vergunning van rechtswege bestaat niet meer. Beslist de gemeente te laat, dan ontstaat er geen vergunning automatisch. Onder de oude reguliere afwijking kon dat wel.
+- De reguliere procedure is nu de hoofdregel, ook bij afwijkingen. Onder de Wabo gold voor de meeste buitenplanse afwijkingen juist de uitgebreide procedure van 26 weken.
 
 <h2 id="wanneer-nodig">Wanneer heeft u een BOPA nodig?</h2>
 
@@ -86,7 +86,7 @@ Een BOPA is aan de orde zodra uw initiatief niet rechtstreeks binnen het omgevin
 - transformatie van leegstaand vastgoed naar een nieuwe functie
 - een tijdelijke afwijking, zoals een evenemententerrein of een tijdelijke woonvoorziening
 
-Belangrijk om te weten: een BOPA is een **bevoegdheid** van het college, geen plicht. De gemeente mag afwijken, zij moet het niet. Zowel een verlening als een weigering moet worden gemotiveerd, en het college heeft daarbij beleidsruimte. Dat verklaart waarom twee vergelijkbare plannen in twee buurgemeenten verschillend kunnen aflopen: het verschil zit in beleid en in de kwaliteit van de motivering, niet in de wet.
+Belangrijk om te weten: een BOPA is een bevoegdheid van het college, geen plicht. De gemeente mag afwijken, zij moet het niet. Zowel een verlening als een weigering moet worden gemotiveerd, en het college heeft daarbij beleidsruimte. Dat verklaart waarom twee vergelijkbare plannen in twee buurgemeenten verschillend kunnen aflopen: het verschil zit in beleid en in de kwaliteit van de motivering, niet in de wet.
 
 ### BOPA, OPA of wijziging van het omgevingsplan?
 
@@ -107,15 +107,15 @@ Voordat u van een BOPA uitgaat, is het de moeite waard om de route te toetsen. E
 
 Twijfelt u welke route op uw situatie van toepassing is? Een [principeverzoek](/blog/principeverzoek-indienen/) geeft daar vooraf duidelijkheid over, zonder dat u meteen de formele procedure hoeft te starten. Het scheelt bovendien onderzoekskosten: pas na de gemeentelijke reactie weet u welke onderzoeken werkelijk nodig zijn.
 
-Let op het **tijdelijke deel** van het omgevingsplan. Sinds 1 januari 2024 bevat elk omgevingsplan de van rechtswege omgezette bestemmingsplannen en de bruidsschat. Uw plan kan binnen die overgangsregels of binnen een binnenplanse afwijkmogelijkheid passen, ook al lijkt het op het eerste gezicht in strijd met het oude bestemmingsplan. Ga daarom altijd uit van de actuele regels in het Omgevingsloket.
+Let op het tijdelijke deel van het omgevingsplan. Sinds 1 januari 2024 bevat elk omgevingsplan de van rechtswege omgezette bestemmingsplannen en de bruidsschat. Uw plan kan binnen die overgangsregels of binnen een binnenplanse afwijkmogelijkheid passen, ook al lijkt het op het eerste gezicht in strijd met het oude bestemmingsplan. Ga daarom altijd uit van de actuele regels in het Omgevingsloket.
 
 <h2 id="procedures">De twee procedures: regulier en uitgebreid</h2>
 
 Voor een BOPA bestaan twee voorbereidingsprocedures. Welke geldt, hangt af van de aard van de activiteit.
 
-**De reguliere procedure is de hoofdregel** en geldt voor de meeste particuliere en kleinzakelijke initiatieven. De gemeente beslist binnen acht weken na ontvangst van een complete aanvraag, met een eenmalige verlenging van maximaal zes weken. De maximale beslistermijn is daarmee veertien weken. Tegen het besluit staat binnen zes weken bezwaar open, daarna beroep bij de rechtbank en hoger beroep bij de Afdeling bestuursrechtspraak van de Raad van State.
+De reguliere procedure is de hoofdregel en geldt voor de meeste particuliere en kleinzakelijke initiatieven. De gemeente beslist binnen acht weken na ontvangst van een complete aanvraag, met een eenmalige verlenging van maximaal zes weken. De maximale beslistermijn is daarmee veertien weken. Tegen het besluit staat binnen zes weken bezwaar open, daarna beroep bij de rechtbank en hoger beroep bij de Afdeling bestuursrechtspraak van de Raad van State.
 
-**De uitgebreide procedure** is de uitzondering en geldt in drie gevallen:
+*De uitgebreide procedure* is de uitzondering en geldt in drie gevallen:
 
 1. bij de gevallen die zijn aangewezen in artikel 10.24 van het Omgevingsbesluit, zoals bepaalde milieubelastende activiteiten, rijksmonumenten en Natura 2000-activiteiten;
 2. wanneer u er als aanvrager zelf om verzoekt of ermee instemt;
@@ -143,15 +143,15 @@ Steeds meer gemeenten hebben beleidsregels vastgesteld waarin staat welke catego
 
 Dit onderdeel ontbreekt op vrijwel elke uitleg over de BOPA, en het kan uw traject wezenlijk vertragen of zelfs een vergunning ongeldig maken. Het verdient daarom aparte aandacht.
 
-Onder de oude Wabo gaf de gemeenteraad bij grotere afwijkingen een verklaring van geen bedenkingen af. Onder de Omgevingswet is dat omgedraaid. De raad wijst nu vooraf de gevallen aan waarin hij een **bindend advies** wil uitbrengen over een BOPA (artikel 16.15a Omgevingswet). Voor de niet-aangewezen gevallen heeft de raad geen rol en beslist het college zelfstandig.
+Onder de oude Wabo gaf de gemeenteraad bij grotere afwijkingen een verklaring van geen bedenkingen af. Onder de Omgevingswet is dat omgedraaid. De raad wijst nu vooraf de gevallen aan waarin hij een bindend advies wil uitbrengen over een BOPA (artikel 16.15a Omgevingswet). Voor de niet-aangewezen gevallen heeft de raad geen rol en beslist het college zelfstandig.
 
 Drie dingen die u hierover moet weten:
 
-**Het advies is bindend.** Geeft de raad in een aangewezen geval een negatief advies, dan mag het college de vergunning niet verlenen. Het college kan daar niet gemotiveerd van afwijken. Dit is dus in de praktijk een instemmingsrecht, geen vrijblijvend advies.
+Het advies is bindend. Geeft de raad in een aangewezen geval een negatief advies, dan mag het college de vergunning niet verlenen. Het college kan daar niet gemotiveerd van afwijken. Dit is dus in de praktijk een instemmingsrecht, geen vrijblijvend advies.
 
-**Het raakt uw planning.** De beslistermijn wordt door het adviesrecht niet verlengd, terwijl de raad niet wekelijks vergadert. Weet u dat uw plan onder het adviesrecht van uw gemeente valt, houd dan rekening met de vergadercyclus. In de praktijk is dit een belangrijke reden waarom sommige BOPA's langer duren dan de wettelijke veertien weken doen vermoeden.
+Het raakt uw planning. De beslistermijn wordt door het adviesrecht niet verlengd, terwijl de raad niet wekelijks vergadert. Weet u dat uw plan onder het adviesrecht van uw gemeente valt, houd dan rekening met de vergadercyclus. In de praktijk is dit een belangrijke reden waarom sommige BOPA's langer duren dan de wettelijke veertien weken doen vermoeden.
 
-**Het niet vragen van advies is fataal voor het besluit.** De rechtbank heeft geoordeeld dat wanneer het college ten onrechte nalaat de raad om advies te vragen in een aangewezen geval, de bevoegdheid om op de aanvraag te beslissen ontbreekt. De rechter toetst dit bovendien ambtshalve, dus ook zonder dat een bezwaarmaker het aankaart. Voor u betekent dit dat u er belang bij heeft dat de gemeente het adviesrecht correct toepast: een vergunning die dit gebrek bevat, houdt in beroep geen stand.
+Het niet vragen van advies is fataal voor het besluit. De rechtbank heeft geoordeeld dat wanneer het college ten onrechte nalaat de raad om advies te vragen in een aangewezen geval, de bevoegdheid om op de aanvraag te beslissen ontbreekt. De rechter toetst dit bovendien ambtshalve, dus ook zonder dat een bezwaarmaker het aankaart. Voor u betekent dit dat u er belang bij heeft dat de gemeente het adviesrecht correct toepast: een vergunning die dit gebrek bevat, houdt in beroep geen stand.
 
 Praktisch: zoek vroeg uit of uw type plan op de aanwijzingslijst van uw gemeente staat. Die lijst is openbaar. Staat uw plan erop, dan weet u dat de raad in beeld komt en kunt u uw planning en uw onderbouwing daarop inrichten.
 
@@ -167,7 +167,7 @@ Een goede onderbouwing bevat, kort samengevat:
 - een verantwoording van de participatie
 - een onderbouwing van de uitvoerbaarheid, waaronder het kostenverhaal
 
-Twee onderdelen worden vrijwel altijd onderschat. De **participatie**: u moet bij de aanvraag aangeven of en hoe u de omgeving heeft betrokken, en de gemeenteraad kan gevallen aanwijzen waarin participatie vooraf verplicht is (artikel 16.55 lid 7 Omgevingswet). En het **kostenverhaal**: bij aangewezen bouwactiviteiten, zoals het bouwen van woningen, is de gemeente verplicht kosten te verhalen, meestal via een anterieure overeenkomst. Zonder die regeling kan het college de vergunning in veel gevallen niet verlenen.
+Twee onderdelen worden vrijwel altijd onderschat. De participatie: u moet bij de aanvraag aangeven of en hoe u de omgeving heeft betrokken, en de gemeenteraad kan gevallen aanwijzen waarin participatie vooraf verplicht is (artikel 16.55 lid 7 Omgevingswet). En het kostenverhaal: bij aangewezen bouwactiviteiten, zoals het bouwen van woningen, is de gemeente verplicht kosten te verhalen, meestal via een anterieure overeenkomst. Zonder die regeling kan het college de vergunning in veel gevallen niet verlenen.
 
 Wilt u hier dieper op ingaan, lees dan het uitgebreide artikel over [het opstellen van een ruimtelijke onderbouwing](/blog/ruimtelijke-onderbouwing-bopa/), waarin de inhoud, de onderzoeken, de veelgemaakte fouten en de kosten stap voor stap aan bod komen.
 
@@ -192,7 +192,7 @@ De doorlooptijd wordt zelden bepaald door de gemeentelijke beslistermijn, maar d
 
 Realistisch: een eenvoudig traject zonder zware onderzoeken loopt van eerste gesprek tot vergunning in ongeveer vier tot zes maanden. Een traject met soortenonderzoek, stikstofberekening en een gevoelige omgeving eerder in de twaalf tot achttien maanden.
 
-De **kosten** bestaan uit drie delen: gemeentelijke leges voor de behandeling van de aanvraag, onderzoekskosten die u rechtstreeks aan de onderzoeksbureaus betaalt, en advieskosten voor het opstellen en begeleiden van de aanvraag. De leges verschillen per gemeente en hangen doorgaans af van de bouwsom of het type activiteit. Bij aangewezen bouwactiviteiten komt daar het kostenverhaal bij, en de plankosten die daaronder vallen mogen dan niet ook nog via de leges in rekening worden gebracht.
+De kosten bestaan uit drie delen: gemeentelijke leges voor de behandeling van de aanvraag, onderzoekskosten die u rechtstreeks aan de onderzoeksbureaus betaalt, en advieskosten voor het opstellen en begeleiden van de aanvraag. De leges verschillen per gemeente en hangen doorgaans af van de bouwsom of het type activiteit. Bij aangewezen bouwactiviteiten komt daar het kostenverhaal bij, en de plankosten die daaronder vallen mogen dan niet ook nog via de leges in rekening worden gebracht.
 
 Een principeverzoek vooraf kost tijd en leges, maar voorkomt dat u onderzoekskosten maakt voor een plan dat de gemeente uiteindelijk niet ziet zitten. Dat is doorgaans de grootste besparing die er te halen valt.
 
@@ -204,9 +204,9 @@ Twee dingen bepaalden het verloop. In de ruimtelijke onderbouwing is bijzondere 
 
 <h2 id="noord-brabant">Noord-Brabant: waarom een gemeentelijk ja niet genoeg is</h2>
 
-In Noord-Brabant is er een extra laag die buiten de provincie vaak wordt onderschat. De **Omgevingsverordening Noord-Brabant** bevat instructieregels waaraan de gemeente gebonden is, en die op grond van artikel 8.0c Bkl doorwerken in de beoordeling van uw BOPA. Werken die regels tegen uw plan, dan kan het college positief zijn en toch geen vergunning verlenen.
+In Noord-Brabant is er een extra laag die buiten de provincie vaak wordt onderschat. De Omgevingsverordening Noord-Brabant bevat instructieregels waaraan de gemeente gebonden is, en die op grond van artikel 8.0c Bkl doorwerken in de beoordeling van uw BOPA. Werken die regels tegen uw plan, dan kan het college positief zijn en toch geen vergunning verlenen.
 
-De onderwerpen die in het landelijk gebied het vaakst beslissend zijn: de begrenzing van stedelijk en landelijk gebied, de verplichte investering in de **kwaliteitsverbetering van het landschap**, het Natuur Netwerk Brabant, en de regels voor veehouderijen. Voor woningbouw in het buitengebied bestaan daarnaast specifieke sporen, zoals Ruimte voor Ruimte en de [Maatwerkregeling omgevingskwaliteit](/blog/maatwerkregeling-omgevingskwaliteit/).
+De onderwerpen die in het landelijk gebied het vaakst beslissend zijn: de begrenzing van stedelijk en landelijk gebied, de verplichte investering in de kwaliteitsverbetering van het landschap, het Natuur Netwerk Brabant, en de regels voor veehouderijen. Voor woningbouw in het buitengebied bestaan daarnaast specifieke sporen, zoals Ruimte voor Ruimte en de [Maatwerkregeling omgevingskwaliteit](/blog/maatwerkregeling-omgevingskwaliteit/).
 
 Neem deze provinciale toets op in uw onderbouwing in plaats van erop te wachten. Wie dat overslaat, hoort soms pas laat dat de provincie een probleem ziet dat vooraf te kennen was.
 

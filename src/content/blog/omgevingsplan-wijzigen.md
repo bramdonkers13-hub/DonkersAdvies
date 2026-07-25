@@ -20,8 +20,8 @@ image: "../../assets/images/blog/omgevingsplan-wijzigen-laptop.jpg"
 imageAlt: "Laptop met het blogoverzicht van Donkers Advies op het scherm"
 publishedDate: 2026-06-30
 updatedDate: 2026-07-19
-readingTimeMinutes: 6
-wordCount: 1070
+readingTimeMinutes: 5
+wordCount: 1000
 relatedSlugs: ["wat-is-een-bopa", "ruimtelijke-onderbouwing-bopa", "principeverzoek-indienen"]
 breadcrumbLabel: "Omgevingsplan wijzigen"
 ctaTitle: "Werkt u aan een grootschalig of structureel initiatief in Noord-Brabant?"
