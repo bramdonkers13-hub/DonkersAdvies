@@ -24,7 +24,6 @@ toc:
   - { label: "Bronnen", anchor: "bronnen" }
 category: "ruimtelijke-onderbouwing"
 categoryLabel: "Ruimtelijke onderbouwing"
-featured: true
 searchTags: ["ruimtelijke onderbouwing", "bopa", "noord-brabant", "wijziging omgevingsplan", "etfal", "goflo", "participatie", "kosten"]
 image: "../../assets/images/blog/ruimtelijke-onderbouwing-laptop.jpg"
 imageAlt: "Laptop met een ruimtelijke onderbouwing en checklist op het bureau"
@@ -171,11 +170,13 @@ Een BOPA is een **bevoegdheid**, geen plicht. Het college mag afwijken, het moet
 
 Er is één grens die in de praktijk regelmatig wordt overzien. Een BOPA maakt een activiteit mogelijk in afwijking van het omgevingsplan, maar kan geen bestaande rechten van derden wegnemen. Is het evenwicht alleen te bereiken door elders een bestaande activiteit of functie te beëindigen, dan is de BOPA niet het juiste instrument en moet het omgevingsplan worden gewijzigd.
 
+Wilt u eerst het begrip, de procedure en het adviesrecht van de gemeenteraad op een rij zien voordat u [een BOPA aanvragen](/blog/wat-is-een-bopa/)? Dat achtergrondartikel behandelt de basis; deze pagina gaat verder in op de onderbouwing zelf.
+
 <h2 id="wanneer-opa">Wanneer is alleen een OPA voldoende?</h2>
 
 Vaker dan initiatiefnemers denken. Het loont om dit vroeg te laten toetsen, want het scheelt een volledige onderbouwing en een aanzienlijk deel van de kosten.
 
-Een binnenplanse [omgevingsplanactiviteit (OPA)](/omgevingsplanactiviteit/) volstaat als uw activiteit binnen de regels van het omgevingsplan past en het plan daarvoor een vergunningplicht kent. De gemeente toetst dan uitsluitend aan de beoordelingsregels die het omgevingsplan zelf stelt. Die toetsing is overwegend juridisch-technisch: voldoet u aan de voorwaarden, dan is er weinig ruimte om te weigeren.
+Een binnenplanse [omgevingsplanactiviteit (OPA)](/omgevingsplanactiviteit/) volstaat als uw activiteit binnen de regels van het omgevingsplan past en het plan daarvoor een vergunningplicht kent. De gemeente toetst dan uitsluitend aan de beoordelingsregels die het omgevingsplan zelf stelt. Die toetsing is overwegend juridisch-technisch: voldoet u aan de voorwaarden, dan is er weinig ruimte om te weigeren. Lees in detail [wanneer een OPA volstaat](/blog/opa-aanvragen/), inclusief de procedure, termijnen en kosten.
 
 Drie punten die hierbij vaak worden gemist:
 
@@ -447,7 +448,7 @@ Een verleende en onherroepelijke vergunning geeft een verworven recht. Intrekkin
 
 Een ruimtelijke onderbouwing is geen verplicht nummer maar het document dat uw plan van idee naar vergunning brengt. Onder de Omgevingswet draait het om één vraag: leidt het toestaan van deze activiteit op deze locatie tot een evenwichtige toedeling van functies aan locaties? Die vraag beantwoordt u met een concrete beleidstoets, een volledige maar gerichte analyse van de omgevingsaspecten, een zichtbaar participatietraject en een sluitende uitvoerbaarheid, inclusief kostenverhaal.
 
-Drie dingen bepalen in de praktijk of een traject soepel loopt. Begin met vooroverleg of een principeverzoek, zodat u weet binnen welke randvoorwaarden u werkt. Zet de onderzoeken in de juiste volgorde, want soortenonderzoek en stikstof bepalen uw tijdlijn. En weeg in de onderbouwing daadwerkelijk af in plaats van alleen te inventariseren, want dat is wat het college nodig heeft om te kunnen besluiten.
+Drie dingen bepalen in de praktijk of een traject soepel loopt. [Begin met een principeverzoek](/blog/principeverzoek-indienen/) of vooroverleg, zodat u weet binnen welke randvoorwaarden u werkt. Zet de onderzoeken in de juiste volgorde, want soortenonderzoek en stikstof bepalen uw tijdlijn. En weeg in de onderbouwing daadwerkelijk af in plaats van alleen te inventariseren, want dat is wat het college nodig heeft om te kunnen besluiten.
 
 In Noord-Brabant komt daar één ding bij: het provinciale spoor. De Omgevingsverordening, de kwaliteitsverbetering van het landschap en de regels voor het Natuur Netwerk Brabant zijn geen aanvulling op de gemeentelijke toets maar een randvoorwaarde eraan.
 

@@ -19,8 +19,6 @@ const blog = defineCollection({
 			toc: z.array(z.object({ label: z.string(), anchor: z.string() })),
 			category: z.string(),
 			categoryLabel: z.string(),
-			/** Toont dit artikel in het "Meest gelezen"-blok op de blogindex. */
-			featured: z.boolean().default(false),
 			/** Zoekwoorden voor de client-side blogfilter. */
 			searchTags: z.array(z.string()),
 			image: image(),

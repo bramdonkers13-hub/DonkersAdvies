@@ -196,7 +196,7 @@ Zoekt u een [adviesbureau voor een BOPA](/buitenplanse-omgevingsplanactiviteit/)
 
 Een maatwerkaanvraag is geen invuloefening. Het is een samenspel tussen provinciaal beleid, gemeentelijk maatwerk, milieuonderzoek en onderhandeling. Donkers Advies begeleidt het hele traject:
 
-1. **Haalbaarheidstoets.** Wij beoordelen of uw locatie kwalificeert als passende locatie, welke bebouwing en voorzieningen kunnen worden ingezet en of er uitsluitingsgronden spelen. U weet snel of doorgaan zinvol is.
+1. **Haalbaarheidstoets.** Wij beoordelen of uw locatie kwalificeert als passende locatie, welke bebouwing en voorzieningen kunnen worden ingezet en of er uitsluitingsgronden spelen. U weet snel of doorgaan zinvol is, en desgewenst [toetst u de haalbaarheid met een principeverzoek](/blog/principeverzoek-indienen/) bij de gemeente.
 2. **Rekenmodule en tegenprestatie.** Wij vullen de provinciale rekenmodule in, optimaliseren de mix van maatregelen en zorgen dat de tegenprestatie aantoonbaar voldoende is voor het gewenste woningtype.
 3. **Vooroverleg met gemeente en provincie.** Vroegtijdig overleg is volgens de beleidsregel altijd nodig. Wij voeren dat gesprek, kennen de vraagstelling van de provincie en voorkomen dat uw plan halverwege spaak loopt.
 4. **Ruimtelijke onderbouwing en milieuonderzoek.** Wij stellen de [ruimtelijke onderbouwing](/blog/ruimtelijke-onderbouwing-bopa/) op voor de BOPA of de omgevingsplanwijziging, inclusief de milieuparagrafen en de afstemming met bijlagen zoals AERIUS-berekeningen.

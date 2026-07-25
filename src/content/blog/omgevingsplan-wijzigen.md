@@ -15,7 +15,6 @@ toc:
   - { label: "Samenvatting", anchor: "samenvatting" }
 category: "omgevingsplan"
 categoryLabel: "Omgevingsplan"
-featured: true
 searchTags: ["wijziging", "omgevingsplan", "wop", "gemeenteraad", "noord-brabant"]
 image: "../../assets/images/blog/omgevingsplan-wijzigen-laptop.jpg"
 imageAlt: "Laptop met het blogoverzicht van Donkers Advies op het scherm"
@@ -42,7 +41,7 @@ faq:
 
 <h2 id="wat-is-het">Wat is een wijziging van het omgevingsplan?</h2>
 
-Het omgevingsplan bevat de regels die de gemeente stelt voor het gebruik en de bebouwing van gronden: het wijst functies toe aan locaties. Past uw initiatief structureel niet binnen die regels, dan kan de gemeenteraad besluiten het omgevingsplan zelf aan te passen — in plaats van per geval een individuele [buitenplanse omgevingsplanactiviteit (BOPA)](/blog/wat-is-een-bopa/) te vergunnen. Het is een politiek-bestuurlijk traject: niet het college, maar de gemeenteraad neemt uiteindelijk het besluit tot vaststelling. Daarom weegt naast de inhoudelijke onderbouwing ook het bestuurlijk draagvlak zwaar mee.
+Het omgevingsplan bevat de regels die de gemeente stelt voor het gebruik en de bebouwing van gronden: het wijst functies toe aan locaties. Past uw initiatief structureel niet binnen die regels, dan kan de gemeenteraad besluiten het omgevingsplan zelf aan te passen — in plaats van per geval [een individueel initiatief via een BOPA](/blog/wat-is-een-bopa/) te vergunnen. Het is een politiek-bestuurlijk traject: niet het college, maar de gemeenteraad neemt uiteindelijk het besluit tot vaststelling. Daarom weegt naast de inhoudelijke onderbouwing ook het bestuurlijk draagvlak zwaar mee.
 
 <h2 id="wanneer-nodig">Wanneer kiest u voor deze route?</h2>
 

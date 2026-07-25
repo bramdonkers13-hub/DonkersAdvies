@@ -12,7 +12,7 @@ import { business } from '../../data/business';
 const allPosts = (await getCollection('blog')).sort(
 	(a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf()
 );
-const featuredPosts = allPosts.filter((post) => post.data.featured);
+const newestPosts = allPosts.slice(0, 3);
 
 function toPostCardProps(post: CollectionEntry<'blog'>, filterable = false): PostCardProps {
 	return {
@@ -69,15 +69,15 @@ const categories = [
 	</PageHero>
 
 	{
-		featuredPosts.length > 0 && (
+		newestPosts.length > 0 && (
 			<section class="sp-section bg-white" id="featuredSection">
 				<div class="container">
 					<div data-fade>
-						<p class="label">Uitgelicht</p>
-						<h2>Meest gelezen artikelen</h2>
+						<p class="label">Nieuw</p>
+						<h2>Nieuwste artikelen</h2>
 					</div>
 					<div class="featured-grid" data-fade>
-						{featuredPosts.map((post) => (
+						{newestPosts.map((post) => (
 							<PostCard {...toPostCardProps(post)} />
 						))}
 					</div>
