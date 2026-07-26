@@ -76,8 +76,8 @@ Twee verschillen met vroeger hebben directe gevolgen voor uw planning:
 
 Een BOPA is aan de orde zodra uw initiatief niet rechtstreeks binnen het omgevingsplan past en u toch een vergunning wilt. In de praktijk komen deze situaties het vaakst voor:
 
-- een woning bouwen of uitbreiden buiten het bouwvlak of buiten de bebouwingscontour
-- een functiewijziging van agrarisch naar wonen, bedrijvigheid, zorg of recreatie
+- [een woning bouwen buiten het bouwvlak](/blog/woning-bouwen-buiten-bouwvlak/) of uitbreiden buiten de bebouwingscontour
+- [een functiewijziging van agrarisch naar wonen](/blog/agrarische-bestemming-wijzigen-naar-wonen/), bedrijvigheid, zorg of recreatie
 - een uitbreiding die de maximale maatvoering van het omgevingsplan overschrijdt
 - herbestemming van vrijkomende agrarische bebouwing
 - een mantelzorgwoning die niet onder de vergunningvrije regeling valt

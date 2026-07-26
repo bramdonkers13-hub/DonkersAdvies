@@ -128,7 +128,7 @@ Wel doen:
 - er speelt beleidsmatige onzekerheid, zeker in het buitengebied
 - het plan is gevoelig voor de omgeving en u wilt draagvlak peilen voordat u zichtbaar wordt
 - de gemeente heeft geen beleidsregels waaruit blijkt hoe zij met dit type initiatief omgaat
-- u overweegt een aankoop die alleen rendabel is bij een functiewijziging
+- u overweegt een aankoop die alleen rendabel is bij [een agrarische bestemming wijzigen naar wonen](/blog/agrarische-bestemming-wijzigen-naar-wonen/) of een andere functiewijziging
 
 Niet doen, of eerst verder uitzoeken:
 
@@ -283,7 +283,7 @@ Staan hogere regels in de weg? Provinciale instructieregels en rijksregels. Dit 
 
 Leidt het tot een evenwichtige toedeling van functies aan locaties? Op hoofdlijnen: zijn er belemmeringen te voorzien op het gebied van geluid, geur, natuur, verkeer, water of gezondheid, en zijn die oplosbaar?
 
-Is het bestuurlijk wenselijk? Hier weegt het college mee wat het plan betekent voor de omgeving, of het past bij de koers van de gemeente, en of er precedentwerking van uitgaat. Precedentwerking is een reëel en veelgebruikt argument: een college dat één keer meewerkt aan een woning buiten het bouwvlak, krijgt de vraag daarna vaker.
+Is het bestuurlijk wenselijk? Hier weegt het college mee wat het plan betekent voor de omgeving, of het past bij de koers van de gemeente, en of er precedentwerking van uitgaat. Precedentwerking is een reëel en veelgebruikt argument: een college dat één keer meewerkt aan [een woning buiten het bouwvlak realiseren](/blog/woning-bouwen-buiten-bouwvlak/), krijgt de vraag daarna vaker.
 
 Twee dingen die uw planning kunnen beïnvloeden. De gemeenteraad kan gevallen hebben aangewezen waarin hij een bindend advies uitbrengt over een latere BOPA (artikel 16.15a Omgevingswet). Sommige gemeenten betrekken de raad al bij het principeverzoek. Dat kost tijd, want de raad vergadert niet wekelijks, maar het levert wel een aanzienlijk steviger vertrekpunt op. En bij ontwikkelingen waarvoor kostenverhaal verplicht is, wil de gemeente vaak al in deze fase weten of u bereid bent een anterieure overeenkomst te sluiten.
 

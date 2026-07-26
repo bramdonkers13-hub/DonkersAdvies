@@ -53,9 +53,9 @@ Donkers Advies begeleidt initiatiefnemers, agrariërs en ontwikkelaars in heel N
 
 De Maatwerkregeling omgevingskwaliteit is de opvolger van de bekende Ruimte-voor-Ruimte-regeling. De basis staat in artikel 5.14 van de Omgevingsverordening Noord-Brabant. Gedeputeerde Staten hebben de regeling verder uitgewerkt in paragraaf 7.1 van de Beleidsregel omgevingsrecht Noord-Brabant (versie 1 juli 2025).
 
-De kerngedachte is een ruil. U levert een fysieke tegenprestatie die de omgevingskwaliteit aantoonbaar versterkt. Denk aan het slopen van verouderde bedrijfsbebouwing, het verwijderen van erfverharding, het afwaarderen van landbouwgrond naar natuur of het intrekken van stikstofrechten. In ruil daarvoor mag op een passende locatie een woning worden toegevoegd. De opbrengst van die bouwkavel financiert de kwaliteitswinst.
+De kerngedachte is een ruil. U levert een fysieke tegenprestatie die de omgevingskwaliteit aantoonbaar versterkt. Denk aan het slopen van verouderde bedrijfsbebouwing, het verwijderen van erfverharding, het afwaarderen van landbouwgrond naar natuur of het intrekken van stikstofrechten. In ruil daarvoor mag u op een passende locatie [bouwen in het buitengebied](/blog/woning-bouwen-buiten-bouwvlak/) een woning toevoegen. De opbrengst van die bouwkavel financiert de kwaliteitswinst.
 
-Belangrijk om te weten: de provincie benadrukt uitdrukkelijk dat dit geen beëindigingsregeling is voor stoppende agrarische bedrijven. Het is een stimulans om leegstaande en niet meer gebruikte bebouwing daadwerkelijk te slopen, in plaats van te laten verloederen of vol te zetten met niet-volhoudbare vervolgfuncties.
+Belangrijk om te weten: de provincie benadrukt uitdrukkelijk dat dit geen beëindigingsregeling is voor stoppende agrarische bedrijven. Het is een stimulans om leegstaande en niet meer gebruikte bebouwing daadwerkelijk te slopen, in plaats van te laten verloederen of vol te zetten met niet-volhoudbare vervolgfuncties. Wilt u alleen de bestaande bedrijfswoning zelf omzetten naar een reguliere woning, zonder extra bouwkavel? Lees dan over [een functiewijziging in het buitengebied](/blog/agrarische-bestemming-wijzigen-naar-wonen/).
 
 ### Voor wie is de regeling interessant?
 
