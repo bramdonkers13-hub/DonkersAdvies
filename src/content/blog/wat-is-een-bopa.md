@@ -80,13 +80,13 @@ Een BOPA is aan de orde zodra uw initiatief niet rechtstreeks binnen het omgevin
 - [een functiewijziging van agrarisch naar wonen](/blog/agrarische-bestemming-wijzigen-naar-wonen/), bedrijvigheid, zorg of recreatie
 - een uitbreiding die de maximale maatvoering van het omgevingsplan overschrijdt
 - herbestemming van vrijkomende agrarische bebouwing
-- een mantelzorgwoning die niet onder de vergunningvrije regeling valt
+- [een mantelzorgwoning die niet vergunningvrij is](/blog/mantelzorgwoning-realiseren/), zoals een pré-mantelzorgwoning
 - een bed and breakfast of andere nevenactiviteit in een woon- of agrarische functie
 - tijdelijke huisvesting, bijvoorbeeld van arbeidsmigranten of statushouders
 - transformatie van leegstaand vastgoed naar een nieuwe functie
 - een tijdelijke afwijking, zoals een evenemententerrein of een tijdelijke woonvoorziening
 
-Belangrijk om te weten: een BOPA is een bevoegdheid van het college, geen plicht. De gemeente mag afwijken, zij moet het niet. Zowel een verlening als een weigering moet worden gemotiveerd, en het college heeft daarbij beleidsruimte. Dat verklaart waarom twee vergelijkbare plannen in twee buurgemeenten verschillend kunnen aflopen: het verschil zit in beleid en in de kwaliteit van de motivering, niet in de wet.
+Belangrijk om te weten: een BOPA is een bevoegdheid van het college, geen plicht. De gemeente mag afwijken, zij moet het niet. Zowel een verlening als een weigering moet worden gemotiveerd, en het college heeft daarbij beleidsruimte. Dat verklaart waarom twee vergelijkbare plannen in twee buurgemeenten verschillend kunnen aflopen: het verschil zit in beleid en in de kwaliteit van de motivering, niet in de wet. Krijgt u toch [een negatieve grondhouding van de gemeente](/blog/principeverzoek-afgewezen/), dan is dat zelden het laatste woord.
 
 ### BOPA, OPA of wijziging van het omgevingsplan?
 

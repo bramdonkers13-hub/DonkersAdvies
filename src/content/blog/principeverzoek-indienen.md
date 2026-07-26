@@ -330,7 +330,7 @@ Wat u nu doet: zie de volgende paragraaf.
 
 <h2 id="afgewezen">Uw principeverzoek is afgewezen: wat nu?</h2>
 
-Een negatieve reactie is geen besluit, dus u kunt niet in bezwaar. Dat voelt als een doodlopende weg en is het meestal niet. Vijf routes, in volgorde van kansrijkheid.
+Een negatieve reactie is geen besluit, dus u kunt niet in bezwaar. Dat voelt als een doodlopende weg en is het meestal niet. Vijf routes, in volgorde van kansrijkheid. Lees de uitgebreide uitwerking van [wat u kunt doen bij een afgewezen principeverzoek](/blog/principeverzoek-afgewezen/), inclusief hoe u de echte reden achterhaalt en wanneer de gemeente van haar eigen beleid moet afwijken.
 
 1. Achterhaal de werkelijke reden. Vraag een gesprek aan en stel de vraag scherp: is dit een juridische belemmering, een beleidskeuze of een bestuurlijke voorkeur? Het antwoord bepaalt alles. Een provinciale instructieregel is een muur. Een beleidsregel is een muur met een deur erin, want van beleidsregels kan het college op grond van artikel 4:84 Awb afwijken bij bijzondere omstandigheden. Een bestuurlijke voorkeur is onderhandelbaar.
 

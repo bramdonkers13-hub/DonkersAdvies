@@ -147,6 +147,7 @@ Meestal wél een OPA:
 - een houtopstand kappen, waar een vergunningplicht geldt
 - bouwen dat binnen de planregels past maar niet onder de vergunningvrije gevallen valt
 - een dakkapel of aanbouw aan de voorzijde of buiten de vergunningvrije maatvoering
+- [een mantelzorgwoning realiseren](/blog/mantelzorgwoning-realiseren/) die buiten de vergunningvrije voorwaarden valt, zoals een pré-mantelzorgwoning
 - een gebruikswijziging die het plan toestaat onder een vergunningplicht
 - een reclame-uiting of ander object waarvoor het plan een vergunning vraagt
 

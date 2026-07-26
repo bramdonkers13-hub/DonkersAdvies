@@ -75,7 +75,7 @@ Belangrijk om meteen scherp te hebben: "buiten het bouwvlak bouwen" betekent iet
 
 <h2 id="vergunningvrij">Wanneer mag u wél vergunningvrij buiten het bouwvlak bouwen?</h2>
 
-Onder de Omgevingswet is een deel van het bouwen buiten het bouwvlak vergunningvrij. Dat geldt voor zogenoemde bijbehorende bouwwerken: aanbouwen, uitbouwen, bijgebouwen, overkappingen en dergelijke, mits ze aan de voorwaarden voldoen. Dit is de reden dat u soms een fors bijgebouw of een serre mag plaatsen zonder vergunning, ook al staat het buiten het bouwvlak.
+Onder de Omgevingswet is een deel van het bouwen buiten het bouwvlak vergunningvrij. Dat geldt voor zogenoemde bijbehorende bouwwerken: aanbouwen, uitbouwen, bijgebouwen, overkappingen en dergelijke, mits ze aan de voorwaarden voldoen. Dit is de reden dat u soms een fors bijgebouw of een serre mag plaatsen zonder vergunning, ook al staat het buiten het bouwvlak. Dit is bijvoorbeeld ook de route om, onder voorwaarden, [een mantelzorgwoning te plaatsen](/blog/mantelzorgwoning-realiseren/).
 
 De hoofdlijn, sterk vereenvoudigd:
 
@@ -133,7 +133,7 @@ Een [wijziging van het omgevingsplan](/blog/omgevingsplan-wijzigen/) verandert h
 </table>
 </div>
 
-De gemeente heeft bij deze routekeuze vaak het laatste woord. Daarom begint u niet met de route, maar met de vraag óf de gemeente überhaupt wil meewerken. Dat doet u met een [principeverzoek](/blog/principeverzoek-indienen/). U legt uw plan voor, en de gemeente geeft aan of zij meewerkt, via welke route, en onder welke voorwaarden. Voor een woning buiten het bouwvlak is die stap vrijwel onmisbaar: het bespaart u onderzoekskosten en voorkomt dat u investeert in een plan dat op voorhand kansloos is.
+De gemeente heeft bij deze routekeuze vaak het laatste woord. Daarom begint u niet met de route, maar met de vraag óf de gemeente überhaupt wil meewerken. Dat doet u met een [principeverzoek](/blog/principeverzoek-indienen/). U legt uw plan voor, en de gemeente geeft aan of zij meewerkt, via welke route, en onder welke voorwaarden. Voor een woning buiten het bouwvlak is die stap vrijwel onmisbaar: het bespaart u onderzoekskosten en voorkomt dat u investeert in een plan dat op voorhand kansloos is. Krijgt u toch een nee, dan is [een afgewezen plan alsnog rondkrijgen](/blog/principeverzoek-afgewezen/) vaker mogelijk dan u denkt.
 
 <h2 id="noord-brabant">Bouwen in het buitengebied: het Brabantse provinciale spoor</h2>
 
