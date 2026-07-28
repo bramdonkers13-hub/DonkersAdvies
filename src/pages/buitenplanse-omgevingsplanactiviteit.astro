@@ -9,47 +9,64 @@ import FAQ from '../components/FAQ.astro';
 import CTA from '../components/CTA.astro';
 import { serviceSchema } from '../lib/schema';
 
-const title = 'BOPA aanvragen | Buitenplanse omgevingsplanactiviteit';
+const title = 'BOPA aanvragen: ruimtelijke onderbouwing en begeleiding';
 const description =
-	'Wijkt uw initiatief af van het omgevingsplan? Donkers Advies stelt de ruimtelijke onderbouwing op en begeleidt uw volledige BOPA-procedure van A tot Z.';
+	'Wijkt uw plan af van het omgevingsplan? Donkers Advies stelt de onderbouwing op en begeleidt uw BOPA tot vergunning, met kennis van de gemeentelijke praktijk.';
 
 const service = serviceSchema({
-	name: 'Buitenplanse omgevingsplanactiviteit (BOPA)',
+	name: 'BOPA aanvragen en ruimtelijke onderbouwing',
 	description:
-		'Professionele begeleiding bij het opstellen van een ruimtelijke onderbouwing en het aanvragen van een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit (BOPA) onder de Omgevingswet.',
+		'Opstellen van de ruimtelijke onderbouwing en volledige begeleiding van een BOPA-aanvraag onder de Omgevingswet.',
 	path: '/buitenplanse-omgevingsplanactiviteit/',
 });
+
+const waaromItems = [
+	{
+		title: 'Donkers Advies kent de beoordeling van binnenuit.',
+		descriptionHtml:
+			'Vanuit de gemeentelijke praktijk zijn BOPA-aanvragen beoordeeld, dus het is bekend waar het college op let. Uw dossier sluit daarop aan.',
+	},
+	{
+		title: 'Eerst de haalbaarheid, dan pas kosten.',
+		descriptionHtml:
+			'Voordat u in onderzoeken investeert, hoort u of uw plan kansrijk is en welke route het snelst tot een vergunning leidt.',
+	},
+	{
+		title: 'Donkers Advies denkt aan het provinciale spoor.',
+		descriptionHtml:
+			'Een gemeentelijk ja is niet altijd genoeg: provinciale instructieregels werken door in de beoordeling. Die toets gebeurt vroeg, zodat u niet voor verrassingen komt te staan.',
+	},
+	{
+		title: 'Een dossier dat een procedure doorstaat.',
+		descriptionHtml:
+			'De onderbouwing is bestand tegen bezwaar en beroep, en beschermt zo ook de vergunning die erop volgt.',
+	},
+];
 
 const werkwijzeSteps = [
 	{
 		number: '01',
 		title: 'Haalbaarheidsanalyse',
 		descriptionHtml:
-			"Wij toetsen uw initiatief op hoofdlijnen aan het omgevingsplan, het provinciaal beleid en de gemeentelijke beleidskaders. We brengen de kansen, risico's en aandachtspunten in kaart.",
+			"Donkers Advies toetst uw plan aan het omgevingsplan en het provinciaal beleid en brengt kansen en risico's in kaart.",
 	},
 	{
 		number: '02',
-		title: 'Strategisch advies en principeverzoek',
+		title: 'Principeverzoek',
 		descriptionHtml:
-			'Wij adviseren over de meest geschikte route. Indien wenselijk dienen wij eerst een <a href="/principeverzoek/">principeverzoek</a> in om bestuurlijk draagvlak te verkennen voordat u investeert in een volledige onderbouwing.',
+			'Waar zinvol wordt eerst de bereidheid van de gemeente verkend, voordat u in een volledige onderbouwing investeert.',
 	},
 	{
 		number: '03',
-		title: 'Opstellen ruimtelijke onderbouwing',
+		title: 'Ruimtelijke onderbouwing',
 		descriptionHtml:
-			'Wij verzorgen een volledige, juridisch houdbare ruimtelijke onderbouwing met ETFAL-motivering, beleidstoetsing en alle benodigde bijlagen. Wij coördineren de sectorale onderzoeken.',
+			'De onderbouwing wordt opgesteld, met de motivering van de evenwichtige toedeling, en de onderzoeken worden gecoördineerd.',
 	},
 	{
 		number: '04',
-		title: 'Indienen via het Omgevingsloket',
+		title: 'Indienen en begeleiden',
 		descriptionHtml:
-			'Wij dienen de aanvraag namens u in via het Omgevingsloket en zorgen voor een volledig en correct dossier bij de eerste indiening.',
-	},
-	{
-		number: '05',
-		title: 'Begeleiding tot vergunningverlening',
-		descriptionHtml:
-			'Wij onderhouden contact met de gemeente, beantwoorden aanvullende vragen en begeleiden het proces tot en met de definitieve vergunningverlening.',
+			'Donkers Advies dient de aanvraag in via het Omgevingsloket en begeleidt het traject tot de vergunning.',
 	},
 ];
 
@@ -57,114 +74,114 @@ const faqItems = [
 	{
 		question: 'Wat is een buitenplanse omgevingsplanactiviteit (BOPA)?',
 		answerHtml:
-			'<p>Een BOPA is een omgevingsvergunning waarmee een activiteit mogelijk wordt gemaakt die afwijkt van het geldende omgevingsplan.</p><p>De aanvraag moet worden onderbouwd met een ruimtelijke onderbouwing waaruit blijkt dat de activiteit leidt tot een evenwichtige toedeling van functies aan locaties (ETFAL). De gemeente heeft bij de beoordeling aanzienlijke beleidsruimte.</p>',
+			'<p>Een BOPA is een omgevingsvergunning waarmee een activiteit mogelijk wordt gemaakt die afwijkt van het geldende omgevingsplan. De aanvraag wordt onderbouwd met een ruimtelijke onderbouwing waaruit blijkt dat de activiteit leidt tot een evenwichtige toedeling van functies aan locaties. De gemeente heeft bij de beoordeling beleidsruimte.</p>',
 		answerText:
-			'Een BOPA is een omgevingsvergunning waarmee een activiteit mogelijk wordt gemaakt die afwijkt van het geldende omgevingsplan. De aanvraag moet worden gemotiveerd met een ruimtelijke onderbouwing waaruit blijkt dat de activiteit leidt tot een evenwichtige toedeling van functies aan locaties (ETFAL).',
+			'Een BOPA is een omgevingsvergunning waarmee een activiteit mogelijk wordt gemaakt die afwijkt van het geldende omgevingsplan. De aanvraag wordt onderbouwd met een ruimtelijke onderbouwing waaruit blijkt dat de activiteit leidt tot een evenwichtige toedeling van functies aan locaties. De gemeente heeft bij de beoordeling beleidsruimte.',
 	},
 	{
 		question: 'Wanneer heb ik een BOPA nodig?',
 		answerHtml:
-			'<p>U heeft een BOPA nodig wanneer uw initiatief niet past binnen de regels van het geldende omgevingsplan, maar u toch een vergunning wilt aanvragen. Typische situaties zijn:</p><ul><li>Woningbouw buiten het bouwvlak of bebouwingscontour</li><li>Functiewijziging van agrarisch naar wonen of bedrijf</li><li>Uitbreidingen die de maximale maten overschrijden</li><li>Nieuwe functies in het buitengebied</li><li>Herbestemming van leegstaand vastgoed</li></ul>',
+			'<p>U heeft een BOPA nodig wanneer uw initiatief niet past binnen de regels van het omgevingsplan, maar u toch een vergunning wilt aanvragen. Typische situaties zijn woningbouw buiten het bouwvlak, een functiewijziging van agrarisch naar wonen, een uitbreiding die de maximale maten overschrijdt, een nieuwe functie in het buitengebied, of de herbestemming van leegstaand vastgoed.</p>',
 		answerText:
-			'U heeft een BOPA nodig wanneer uw initiatief niet past binnen de regels van het geldende omgevingsplan, maar u toch wilt doorgaan met de ontwikkeling. Voorbeelden zijn: woningbouw buiten het bouwvlak, een functiewijziging van agrarisch naar wonen of bedrijf, uitbreidingen die de maximale maten overschrijden.',
+			'U heeft een BOPA nodig wanneer uw initiatief niet past binnen de regels van het omgevingsplan, maar u toch een vergunning wilt aanvragen. Typische situaties zijn woningbouw buiten het bouwvlak, een functiewijziging van agrarisch naar wonen, een uitbreiding die de maximale maten overschrijdt, een nieuwe functie in het buitengebied, of de herbestemming van leegstaand vastgoed.',
 	},
 	{
 		question: 'Wat is het verschil tussen een BOPA en een OPA?',
 		answerHtml:
-			'<p>Het verschil zit in de verhouding tot het omgevingsplan:</p><p><strong>OPA:</strong> uw activiteit past <em>binnen</em> het omgevingsplan en is vergunningplichtig. De gemeente toetst alleen aan de planregels. Geen ruimtelijke onderbouwing nodig.</p><p><strong>BOPA:</strong> uw activiteit wijkt <em>af</em> van het omgevingsplan. Een volledige ruimtelijke onderbouwing met ETFAL-motivering is verplicht. De gemeente heeft meer beoordelingsruimte en de procedure is zwaarder.</p>',
+			'<p>Het verschil zit in de verhouding tot het omgevingsplan. Bij een OPA past uw activiteit binnen het plan en toetst de gemeente alleen aan de planregels; een volledige ruimtelijke onderbouwing is niet nodig. Bij een BOPA wijkt uw activiteit af van het plan, is een volledige onderbouwing verplicht en heeft de gemeente meer beoordelingsruimte. De BOPA is daarmee de zwaardere procedure.</p>',
 		answerText:
-			'Bij een OPA (omgevingsplanactiviteit) past uw activiteit binnen de regels van het omgevingsplan, maar is een formele vergunning nodig. Bij een BOPA wijkt uw activiteit af van het omgevingsplan. Een BOPA vereist altijd een ruimtelijke onderbouwing met ETFAL-motivering en heeft een zwaardere procedure.',
+			'Het verschil zit in de verhouding tot het omgevingsplan. Bij een OPA past uw activiteit binnen het plan en toetst de gemeente alleen aan de planregels; een volledige ruimtelijke onderbouwing is niet nodig. Bij een BOPA wijkt uw activiteit af van het plan, is een volledige onderbouwing verplicht en heeft de gemeente meer beoordelingsruimte. De BOPA is daarmee de zwaardere procedure.',
 	},
 	{
 		question: 'Wat is het verschil tussen een BOPA en een wijziging van het omgevingsplan?',
 		answerHtml:
-			'<p>Een BOPA is een vergunning die een eenmalige, incidentele afwijking van het omgevingsplan mogelijk maakt. Het omgevingsplan zelf wordt niet aangepast.</p><p>Een <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a> past de planregels structureel aan, waardoor de activiteit voortaan planologisch is toegestaan voor iedereen op die locatie. Bij grootschalige of permanente ontwikkelingen is een WOP doorgaans beter passend.</p>',
+			'<p>Een BOPA is een vergunning die een individuele afwijking van het omgevingsplan mogelijk maakt op basis van uw concrete aanvraag, zonder dat het plan zelf verandert. Dat kan ook een permanente ontwikkeling zijn: de vergunde woning of uitbreiding staat er structureel. Een <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a> past de planregels zelf aan en geldt daarna voor iedereen op die locatie. Een planwijziging is vooral nodig als u een flexibele regeling wilt waarbinnen meerdere invullingen mogelijk zijn, als er meerdere percelen of eigenaren bij betrokken zijn, of als er regels buiten uw eigen locatie moeten worden aangepast.</p>',
 		answerText:
-			'Een BOPA is een vergunning die een eenmalige afwijking van het omgevingsplan mogelijk maakt. Een wijziging van het omgevingsplan past de planregels structureel aan, waardoor de activiteit voortaan planologisch is toegestaan. Bij grootschalige of permanente ontwikkelingen is een wijziging van het omgevingsplan doorgaans beter passend dan een BOPA.',
+			'Een BOPA is een vergunning die een individuele afwijking van het omgevingsplan mogelijk maakt op basis van uw concrete aanvraag, zonder dat het plan zelf verandert. Dat kan ook een permanente ontwikkeling zijn: de vergunde woning of uitbreiding staat er structureel. Een wijziging van het omgevingsplan past de planregels zelf aan en geldt daarna voor iedereen op die locatie. Een planwijziging is vooral nodig als u een flexibele regeling wilt waarbinnen meerdere invullingen mogelijk zijn, als er meerdere percelen of eigenaren bij betrokken zijn, of als er regels buiten uw eigen locatie moeten worden aangepast.',
 	},
 	{
 		question: 'Wat is ETFAL en waarom is het zo belangrijk?',
 		answerHtml:
-			'<p>ETFAL staat voor <em>evenwichtige toedeling van functies aan locaties</em>. Dit is het centrale beoordelingscriterium voor een BOPA onder de Omgevingswet. Het vervangt het vroegere begrip &ldquo;goede ruimtelijke ordening&rdquo; uit de Wet ruimtelijke ordening.</p><p>De gemeente beoordeelt of de activiteit, met alle betrokken belangen afgewogen, aanvaardbaar is op de betreffende locatie. Dit omvat aspecten als ruimtelijke kwaliteit, veiligheid, gezondheid, milieu en omgevingskwaliteit. Een sterke, goed onderbouwde ETFAL-motivering is bepalend voor de kans van slagen van uw aanvraag.</p>',
+			'<p>ETFAL staat voor evenwichtige toedeling van functies aan locaties. Dit is het centrale beoordelingscriterium voor een BOPA onder de Omgevingswet, dat het vroegere begrip goede ruimtelijke ordening vervangt. Voor de beoordeling van de aanvraag is het vastgelegd in artikel 8.0a lid 2 van het Besluit kwaliteit leefomgeving. De gemeente beoordeelt of de activiteit, met alle belangen afgewogen, aanvaardbaar is op de locatie. Een sterke onderbouwing op dit punt is bepalend voor de kans van slagen.</p>',
 		answerText:
-			"ETFAL staat voor 'evenwichtige toedeling van functies aan locaties'. Dit is het kerncriterium waaraan een BOPA-aanvraag moet voldoen onder de Omgevingswet. Het vervangt het vroegere begrip 'goede ruimtelijke ordening'. Een sterke onderbouwing van ETFAL is essentieel voor een succesvolle aanvraag.",
+			'ETFAL staat voor evenwichtige toedeling van functies aan locaties. Dit is het centrale beoordelingscriterium voor een BOPA onder de Omgevingswet, dat het vroegere begrip goede ruimtelijke ordening vervangt. Voor de beoordeling van de aanvraag is het vastgelegd in artikel 8.0a lid 2 van het Besluit kwaliteit leefomgeving. De gemeente beoordeelt of de activiteit, met alle belangen afgewogen, aanvaardbaar is op de locatie. Een sterke onderbouwing op dit punt is bepalend voor de kans van slagen.',
 	},
 	{
 		question: 'Hoe lang duurt een BOPA-procedure?',
 		answerHtml:
-			'<p>Er zijn twee procedures mogelijk:</p><ul><li><strong>Reguliere procedure:</strong> beslistermijn 8 weken, met maximale verlenging van 6 weken. Totaal maximaal 14 weken.</li><li><strong>Uitgebreide procedure:</strong> beslistermijn 26 weken, met maximale verlenging van 6 weken. Totaal maximaal 32 weken. Vereist een ontwerpbesluit met terinzagelegging.</li></ul><p>Welke procedure van toepassing is, hangt af van de aard van de activiteit en eventuele m.e.r.-plicht. Donkers Advies adviseert u hierover aan het begin van het traject.</p>',
+			'<p>Bij de reguliere procedure beslist de gemeente binnen 8 weken, met een eenmalige verlenging van maximaal 6 weken, samen ten hoogste 14 weken. De uitgebreide procedure kent een beslistermijn van 6 maanden en vereist een ontwerpbesluit met terinzagelegging. Welke procedure geldt, hangt af van de aard van de activiteit en een eventuele m.e.r.-plicht. Donkers Advies adviseert u hierover aan het begin van het traject.</p>',
 		answerText:
-			'Bij de reguliere procedure bedraagt de beslistermijn 8 weken, met een mogelijke verlenging van 6 weken (totaal maximaal 14 weken). Bij de uitgebreide procedure is de beslistermijn 26 weken, met een verlenging van maximaal 6 weken (totaal maximaal 32 weken).',
+			'Bij de reguliere procedure beslist de gemeente binnen 8 weken, met een eenmalige verlenging van maximaal 6 weken, samen ten hoogste 14 weken. De uitgebreide procedure kent een beslistermijn van 6 maanden en vereist een ontwerpbesluit met terinzagelegging. Welke procedure geldt, hangt af van de aard van de activiteit en een eventuele m.e.r.-plicht.',
 	},
 	{
 		question: 'Wat kost een BOPA aanvragen?',
 		answerHtml:
-			'<p>De kosten bestaan uit drie onderdelen:</p><ul><li><strong>Gemeentelijke leges:</strong> bepaald door de gemeente op basis van bouwsom of type activiteit. Varieert sterk per gemeente en project.</li><li><strong>Advieskosten Donkers Advies:</strong> voor haalbaarheidsanalyse, ruimtelijke onderbouwing en procedurebegeleiding. Afhankelijk van complexiteit.</li><li><strong>Onderzoekskosten:</strong> voor sectorale onderzoeken (geluid, bodem, ecologie, etc.). Afhankelijk van de benodigde onderzoeken.</li></ul><p>Donkers Advies geeft u vooraf een helder overzicht van alle te verwachten kosten. <a href="/#contact">Neem contact op voor een vrijblijvende indicatie.</a></p>',
+			'<p>De kosten bestaan uit gemeentelijke leges, advieskosten en onderzoekskosten, en bij aangewezen bouwactiviteiten komt daar kostenverhaal bij. De leges verschillen per gemeente en hangen af van de bouwsom of het type activiteit. Donkers Advies geeft u vooraf een helder overzicht van alle te verwachten kosten. <a href="/#contact">Neem contact op voor een vrijblijvende indicatie.</a></p>',
 		answerText:
-			'De kosten bestaan uit gemeentelijke leges, advieskosten en onderzoekskosten. De leges worden bepaald door de gemeente en zijn afhankelijk van de bouwsom of het type activiteit. Donkers Advies geeft u vooraf een helder beeld van de verwachte kosten.',
-	},
-	{
-		question: 'Welke onderzoeken kunnen nodig zijn voor een BOPA?',
-		answerHtml:
-			'<p>Dit is sterk afhankelijk van uw initiatief en de locatie. Veelvoorkomende onderzoeken zijn:</p><ul><li>Akoestisch onderzoek (geluid)</li><li>AERIUS-berekening (stikstof)</li><li>Ecologisch onderzoek of quickscan (flora en fauna)</li><li>Verkennend bodemonderzoek</li><li>Watertoets</li><li>Archeologisch bureauonderzoek of veldonderzoek</li><li>Externe veiligheidstoets</li><li>Geuronderzoek</li><li>Verkeerskundige onderbouwing</li></ul><p>Donkers Advies bepaalt samen met u welke onderzoeken nodig zijn en coördineert de uitvoering ervan.</p>',
-		answerText:
-			'Afhankelijk van uw initiatief en de locatie kunnen de volgende onderzoeken nodig zijn: akoestisch onderzoek, stikstofdepositieberekening (AERIUS), ecologisch onderzoek (flora en fauna), bodemonderzoek, watertoets, archeologisch onderzoek, externe veiligheidstoets, geuronderzoek en een verkeersstudie.',
+			'De kosten bestaan uit gemeentelijke leges, advieskosten en onderzoekskosten, en bij aangewezen bouwactiviteiten komt daar kostenverhaal bij. De leges verschillen per gemeente en hangen af van de bouwsom of het type activiteit. Donkers Advies geeft u vooraf een helder overzicht van alle te verwachten kosten.',
 	},
 	{
 		question: 'Kan de gemeente een BOPA weigeren?',
 		answerHtml:
-			'<p>Ja. De gemeente heeft bij een BOPA aanzienlijke beoordelingsruimte. Als zij van oordeel is dat de activiteit niet leidt tot een evenwichtige toedeling van functies aan locaties, of niet past binnen het gemeentelijk of provinciaal beleid, kan zij de vergunning weigeren.</p><p>Anders dan bij een OPA, waarbij de toetsing grotendeels juridisch-technisch is, heeft de gemeente bij een BOPA ruimte voor een eigen belangenafweging. Een sterke onderbouwing en goede afstemming vooraf vergroot de kans van slagen aanzienlijk.</p>',
+			'<p>Ja. Het verlenen van een BOPA is een bevoegdheid, geen plicht, en de gemeente heeft beoordelingsruimte. Meent zij dat de activiteit niet leidt tot een evenwichtige toedeling van functies aan locaties, of dat het plan niet past binnen het gemeentelijk of provinciaal beleid, dan kan zij weigeren. Anders dan bij een OPA, waar de toetsing grotendeels juridisch-technisch is, heeft de gemeente hier ruimte voor een eigen afweging. Een sterke onderbouwing en goede afstemming vooraf vergroten de kans van slagen aanzienlijk.</p>',
 		answerText:
-			'Ja. De gemeente heeft bij een BOPA aanzienlijke beleidsruimte. Als de gemeente van oordeel is dat het initiatief niet leidt tot een evenwichtige toedeling van functies aan locaties (ETFAL), of niet past binnen het gemeentelijk of provinciaal beleid, kan zij de vergunning weigeren.',
-	},
-	{
-		question: 'Is een principeverzoek verplicht voor een BOPA?',
-		answerHtml:
-			'<p>Een <a href="/principeverzoek/">principeverzoek</a> is niet wettelijk verplicht, maar wordt sterk aanbevolen bij een BOPA. Via een principeverzoek toetst u vooraf of de gemeente bereid is mee te werken aan uw initiatief.</p><p>Dit is waardevol omdat het opstellen van een volledige ruimtelijke onderbouwing en de bijbehorende onderzoeken aanzienlijke kosten met zich meebrengt. Een negatieve grondhouding van de gemeente in een vroeg stadium bespaart u die kosten. Lees <a href="/blog/principeverzoek-indienen/">hoe u een principeverzoek indient</a> voor het volledige stappenplan.</p>',
-		answerText:
-			'Een principeverzoek is niet wettelijk verplicht, maar wordt sterk aanbevolen. Met een principeverzoek toetst u vooraf of de gemeente bereid is mee te werken aan uw initiatief. Dit bespaart u de kosten van een volledige ruimtelijke onderbouwing als de gemeente al in een vroeg stadium aangeeft geen medewerking te willen verlenen.',
+			'Ja. Het verlenen van een BOPA is een bevoegdheid, geen plicht, en de gemeente heeft beoordelingsruimte. Meent zij dat de activiteit niet leidt tot een evenwichtige toedeling van functies aan locaties, of dat het plan niet past binnen het gemeentelijk of provinciaal beleid, dan kan zij weigeren. Een sterke onderbouwing en goede afstemming vooraf vergroten de kans van slagen aanzienlijk.',
 	},
 	{
 		question: 'Moet ik participatie organiseren voor een BOPA?',
 		answerHtml:
-			'<p>Participatie is onder de Omgevingswet een belangrijk onderdeel van het aanvraagproces. U bent verplicht bij uw aanvraag aan te geven of en hoe u omwonenden en andere belanghebbenden heeft betrokken bij uw initiatief.</p><p>De gemeente kan aanvullende eisen stellen aan de wijze van participatie. Een goed participatieproces vergroot het draagvlak voor uw initiatief en verkleint de kans op zienswijzen en bezwaren. Donkers Advies adviseert u over een effectief participatieproces.</p>',
+			'<p>Bij de aanvraag moet u aangeven of en hoe u de omgeving heeft betrokken. Dat is een aanvraagvereiste. Daadwerkelijk participeren is alleen verplicht als de gemeenteraad uw type activiteit daarvoor heeft aangewezen. Belangrijk: de gemeente mag de vorm van de participatie niet voorschrijven. Los van de verplichting is vroeg contact met de omgeving verstandig, omdat het de kans op zienswijzen en bezwaren verkleint. Donkers Advies adviseert u over een effectieve aanpak.</p>',
 		answerText:
-			'Participatie is onder de Omgevingswet een belangrijk onderdeel van de procedure. De gemeente kan als voorwaarde stellen dat u omwonenden en andere belanghebbenden betrekt bij uw initiatief voordat u een formele aanvraag indient. Donkers Advies adviseert over het participatieproces.',
+			'Bij de aanvraag moet u aangeven of en hoe u de omgeving heeft betrokken. Dat is een aanvraagvereiste. Daadwerkelijk participeren is alleen verplicht als de gemeenteraad uw type activiteit daarvoor heeft aangewezen. De gemeente mag de vorm van de participatie niet voorschrijven. Los van de verplichting is vroeg contact met de omgeving verstandig, omdat het de kans op zienswijzen en bezwaren verkleint.',
+	},
+	{
+		question: 'Speelt de gemeenteraad een rol bij een BOPA?',
+		answerHtml:
+			'<p>Dat kan. De gemeenteraad kan gevallen aanwijzen waarin hij een bindend advies uitbrengt over een BOPA. Valt uw plan daaronder en adviseert de raad negatief, dan mag het college de vergunning niet verlenen. Dit beïnvloedt ook uw planning, omdat de raad niet wekelijks vergadert. Donkers Advies zoekt vroeg uit of uw plan onder dit adviesrecht valt.</p>',
+		answerText:
+			'Dat kan. De gemeenteraad kan gevallen aanwijzen waarin hij een bindend advies uitbrengt over een BOPA. Valt uw plan daaronder en adviseert de raad negatief, dan mag het college de vergunning niet verlenen. Dit beïnvloedt ook uw planning, omdat de raad niet wekelijks vergadert.',
+	},
+	{
+		question: 'Is een principeverzoek verplicht voor een BOPA?',
+		answerHtml:
+			'<p>Een <a href="/principeverzoek/">principeverzoek</a> is niet wettelijk verplicht, maar bij een BOPA sterk aan te raden. U toetst er vooraf mee of de gemeente bereid is mee te werken. Omdat een volledige onderbouwing en de onderzoeken aanzienlijke kosten meebrengen, bespaart een negatieve reactie in een vroeg stadium u die kosten. Lees <a href="/blog/principeverzoek-indienen/">hoe u een principeverzoek indient</a>.</p>',
+		answerText:
+			'Een principeverzoek is niet wettelijk verplicht, maar bij een BOPA sterk aan te raden. U toetst er vooraf mee of de gemeente bereid is mee te werken. Omdat een volledige onderbouwing en de onderzoeken aanzienlijke kosten meebrengen, bespaart een negatieve reactie in een vroeg stadium u die kosten.',
 	},
 	{
 		question: 'Wat als mijn BOPA-aanvraag wordt geweigerd?',
 		answerHtml:
-			'<p>Tegen een weigering kunt u bezwaar maken bij de gemeente, en daarna beroep instellen bij de bestuursrechter (Afdeling bestuursrechtspraak van de Raad van State bij ruimtelijke besluiten).</p><p>In de praktijk is het vaak effectiever om eerst in overleg te treden met de gemeente over de bezwaren en te bezien of aanpassing van het plan tot een positief besluit kan leiden. Donkers Advies adviseert u over de beste vervolgstrategie na een weigering.</p>',
+			'<p>Tegen een weigering kunt u bezwaar maken en daarna beroep instellen bij de bestuursrechter. In de praktijk is het vaak effectiever om eerst met de gemeente in overleg te gaan over de bezwaren en te bezien of een aanpassing van het plan tot een positief besluit kan leiden. Donkers Advies adviseert u over de beste vervolgstrategie.</p>',
 		answerText:
-			'Tegen een weigering kunt u bezwaar maken bij de gemeente, en daarna eventueel beroep instellen bij de bestuursrechter. In veel gevallen is het effectiever om eerst in overleg te treden met de gemeente over de bezwaren en te bezien of aanpassing van het plan tot een positief besluit kan leiden.',
-	},
-	{
-		question: 'Wat is het verschil tussen een BOPA en een principeverzoek?',
-		answerHtml:
-			'<p>Een <a href="/principeverzoek/">principeverzoek</a> is een informeel, niet-bindend verzoek aan de gemeente om een standpunt in te nemen over uw initiatief. Het heeft geen rechtsgevolgen en is bedoeld als toetsing vooraf. Het kost minder dan een volledige BOPA-aanvraag.</p><p>Een BOPA is de formele omgevingsvergunning zelf. Bij een BOPA voor een complex of kostbaar initiatief is het bijna altijd verstandig eerst een principeverzoek in te dienen om de kansen te beoordelen.</p>',
-		answerText:
-			'Een principeverzoek is een informeel, niet-bindend verzoek aan de gemeente om een standpunt in te nemen over uw initiatief. Het heeft geen rechtsgevolgen en gaat vooraf aan de formele procedure. Een BOPA is de formele omgevingsvergunning zelf. Bij complexe initiatieven is het verstandig eerst een principeverzoek in te dienen.',
+			'Tegen een weigering kunt u bezwaar maken en daarna beroep instellen bij de bestuursrechter. In de praktijk is het vaak effectiever om eerst met de gemeente in overleg te gaan over de bezwaren en te bezien of een aanpassing van het plan tot een positief besluit kan leiden.',
 	},
 	{
 		question: 'Wanneer geldt de uitgebreide procedure voor een BOPA?',
 		answerHtml:
-			'<p>De uitgebreide procedure is verplicht bij:</p><ul><li>Activiteiten aangewezen in bijlage III van de Omgevingsregeling</li><li>M.e.r.-(beoordelings)plichtige activiteiten</li><li>Activiteiten waarvoor de provincie of het Rijk bevoegd gezag is</li></ul><p>De uitgebreide procedure kent een beslistermijn van 26 weken en vereist een ontwerpbesluit dat 6 weken ter inzage wordt gelegd, zodat iedereen een zienswijze kan indienen. Donkers Advies begeleidt ook de terinzagelegging en de afhandeling van zienswijzen.</p>',
+			'<p>De uitgebreide procedure geldt in drie gevallen: bij de gevallen die zijn aangewezen in artikel 10.24 van het Omgevingsbesluit, zoals bepaalde milieubelastende activiteiten, rijksmonumenten en Natura 2000-activiteiten; wanneer u er zelf om verzoekt of ermee instemt; en wanneer het college haar van toepassing verklaart omdat de activiteit aanzienlijke gevolgen kan hebben en verschillende belanghebbenden bedenkingen zullen hebben. De uitgebreide procedure kent een beslistermijn van 6 maanden en een ontwerpbesluit dat 6 weken ter inzage gaat.</p>',
 		answerText:
-			'De uitgebreide procedure is verplicht bij activiteiten die zijn aangewezen in bijlage III van de Omgevingsregeling, bij m.e.r.-(beoordelings)plichtige activiteiten en in bepaalde andere bij wet aangewezen gevallen. De uitgebreide procedure kent een beslistermijn van 26 weken en vereist een ontwerpbesluit dat ter inzage wordt gelegd.',
+			'De uitgebreide procedure geldt in drie gevallen: bij de gevallen die zijn aangewezen in artikel 10.24 van het Omgevingsbesluit, zoals bepaalde milieubelastende activiteiten, rijksmonumenten en Natura 2000-activiteiten; wanneer u er zelf om verzoekt of ermee instemt; en wanneer het college haar van toepassing verklaart omdat de activiteit aanzienlijke gevolgen kan hebben en verschillende belanghebbenden bedenkingen zullen hebben. De uitgebreide procedure kent een beslistermijn van 6 maanden en een ontwerpbesluit dat 6 weken ter inzage gaat.',
+	},
+	{
+		question: 'Bestaat de vergunning van rechtswege nog?',
+		answerHtml:
+			'<p>Nee. Onder de Omgevingswet bestaat de vergunning van rechtswege niet meer. Beslist de gemeente te laat, dan ontstaat er geen vergunning automatisch. U kunt de gemeente wel in gebreke stellen en eventueel een dwangsom vorderen, maar dat levert geen toestemming op. Een complete aanvraag bij de eerste indiening is daarom van belang.</p>',
+		answerText:
+			'Nee. Onder de Omgevingswet bestaat de vergunning van rechtswege niet meer. Beslist de gemeente te laat, dan ontstaat er geen vergunning automatisch. U kunt de gemeente wel in gebreke stellen en eventueel een dwangsom vorderen, maar dat levert geen toestemming op. Een complete aanvraag bij de eerste indiening is daarom van belang.',
 	},
 	{
 		question: 'Kan ik een BOPA zonder professionele begeleiding aanvragen?',
 		answerHtml:
-			'<p>Technisch gezien wel, maar het is zelden verstandig. Een succesvolle BOPA-aanvraag vereist:</p><ul><li>Kennis van het omgevingsplan en het provinciaal beleid</li><li>Een juridisch houdbare ETFAL-motivering</li><li>Inzicht in welke sectorale onderzoeken verplicht zijn</li><li>Ervaring met de eisen van het bevoegd gezag</li><li>Kennis van de formele vereisten van het Omgevingsloket</li></ul><p>Fouten of omissies in de aanvraag leiden tot aanhoudingen, extra kosten en vertraging. Professionele begeleiding vergroot de kans van slagen aanzienlijk en voorkomt kostbare fouten.</p>',
+			'<p>Technisch wel, maar het is zelden verstandig. Een succesvolle aanvraag vraagt kennis van het omgevingsplan en het provinciaal beleid, een juridisch houdbare motivering van de evenwichtige toedeling, inzicht in de verplichte onderzoeken, en ervaring met de eisen van het bevoegd gezag. Fouten of omissies leiden tot aanhouding, extra kosten en vertraging. De begeleiding van Donkers Advies, met kennis van de beoordeling van binnenuit, vergroot de kans van slagen en voorkomt kostbare fouten.</p>',
 		answerText:
-			'Technisch gezien wel, maar het is zelden verstandig. Een BOPA-aanvraag vereist een juridisch houdbare ruimtelijke onderbouwing, kennis van het omgevingsplan en provinciaal beleid, en inzicht in welke sectorale onderzoeken nodig zijn. Fouten of omissies leiden tot aanhoudingen, weigeringen of verlies van kostbare tijd.',
+			'Technisch wel, maar het is zelden verstandig. Een succesvolle aanvraag vraagt kennis van het omgevingsplan en het provinciaal beleid, een juridisch houdbare motivering van de evenwichtige toedeling, inzicht in de verplichte onderzoeken, en ervaring met de eisen van het bevoegd gezag. Fouten of omissies leiden tot aanhouding, extra kosten en vertraging.',
 	},
 	{
 		question: 'Waar vraag ik een BOPA aan?',
 		answerHtml:
-			'<p>Een BOPA-aanvraag dient u in via het <strong>Omgevingsloket</strong> (omgevingsloket.nl), het officiële digitale loket voor alle aanvragen onder de Omgevingswet. De aanvraag gaat naar de gemeente die bevoegd gezag is voor uw locatie.</p><p>Donkers Advies verzorgt de volledige aanvraag en dient deze namens u in. Zo bent u zeker van een correcte en volledige indiening bij de eerste poging.</p>',
+			'<p>Een BOPA-aanvraag dient u in via het Omgevingsloket, het officiële digitale loket voor aanvragen onder de Omgevingswet. De aanvraag gaat naar de gemeente die bevoegd gezag is voor uw locatie. Donkers Advies verzorgt de volledige aanvraag en dient deze namens u in, zodat u zeker bent van een correcte en volledige indiening bij de eerste poging.</p>',
 		answerText:
-			'Een BOPA-aanvraag dient u in via het Omgevingsloket (omgevingsloket.nl). Dit is het officiële digitale loket voor alle aanvragen onder de Omgevingswet. De aanvraag gaat naar de gemeente die bevoegd gezag is voor uw locatie.',
+			'Een BOPA-aanvraag dient u in via het Omgevingsloket, het officiële digitale loket voor aanvragen onder de Omgevingswet. De aanvraag gaat naar de gemeente die bevoegd gezag is voor uw locatie. Donkers Advies verzorgt de volledige aanvraag en dient deze namens u in.',
 	},
 ];
 ---
@@ -176,237 +193,73 @@ const faqItems = [
 			{ name: 'Diensten', path: '/#diensten' },
 			{ name: 'Buitenplanse omgevingsplanactiviteit (BOPA)', path: '/buitenplanse-omgevingsplanactiviteit/' },
 		]}
-		title="Buitenplanse omgevingsplanactiviteit (BOPA)"
-		subtitle="Uw initiatief past niet binnen het geldende omgevingsplan, maar u wilt toch verder. Donkers Advies stelt de ruimtelijke onderbouwing op en begeleidt uw BOPA-aanvraag van eerste analyse tot vergunningverlening."
-	/>
+		title="Buitenplanse omgevingsplanactiviteit (BOPA) aanvragen"
+		subtitle="Wijkt uw plan af van het omgevingsplan, maar wilt u toch verder? Dan heeft u een BOPA nodig. Donkers Advies stelt de ruimtelijke onderbouwing op en begeleidt uw aanvraag van eerste analyse tot vergunning."
+	>
+		<p class="page-sub" style="margin-top:1rem;">
+			Het verschil tussen een BOPA die wordt verleend en een die strandt, zit zelden in het plan. Het zit in de
+			onderbouwing. Doordat Donkers Advies vanuit de gemeentelijke praktijk aanvragen heeft beoordeeld, is bekend
+			hoe die beoordeling verloopt, en dat wordt in uw dossier verwerkt.
+		</p>
+		<a href="/#contact" class="btn btn-primary" style="margin-top:1.5rem;">Vraag een vrijblijvend adviesgesprek aan</a>
+	</PageHero>
 
 	<section class="sp-section bg-white">
 		<div class="container">
-			<div class="intro-grid">
-				<div class="intro-text" data-fade>
-					<p class="label">Wat is het</p>
-					<h2>Wat is een buitenplanse omgevingsplanactiviteit (BOPA)?</h2>
-					<p>Een BOPA is een omgevingsvergunning waarmee een activiteit mogelijk wordt gemaakt die afwijkt van het geldende omgevingsplan.</p>
-					<p>
-						Anders dan bij een <a href="/omgevingsplanactiviteit/">omgevingsplanactiviteit (OPA)</a> past uw
-						initiatief hier dus <em>niet</em> binnen de bestaande planregels. Toch kan de gemeente toestemming
-						verlenen, mits u kunt aantonen dat de activiteit leidt tot een
-						<strong>evenwichtige toedeling van functies aan locaties (ETFAL)</strong>.
-					</p>
-					<p>
-						Donkers Advies begeleidt particulieren en ondernemers bij het volledige BOPA-traject: van
-						haalbaarheidsanalyse en strategisch advies tot het opstellen van de ruimtelijke onderbouwing en de
-						begeleiding van de formele vergunningsprocedure.
-					</p>
-
-					<div class="highlight-box">
-						<strong>Wat is ETFAL?</strong>
-						De <em>evenwichtige toedeling van functies aan locaties</em> is het centrale beoordelingscriterium
-						voor een BOPA onder de Omgevingswet. Het vervangt het vroegere begrip &ldquo;goede ruimtelijke
-						ordening&rdquo;. De gemeente weegt alle betrokken belangen af en beoordeelt of de activiteit
-						aanvaardbaar is op de betreffende locatie. Een sterke ETFAL-motivering is de basis van iedere
-						kansrijke BOPA-aanvraag.
-					</div>
-				</div>
-
-				<InfoBox
-					fade
-					title="Wanneer is een BOPA nodig?"
-					items={[
-						'<a href="/blog/woning-bouwen-buiten-bouwvlak/">Woning bouwen buiten het bouwvlak</a> of buiten de bebouwingscontour',
-						'<a href="/blog/agrarische-bestemming-wijzigen-naar-wonen/">Functiewijziging agrarisch naar wonen</a> of bedrijf',
-						'Uitbreidingen die de maximale maten van het omgevingsplan overschrijden',
-						'Afwijkingen van bouwhoogte, oppervlak, rooilijn of gebruiksregels',
-						'Herbestemming van leegstaand vastgoed naar een nieuwe functie',
-						'Bed &amp; breakfast of recreatieve functies in een woonbestemming',
-					]}
-				/>
+			<div data-fade>
+				<p class="label">Aanpak</p>
+				<h2>Waarom Donkers Advies</h2>
 			</div>
+			<FeatureGrid items={waaromItems} />
 		</div>
 	</section>
 
 	<section class="sp-section bg-paper">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Wat is het</p>
+				<h2>Wat is een BOPA?</h2>
+				<p>
+					Een BOPA is een omgevingsvergunning voor een activiteit die afwijkt van het omgevingsplan. De gemeente
+					kan die verlenen als u aantoont dat de activiteit leidt tot een evenwichtige toedeling van functies aan
+					locaties, het beoordelingscriterium onder de Omgevingswet (artikel 8.0a lid 2 Bkl). Anders dan bij een
+					<a href="/omgevingsplanactiviteit/">OPA</a> heeft de gemeente hierbij beoordelingsruimte: zij mag afwijken,
+					maar hoeft niet. Daarom maken de kwaliteit van uw onderbouwing en de afstemming vooraf een reëel verschil.
+				</p>
+				<p>Wilt u meer achtergrond? Lees <a href="/blog/wat-is-een-bopa/">wat een BOPA precies is</a>.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
 		<div class="container">
 			<div data-fade>
 				<p class="label">Toepassingsgebied</p>
-				<h2>Wanneer is een BOPA de juiste procedure?</h2>
-				<p>Een BOPA is niet altijd de juiste route. De keuze hangt af van uw specifieke situatie, de omvang van uw initiatief en de mate van afwijking van het omgevingsplan.</p>
+				<h2>Wanneer heeft u een BOPA nodig?</h2>
+				<p>Een BOPA speelt zodra uw plan afwijkt van het omgevingsplan. De meest voorkomende situaties:</p>
 			</div>
 
-			<FeatureGrid
+			<InfoBox
+				fade
+				style="max-width: 720px; margin: 0 auto;"
+				title="Meest voorkomende situaties"
 				items={[
-					{
-						title: 'Activiteit wijkt af van het omgevingsplan',
-						descriptionHtml:
-							'Uw bouwplan, functiewijziging of gebruik past niet binnen de geldende planregels. Voor een tijdelijke of incidentele afwijking is een BOPA doorgaans de aangewezen route.',
-					},
-					{
-						title: 'Kleinschalige of incidentele ontwikkeling',
-						descriptionHtml:
-							'Gaat het om een beperkte afwijking of een eenmalige ontwikkeling? Dan is een BOPA sneller en goedkoper dan een <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>.',
-					},
-					{
-						title: 'Activiteit past juist wel binnen het plan → OPA',
-						descriptionHtml:
-							'Past uw initiatief al binnen het omgevingsplan maar is een vergunning vereist? Dan heeft u geen BOPA maar een <a href="/omgevingsplanactiviteit/">omgevingsplanactiviteit (OPA)</a> nodig.',
-					},
-					{
-						title: 'Grootschalige of permanente ontwikkeling → WOP',
-						descriptionHtml:
-							'Gaat het om een structurele, grootschalige of herhaaldelijk gewenste ontwikkeling? Een <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a> is dan juridisch robuuster.',
-					},
-					{
-						title: 'Twijfel over haalbaarheid → eerst principeverzoek',
-						descriptionHtml:
-							'Weet u niet of de gemeente wil meewerken? Begin dan met een <a href="/principeverzoek/">principeverzoek</a>. Dat bespaart u de kosten van een ruimtelijke onderbouwing als haalbaarheid onzeker is.',
-					},
-					{
-						title: 'Activiteit is vergunningvrij → geen procedure nodig',
-						descriptionHtml:
-							'Valt uw initiatief onder vergunningvrij bouwen? Dan heeft u helemaal geen vergunning nodig. Donkers Advies toetst snel of dat het geval is.',
-					},
+					'Een woning toevoegen, in de kern of <a href="/blog/woning-bouwen-buiten-bouwvlak/">in het buitengebied</a>',
+					'<a href="/blog/woning-bouwen-buiten-bouwvlak/">Een woning bouwen buiten het bouwvlak</a> of buiten de bebouwingscontour',
+					'Bedrijfsbebouwing uitbreiden terwijl de toegestane oppervlakte al is gemaximeerd',
+					'<a href="/blog/agrarische-bestemming-wijzigen-naar-wonen/">Een agrarische bestemming wijzigen naar wonen</a> of naar een andere functie',
+					'Herbestemming van vrijkomende agrarische bebouwing of een leegstaand pand',
+					'Een woning splitsen of een woning toevoegen binnen een bestaand pand',
+					'Een <a href="/blog/mantelzorgwoning-realiseren/">mantelzorgwoning</a> die niet vergunningvrij is',
+					'Een bed and breakfast, zorgfunctie of recreatieve nevenactiviteit in een woon- of agrarische functie',
+					'Afwijken van de toegestane bouwhoogte, rooilijn of gebruiksregels',
 				]}
 			/>
-		</div>
-	</section>
 
-	<section class="sp-section bg-white">
-		<div class="container">
-			<div data-fade>
-				<p class="label">De onderbouwing</p>
-				<h2>Wat bevat een ruimtelijke onderbouwing voor een BOPA?</h2>
-				<p>De ruimtelijke onderbouwing is het fundament van iedere BOPA-aanvraag. Een zwakke onderbouwing leidt tot aanhoudingen, extra onderzoeken of een weigering. Donkers Advies verzorgt een volledig, juridisch houdbaar document dat aansluit op de eisen van het bevoegd gezag.</p>
-			</div>
-
-			<FeatureGrid
-				items={[
-					{
-						title: 'Beschrijving van het initiatief',
-						descriptionHtml:
-							'Een heldere toelichting op het plan: de aard van de activiteit, de omvang, de locatie, de ruimtelijke context en de gewenste situatie na realisatie.',
-					},
-					{
-						title: 'Beleidsmatige toetsing',
-						descriptionHtml:
-							'Toetsing aan rijksbeleid (NPS, NOVI), provinciaal omgevingsbeleid en gemeentelijk beleid. Wij analyseren of uw initiatief past binnen de geldende beleidskaders.',
-					},
-					{
-						title: 'ETFAL-onderbouwing',
-						descriptionHtml:
-							'Motivering dat de activiteit leidt tot een evenwichtige toedeling van functies aan locaties. Dit is de kern van de onderbouwing en wordt door de gemeente het zwaarst beoordeeld.',
-					},
-					{
-						title: 'Toetsing omgevingsaspecten',
-						descriptionHtml:
-							"Beoordeling van alle relevante omgevingsthema's: geluid, geur, stikstof, ecologie, bodem, water, archeologie, externe veiligheid en verkeer.",
-					},
-					{
-						title: 'Coördinatie sectorale onderzoeken',
-						descriptionHtml:
-							'Wij sturen de benodigde specialistische onderzoeken aan, bewaken de planning en verwerken de resultaten naadloos in de ruimtelijke onderbouwing.',
-					},
-					{
-						title: 'Juridische houdbaarheid',
-						descriptionHtml:
-							'Wij schrijven een bestuurlijk en ambtelijk uitlegbare onderbouwing die de toets der kritiek doorstaat. Van bezwaar tot beroep: uw dossier staat.',
-					},
-				]}
-			/>
-		</div>
-	</section>
-
-	<section class="sp-section bg-paper">
-		<div class="container">
-			<div data-fade>
-				<p class="label">Sectorale onderzoeken</p>
-				<h2>Welke onderzoeken kunnen nodig zijn bij een BOPA?</h2>
-				<p>Welke onderzoeken precies nodig zijn, hangt af van uw initiatief en de locatie. Donkers Advies bepaalt samen met u welke onderzoeken vereist zijn en coördineert de uitvoering ervan.</p>
-			</div>
-
-			<FeatureGrid
-				items={[
-					{
-						title: 'Geluid',
-						descriptionHtml:
-							'Bij nieuwe geluidsgevoelige functies (zoals woningen) nabij wegen, spoorwegen of industrie is een akoestisch onderzoek verplicht. Wij toetsen aan de geluidsnormen uit het Bkl.',
-					},
-					{
-						title: 'Stikstof',
-						descriptionHtml:
-							'Is de locatie nabij een Natura 2000-gebied? Dan is een AERIUS-berekening vereist om significant negatieve effecten op de stikstofdepositie uit te sluiten.',
-					},
-					{
-						title: 'Flora en fauna',
-						descriptionHtml:
-							'Een ecologische quickscan of soortgericht onderzoek is nodig wanneer de activiteit invloed kan hebben op beschermde plant- of diersoorten of Natura 2000-gebieden.',
-					},
-					{
-						title: 'Bodem',
-						descriptionHtml:
-							'Bij gevoelig gebruik van de bodem (wonen, moestuinen) is een verkennend bodemonderzoek conform NEN 5740 vereist om verontreiniging uit te sluiten of te beoordelen.',
-					},
-					{
-						title: 'Water',
-						descriptionHtml:
-							'Een watertoets is nodig bij nieuwe verharding, waterberging of invloed op het watersysteem. Wij stemmen af met het waterschap over de vereiste compensatie en maatregelen.',
-					},
-					{
-						title: 'Archeologie',
-						descriptionHtml:
-							'In gebieden met een hoge of middelhoge archeologische verwachtingswaarde is een bureauonderzoek of archeologisch veldonderzoek nodig voor de aanvraag.',
-					},
-					{
-						title: 'Externe veiligheid',
-						descriptionHtml:
-							'Nabij risicobronnen (LPG-stations, buisleidingen, Bevi-inrichtingen) is een externe veiligheidstoets vereist om het groeps- en plaatsgebonden risico te beoordelen.',
-					},
-					{
-						title: 'Geur',
-						descriptionHtml:
-							'Bij agrarische of industriële geurbelasting op geurgevoelige functies is een geuronderzoek nodig om te toetsen aan de geurnormen uit het omgevingsplan of het Bkl.',
-					},
-					{
-						title: 'Verkeer',
-						descriptionHtml:
-							'Nieuwe functies die extra verkeer genereren, vereisen een verkeerskundige onderbouwing: verkeersaantrekking, parkeerbehoefte en impact op de omliggende infrastructuur.',
-					},
-				]}
-			/>
-		</div>
-	</section>
-
-	<section class="sp-section bg-forest">
-		<div class="container">
-			<div data-fade>
-				<p class="label">Werkwijze</p>
-				<h2 style="color:var(--white); margin-bottom: 2.5rem;">Hoe begeleidt Donkers Advies uw BOPA-aanvraag?</h2>
-			</div>
-
-			<div class="grid-2" style="align-items:start;">
-				<StepList items={werkwijzeSteps} variant="vertical" dark />
-
-				<div data-fade>
-					<InfoBox
-						style="margin-bottom: 1.25rem;"
-						title="Doorlooptijd"
-						items={[
-							'<strong style="color:var(--sage-lt);">Reguliere procedure:</strong> 8 weken, met maximale verlenging van 6 weken (totaal 14 weken)',
-							'<strong style="color:var(--sage-lt);">Uitgebreide procedure:</strong> 26 weken, met maximale verlenging van 6 weken (totaal 32 weken)',
-							'De toepasselijke procedure hangt af van de aard en omvang van de activiteit',
-							'Een volledige aanvraag bij de eerste indiening voorkomt opschorting van de beslistermijn',
-						]}
-					/>
-					<InfoBox
-						title="Kosten"
-						items={[
-							'<strong style="color:var(--sage-lt);">Gemeentelijke leges:</strong> afhankelijk van bouwsom, type activiteit en gemeente',
-							'<strong style="color:var(--sage-lt);">Advieskosten:</strong> afhankelijk van complexiteit en benodigde stukken',
-							'<strong style="color:var(--sage-lt);">Onderzoekskosten:</strong> afhankelijk van type en aantal onderzoeken',
-							'Donkers Advies geeft u vooraf een helder beeld van alle te verwachten kosten. <a href="/#contact">Vraag een vrijblijvende indicatie.</a>',
-						]}
-					/>
-				</div>
-			</div>
+			<p data-fade style="max-width: 68ch; margin: 2rem auto 0;">
+				Twijfelt u of uw plan een BOPA vereist? Soms volstaat een lichtere route of is het plan zelfs
+				vergunningvrij. Donkers Advies toetst dat als eerste.
+			</p>
 		</div>
 	</section>
 
@@ -415,32 +268,68 @@ const faqItems = [
 			<div data-fade>
 				<p class="label">Procedure kiezen</p>
 				<h2>BOPA, OPA of wijziging omgevingsplan?</h2>
-				<p style="margin-bottom: 2rem;">De keuze voor de juiste procedure is bepalend voor de doorlooptijd, kosten en kans van slagen. Donkers Advies adviseert u over de meest passende route voor uw specifieke situatie.</p>
 			</div>
 			<CompareGrid
 				items={[
 					{
 						title: 'OPA',
 						descriptionHtml:
-							'Uw activiteit past <em>binnen</em> het omgevingsplan en is vergunningplichtig. Geen ruimtelijke onderbouwing vereist. Eenvoudigste en snelste procedure.',
+							'Uw plan past binnen het omgevingsplan, maar is vergunningplichtig. Lichtste en snelste route.',
 						linkLabel: 'Meer over de OPA-procedure',
 						linkHref: '/omgevingsplanactiviteit/',
 					},
 					{
 						title: 'BOPA',
 						descriptionHtml:
-							'Uw activiteit wijkt <em>af</em> van het omgevingsplan. Vereist een volledige ruimtelijke onderbouwing met ETFAL-motivering. Geschikt voor incidentele afwijkingen.',
+							'Uw plan wijkt af, als concreet initiatief op uw locatie. Vergunning op basis van uw aanvraag.',
 						highlight: true,
 					},
 					{
 						title: 'Wijziging omgevingsplan',
 						descriptionHtml:
-							'Het plan zelf wordt structureel aangepast. Geschikt voor grootschalige of permanente ontwikkelingen waarbij een BOPA juridisch onvoldoende robuust is.',
+							'De regels zelf moeten veranderen, of meerdere percelen of eigenaren zijn betrokken. Aanpassing van het plan, geldt voor iedereen.',
 						linkLabel: 'Meer over wijziging omgevingsplan',
 						linkHref: '/wijziging-omgevingsplan/',
 					},
 				]}
 			/>
+			<div data-fade style="max-width: 68ch; margin: 2rem auto 0;">
+				<p>
+					Een BOPA kan ook een permanente ontwikkeling mogelijk maken; de vergunde woning of uitbreiding staat er
+					structureel. Een wijziging van het omgevingsplan is vooral nodig als u een flexibele regeling wilt
+					waarbinnen meerdere invullingen mogelijk zijn, als er meerdere percelen of eigenaren bij betrokken zijn,
+					of als er regels buiten uw eigen locatie moeten worden aangepast.
+				</p>
+				<p>
+					Weet u niet welke route past? Begin met een <a href="/principeverzoek/">principeverzoek</a>; dat
+					bespaart u de kosten van een onderbouwing als de haalbaarheid onzeker is.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-forest">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Werkwijze</p>
+				<h2 style="color:var(--white); margin-bottom: 2.5rem;">Zo werkt het</h2>
+			</div>
+			<StepList items={werkwijzeSteps} variant="vertical" dark />
+		</div>
+	</section>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div data-fade style="max-width: 68ch; margin: 0 auto;">
+				<p class="label">Kerncijfers</p>
+				<h2>Doorlooptijd en kosten</h2>
+				<p>
+					De reguliere procedure duurt 8 weken, met een verlenging tot maximaal 14 weken. In aangewezen gevallen
+					geldt de uitgebreide procedure van 6 maanden. De kosten bestaan uit gemeentelijke leges, advieskosten
+					en onderzoekskosten, en bij aangewezen bouwactiviteiten komt daar kostenverhaal bij. Donkers Advies
+					geeft u vooraf een helder beeld. <a href="/#contact">Vraag een vrijblijvende indicatie.</a>
+				</p>
+			</div>
 		</div>
 	</section>
 
@@ -450,9 +339,7 @@ const faqItems = [
 				<p class="label">Veelgestelde vragen</p>
 				<h2>Veelgestelde vragen over de BOPA</h2>
 				<p>
-					Hieronder vindt u antwoord op de meest gestelde vragen over de buitenplanse omgevingsplanactiviteit
-					(BOPA) onder de Omgevingswet. Meer achtergrond vindt u op onze blog:
-					<a href="/blog/wat-is-een-bopa/">lees eerst wat een BOPA precies is</a> en
+					Meer achtergrond leest u op de blog: <a href="/blog/wat-is-een-bopa/">wat is een BOPA</a> en
 					<a href="/blog/ruimtelijke-onderbouwing-bopa/">hoe u een ruimtelijke onderbouwing opstelt</a>.
 				</p>
 			</div>
@@ -462,7 +349,7 @@ const faqItems = [
 
 	<CTA
 		title="Wilt u weten of uw initiatief kansrijk is?"
-		description="Donkers Advies beoordeelt uw plan, adviseert over de beste procedure en begeleidt uw BOPA-aanvraag van begin tot eind. Neem vrijblijvend contact op voor een eerste gesprek."
+		description="Donkers Advies beoordeelt uw plan, adviseert over de beste procedure en begeleidt uw BOPA van begin tot eind. Dankzij ervaring met de beoordelingspraktijk van gemeenten weet u vroeg waar uw plan sterk staat en waar het risico zit."
 		buttonLabel="Vraag een vrijblijvend adviesgesprek aan"
 		buttonHref="/#contact"
 	/>

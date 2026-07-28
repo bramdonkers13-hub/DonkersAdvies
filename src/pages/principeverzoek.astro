@@ -9,47 +9,88 @@ import FAQ from '../components/FAQ.astro';
 import CTA from '../components/CTA.astro';
 import { serviceSchema } from '../lib/schema';
 
-const title = 'Principeverzoek opstellen en indienen | Donkers Advies';
+const title = 'Principeverzoek opstellen en indienen';
 const description =
-	'Toets de haalbaarheid van uw bouwplan of functiewijziging vooraf bij de gemeente. Donkers Advies stelt uw principeverzoek op en begeleidt het volledige traject.';
+	'Toets de haalbaarheid van uw plan vóór u investeert in onderzoeken. Donkers Advies stelt uw principeverzoek op en begeleidt het traject tot de gemeentelijke reactie.';
 
 const service = serviceSchema({
 	name: 'Principeverzoek opstellen en indienen',
 	description:
-		'Professionele begeleiding bij het opstellen en indienen van een principeverzoek bij de gemeente — van haalbaarheidsanalyse en strategisch advies tot volledige procedurebegeleiding onder de Omgevingswet.',
+		'Opstellen en indienen van een principeverzoek bij de gemeente om de haalbaarheid van een ruimtelijk initiatief vooraf te toetsen, met volledige begeleiding.',
 	path: '/principeverzoek/',
 });
+
+const waaromItems = [
+	{
+		title: 'Donkers Advies kent de beoordeling van binnenuit.',
+		descriptionHtml:
+			'Vanuit de gemeentelijke praktijk zijn principeverzoeken beoordeeld, dus het is bekend welke onderbouwing een positieve grondhouding uitlokt en welke vragen oproept.',
+	},
+	{
+		title: 'De juiste vraag levert een bruikbaar antwoord.',
+		descriptionHtml:
+			'Een vaag verzoek geeft een vaag antwoord. Donkers Advies formuleert een concrete vraag aan het college en stuurt aan op een reactie met heldere voorwaarden.',
+	},
+	{
+		title: 'Vooruitdenken over de route.',
+		descriptionHtml:
+			'Een principeverzoek is de eerste stap naar een BOPA, een OPA of een wijziging van het omgevingsplan. Het wordt zo ingericht dat het de vervolgprocedure versnelt.',
+	},
+	{
+		title: 'Oog voor het provinciale spoor.',
+		descriptionHtml:
+			'Een gemeentelijk ja is niet altijd genoeg: provinciale instructieregels werken door in de beoordeling. Die toets wordt in het verzoek meegenomen.',
+	},
+];
+
+const reactiesItems = [
+	{
+		title: 'Positieve grondhouding.',
+		descriptionHtml:
+			'De gemeente staat open voor het plan, veelal onder voorwaarden. Donkers Advies toetst of die voorwaarden uitvoerbaar en betaalbaar zijn en zet de vervolgprocedure in gang.',
+	},
+	{
+		title: 'Voorwaardelijke medewerking.',
+		descriptionHtml:
+			'Aanpassing van het plan of aanvullend onderzoek is vereist. Donkers Advies zoekt uit welke voorwaarden hard zijn en welke onderhandelbaar.',
+	},
+	{
+		title: 'Negatieve grondhouding.',
+		descriptionHtml:
+			'De gemeente ziet binnen het huidige beleid geen mogelijkheden. Dat is niet altijd het einde. Lees <a href="/blog/principeverzoek-afgewezen/">wat te doen bij een afwijzing</a>.',
+	},
+];
 
 const werkwijzeSteps = [
 	{
 		number: '01',
 		title: 'Haalbaarheidsanalyse',
 		descriptionHtml:
-			"Wij beoordelen uw initiatief aan de hand van het geldende omgevingsplan en relevante beleidsregels. We brengen kansen, risico's en aandachtspunten in kaart — zodat u weet waar u aan toe bent.",
+			"Donkers Advies beoordeelt uw plan aan de hand van het omgevingsplan en het relevante beleid, en brengt kansen en risico's in kaart.",
 	},
 	{
 		number: '02',
 		title: 'Strategisch advies',
 		descriptionHtml:
-			'Op basis van de analyse adviseren wij over de optimale positionering van uw initiatief en de meest kansrijke insteek richting de gemeente.',
+			'Op basis daarvan volgt advies over de sterkste positionering en de meest kansrijke insteek richting de gemeente.',
 	},
 	{
 		number: '03',
 		title: 'Opstellen principeverzoek',
 		descriptionHtml:
-			'Wij stellen een helder, overtuigend en volledig onderbouwd principeverzoek op — inclusief ruimtelijke motivering, beleidstoetsing en alle relevante bijlagen.',
+			'Een helder, volledig onderbouwd verzoek met een concrete vraag aan het college, een ruimtelijke motivering en de beleidstoets.',
 	},
 	{
 		number: '04',
-		title: 'Indienen en afstemming met gemeente',
+		title: 'Indienen en afstemmen',
 		descriptionHtml:
-			'Wij dienen het verzoek in bij de gemeente en onderhouden gedurende de beoordelingsperiode het contact met de behandelend ambtenaar.',
+			'Donkers Advies dient het verzoek in en onderhoudt het contact met de gemeente tijdens de beoordeling.',
 	},
 	{
 		number: '05',
 		title: 'Beoordeling en vervolgadvies',
 		descriptionHtml:
-			'Wij analyseren de gemeentelijke reactie en adviseren over de meest geschikte vervolgstap: een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a>, <a href="/omgevingsplanactiviteit/">OPA</a> of <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>.',
+			'De reactie wordt geanalyseerd, met advies over de vervolgstap: een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a>, <a href="/omgevingsplanactiviteit/">OPA</a> of <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>.',
 	},
 ];
 
@@ -57,44 +98,72 @@ const faqItems = [
 	{
 		question: 'Wat is het verschil tussen een principeverzoek en een vooroverleg?',
 		answerHtml:
-			'<p>Een principeverzoek is een schriftelijk verzoek aan het gemeentebestuur om een formeel standpunt in te nemen over een ruimtelijke ontwikkeling. Een vooroverleg is een informeel ambtelijk gesprek om uw initiatief te bespreken.</p><p>In de praktijk worden beide gecombineerd: Donkers Advies bereidt het vooroverleg strategisch voor én stelt het formele principeverzoek op dat hierop volgt.</p>',
+			'<p>Een principeverzoek is een schriftelijk verzoek aan het gemeentebestuur om een standpunt in te nemen over een ruimtelijke ontwikkeling. Een vooroverleg is een informeel ambtelijk gesprek om uw initiatief te bespreken. In de praktijk worden beide gecombineerd. Let op dat gemeenten deze termen niet altijd consequent gebruiken; vraag na wat uw gemeente ermee bedoelt.</p>',
 		answerText:
-			'Een principeverzoek is een schriftelijk verzoek aan het gemeentebestuur om een formeel standpunt in te nemen over een ruimtelijke ontwikkeling. Een vooroverleg is een informeel ambtelijk gesprek. In de praktijk worden beide gecombineerd: Donkers Advies bereidt het vooroverleg voor én stelt het formele principeverzoek op.',
+			'Een principeverzoek is een schriftelijk verzoek aan het gemeentebestuur om een standpunt in te nemen over een ruimtelijke ontwikkeling. Een vooroverleg is een informeel ambtelijk gesprek om uw initiatief te bespreken. In de praktijk worden beide gecombineerd.',
 	},
 	{
 		question: 'Wat is het verschil tussen een principeverzoek en een BOPA?',
 		answerHtml:
-			'<p>Een principeverzoek is een <em>informeel, niet-bindend</em> verzoek waarmee u toetst of de gemeente bereid is mee te werken aan uw initiatief. Een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA (buitenplanse omgevingsplanactiviteit)</a> is een <em>formele omgevingsvergunning</em> voor een activiteit die afwijkt van het omgevingsplan — inclusief volledige ruimtelijke onderbouwing en formele besluitvorming.</p><p>In de meeste trajecten gaat het principeverzoek vooraf aan de BOPA-aanvraag: eerst toetst u de haalbaarheid, dan werkt u het uit in een formele aanvraag.</p>',
+			'<p>Een principeverzoek is een informeel, niet-bindend verzoek waarmee u toetst of de gemeente bereid is mee te werken. Een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> is een formele omgevingsvergunning voor een activiteit die afwijkt van het omgevingsplan, inclusief een volledige ruimtelijke onderbouwing en formele besluitvorming. In de meeste trajecten gaat het principeverzoek vooraf aan de BOPA-aanvraag: eerst toetst u de haalbaarheid, dan werkt u het uit.</p>',
 		answerText:
-			'Een principeverzoek is een informeel, niet-bindend verzoek waarmee u toetst of de gemeente bereid is mee te werken aan uw initiatief. Een BOPA (buitenplanse omgevingsplanactiviteit) is een formele omgevingsvergunning voor een activiteit die afwijkt van het omgevingsplan. In de meeste gevallen gaat het principeverzoek vooraf aan de BOPA-aanvraag.',
+			'Een principeverzoek is een informeel, niet-bindend verzoek waarmee u toetst of de gemeente bereid is mee te werken. Een BOPA is een formele omgevingsvergunning voor een activiteit die afwijkt van het omgevingsplan. In de meeste trajecten gaat het principeverzoek vooraf aan de BOPA-aanvraag.',
 	},
 	{
-		question: 'Is een positief principeverzoek een garantie op een omgevingsvergunning?',
+		question: 'Is een positief principeverzoek een garantie op een vergunning?',
 		answerHtml:
-			'<p>Nee. Een positief principeverzoek is juridisch niet bindend. Het geeft aan dat de gemeente <em>in principe</em> bereid is medewerking te verlenen, maar de formele vergunningverlening vindt pas plaats na de volledige aanvraagprocedure.</p><p>Een positieve grondhouding verlaagt het risico aanzienlijk, versnelt de vervolgprocedure en vergroot de kans op een succesvolle vergunningverlening — maar biedt geen juridische zekerheid.</p>',
+			'<p>Nee. Een positief principeverzoek is juridisch niet bindend en geeft geen recht op een vergunning. Het geeft aan dat de gemeente in beginsel bereid is mee te werken. Wel kunt u zich onder omstandigheden op het vertrouwensbeginsel beroepen als de gemeente terugkomt op een concrete, aan het college toe te rekenen toezegging waarop u redelijkerwijs mocht vertrouwen. Een positieve grondhouding verlaagt het risico aanzienlijk en versnelt de vervolgprocedure, maar biedt geen absolute zekerheid.</p>',
 		answerText:
-			'Nee. Een positief principeverzoek is juridisch niet bindend. Het geeft aan dat de gemeente in principe bereid is medewerking te verlenen, maar de formele vergunningverlening vindt pas plaats na de volledige aanvraagprocedure. Een positieve grondhouding verlaagt het risico aanzienlijk en versnelt de vervolgprocedure.',
+			'Nee. Een positief principeverzoek is juridisch niet bindend en geeft geen recht op een vergunning. Het geeft aan dat de gemeente in beginsel bereid is mee te werken. Wel kunt u zich onder omstandigheden op het vertrouwensbeginsel beroepen als de gemeente terugkomt op een concrete toezegging waarop u redelijkerwijs mocht vertrouwen.',
 	},
 	{
 		question: 'Hoe lang duurt een principeverzoek?',
 		answerHtml:
-			'<p>De behandeltijd door de gemeente bedraagt gemiddeld <strong>4 tot 12 weken</strong>, afhankelijk van de complexiteit van het initiatief en de interne besluitvorming binnen de gemeente. Wanneer het college van B&amp;W formeel moet instemmen, kan de doorlooptijd langer zijn.</p><p>Een zorgvuldig en volledig opgesteld principeverzoek verkort doorgaans de behandelingstijd. Donkers Advies zorgt voor een zo compleet en overtuigend mogelijk dossier.</p>',
+			'<p>De behandeltijd bedraagt gemiddeld 4 tot 12 weken, afhankelijk van de complexiteit en de interne besluitvorming. Moet het college formeel instemmen of wordt de gemeenteraad betrokken, dan kan het langer duren. Er geldt geen wettelijke termijn. Een zorgvuldig en volledig opgesteld verzoek verkort de behandeling doorgaans.</p>',
 		answerText:
-			'De behandeltijd door de gemeente bedraagt gemiddeld 4 tot 12 weken, afhankelijk van de complexiteit van het initiatief en de interne besluitvorming binnen de gemeente. Een zorgvuldig en volledig opgesteld principeverzoek verkort doorgaans de behandelingstijd.',
+			'De behandeltijd bedraagt gemiddeld 4 tot 12 weken, afhankelijk van de complexiteit en de interne besluitvorming. Moet het college formeel instemmen of wordt de gemeenteraad betrokken, dan kan het langer duren. Er geldt geen wettelijke termijn.',
 	},
 	{
 		question: 'Wat kost een principeverzoek?',
 		answerHtml:
-			'<p>De kosten bestaan uit twee onderdelen: de advieskosten van Donkers Advies voor het opstellen, onderbouwen en begeleiden van het verzoek, en eventuele gemeentelijke leges voor de behandeling.</p><p>De hoogte van de leges verschilt per gemeente. Donkers Advies geeft u vooraf een helder beeld van de verwachte kosten. <a href="/#contact">Neem contact op voor een vrijblijvende kostenestimatie.</a></p>',
+			'<p>De kosten bestaan uit de advieskosten voor het opstellen en begeleiden van het verzoek, en de gemeentelijke leges voor de behandeling. De leges verschillen per gemeente en zijn verschuldigd zodra de gemeente het verzoek in behandeling neemt, ook bij een negatief antwoord. Veel gemeenten verrekenen die leges later met de vergunningaanvraag. Donkers Advies geeft u vooraf een helder beeld van de verwachte kosten. <a href="/#contact">Neem contact op voor een vrijblijvende indicatie.</a></p>',
 		answerText:
-			'De kosten bestaan uit twee onderdelen: de advieskosten van Donkers Advies voor het opstellen, onderbouwen en begeleiden van het verzoek, en eventuele gemeentelijke leges voor de behandeling. De hoogte van de leges verschilt per gemeente. Neem contact op voor een vrijblijvende indicatie.',
+			'De kosten bestaan uit de advieskosten voor het opstellen en begeleiden van het verzoek, en de gemeentelijke leges voor de behandeling. De leges verschillen per gemeente en zijn verschuldigd zodra de gemeente het verzoek in behandeling neemt, ook bij een negatief antwoord. Veel gemeenten verrekenen die leges later met de vergunningaanvraag.',
+	},
+	{
+		question: 'Krijg ik mijn leges terug bij een negatief antwoord?',
+		answerHtml:
+			'<p>Doorgaans niet. Leges zijn verschuldigd voor het in behandeling nemen van het verzoek, niet voor een positieve uitkomst. Wel verrekenen veel gemeenten de leges van het principeverzoek later met die van de vergunningaanvraag, mits u binnen een bepaalde termijn aanvraagt. Die termijn en de voorwaarden verschillen per gemeente.</p>',
+		answerText:
+			'Doorgaans niet. Leges zijn verschuldigd voor het in behandeling nemen van het verzoek, niet voor een positieve uitkomst. Wel verrekenen veel gemeenten de leges van het principeverzoek later met die van de vergunningaanvraag, mits u binnen een bepaalde termijn aanvraagt.',
+	},
+	{
+		question: 'Kan ik een principeverzoek indienen voor een pand dat ik nog niet heb gekocht?',
+		answerHtml:
+			'<p>Ja, en dat is vaak juist verstandig. U heeft geen eigendom nodig om een principeverzoek in te dienen. Neem in de koopovereenkomst een ontbindende voorwaarde op die is gekoppeld aan de uitkomst van het verzoek, zodat u niet vastzit aan een aankoop als de gemeente niet wil meewerken.</p>',
+		answerText:
+			'Ja, en dat is vaak juist verstandig. U heeft geen eigendom nodig om een principeverzoek in te dienen. Neem in de koopovereenkomst een ontbindende voorwaarde op die is gekoppeld aan de uitkomst van het verzoek.',
 	},
 	{
 		question: 'Wat als de gemeente een negatieve grondhouding heeft?',
 		answerHtml:
-			'<p>Een negatieve reactie geeft in elk geval dúidelijkheid — en dat heeft waarde. Op basis van de gemeentelijke motivering adviseert Donkers Advies over de mogelijkheden: aanpassing van het plan, een andere locatiekeuze of een strategisch overleg met een hogere bestuurslaag.</p><p>Soms is een negatieve grondhouding niet definitief. Door het plan te herzien of aanvullende informatie aan te leveren kan de gemeente worden overtuigd haar standpunt te heroverwegen. Lees <a href="/blog/principeverzoek-afgewezen/">wat te doen bij een afwijzing</a> voor de volledige uitwerking.</p>',
+			'<p>Een negatieve reactie geeft in elk geval duidelijkheid, en dat heeft waarde. Op basis van de motivering adviseert Donkers Advies over de mogelijkheden: aanpassing van het plan, een ander beleidsspoor, een beroep op de afwegingsplicht van de gemeente, of een strategisch overleg. Soms is een negatieve grondhouding niet definitief. Lees <a href="/blog/principeverzoek-afgewezen/">wat te doen bij een afwijzing</a>.</p>',
 		answerText:
-			'Een negatieve reactie geeft duidelijkheid en heeft waarde. Op basis van de gemeentelijke motivering adviseert Donkers Advies over mogelijkheden: aanpassing van het plan, andere locatiekeuze of een aanvullend strategisch overleg. Soms is een negatieve grondhouding niet definitief.',
+			'Een negatieve reactie geeft in elk geval duidelijkheid, en dat heeft waarde. Op basis van de motivering adviseert Donkers Advies over de mogelijkheden: aanpassing van het plan, een ander beleidsspoor, een beroep op de afwegingsplicht van de gemeente, of een strategisch overleg. Soms is een negatieve grondhouding niet definitief.',
+	},
+	{
+		question: 'Geldt er iets bijzonders bij provinciaal beleid?',
+		answerHtml:
+			'<p>Ja. Een positief antwoord van de gemeente betekent niet dat uw plan doorgaat. Provinciale instructieregels, zoals die in een provinciale omgevingsverordening, werken door in de beoordeling. Werken die tegen uw plan, dan kan de gemeente positief zijn en toch geen vergunning verlenen. Donkers Advies neemt de provinciale toets daarom op in het principeverzoek.</p>',
+		answerText:
+			'Ja. Een positief antwoord van de gemeente betekent niet dat uw plan doorgaat. Provinciale instructieregels, zoals die in een provinciale omgevingsverordening, werken door in de beoordeling. Werken die tegen uw plan, dan kan de gemeente positief zijn en toch geen vergunning verlenen.',
+	},
+	{
+		question: 'Moet ik participatie organiseren bij een principeverzoek?',
+		answerHtml:
+			'<p>Niet verplicht. Bij de latere vergunningaanvraag moet u wel aangeven of participatie heeft plaatsgevonden, en de gemeenteraad kan gevallen aanwijzen waarin participatie vooraf verplicht is. Los daarvan is vroeg contact met de omgeving strategisch verstandig, omdat omwonenden die zich overvallen voelen sneller bezwaarmaker worden.</p>',
+		answerText:
+			'Niet verplicht. Bij de latere vergunningaanvraag moet u wel aangeven of participatie heeft plaatsgevonden, en de gemeenteraad kan gevallen aanwijzen waarin participatie vooraf verplicht is. Los daarvan is vroeg contact met de omgeving strategisch verstandig.',
 	},
 ];
 ---
@@ -106,53 +175,80 @@ const faqItems = [
 			{ name: 'Diensten', path: '/#diensten' },
 			{ name: 'Principeverzoek', path: '/principeverzoek/' },
 		]}
-		title="Principeverzoek"
-		subtitle="Toets de planologische haalbaarheid van uw initiatief vóór u investeert in onderzoeken of verdere planvorming — Donkers Advies begeleidt uw principeverzoek van analyse tot gemeentebeoordeling."
-	/>
+		title="Principeverzoek opstellen en indienen"
+		subtitle="Toets de haalbaarheid van uw bouwplan of functiewijziging vóór u investeert in onderzoeken, tekeningen of verdere planvorming. Donkers Advies stelt uw principeverzoek op en begeleidt het traject van analyse tot gemeentelijke reactie."
+	>
+		<p class="page-sub" style="margin-top:1rem;">
+			Het principeverzoek is het goedkoopste moment om te weten of uw plan haalbaar is, en het beste moment om te
+			horen onder welke voorwaarden het dat wordt. Maar wat een positief antwoord juridisch waard is, hangt af van
+			hoe het verzoek is opgesteld. Doordat Donkers Advies vanuit de gemeentelijke praktijk principeverzoeken heeft
+			beoordeeld, is bekend welke vraag u aan het college moet stellen om een antwoord te krijgen waar u later op
+			kunt bouwen.
+		</p>
+		<a href="/#contact" class="btn btn-primary" style="margin-top:1.5rem;">Vraag een vrijblijvend adviesgesprek aan</a>
+	</PageHero>
 
 	<section class="sp-section bg-white">
 		<div class="container">
-			<div class="intro-grid">
-				<div class="intro-text" data-fade>
-					<p class="label">Wat is het</p>
-					<h2>Wat is een principeverzoek?</h2>
-					<p>
-						Een principeverzoek is een informeel verzoek aan de gemeente om vooraf een standpunt in te nemen over
-						een voorgenomen ruimtelijke ontwikkeling. Denk aan het realiseren van een woning buiten het
-						bouwvlak, een bedrijfsuitbreiding, een functiewijziging van agrarisch naar wonen of een nieuwe
-						stedelijke ontwikkeling.
-					</p>
-					<p>
-						De gemeente beoordeelt uw initiatief op hoofdlijnen aan de hand van het geldende omgevingsplan,
-						provinciaal beleid en gemeentelijk beleid. Zij geeft vervolgens aan of zij in principe bereid is
-						medewerking te verlenen aan verdere planvorming.
-					</p>
-					<p>
-						Hoewel het principeverzoek juridisch niet bindend is, vormt een positieve gemeentelijke grondhouding
-						in de praktijk de onmisbare basis voor een formele procedure: een
-						<a href="/buitenplanse-omgevingsplanactiviteit/">buitenplanse omgevingsplanactiviteit (BOPA)</a>, een
-						<a href="/omgevingsplanactiviteit/">omgevingsplanactiviteit (OPA)</a> of een
-						<a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>.
-					</p>
-					<p>
-						Donkers Advies stelt uw principeverzoek op, verzorgt de ruimtelijke onderbouwing, begeleidt de
-						afstemming met de gemeente en adviseert over de strategie die uw initiatief de grootste kans op
-						succes geeft.
-					</p>
-				</div>
+			<div data-fade>
+				<p class="label">Aanpak</p>
+				<h2>Waarom Donkers Advies</h2>
+			</div>
+			<FeatureGrid items={waaromItems} />
+		</div>
+	</section>
 
-				<InfoBox
-					fade
-					title="Voordelen van een principeverzoek"
-					items={[
-						'Duidelijkheid over planologische haalbaarheid vóór grote investeringen',
-						'Inzicht in het gemeentelijk en provinciaal beleid dat op uw plan van toepassing is',
-						'Verkenning van bestuurlijk draagvlak in een vroeg stadium',
-						'Lagere kosten dan direct een formele omgevingsvergunning aanvragen zonder zekerheid',
-						'Versnelling van de vervolgprocedure (<a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> of <a href="/wijziging-omgevingsplan/">wijziging omgevingsplan</a>)',
-						'Inzicht in de randvoorwaarden waaronder de gemeente medewerking wil verlenen',
-					]}
-				/>
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Wat is het</p>
+				<h2>Wat is een principeverzoek?</h2>
+				<p>
+					Een principeverzoek is een verzoek aan de gemeente om vóór de formele procedure een standpunt in te
+					nemen over een voorgenomen ruimtelijke ontwikkeling, bijvoorbeeld een woning toevoegen, een
+					bedrijfsuitbreiding of een functiewijziging van agrarisch naar wonen. De gemeente beoordeelt uw plan op
+					hoofdlijnen aan de hand van het omgevingsplan en het beleid, en geeft aan of zij in beginsel bereid is
+					mee te werken.
+				</p>
+				<p>
+					Een principeverzoek is geen besluit in de zin van de Algemene wet bestuursrecht. Er staat daarom geen
+					bezwaar of beroep tegen open. Toch is een positieve grondhouding in de praktijk de onmisbare basis voor
+					een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a>, een
+					<a href="/omgevingsplanactiviteit/">OPA</a> of een
+					<a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>.
+				</p>
+				<p>
+					Wilt u het volledige stappenplan lezen? Bekijk
+					<a href="/blog/principeverzoek-indienen/">hoe u een principeverzoek indient</a>.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Juridische waarde</p>
+				<h2>Hoe hard is een positief antwoord?</h2>
+				<p>
+					Veel initiatiefnemers horen dat een principeverzoek niet bindend is, en denken daarom dat het antwoord
+					vrijblijvend is. Dat is te kort door de bocht, en juist hier ligt de meerwaarde van een goed opgesteld
+					verzoek.
+				</p>
+				<p>
+					Het klopt dat een principe-uitspraak geen recht op een vergunning geeft. Maar komt de gemeente terug
+					op een concrete toezegging waarop u redelijkerwijs mocht vertrouwen, dan kunt u zich beroepen op het
+					vertrouwensbeginsel. De rechter beoordeelt zo'n beroep aan de hand van drie vragen: is er een
+					toezegging gedaan, is die toe te rekenen aan het bevoegde bestuursorgaan, en weegt uw belang op tegen
+					dat van anderen.
+				</p>
+				<p>
+					De juridische waarde van uw antwoord wordt daarmee grotendeels bepaald door de kwaliteit van het
+					verzoek. Daarom stuurt Donkers Advies aan op een uitspraak van het college in plaats van een
+					vrijblijvende ambtelijke mail, formuleert het een concrete vraag, en beschrijft het uw plan volledig,
+					inclusief de lastige punten. Dat laatste beschermt uw positie: wie zijn plan mooier voorstelt dan het
+					is, ondermijnt zijn eigen beroep op het vertrouwensbeginsel op het moment dat hij het nodig heeft.
+				</p>
 			</div>
 		</div>
 	</section>
@@ -162,43 +258,38 @@ const faqItems = [
 			<div data-fade>
 				<p class="label">Toepassingsgebied</p>
 				<h2>Wanneer is een principeverzoek verstandig?</h2>
-				<p>Een principeverzoek onder de Omgevingswet is met name zinvol in de volgende situaties.</p>
+				<p>Een principeverzoek is met name zinvol in deze situaties:</p>
 			</div>
 
-			<FeatureGrid
+			<InfoBox
+				fade
+				style="max-width: 720px; margin: 0 auto;"
+				title="Met name zinvol wanneer"
 				items={[
-					{
-						title: 'Initiatief buiten het omgevingsplan',
-						descriptionHtml:
-							'Uw bouwplan of functiewijziging past niet (volledig) binnen het geldende omgevingsplan en vereist planologische medewerking van de gemeente.',
-					},
-					{
-						title: 'Beleidsmatige onzekerheid',
-						descriptionHtml:
-							'Er bestaat onduidelijkheid over het gemeentelijk, provinciaal of nationaal beleid dat van toepassing is op uw ruimtelijke ontwikkeling.',
-					},
-					{
-						title: 'Afstemming vóór grote investeringen',
-						descriptionHtml:
-							'U wilt bestuurlijk draagvlak verkennen voordat u kosten maakt voor onderzoeken, architectentekeningen of verdere planvorming.',
-					},
-					{
-						title: 'Ruimtelijke impact op de omgeving',
-						descriptionHtml:
-							'Uw initiatief heeft mogelijk gevolgen voor de directe omgeving, het landschap of de leefomgeving van omwonenden.',
-					},
-					{
-						title: 'Bestuurlijk draagvlak peilen',
-						descriptionHtml:
-							'U wilt al in een vroeg stadium weten of het gemeentebestuur openstaat voor uw ruimtelijke ontwikkeling voordat u een formele aanvraag indient.',
-					},
-					{
-						title: 'Voorbereiding op formele procedure',
-						descriptionHtml:
-							'Het principeverzoek vormt de brug tussen uw idee en een formele procedure: een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a>, <a href="/omgevingsplanactiviteit/">OPA</a> of <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>.',
-					},
+					'Uw plan past niet volledig binnen het omgevingsplan en vraagt om medewerking van de gemeente',
+					'Er is onduidelijkheid over het gemeentelijk of provinciaal beleid dat op uw plan van toepassing is',
+					'U wilt de bereidheid van de gemeente kennen vóór u kosten maakt voor onderzoeken of tekeningen',
+					'Uw plan heeft impact op de omgeving en u wilt het draagvlak vroeg peilen',
+					'U bereidt een formele procedure voor en wilt een sterk vertrekpunt',
 				]}
 			/>
+
+			<p data-fade style="max-width: 68ch; margin: 2rem auto 0;">
+				Wanneer een principeverzoek juist niet nodig is: als uw plan vergunningvrij is, of duidelijk binnen het
+				omgevingsplan past en alleen een reguliere vergunning vraagt. Donkers Advies toetst dat als eerste, zodat
+				u geen dubbele kosten maakt.
+			</p>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Uitkomst</p>
+				<h2>De mogelijke reacties van de gemeente</h2>
+				<p>Een principeverzoek leidt doorgaans tot een van drie uitkomsten:</p>
+			</div>
+			<FeatureGrid items={reactiesItems} />
 		</div>
 	</section>
 
@@ -206,32 +297,26 @@ const faqItems = [
 		<div class="container">
 			<div data-fade>
 				<p class="label">Werkwijze</p>
-				<h2 style="color:var(--white); margin-bottom: 2.5rem;">Hoe begeleidt Donkers Advies uw principeverzoek?</h2>
+				<h2 style="color:var(--white); margin-bottom: 2.5rem;">Zo werkt het</h2>
 			</div>
+			<StepList items={werkwijzeSteps} variant="vertical" dark />
+		</div>
+	</section>
 
-			<div class="grid-2" style="align-items:start;">
-				<StepList items={werkwijzeSteps} variant="vertical" dark />
-
-				<div data-fade>
-					<InfoBox
-						style="margin-bottom: 1.25rem;"
-						title="Mogelijke reacties van de gemeente"
-						items={[
-							'<strong style="color:var(--sage-lt);">Positieve grondhouding</strong> — gemeente staat open voor het initiatief, veelal onder randvoorwaarden',
-							'<strong style="color:var(--sage-lt);">Voorwaardelijke medewerking</strong> — aanpassing van het plan of aanvullende onderzoeken vereist',
-							'<strong style="color:var(--sage-lt);">Negatieve grondhouding</strong> — gemeente ziet geen mogelijkheden binnen huidig beleid',
-						]}
-					/>
-					<InfoBox
-						title="Doorlooptijd en kosten"
-						items={[
-							'Gemeentelijke behandeltijd: gemiddeld <strong style="color:var(--sage-lt);">4 tot 12 weken</strong>',
-							'Afhankelijk van complexiteit en interne gemeentelijke afstemming',
-							'Sommige gemeenten rekenen leges voor de behandeling van een principeverzoek',
-							'Donkers Advies geeft u vooraf inzicht in de verwachte kosten en doorlooptijd',
-						]}
-					/>
-				</div>
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div data-fade style="max-width: 68ch; margin: 0 auto;">
+				<p class="label">Kerncijfers</p>
+				<h2>Doorlooptijd en kosten</h2>
+				<p>
+					De behandeltijd bedraagt gemiddeld 4 tot 12 weken, afhankelijk van de complexiteit en de interne
+					afstemming. Wordt de gemeenteraad betrokken, dan kan het langer duren. Er geldt geen wettelijke
+					beslistermijn. De meeste gemeenten rekenen leges voor de behandeling; die zijn verschuldigd zodra de
+					gemeente het verzoek in behandeling neemt, ongeacht de uitkomst. Veel gemeenten verrekenen die leges
+					later met de vergunningaanvraag. Daarnaast betaalt u de advieskosten voor het opstellen en begeleiden.
+					Donkers Advies geeft u vooraf inzicht in de te verwachten kosten.
+					<a href="/#contact">Vraag een vrijblijvende indicatie.</a>
+				</p>
 			</div>
 		</div>
 	</section>
@@ -240,38 +325,36 @@ const faqItems = [
 		<div class="container">
 			<div data-fade>
 				<p class="label">Vervolgstappen</p>
-				<h2>Van principeverzoek naar omgevingsvergunning</h2>
-				<p style="margin-bottom: 2rem;">
-					Na een positief principeverzoek werkt u het initiatief uit in een formele procedure. De meest
-					passende route is afhankelijk van uw specifieke situatie.
-				</p>
+				<h2>Van principeverzoek naar vergunning</h2>
 			</div>
 			<CompareGrid
 				items={[
 					{
 						title: 'OPA',
-						descriptionHtml:
-							'Omgevingsvergunning voor een activiteit die <em>past binnen</em> het omgevingsplan, maar waarvoor formele toestemming vereist is.',
+						descriptionHtml: 'Plan past binnen het omgevingsplan, vergunning vereist. Lichte toets, sterke positie.',
 						linkLabel: 'Meer over de OPA-procedure',
 						linkHref: '/omgevingsplanactiviteit/',
 					},
 					{
 						title: 'BOPA',
 						descriptionHtml:
-							'Omgevingsvergunning voor een activiteit die <em>afwijkt</em> van het omgevingsplan. Vereist een volledige ruimtelijke onderbouwing.',
+							'Plan wijkt af, concreet initiatief op uw locatie. Volledige ruimtelijke onderbouwing.',
 						linkLabel: 'Meer over de BOPA-procedure',
 						linkHref: '/buitenplanse-omgevingsplanactiviteit/',
-						highlight: true,
 					},
 					{
 						title: 'Wijziging omgevingsplan',
 						descriptionHtml:
-							'Structurele aanpassing van het omgevingsplan — geschikt voor grootschalige of structurele ontwikkelingen.',
+							'De regels zelf moeten veranderen, of meerdere percelen of eigenaren zijn betrokken. Vaststelling door de gemeenteraad.',
 						linkLabel: 'Meer over wijziging omgevingsplan',
 						linkHref: '/wijziging-omgevingsplan/',
 					},
 				]}
 			/>
+			<p data-fade style="max-width: 68ch; margin: 2rem auto 0;">
+				De motivering uit uw principeverzoek is de basis voor de onderbouwing die daarna volgt. Een goed
+				opgesteld verzoek is dus geen verloren investering, maar het eerste hoofdstuk van het vervolgtraject.
+			</p>
 		</div>
 	</section>
 
@@ -281,8 +364,7 @@ const faqItems = [
 				<p class="label">Veelgestelde vragen</p>
 				<h2>Veelgestelde vragen over het principeverzoek</h2>
 				<p>
-					Hieronder vindt u antwoord op de meest gestelde vragen over het principeverzoek onder de Omgevingswet.
-					Lees ook <a href="/blog/principeverzoek-indienen/">het complete stappenplan voor het principeverzoek</a> voor een uitgebreide toelichting per stap.
+					Lees ook <a href="/blog/principeverzoek-indienen/">het complete stappenplan voor het principeverzoek</a>.
 				</p>
 			</div>
 			<FAQ items={faqItems} />
@@ -291,7 +373,7 @@ const faqItems = [
 
 	<CTA
 		title="Wilt u weten of uw plan haalbaar is?"
-		description="Donkers Advies beoordeelt uw initiatief en stelt uw principeverzoek professioneel op. Neem vrijblijvend contact op voor een eerste gesprek over de mogelijkheden."
+		description="Donkers Advies beoordeelt uw initiatief en stelt uw principeverzoek professioneel op. Dankzij ervaring met de beoordelingspraktijk van gemeenten weet u vroeg of uw plan kansrijk is, en wordt de vraag zo gesteld dat u een bruikbaar antwoord krijgt."
 		buttonLabel="Vraag een vrijblijvend adviesgesprek aan"
 		buttonHref="/#contact"
 	/>

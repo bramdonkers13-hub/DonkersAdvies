@@ -9,47 +9,63 @@ import FAQ from '../components/FAQ.astro';
 import CTA from '../components/CTA.astro';
 import { serviceSchema } from '../lib/schema';
 
-const title = 'Omgevingsvergunning OPA aanvragen | Donkers Advies';
+const title = 'OPA aanvragen: omgevingsvergunning en begeleiding';
 const description =
-	'Heb je een OPA nodig? Donkers Advies stelt uw omgevingsvergunning voor een omgevingsplanactiviteit professioneel op en begeleidt de gehele procedure.';
+	'Past uw plan binnen het omgevingsplan maar is een vergunning nodig? Donkers Advies stelt uw OPA-aanvraag op en begeleidt de procedure tot de vergunning.';
 
 const service = serviceSchema({
-	name: 'Omgevingsvergunning omgevingsplanactiviteit (OPA)',
+	name: 'OPA aanvragen en begeleiding',
 	description:
-		"Professionele begeleiding bij het aanvragen van een omgevingsvergunning voor een omgevingsplanactiviteit (OPA). Van toetsing aan het omgevingsplan tot volledige procedurebegeleiding onder de Omgevingswet.",
+		'Opstellen en indienen van een omgevingsvergunning voor een binnenplanse omgevingsplanactiviteit onder de Omgevingswet, met volledige procedurebegeleiding.',
 	path: '/omgevingsplanactiviteit/',
 });
+
+const waaromItems = [
+	{
+		title: 'Donkers Advies kent de beoordeling van binnenuit.',
+		descriptionHtml:
+			'Vanuit de gemeentelijke praktijk zijn vergunningaanvragen beoordeeld, dus het is bekend welke gegevens een behandelaar nodig heeft en waar een aanvraag op vastloopt. Uw dossier gaat in één keer compleet de deur uit.',
+	},
+	{
+		title: 'Eerst de route, dan pas indienen.',
+		descriptionHtml:
+			'Voordat u iets indient, wordt vastgesteld of u werkelijk een OPA nodig heeft. Soms is uw plan vergunningvrij, soms wijkt het juist af en is het een BOPA.',
+	},
+	{
+		title: 'Beide kanten van de knip in beeld.',
+		descriptionHtml:
+			'Bij bouwen zijn het ruimtelijke en het technische deel twee losse activiteiten. Donkers Advies houdt ze allebei in de gaten, zodat u niet voor verrassingen komt te staan.',
+	},
+	{
+		title: 'Bekend met het Omgevingsloket.',
+		descriptionHtml: 'De formele indieningsvereisten zijn vertrouwd, zodat de aanvraag correct en volledig binnenkomt.',
+	},
+];
 
 const werkwijzeSteps = [
 	{
 		number: '01',
 		title: 'Toetsing aan het omgevingsplan',
 		descriptionHtml:
-			'Wij beoordelen uw initiatief aan de hand van het geldende omgevingsplan en stellen vast of een OPA, een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> of een andere procedure van toepassing is.',
+			'Donkers Advies beoordeelt uw plan en stelt vast of een OPA, een BOPA of een andere procedure van toepassing is.',
 	},
 	{
 		number: '02',
-		title: 'Advies over de beste route',
+		title: 'Advies over de route',
 		descriptionHtml:
-			"Wij adviseren over de meest geschikte procedure en bespreken de kansen, risico's en aandachtspunten van uw specifieke situatie, zodat u geen onnodige kosten maakt.",
+			"De kansen, risico's en aandachtspunten worden besproken, zodat u geen onnodige kosten maakt.",
 	},
 	{
 		number: '03',
 		title: 'Opstellen van de aanvraag',
 		descriptionHtml:
-			'Wij verzorgen een volledige, juridisch correcte OPA-aanvraag inclusief alle vereiste stukken: motivering, plantoetsing, tekeningen en eventuele onderzoeken.',
+			'De volledige aanvraag wordt opgesteld: motivering, plantoetsing, tekeningen en eventuele onderzoeken.',
 	},
 	{
 		number: '04',
-		title: 'Indienen via het Omgevingsloket',
+		title: 'Indienen en begeleiden',
 		descriptionHtml:
-			'Wij dienen de aanvraag namens u in via het Omgevingsloket (omgevingsloket.nl) en zorgen dat het dossier compleet en conform de gemeentelijke eisen is.',
-	},
-	{
-		number: '05',
-		title: 'Begeleiding tot vergunningverlening',
-		descriptionHtml:
-			'Wij onderhouden contact met het bevoegd gezag, beantwoorden vragen en begeleiden het proces tot en met de vergunningverlening. Bij aanvullende verzoeken van de gemeente reageren wij snel en adequaat.',
+			'Donkers Advies dient de aanvraag in via het Omgevingsloket en begeleidt het traject tot de vergunning.',
 	},
 ];
 
@@ -57,79 +73,93 @@ const faqItems = [
 	{
 		question: 'Wat is een omgevingsplanactiviteit (OPA)?',
 		answerHtml:
-			"<p>Een omgevingsplanactiviteit (OPA) is een activiteit die past binnen de regels van het geldende omgevingsplan, maar waarvoor het omgevingsplan een vergunningplicht heeft opgenomen. U heeft voor die activiteit een omgevingsvergunning nodig van de gemeente.</p><p>De gemeente toetst uw aanvraag aan de planregels. Voldoet uw aanvraag aan alle eisen, dan is de gemeente verplicht de vergunning te verlenen. De OPA is daarmee een relatief eenvoudige en voorspelbare procedure, mits uw initiatief daadwerkelijk past binnen het plan.</p>",
+			'<p>Een OPA is een activiteit die past binnen de regels van het geldende omgevingsplan, maar waarvoor het plan een vergunningplicht heeft opgenomen. U heeft er een omgevingsvergunning voor nodig. De gemeente toetst uw aanvraag aan de planregels, en voldoet die aan alle eisen, dan is de gemeente in beginsel verplicht de vergunning te verlenen. De OPA is daarmee een relatief eenvoudige en voorspelbare procedure, mits uw initiatief daadwerkelijk binnen het plan past.</p>',
 		answerText:
-			"Een omgevingsplanactiviteit (OPA) is een activiteit die past binnen de regels van het geldende omgevingsplan, maar waarvoor een vergunningplicht geldt. Voor zo'n activiteit heeft u een omgevingsvergunning nodig. De gemeente toetst uw aanvraag aan de planregels en verleent de vergunning als uw initiatief aan alle eisen voldoet.",
+			'Een OPA is een activiteit die past binnen de regels van het geldende omgevingsplan, maar waarvoor het plan een vergunningplicht heeft opgenomen. U heeft er een omgevingsvergunning voor nodig. De gemeente toetst uw aanvraag aan de planregels, en voldoet die aan alle eisen, dan is de gemeente in beginsel verplicht de vergunning te verlenen.',
 	},
 	{
 		question: 'Wanneer heb ik een OPA nodig?',
 		answerHtml:
-			'<p>U heeft een OPA nodig wanneer uw bouwplan of activiteit past binnen het geldende omgevingsplan, maar het omgevingsplan voor die activiteit een vergunningplicht heeft opgenomen. Voorbeelden zijn: het bouwen van een woning of bedrijfsgebouw binnen een passende bestemming, het uitvoeren van aanlegwerkzaamheden of een gebruikswijziging met aanvullende eisen.</p><p>Twijfelt u of u een OPA nodig heeft? Donkers Advies toetst dit snel voor u en adviseert over de juiste procedure.</p>',
+			'<p>U heeft een OPA nodig wanneer uw bouwplan of activiteit binnen het geldende omgevingsplan past, maar het plan er een vergunningplicht voor kent. Voorbeelden zijn het bouwen van een woning of bedrijfsgebouw binnen een passende functie, het uitvoeren van aanlegwerkzaamheden, of een gebruikswijziging met aanvullende eisen. Twijfelt u? Donkers Advies toetst dit snel voor u.</p>',
 		answerText:
-			'U heeft een OPA nodig wanneer uw bouwplan of activiteit past binnen het geldende omgevingsplan, maar het omgevingsplan voor die activiteit een vergunningplicht heeft opgenomen. Dit geldt bijvoorbeeld voor het bouwen van een woning of bedrijfsgebouw binnen een passende bestemming, of voor specifieke gebruikswijzigingen met aanvullende eisen.',
+			'U heeft een OPA nodig wanneer uw bouwplan of activiteit binnen het geldende omgevingsplan past, maar het plan er een vergunningplicht voor kent. Voorbeelden zijn het bouwen van een woning of bedrijfsgebouw binnen een passende functie, het uitvoeren van aanlegwerkzaamheden, of een gebruikswijziging met aanvullende eisen.',
 	},
 	{
 		question: 'Wanneer heb ik geen OPA maar een BOPA nodig?',
 		answerHtml:
-			'<p>U heeft een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA (buitenplanse omgevingsplanactiviteit)</a> nodig wanneer uw initiatief <em>afwijkt</em> van het geldende omgevingsplan. Denk aan bouwen buiten het bouwvlak, een functiewijziging van agrarisch naar wonen, of een uitbreiding die de maximale maten overschrijdt.</p><p>Bij een BOPA is een volledige ruimtelijke onderbouwing vereist en is de procedure complexer en tijdrovender dan bij een OPA.</p>',
+			'<p>U heeft een <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> nodig wanneer uw initiatief afwijkt van het geldende omgevingsplan. Denk aan bouwen buiten het bouwvlak, een functiewijziging van agrarisch naar wonen, of een uitbreiding die de maximale maten overschrijdt. Bij een BOPA is een volledige ruimtelijke onderbouwing vereist en is de procedure zwaarder dan bij een OPA.</p>',
 		answerText:
-			'U heeft een BOPA nodig wanneer uw initiatief afwijkt van het geldende omgevingsplan. Denk aan bouwen buiten het bouwvlak, een functiewijziging van agrarisch naar wonen, of een uitbreiding die de maximale maten overschrijdt. In die gevallen is een buitenplanse omgevingsplanactiviteit de aangewezen procedure.',
+			'U heeft een BOPA nodig wanneer uw initiatief afwijkt van het geldende omgevingsplan. Denk aan bouwen buiten het bouwvlak, een functiewijziging van agrarisch naar wonen, of een uitbreiding die de maximale maten overschrijdt. Bij een BOPA is een volledige ruimtelijke onderbouwing vereist en is de procedure zwaarder dan bij een OPA.',
 	},
 	{
 		question: 'Wat is het verschil tussen een OPA en een BOPA?',
 		answerHtml:
-			'<p>Het sleutelwoord is <em>passend versus afwijkend</em>:</p><p><strong>OPA:</strong> uw activiteit past <em>binnen</em> het omgevingsplan en u heeft alleen een formele vergunning nodig. De gemeente toetst slechts aan de planregels. Geen ruimtelijke onderbouwing vereist.</p><p><strong>BOPA:</strong> uw activiteit wijkt <em>af</em> van het omgevingsplan. Een volledige ruimtelijke onderbouwing (ETFAL-toets) is vereist. De procedure is zwaarder en duurt langer. Donkers Advies adviseert u over de meest passende route.</p>',
+			'<p>Het sleutelwoord is passend versus afwijkend. Bij een OPA past uw activiteit binnen het omgevingsplan en toetst de gemeente alleen aan de planregels; die toets is limitatief en imperatief, wat u een sterke positie geeft. Bij een BOPA wijkt uw activiteit af van het plan, is een volledige onderbouwing vereist en heeft de gemeente beoordelingsruimte. De BOPA is de zwaardere en doorgaans langere procedure.</p>',
 		answerText:
-			"Bij een OPA past uw activiteit binnen de regels van het omgevingsplan — u heeft alleen een formele vergunning nodig. Bij een BOPA (buitenplanse omgevingsplanactiviteit) wijkt uw activiteit af van het omgevingsplan en is een volledige ruimtelijke onderbouwing vereist. Een BOPA is daarmee complexer en tijdrovender dan een OPA.",
+			'Het sleutelwoord is passend versus afwijkend. Bij een OPA past uw activiteit binnen het omgevingsplan en toetst de gemeente alleen aan de planregels; die toets is limitatief en imperatief, wat u een sterke positie geeft. Bij een BOPA wijkt uw activiteit af van het plan, is een volledige onderbouwing vereist en heeft de gemeente beoordelingsruimte.',
+	},
+	{
+		question: 'Sta ik bij een OPA sterker dan bij een BOPA?',
+		answerHtml:
+			'<p>Ja. Bij een binnenplanse OPA mag de gemeente uw aanvraag alleen toetsen aan de regels in het omgevingsplan zelf, en moet zij de vergunning verlenen zodra u daaraan voldoet. Zij mag niet weigeren op algemene ruimtelijke of beleidsmatige gronden die niet in het plan staan. Wel kan een planregel zelf afwegingsruimte bevatten, bijvoorbeeld een open norm; dan zit de beoordeling in die regel. Bij een BOPA heeft de gemeente ruimte voor een eigen afweging. Uw uitgangspositie bij een OPA is daardoor doorgaans aanzienlijk sterker.</p>',
+		answerText:
+			'Ja. Bij een binnenplanse OPA mag de gemeente uw aanvraag alleen toetsen aan de regels in het omgevingsplan zelf, en moet zij de vergunning verlenen zodra u daaraan voldoet. Zij mag niet weigeren op algemene ruimtelijke of beleidsmatige gronden die niet in het plan staan. Wel kan een planregel zelf afwegingsruimte bevatten, bijvoorbeeld een open norm.',
 	},
 	{
 		question: 'Hoe lang duurt een OPA-procedure?',
 		answerHtml:
-			'<p>De reguliere beslistermijn voor een OPA-aanvraag is <strong>8 weken</strong> na ontvangst van een volledige aanvraag. De gemeente mag deze termijn eenmalig verlengen met maximaal <strong>6 weken</strong>. De totale maximale doorlooptijd is daarmee 14 weken.</p><p>De beslistermijn wordt opgeschort wanneer de aanvraag onvolledig is of wanneer aanvullend onderzoek gevraagd wordt. Een complete aanvraag bij de eerste indiening is daarom cruciaal. Donkers Advies zorgt voor een zo volledig mogelijk dossier.</p>',
+			'<p>De reguliere beslistermijn is 8 weken na ontvangst van een volledige aanvraag. De gemeente mag deze eenmalig verlengen met maximaal 6 weken, samen ten hoogste 14 weken. De termijn wordt opgeschort bij een onvolledige aanvraag of aanvullend onderzoek. Een complete aanvraag bij de eerste indiening is daarom belangrijk.</p>',
 		answerText:
-			'De reguliere beslistermijn voor een OPA-aanvraag is 8 weken. De gemeente mag deze termijn eenmalig verlengen met maximaal 6 weken. De totale doorlooptijd bedraagt daarmee maximaal 14 weken, mits de aanvraag compleet is ingediend.',
+			'De reguliere beslistermijn is 8 weken na ontvangst van een volledige aanvraag. De gemeente mag deze eenmalig verlengen met maximaal 6 weken, samen ten hoogste 14 weken. De termijn wordt opgeschort bij een onvolledige aanvraag of aanvullend onderzoek.',
 	},
 	{
 		question: 'Wat kost een OPA aanvragen?',
 		answerHtml:
-			'<p>De kosten bestaan uit twee onderdelen: <strong>gemeentelijke leges</strong> en <strong>advieskosten</strong>. De leges worden door de gemeente bepaald en zijn afhankelijk van het type activiteit, de bouwsom of het gebruiksoppervlak. De hoogte verschilt per gemeente.</p><p>Donkers Advies geeft u vooraf een helder kostenplaatje. <a href="/#contact">Neem contact op voor een vrijblijvende indicatie.</a></p>',
+			'<p>De kosten bestaan uit gemeentelijke leges en advieskosten, en eventueel onderzoekskosten. De leges worden door de gemeente bepaald en hangen af van het type activiteit, de bouwsom of het gebruiksoppervlak. Doordat een OPA geen volledige ruimtelijke onderbouwing vereist, liggen de advieskosten doorgaans lager dan bij een BOPA. Donkers Advies geeft u vooraf een helder kostenplaatje. <a href="/#contact">Neem contact op voor een vrijblijvende indicatie.</a></p>',
 		answerText:
-			'De kosten bestaan uit gemeentelijke leges en eventuele advieskosten. De leges zijn afhankelijk van het type activiteit, de omvang van het project en de gemeente. Donkers Advies geeft u vooraf een helder kostenplaatje.',
+			'De kosten bestaan uit gemeentelijke leges en advieskosten, en eventueel onderzoekskosten. De leges worden door de gemeente bepaald en hangen af van het type activiteit, de bouwsom of het gebruiksoppervlak. Doordat een OPA geen volledige ruimtelijke onderbouwing vereist, liggen de advieskosten doorgaans lager dan bij een BOPA.',
 	},
 	{
 		question: 'Kan de gemeente een OPA weigeren?',
 		answerHtml:
-			'<p>Ja. Als uw aanvraag niet voldoet aan de regels en voorwaarden van het omgevingsplan, kan de gemeente de vergunning weigeren. Anders dan bij een BOPA (waarbij de gemeente beleidsruimte heeft) is de toetsing bij een OPA grotendeels juridisch-technisch. Voldoet uw aanvraag aan alle eisen, dan is de gemeente <em>verplicht</em> de vergunning te verlenen.</p><p>Een volledige en inhoudelijk correcte aanvraag is daarom essentieel. Donkers Advies zorgt dat uw aanvraag sluitend is voordat deze wordt ingediend.</p>',
+			'<p>In beginsel alleen op grond van de beoordelingsregels in het omgevingsplan zelf. De toets is limitatief en imperatief: voldoet uw aanvraag aan de planregels, eventueel onder voorschriften, dan is de gemeente verplicht de vergunning te verlenen. Zij mag niet weigeren op algemene gronden die niet in het plan staan. Bevat een planregel afwegingsruimte, dan zit de beoordeling in die regel, en moet een weigering zorgvuldig zijn gemotiveerd. Een volledige, correcte aanvraag is daarom essentieel.</p>',
 		answerText:
-			'Ja. Als uw aanvraag niet voldoet aan de regels en voorwaarden van het omgevingsplan, kan de gemeente de vergunning weigeren. Anders dan bij een BOPA heeft de gemeente bij een OPA relatief weinig beleidsruimte: de toetsing is grotendeels juridisch-technisch van aard.',
+			'In beginsel alleen op grond van de beoordelingsregels in het omgevingsplan zelf. De toets is limitatief en imperatief: voldoet uw aanvraag aan de planregels, eventueel onder voorschriften, dan is de gemeente verplicht de vergunning te verlenen. Bevat een planregel afwegingsruimte, dan zit de beoordeling in die regel, en moet een weigering zorgvuldig zijn gemotiveerd.',
 	},
 	{
 		question: 'Waar dien ik een OPA-aanvraag in?',
 		answerHtml:
-			'<p>Een OPA-aanvraag dient u in via het <strong>Omgevingsloket</strong> (omgevingsloket.nl), het officiële digitale loket voor alle aanvragen onder de Omgevingswet. De aanvraag gaat naar de gemeente die bevoegd gezag is voor uw locatie.</p><p>Donkers Advies verzorgt de volledige aanvraag en dient deze namens u in. Zo bent u zeker van een correcte en volledige indiening.</p>',
+			'<p>Een OPA-aanvraag dient u in via het Omgevingsloket, het officiële digitale loket voor aanvragen onder de Omgevingswet. De aanvraag gaat naar de gemeente die bevoegd gezag is voor uw locatie. Donkers Advies verzorgt de volledige aanvraag en dient deze namens u in, zodat u zeker bent van een correcte en volledige indiening.</p>',
 		answerText:
-			'Een OPA-aanvraag dient u in via het Omgevingsloket (omgevingsloket.nl). Dit is het officiële digitale loket voor alle aanvragen onder de Omgevingswet. Donkers Advies verzorgt de volledige aanvraag en dient deze namens u in.',
+			'Een OPA-aanvraag dient u in via het Omgevingsloket, het officiële digitale loket voor aanvragen onder de Omgevingswet. De aanvraag gaat naar de gemeente die bevoegd gezag is voor uw locatie. Donkers Advies verzorgt de volledige aanvraag en dient deze namens u in.',
 	},
 	{
 		question: 'Wat als mijn aanvraag onvolledig is?',
 		answerHtml:
-			'<p>Als de gemeente uw aanvraag onvolledig acht, ontvangt u een verzoek om aanvullende informatie. De beslistermijn wordt dan opgeschort totdat de ontbrekende gegevens zijn aangeleverd. Dit kan leiden tot aanzienlijke vertraging in uw project.</p><p>Donkers Advies stelt vooraf een volledig overzicht op van alle vereiste stukken en zorgt dat uw aanvraag bij de eerste indiening compleet is.</p>',
+			'<p>Acht de gemeente uw aanvraag onvolledig, dan ontvangt u een verzoek om aanvullende informatie en wordt de beslistermijn opgeschort tot de ontbrekende gegevens zijn aangeleverd. Dat kan tot aanzienlijke vertraging leiden. Donkers Advies stelt vooraf een volledig overzicht op van alle vereiste stukken en zorgt dat uw aanvraag bij de eerste indiening compleet is.</p>',
 		answerText:
-			'Wanneer de gemeente uw aanvraag onvolledig acht, ontvangt u een verzoek om aanvullende informatie. De beslistermijn wordt dan opgeschort totdat de ontbrekende gegevens zijn aangeleverd. Een onvolledige aanvraag kan leiden tot aanzienlijke vertraging.',
+			'Acht de gemeente uw aanvraag onvolledig, dan ontvangt u een verzoek om aanvullende informatie en wordt de beslistermijn opgeschort tot de ontbrekende gegevens zijn aangeleverd. Dat kan tot aanzienlijke vertraging leiden.',
 	},
 	{
 		question: 'Heb ik altijd een ruimtelijke onderbouwing nodig bij een OPA?',
 		answerHtml:
-			'<p>Niet altijd. Bij een eenvoudige OPA waarbij uw activiteit helder past binnen de planregels, volstaan bouwkundige gegevens en een toetsing aan het omgevingsplan. Een uitgebreide ruimtelijke onderbouwing is dan niet vereist.</p><p>Stelt het omgevingsplan beoordelingsregels of nadere eisen? Dan is wel een motivering nodig waaruit blijkt dat uw initiatief aan die specifieke criteria voldoet. Donkers Advies beoordeelt per situatie wat precies nodig is.</p>',
+			'<p>Niet als zodanig. Omdat uw plan binnen het omgevingsplan past, toetst de gemeente rechtstreeks aan de planregels en is een volledige ruimtelijke onderbouwing niet nodig. Wel kan het plan om specifieke gegevens vragen, zoals een parkeerbalans, een akoestisch rapport of een onderbouwing van de beeldkwaliteit. Donkers Advies beoordeelt per situatie wat precies nodig is.</p>',
 		answerText:
-			'Niet altijd. Bij een eenvoudige OPA waarbij uw activiteit helder past binnen de planregels, volstaan bouwkundige gegevens en een toetsing aan het omgevingsplan. Bij beoordelingsregels of nadere eisen kan een motivering wel vereist zijn.',
+			'Niet als zodanig. Omdat uw plan binnen het omgevingsplan past, toetst de gemeente rechtstreeks aan de planregels en is een volledige ruimtelijke onderbouwing niet nodig. Wel kan het plan om specifieke gegevens vragen, zoals een parkeerbalans, een akoestisch rapport of een onderbouwing van de beeldkwaliteit.',
+	},
+	{
+		question: 'Wat is de knip bij bouwen?',
+		answerHtml:
+			'<p>De knip is de scheiding tussen het ruimtelijke en het technische deel van een bouwactiviteit. Het ruimtelijke deel, de omgevingsplanactiviteit, wordt getoetst aan het omgevingsplan. Het technische deel wordt getoetst aan het Besluit bouwwerken leefomgeving. Beide kunnen los van elkaar vergunningplichtig, meldingsplichtig of vergunningvrij zijn. Donkers Advies controleert altijd beide kanten.</p>',
+		answerText:
+			'De knip is de scheiding tussen het ruimtelijke en het technische deel van een bouwactiviteit. Het ruimtelijke deel, de omgevingsplanactiviteit, wordt getoetst aan het omgevingsplan. Het technische deel wordt getoetst aan het Besluit bouwwerken leefomgeving. Beide kunnen los van elkaar vergunningplichtig, meldingsplichtig of vergunningvrij zijn.',
 	},
 	{
 		question: 'Wat is het verschil tussen een OPA en een principeverzoek?',
 		answerHtml:
-			'<p>Een <a href="/principeverzoek/">principeverzoek</a> is een <em>informeel, niet-bindend</em> verzoek aan de gemeente om vooraf een standpunt in te nemen over uw initiatief. Het is geen formele procedure en heeft geen rechtsgevolgen. Het gaat vooraf aan de formele aanvraag.</p><p>Een OPA is de <em>formele omgevingsvergunning</em> zelf. Als u twijfelt of uw initiatief kansrijk is of past binnen het omgevingsplan, is een principeverzoek de logische eerste stap vóór de OPA-aanvraag.</p>',
+			'<p>Een <a href="/principeverzoek/">principeverzoek</a> is een informeel, niet-bindend verzoek aan de gemeente om vooraf een standpunt in te nemen over uw initiatief. Het heeft geen rechtsgevolgen en gaat vooraf aan de formele aanvraag. Een OPA is de formele omgevingsvergunning zelf. Twijfelt u of uw initiatief kansrijk is of binnen het omgevingsplan past, dan is een principeverzoek de logische eerste stap vóór de OPA-aanvraag.</p>',
 		answerText:
-			'Een principeverzoek is een informeel verzoek aan de gemeente om vooraf een standpunt in te nemen over uw initiatief. Het is niet-bindend en gaat vooraf aan de formele procedure. Een OPA is de formele omgevingsvergunning zelf. Als u twijfelt of uw initiatief kansrijk is, start dan met een principeverzoek.',
+			'Een principeverzoek is een informeel, niet-bindend verzoek aan de gemeente om vooraf een standpunt in te nemen over uw initiatief. Het heeft geen rechtsgevolgen en gaat vooraf aan de formele aanvraag. Een OPA is de formele omgevingsvergunning zelf.',
 	},
 ];
 ---
@@ -141,54 +171,76 @@ const faqItems = [
 			{ name: 'Diensten', path: '/#diensten' },
 			{ name: 'Omgevingsplanactiviteit (OPA)', path: '/omgevingsplanactiviteit/' },
 		]}
-		title="Omgevingsvergunning omgevingsplanactiviteit (OPA)"
-		subtitle="Uw initiatief past binnen het omgevingsplan, maar vereist formele toestemming van de gemeente. Donkers Advies stelt uw OPA-aanvraag op en begeleidt de vergunningsprocedure van begin tot eind."
-	/>
+		title="Omgevingsvergunning voor een omgevingsplanactiviteit (OPA) aanvragen"
+		subtitle="Past uw plan binnen het omgevingsplan, maar vraagt de gemeente er toch een vergunning voor? Dan heeft u een omgevingsplanactiviteit nodig, kortweg een OPA. Donkers Advies stelt uw aanvraag op en begeleidt de procedure van begin tot eind."
+	>
+		<p class="page-sub" style="margin-top:1rem;">
+			De OPA is de lichtste en meest voorspelbare vergunningroute onder de Omgevingswet, en uw uitgangspositie is
+			sterker dan u wellicht denkt. Als uw plan aan de planregels voldoet, is de gemeente in beginsel verplicht de
+			vergunning te verlenen. De kunst zit in een aanvraag die dat sluitend aantoont. Doordat Donkers Advies vanuit
+			de gemeentelijke praktijk aanvragen heeft beoordeeld, is bekend wat daarvoor nodig is.
+		</p>
+		<a href="/#contact" class="btn btn-primary" style="margin-top:1.5rem;">Vraag een vrijblijvend adviesgesprek aan</a>
+	</PageHero>
 
 	<section class="sp-section bg-white">
 		<div class="container">
-			<div class="intro-grid">
-				<div class="intro-text" data-fade>
-					<p class="label">Wat is het</p>
-					<h2>Wat is een omgevingsplanactiviteit (OPA)?</h2>
-					<p>
-						Een omgevingsplanactiviteit (OPA) is een activiteit die past binnen de regels van het geldende
-						omgevingsplan, maar waarvoor het omgevingsplan een vergunningplicht heeft opgenomen. U mag de
-						activiteit dus uitvoeren, maar u heeft daarvoor eerst een formele omgevingsvergunning nodig van de
-						gemeente.
-					</p>
-					<p>
-						De kern van een OPA-procedure is het <strong>aantonen</strong> dat uw initiatief voldoet aan alle
-						regels, beoordelingscriteria en voorwaarden uit het omgevingsplan. Anders dan bij een
-						<a href="/buitenplanse-omgevingsplanactiviteit/">buitenplanse omgevingsplanactiviteit (BOPA)</a> hoeft
-						u niet aan te tonen dat afwijken van het plan aanvaardbaar is. De gemeente toetst slechts of uw
-						aanvraag voldoet aan de geldende planregels.
-					</p>
-					<p>
-						Onder de Omgevingswet is de OPA een van de meest voorkomende vergunningvormen voor particulieren en
-						ondernemers. Of het nu gaat om het bouwen van een woning, het uitbreiden van een bedrijfspand of een
-						gebruikswijziging: als de activiteit past binnen het omgevingsplan maar vergunningplichtig is, heeft
-						u een OPA nodig.
-					</p>
-					<p>
-						Donkers Advies ondersteunt bij het opstellen en indienen van een juridisch correcte en volledige
-						OPA-aanvraag. Wij kennen de eisen van het bevoegd gezag en zorgen voor een dossier dat de toets der
-						kritiek doorstaat.
-					</p>
-				</div>
+			<div data-fade>
+				<p class="label">Aanpak</p>
+				<h2>Waarom Donkers Advies</h2>
+			</div>
+			<FeatureGrid items={waaromItems} />
+		</div>
+	</section>
 
-				<InfoBox
-					fade
-					title="Wanneer is een OPA nodig?"
-					items={[
-						'Bouwen van een woning of bijgebouw binnen de regels van het omgevingsplan',
-						'Realiseren van een bedrijfsgebouw of -uitbreiding binnen een passende bestemming',
-						'Uitvoeren van bouw- of sloopwerkzaamheden waarvoor het omgevingsplan een vergunningplicht stelt',
-						'Gebruikswijziging conform de toegestane functies, maar met aanvullende eisen',
-						'Aanlegwerkzaamheden zoals het verharden van terreinen, aanleggen van wegen of uitvoeren van grondwerkzaamheden',
-						'Een <a href="/blog/mantelzorgwoning-realiseren/">mantelzorgwoning</a> die niet aan de vergunningvrije voorwaarden voldoet',
-					]}
-				/>
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Wat is het</p>
+				<h2>Wat is een OPA?</h2>
+				<p>
+					Een omgevingsplanactiviteit is een activiteit die past binnen de regels van het omgevingsplan, maar
+					waarvoor dat plan een vergunningplicht heeft opgenomen. U mag de activiteit dus uitvoeren, maar u heeft
+					er eerst een omgevingsvergunning voor nodig. De gemeente toetst uitsluitend of uw aanvraag voldoet aan
+					de planregels. Anders dan bij een
+					<a href="/buitenplanse-omgevingsplanactiviteit/">buitenplanse omgevingsplanactiviteit (BOPA)</a> hoeft u
+					niet aan te tonen dat afwijken van het plan aanvaardbaar is.
+				</p>
+				<p>Wilt u meer achtergrond? Lees <a href="/blog/opa-aanvragen/">hoe een OPA-aanvraag verloopt</a>.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Uw positie</p>
+				<h2>Waarom u bij een OPA sterker staat dan u denkt</h2>
+				<p>
+					Dit is het punt dat veel initiatiefnemers niet weten, en het maakt verschil voor uw positie. De
+					beoordeling van een binnenplanse OPA is vastgelegd in artikel 8.0a lid 1 van het Besluit kwaliteit
+					leefomgeving, en die toets heeft een limitatief-imperatief karakter.
+				</p>
+				<p>
+					Limitatief betekent dat de gemeente uw aanvraag uitsluitend mag beoordelen aan de hand van de regels
+					die in het omgevingsplan zelf staan. Zij mag er geen algemene ruimtelijke bezwaren of beleidswensen
+					bijhalen die niet in de planregels zijn vastgelegd. Imperatief betekent dat de gemeente de vergunning
+					moet verlenen, eventueel onder voorschriften, zodra uw activiteit aan die regels voldoet.
+				</p>
+				<p>
+					Voor u betekent dit dat de discussie niet gaat over de vraag óf het mag, maar alleen of u aan de
+					regels voldoet. Dat is een sterkere uitgangspositie dan bij een BOPA, waar de gemeente
+					beoordelingsruimte heeft. Weigert een gemeente op gronden die niet in het plan staan, dan is dat in
+					een bezwaarprocedure een reëel aanknopingspunt.
+				</p>
+				<p>
+					Eén nuance hoort erbij, want die bepaalt hoe hard uw positie is. Het omgevingsplan kan zelf een
+					beoordelingsregel bevatten die het college afwegingsruimte geeft, bijvoorbeeld een open norm over
+					beeldkwaliteit. In dat geval zit de ruimte in die specifieke planregel, en is het zaak juist die regel
+					gericht te adresseren. Ook dan geldt: een weigering moet op het plan berusten en zorgvuldig zijn
+					gemotiveerd. Donkers Advies zoekt vooraf uit welke regels op uw plan van toepassing zijn en of daar
+					afwegingsruimte in zit.
+				</p>
 			</div>
 		</div>
 	</section>
@@ -197,124 +249,28 @@ const faqItems = [
 		<div class="container">
 			<div data-fade>
 				<p class="label">Toepassingsgebied</p>
-				<h2>Wanneer is een OPA de juiste procedure, en wanneer niet?</h2>
-				<p>Niet elke activiteit vereist een OPA. Hieronder ziet u in welke situaties een OPA de juiste route is, en wanneer een andere procedure passender is.</p>
+				<h2>Wanneer heeft u een OPA nodig?</h2>
+				<p>Een OPA speelt wanneer uw activiteit binnen het omgevingsplan past, maar het plan er een vergunningplicht voor kent. De meest voorkomende situaties:</p>
 			</div>
 
-			<FeatureGrid
+			<InfoBox
+				fade
+				style="max-width: 720px; margin: 0 auto;"
+				title="Meest voorkomende situaties"
 				items={[
-					{
-						title: 'Activiteit past binnen het omgevingsplan',
-						descriptionHtml:
-							'Uw bouwplan of gebruik valt binnen de planregels en het omgevingsplan kent voor die activiteit een vergunningplicht. Dit is het klassieke OPA-geval.',
-					},
-					{
-						title: 'Beoordelingsregels van toepassing',
-						descriptionHtml:
-							'Het omgevingsplan stelt nadere eisen of beoordelingscriteria aan de activiteit. U moet aantonen dat uw initiatief aan die criteria voldoet.',
-					},
-					{
-						title: 'Activiteit is vergunningvrij → geen OPA nodig',
-						descriptionHtml:
-							'Valt uw initiatief onder vergunningvrij bouwen of een uitzondering in het omgevingsplan? Dan heeft u géén OPA nodig en kunt u direct aan de slag.',
-					},
-					{
-						title: 'Activiteit wijkt af van het plan → BOPA nodig',
-						descriptionHtml:
-							'Past uw initiatief <em>niet</em> binnen het omgevingsplan? Dan heeft u een <a href="/buitenplanse-omgevingsplanactiviteit/">buitenplanse omgevingsplanactiviteit (BOPA)</a> nodig, niet een OPA.',
-					},
-					{
-						title: 'Twijfel over haalbaarheid → eerst principeverzoek',
-						descriptionHtml:
-							'Weet u niet zeker of de gemeente medewerking wil verlenen? Start dan eerst met een <a href="/principeverzoek/">principeverzoek</a> om de haalbaarheid informeel te toetsen.',
-					},
-					{
-						title: 'Structurele ontwikkeling → wijziging omgevingsplan',
-						descriptionHtml:
-							'Gaat het om een grootschalige of permanente wijziging van de planologische situatie? Dan is een <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a> de aangewezen route.',
-					},
+					'Het bouwen van een woning of bijgebouw binnen de regels van het omgevingsplan',
+					'Het realiseren of uitbreiden van een bedrijfsgebouw binnen een passende functie',
+					'Bouw- of sloopwerkzaamheden waarvoor het omgevingsplan een vergunningplicht stelt',
+					'Een gebruikswijziging binnen de toegestane functies, maar met aanvullende eisen',
+					'Aanlegwerkzaamheden, zoals het verharden van een terrein of het aanleggen van een weg',
+					'Een <a href="/blog/mantelzorgwoning-realiseren/">mantelzorgwoning</a> die niet aan de vergunningvrije voorwaarden voldoet',
 				]}
 			/>
-		</div>
-	</section>
 
-	<section class="sp-section bg-white">
-		<div class="container">
-			<div data-fade>
-				<p class="label">Aanvraagvereisten</p>
-				<h2>Welke documenten zijn nodig voor een OPA-aanvraag?</h2>
-				<p>Een volledige aanvraag is de sleutel tot een vlotte procedure. Ontbrekende stukken leiden tot aanhouding van de beslistermijn en onnodige vertraging. Donkers Advies zorgt voor een compleet dossier bij de eerste indiening.</p>
-			</div>
-
-			<FeatureGrid
-				items={[
-					{
-						title: 'Situatietekeningen en plattegronden',
-						descriptionHtml:
-							'Tekeningen van de bestaande en gewenste situatie, inclusief maatvoering, situering op het perceel en hoogte-aanduidingen.',
-					},
-					{
-						title: 'Toetsing aan het omgevingsplan',
-						descriptionHtml:
-							'Een inhoudelijke motivering waaruit blijkt dat het initiatief voldoet aan alle planregels, gebruiksbepalingen en beoordelingscriteria van het omgevingsplan.',
-					},
-					{
-						title: 'Ruimtelijke motivering bij beoordelingsregels',
-						descriptionHtml:
-							'Stelt het omgevingsplan nadere beoordelingscriteria? Dan is een toelichting vereist waaruit blijkt dat uw initiatief aan die specifieke eisen voldoet.',
-					},
-					{
-						title: 'Sectorale onderzoeken',
-						descriptionHtml:
-							'Afhankelijk van de activiteit: akoestisch onderzoek, bodemonderzoek, ecologische quick scan, bezonningsstudie of verkeersonderzoek. Donkers Advies coördineert de benodigde onderzoeken.',
-					},
-					{
-						title: 'Constructieve gegevens',
-						descriptionHtml:
-							'Bij bouwactiviteiten: constructieberekeningen, fundering en materiaalspecificaties conform de geldende bouwtechnische eisen (Bbl).',
-					},
-					{
-						title: 'Overige bijlagen',
-						descriptionHtml:
-							'Afhankelijk van de gemeentelijke indieningsvereisten: eigendomsakte, volmacht, archeologisch onderzoek of een watertoets. Donkers Advies stelt een volledig checklist op voor uw specifieke situatie.',
-					},
-				]}
-			/>
-		</div>
-	</section>
-
-	<section class="sp-section bg-forest">
-		<div class="container">
-			<div data-fade>
-				<p class="label">Werkwijze</p>
-				<h2 style="color:var(--white); margin-bottom: 2.5rem;">Hoe begeleidt Donkers Advies uw OPA-aanvraag?</h2>
-			</div>
-
-			<div class="grid-2" style="align-items:start;">
-				<StepList items={werkwijzeSteps} variant="vertical" dark />
-
-				<div data-fade>
-					<InfoBox
-						style="margin-bottom: 1.25rem;"
-						title="Doorlooptijd"
-						items={[
-							'Reguliere beslistermijn: <strong style="color:var(--sage-lt);">8 weken</strong>',
-							'Gemeente mag verlengen met maximaal <strong style="color:var(--sage-lt);">6 weken</strong>, totaal maximaal 14 weken',
-							'Termijn wordt opgeschort bij onvolledige aanvraag of aanvullend onderzoek',
-							'Een complete aanvraag bij de eerste indiening voorkomt onnodige vertraging',
-						]}
-					/>
-					<InfoBox
-						title="Kosten"
-						items={[
-							'Gemeentelijke leges: <strong style="color:var(--sage-lt);">afhankelijk van type activiteit en gemeente</strong>',
-							'Advieskosten Donkers Advies: afhankelijk van complexiteit en benodigde stukken',
-							'Eventuele onderzoekskosten (geluid, bodem, ecologie, etc.)',
-							'Donkers Advies geeft u vooraf een helder beeld van de verwachte kosten. <a href="/#contact">Vraag een vrijblijvende indicatie.</a>',
-						]}
-					/>
-				</div>
-			</div>
+			<p data-fade style="max-width: 68ch; margin: 2rem auto 0;">
+				Twijfelt u welke route op uw situatie van toepassing is? Donkers Advies toetst dat als eerste, zodat u
+				geen onnodige kosten maakt.
+			</p>
 		</div>
 	</section>
 
@@ -322,37 +278,89 @@ const faqItems = [
 		<div class="container">
 			<div data-fade>
 				<p class="label">Procedure kiezen</p>
-				<h2>OPA of BOPA: wat is het verschil?</h2>
-				<p style="margin-bottom: 2rem;">
-					De keuze tussen een OPA en een BOPA is bepalend voor de complexiteit, doorlooptijd en kosten van uw
-					procedure. Het verschil zit in één kernvraag: past uw activiteit <em>binnen</em> of <em>buiten</em> het
-					geldende omgevingsplan?
-				</p>
+				<h2>OPA, BOPA of wijziging omgevingsplan?</h2>
 			</div>
 			<CompareGrid
 				items={[
 					{
 						title: 'OPA',
 						descriptionHtml:
-							'Uw activiteit past <em>binnen</em> het omgevingsplan en is vergunningplichtig. De gemeente toetst uw aanvraag aan de planregels. Geen ruimtelijke onderbouwing vereist. Doorlooptijd: 8–14 weken.',
+							'Uw plan past binnen het omgevingsplan, maar is vergunningplichtig. Lichtste en snelste route, sterke positie.',
 						highlight: true,
 					},
 					{
 						title: 'BOPA',
 						descriptionHtml:
-							'Uw activiteit wijkt <em>af</em> van het omgevingsplan. Vereist een volledige ruimtelijke onderbouwing (ETFAL). Complexer en doorgaans tijdrovender dan een OPA.',
+							'Uw plan wijkt af, als concreet initiatief op uw locatie. Volledige ruimtelijke onderbouwing vereist.',
 						linkLabel: 'Meer over de BOPA-procedure',
 						linkHref: '/buitenplanse-omgevingsplanactiviteit/',
 					},
 					{
-						title: 'Principeverzoek',
+						title: 'Wijziging omgevingsplan',
 						descriptionHtml:
-							'Twijfelt u of uw initiatief kansrijk is? Een <a href="/principeverzoek/">principeverzoek</a> toetst de haalbaarheid informeel bij de gemeente, vóór de formele aanvraag.',
-						linkLabel: 'Meer over het principeverzoek',
-						linkHref: '/principeverzoek/',
+							'De regels zelf moeten veranderen, of meerdere percelen of eigenaren zijn betrokken. Aanpassing van het plan, geldt voor iedereen.',
+						linkLabel: 'Meer over wijziging omgevingsplan',
+						linkHref: '/wijziging-omgevingsplan/',
 					},
 				]}
 			/>
+			<p data-fade style="max-width: 68ch; margin: 2rem auto 0;">
+				Twijfelt u over de juiste route? Een <a href="/principeverzoek/">principeverzoek</a> geeft daar vooraf
+				duidelijkheid over.
+			</p>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">De knip</p>
+				<h2>De knip: ruimtelijk en technisch bouwen</h2>
+				<p>
+					Wie gaat bouwen, krijgt te maken met een bijzonderheid van de Omgevingswet die vaak voor verwarring
+					zorgt: de knip. De vroegere bouwvergunning is gesplitst in twee losstaande activiteiten.
+				</p>
+				<p>
+					De omgevingsplanactiviteit voor een bouwwerk is het ruimtelijke deel: past uw bouwwerk op deze plek,
+					gelet op maatvoering, situering, gebruik en de regels van het omgevingsplan. Dat is de OPA waar deze
+					pagina over gaat. De technische bouwactiviteit is het bouwtechnische deel, getoetst aan het Besluit
+					bouwwerken leefomgeving: constructie, brandveiligheid, energiezuinigheid en gezondheid.
+				</p>
+				<p>
+					De twee zijn ontkoppeld en kunnen elk afzonderlijk vergunningplichtig, meldingsplichtig of
+					vergunningvrij zijn, in elke combinatie. Zo kan een dakkapel aan de voorzijde ruimtelijk
+					vergunningplichtig zijn terwijl hij technisch vergunningvrij is. Donkers Advies controleert altijd
+					beide kanten. Let op: ook bij vergunningvrij bouwen blijven de technische eisen van het Bbl gewoon
+					gelden.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-forest">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Werkwijze</p>
+				<h2 style="color:var(--white); margin-bottom: 2.5rem;">Zo werkt het</h2>
+			</div>
+			<StepList items={werkwijzeSteps} variant="vertical" dark />
+		</div>
+	</section>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div data-fade style="max-width: 68ch; margin: 0 auto;">
+				<p class="label">Kerncijfers</p>
+				<h2>Doorlooptijd en kosten</h2>
+				<p>
+					De reguliere beslistermijn is 8 weken na een volledige aanvraag, met een verlenging tot maximaal 14
+					weken. Anders dan bij de uitgebreide procedure van sommige BOPA's komt er geen ontwerpbesluit ter
+					inzage. De kosten bestaan uit gemeentelijke leges en advieskosten, en eventueel onderzoekskosten.
+					Doordat een OPA geen volledige ruimtelijke onderbouwing vereist, liggen de advieskosten doorgaans
+					lager dan bij een BOPA. Donkers Advies geeft u vooraf een helder beeld.
+					<a href="/#contact">Vraag een vrijblijvende indicatie.</a>
+				</p>
+			</div>
 		</div>
 	</section>
 
@@ -360,11 +368,10 @@ const faqItems = [
 		<div class="container">
 			<div data-fade>
 				<p class="label">Veelgestelde vragen</p>
-				<h2>Veelgestelde vragen over de OPA-vergunning</h2>
+				<h2>Veelgestelde vragen over de OPA</h2>
 				<p>
-					Hieronder vindt u antwoord op de meest gestelde vragen over de omgevingsvergunning voor een
-					omgevingsplanactiviteit (OPA) onder de Omgevingswet. Lees ook meer over
-					<a href="/blog/opa-aanvragen/">zo verloopt een OPA-aanvraag</a>.
+					Meer achtergrond leest u in het blogartikel over
+					<a href="/blog/opa-aanvragen/">hoe een OPA-aanvraag verloopt</a>.
 				</p>
 			</div>
 			<FAQ items={faqItems} />
@@ -373,7 +380,7 @@ const faqItems = [
 
 	<CTA
 		title="Wilt u een OPA-aanvraag laten opstellen?"
-		description="Donkers Advies beoordeelt uw initiatief, stelt de aanvraag op en begeleidt de gehele OPA-procedure. Neem vrijblijvend contact op voor een eerste beoordeling."
+		description="Donkers Advies beoordeelt uw initiatief, stelt de aanvraag op en begeleidt de gehele OPA-procedure. Dankzij ervaring met de beoordelingspraktijk van gemeenten gaat uw dossier in één keer compleet de deur uit, zodat u niet onnodig vertraging oploopt."
 		buttonLabel="Vraag een vrijblijvend adviesgesprek aan"
 		buttonHref="/#contact"
 	/>
