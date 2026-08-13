@@ -2,7 +2,7 @@
 import { getImage } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import ServicesGrid from '../components/ServicesGrid.astro';
+import ServiceTabs from '../components/ServiceTabs.astro';
 import StepList from '../components/StepList.astro';
 import FAQ from '../components/FAQ.astro';
 import ContactForm from '../components/ContactForm.astro';
@@ -115,13 +115,9 @@ const faqItems = [
 	jsonLd={[organizationSchema(), professionalServiceSchema(), websiteSchema()]}
 >
 	<Hero label={`${business.name} — ${business.tagline}`}>
-		<h1>Van initiatief<br /><em>naar vergunning</em></h1>
+		<h1>Van initiatief<br /><em>tot vergunning</em></h1>
 		<p class="hero-lead">
-			Donkers Advies begeleidt particulieren en ondernemers bij
-			<a href="/principeverzoek/">principeverzoeken</a>,
-			<a href="/omgevingsplanactiviteit/">omgevingsvergunningen</a>
-			en <a href="/wijziging-omgevingsplan/">wijzigingen van het omgevingsplan</a>.
-			Van initiatief tot definitieve besluitvorming.
+			Uw plan realiseren? Donkers Advies helpt initiatiefnemers bij het verkrijgen van planologische medewerking, <a href="/omgevingsplanactiviteit/">omgevingsvergunningen</a> en <a href="/wijziging-omgevingsplan/">wijzigingen van het omgevingsplan</a>.
 		</p>
 		<div class="hero-actions">
 			<a href="#contact" class="btn btn-primary">Vrijblijvend adviesgesprek</a>
@@ -135,15 +131,10 @@ const faqItems = [
 				<p class="label">Dienstverlening</p>
 				<h2>Ruimtelijk advies onder de Omgevingswet</h2>
 				<p>
-					Past uw initiatief niet binnen het geldende omgevingsplan? Of weet u niet zeker welke procedure u nodig
-					heeft? Donkers Advies analyseert uw situatie en begeleidt de meest passende planologische procedure.
-					Van <a href="/principeverzoek/">principeverzoek</a> en <a href="/omgevingsplanactiviteit/">omgevingsvergunning</a>
-					tot <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> en
-					<a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>. Nieuw in deze materie? Lees eerst
-					<a href="/blog/wat-is-een-bopa/">wat is een BOPA</a>.
+					Past uw initiatief niet binnen het geldende omgevingsplan? Of weet u niet welke procedure nodig is om uw plannen mogelijk te maken? Donkers Advies analyseert uw situatie en begeleidt u bij de meest passende ruimtelijke procedure. Ontdek hieronder welke route het beste aansluit bij uw initiatief.
 				</p>
 			</div>
-			<ServicesGrid />
+			<ServiceTabs />
 		</div>
 	</section>
 

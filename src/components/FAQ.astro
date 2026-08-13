@@ -27,5 +27,8 @@ const schemaItems: FaqItem[] = items.map((item) => ({ question: item.question, a
 		))
 	}
 </div>
+<p class="faq-footnote" data-fade>
+	Staat uw vraag er niet bij? Neem <a href="/#contact">contact op</a>.
+</p>
 
 <script type="application/ld+json" set:html={JSON.stringify(faqSchema(schemaItems))} />

@@ -1,0 +1,87 @@
+---
+import { services } from '../data/services';
+---
+
+<div class="service-tabs" data-fade>
+	<div class="service-tabs-nav" role="tablist" aria-label="Diensten">
+		{
+			services.map((service, i) => (
+				<button
+					type="button"
+					class:list={['service-tab', i === 0 && 'active']}
+					data-service={service.slug}
+					role="tab"
+					aria-selected={i === 0}
+				>
+					<span class="service-tab-badge">{service.navBadge}</span>
+					<span class="service-tab-label">{service.navLabel}</span>
+				</button>
+			))
+		}
+	</div>
+
+	<div class="service-tabs-panel">
+		{
+			services.map((service, i) => (
+				<div class="service-panel" data-service={service.slug} hidden={i !== 0} role="tabpanel">
+					<div class="service-panel-main">
+						<h3>{service.title}</h3>
+						<p>{service.cardDescription}</p>
+						<div class="service-panel-cta">
+							<p class="service-panel-cta-question">{service.ctaQuestion}</p>
+							<div class="service-panel-actions">
+								<a href="/#contact" class="btn btn-forest">Vraag een vrijblijvend adviesgesprek aan</a>
+								<a href={service.path} class="service-panel-link">
+									Meer informatie
+									<svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="service-panel-side">
+						<div class="service-duration-card">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15.5 14" /></svg>
+							<div>
+								<span class="service-duration-label">Doorlooptijd</span>
+								<strong>{service.duration}</strong>
+								{service.durationNote && <span class="service-duration-note">{service.durationNote}</span>}
+							</div>
+						</div>
+						<div class="service-checklist-card">
+							<p class="service-checklist-title">Wat wij verzorgen</p>
+							<ul>
+								{service.checklist.map((item) => (
+									<li>
+										<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><polyline points="8.5 12.5 11 15 15.5 9.5" /></svg>
+										{item}
+									</li>
+								))}
+							</ul>
+						</div>
+					</div>
+				</div>
+			))
+		}
+	</div>
+</div>
+
+<script>
+	const tabsRoot = document.querySelector('.service-tabs');
+	if (tabsRoot) {
+		const tabs = Array.from(tabsRoot.querySelectorAll<HTMLButtonElement>('.service-tab'));
+		const panels = Array.from(tabsRoot.querySelectorAll<HTMLElement>('.service-panel'));
+
+		tabs.forEach((tab) => {
+			tab.addEventListener('click', () => {
+				const target = tab.dataset.service;
+				tabs.forEach((t) => {
+					t.classList.toggle('active', t === tab);
+					t.setAttribute('aria-selected', String(t === tab));
+				});
+				panels.forEach((panel) => {
+					panel.hidden = panel.dataset.service !== target;
+				});
+			});
+		});
+	}
+</script>

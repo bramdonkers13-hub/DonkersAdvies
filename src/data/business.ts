@@ -1,7 +1,7 @@
 export const business = {
 	name: 'Donkers Advies',
 	legalName: 'Donkers Advies, Ruimtelijke Ordening',
-	tagline: 'Ruimtelijk adviesbureau',
+	tagline: 'Adviesbureau ruimtelijke ordening',
 	url: 'https://www.donkersadvies.nl',
 	email: 'info@donkersadvies.nl',
 	phoneDisplay: '06 44 84 87 72',
