@@ -35,7 +35,7 @@ export function professionalServiceSchema() {
 		description:
 			'Specialist in ruimtelijke ordening en de Omgevingswet. Begeleiding bij principeverzoeken, OPA, BOPA en wijzigingen van het omgevingsplan.',
 		serviceType: 'Ruimtelijke ordening advies',
-		areaServed: { '@type': 'Country', name: 'Nederland' },
+		areaServed: business.areaServed,
 		hasOfferCatalog: {
 			'@type': 'OfferCatalog',
 			name: 'Diensten ruimtelijke ordening',
@@ -104,7 +104,7 @@ export function serviceSchema(params: { name: string; description: string; path:
 			identifier: business.kvk,
 		},
 		serviceType: 'Ruimtelijke ordening advies',
-		areaServed: { '@type': 'Country', name: 'Nederland' },
+		areaServed: business.areaServed,
 	};
 }
 

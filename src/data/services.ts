@@ -40,7 +40,7 @@ export const services: Service[] = [
 		navBadge: 'OPA',
 		title: 'Omgevingsplanactiviteit (OPA)',
 		cardDescription:
-			'Past uw activiteit binnen het omgevingsplan maar is een vergunning vereist? Donkers Advies begeleidt de OPA-aanvraag en verzorgt alle benodigde stukken voor het Omgevingsloket.',
+			'Past uw activiteit binnen het omgevingsplan maar is een vergunning vereist? Donkers Advies begeleidt de aanvraag voor de binnenplanse omgevingsplanactiviteit en verzorgt alle benodigde stukken voor het Omgevingsloket.',
 		tags: ['OPA', 'Vergunning'],
 		icon: '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
 		duration: '8 – 14 weken',
