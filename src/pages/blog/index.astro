@@ -4,7 +4,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import PostCard, { type PostCardProps } from '../../components/PostCard.astro';
 import PostGrid from '../../components/PostGrid.astro';
-import CTA from '../../components/CTA.astro';
 import { formatDateNL } from '../../utils/formatDate';
 import { blogSchema } from '../../lib/schema';
 import { business } from '../../data/business';
@@ -112,36 +111,6 @@ const categories = [
 			<PostGrid posts={allPosts.map((post) => toPostCardProps(post, true))} />
 		</div>
 	</section>
-
-	<section class="sp-section bg-white">
-		<div class="container">
-			<div class="grid-2" style="align-items:center;">
-				<div data-fade>
-					<p class="label">Nieuwsbrief</p>
-					<h2>Blijf op de hoogte van de Omgevingswet</h2>
-					<p>Ontvang nieuwe artikelen over BOPA, principeverzoeken en wijzigingen van het omgevingsplan rechtstreeks in uw inbox. Geen spam, u kunt zich altijd afmelden.</p>
-				</div>
-				<div class="contact-form" data-fade>
-					<form class="newsletter-form" id="newsletterForm" action="#" method="POST" novalidate>
-						<input type="text" name="company" class="newsletter-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-						<div class="form-row">
-							<label for="newsletterEmail">E-mailadres</label>
-							<input type="email" id="newsletterEmail" name="email" placeholder="naam@voorbeeld.nl" required />
-						</div>
-						<button type="submit" class="btn-submit">Aanmelden</button>
-					</form>
-					<div id="newsletterMsg" class="newsletter-msg" role="status" aria-live="polite"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<CTA
-		title="Heeft u een concreet initiatief?"
-		description="Donkers Advies beoordeelt uw plan en adviseert over de te volgen procedure. Neem vrijblijvend contact op voor een eerste gesprek."
-		buttonLabel="Vraag een vrijblijvend adviesgesprek aan"
-		buttonHref="/#contact"
-	/>
 
 	<section class="sp-section bg-paper">
 		<div class="container">
@@ -290,52 +259,5 @@ const categories = [
 		}
 
 		render();
-	}
-</script>
-
-<script define:vars={{ contactEmail: business.email }}>
-	// Nieuwsbrief-aanmelding
-	const form = document.getElementById('newsletterForm');
-	if (form) {
-		const msg = document.getElementById('newsletterMsg');
-		const emailInput = form.querySelector('input[type="email"]');
-
-		form.addEventListener('submit', async (e) => {
-			e.preventDefault();
-			const email = emailInput.value.trim();
-			const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-			if (!valid) {
-				msg.textContent = 'Vul een geldig e-mailadres in.';
-				msg.className = 'newsletter-msg error';
-				return;
-			}
-
-			const endpoint = form.getAttribute('action');
-			// Zodra een echt formulier-endpoint is ingevuld (Mailchimp, Brevo, een Vercel
-			// serverless function, etc.) via action="...", wordt hier naartoe gepost.
-			if (endpoint && endpoint !== '#') {
-				try {
-					await fetch(endpoint, { method: 'POST', body: new FormData(form), mode: 'no-cors' });
-					msg.textContent = 'Bedankt! U ontvangt een bevestiging per e-mail.';
-					msg.className = 'newsletter-msg ok';
-					form.reset();
-					return;
-				} catch {
-					/* val terug op mailto hieronder */
-				}
-			}
-
-			// Fallback zolang er nog geen provider is gekoppeld: open de mail-client.
-			window.location.href =
-				'mailto:' +
-				contactEmail +
-				'?subject=' +
-				encodeURIComponent('Aanmelding nieuwsbrief') +
-				'&body=' +
-				encodeURIComponent('Meld dit e-mailadres aan voor de nieuwsbrief: ' + email);
-			msg.textContent = 'Uw e-mailprogramma wordt geopend om de aanmelding te versturen.';
-			msg.className = 'newsletter-msg ok';
-		});
 	}
 </script>

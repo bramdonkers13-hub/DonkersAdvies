@@ -6,7 +6,6 @@
 export const dienstenDropdownHref = '/#diensten';
 
 export const primaryNav: { label: string; href: string }[] = [
-	{ label: 'Werkwijze', href: '/#werkwijze' },
 	{ label: 'Over Donkers Advies', href: '/#about' },
 	{ label: 'Blog', href: '/blog/' },
 ];
