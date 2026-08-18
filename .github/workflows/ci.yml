@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build en contentcontrole
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Dependencies installeren
+        run: npm ci
+
+      # De build is de feitelijke controle voor deze repo: hij type-checkt de
+      # frontmatter van .astro-bestanden, valideert elke blogpost tegen het
+      # schema in src/content.config.ts en faalt op kapotte image-imports.
+      - name: Build
+        run: npm run build
+
+      # Aanvullende controles op verbanden die het schema niet kent.
+      - name: Contentcontrole
+        run: npm run check:content

@@ -17,6 +17,7 @@ you are editing).
 | `npm run dev` | Dev server on `localhost:4321` |
 | `npm run build` | Static build to `./dist/` (currently 31 pages) |
 | `npm run preview` | Preview the production build |
+| `npm run check:content` | Content integrity checks the build does not perform (see below) |
 
 When starting the dev server as an agent, use background mode:
 
@@ -29,6 +30,17 @@ Manage it with `npx astro dev stop`, `npx astro dev status`, and `npx astro dev 
 `npm run build` is the real check for this repo — it type-checks `.astro` frontmatter, validates
 every blog post against the content-collection schema, and fails on broken image imports. Run it
 before committing. (`astro check` is not wired up; `@astrojs/check` is not a dependency.)
+
+`npm run check:content` (`scripts/check-content.mjs`) covers the relationships the Zod schema
+cannot see, because they span files:
+
+- every post's `category` has a matching chip in the `categories` array in `blog/index.astro`;
+- `relatedSlugs` holds exactly 3 slugs, each pointing at a post that exists, never at itself;
+- every `toc` anchor has a matching `<h2 id="…">` in that post's body;
+- every literal internal link in `src/` ends in a slash and resolves to a route the site builds.
+
+It is dependency-free and runs in well under a second. Both commands run on every pull request
+via `.github/workflows/ci.yml`.
 
 ## Project structure
 
