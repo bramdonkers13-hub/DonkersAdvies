@@ -237,12 +237,6 @@ footer .nav-wordmark .wm-sub { color: rgba(255,255,255,.7); }
   flex-shrink: 0;
 }
 
-.dd-sep {
-  height: 1px;
-  background: var(--sage-xl);
-  margin: .35rem .5rem;
-}
-
 /* ─── Hamburger ────────────────────────────────────────────── */
 .nav-toggle {
   display: none;
