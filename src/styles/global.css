@@ -418,6 +418,7 @@ footer .nav-wordmark .wm-sub { color: rgba(255,255,255,.7); }
 }
 
 /* ─── ABOUT ────────────────────────────────────────────────── */
+#about, #faq, #contact { padding-block: clamp(3rem, 5vw, 4.5rem); }
 #about { background: var(--white); }
 .about-text { padding-top: .5rem; }
 .about-text .label { margin-bottom: .75rem; }
