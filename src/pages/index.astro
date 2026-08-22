@@ -1,12 +1,10 @@
 ---
-import { getImage } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import ServiceTabs from '../components/ServiceTabs.astro';
 import StepList from '../components/StepList.astro';
 import FAQ from '../components/FAQ.astro';
 import ContactForm from '../components/ContactForm.astro';
-import landscapeImage from '../assets/images/landscape-buitengebied.jpg';
 import { organizationSchema, professionalServiceSchema, websiteSchema } from '../lib/schema';
 import { business } from '../data/business';
 
@@ -14,37 +12,31 @@ const title = 'Donkers Advies | Ruimtelijk adviesbureau Omgevingswet';
 const description =
 	'Ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Donkers Advies begeleidt principeverzoeken, OPA, BOPA en wijzigingen van het omgevingsplan.';
 
-const optimizedLandscape = await getImage({ src: landscapeImage, width: 1600, format: 'webp', quality: 78 });
-
 const werkwijzeSteps = [
 	{
 		number: '01',
 		title: 'Kennismaking',
-		descriptionHtml: 'Bespreken van uw initiatief, de locatie en de gewenste ontwikkeling. Wij luisteren en stellen de juiste vragen.',
+		descriptionHtml: 'Bespreken van uw initiatief, de locatie en de gewenste ontwikkeling.',
 	},
 	{
 		number: '02',
 		title: 'Haalbaarheidsanalyse',
-		descriptionHtml:
-			"Toetsing aan het omgevingsplan, gemeentelijk en provinciaal beleid en de Omgevingswet. Wij brengen de kansen en risico's in kaart.",
+		descriptionHtml: 'Toetsing aan omgevingsplan, gemeentelijk- en provinciaal beleid.',
 	},
 	{
 		number: '03',
 		title: 'Strategisch advies',
-		descriptionHtml:
-			'Wij adviseren over de meest passende procedure: <a href="/principeverzoek/">principeverzoek</a>, <a href="/omgevingsplanactiviteit/">OPA</a>, <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> of <a href="/wijziging-omgevingsplan/">wijziging omgevingsplan</a>.',
+		descriptionHtml: 'Advies over de passende procedure.',
 	},
 	{
 		number: '04',
-		title: 'Onderbouwing en procedure',
-		descriptionHtml:
-			'Opstellen van de ruimtelijke onderbouwing, planregels en benodigde onderzoeken. Volledige procedurebegeleiding inclusief afstemming met de gemeente.',
+		title: 'Onderbouwing',
+		descriptionHtml: 'Ruimtelijke onderbouwing, planregels en onderzoeken.',
 	},
 	{
 		number: '05',
 		title: 'Besluitvorming',
-		descriptionHtml:
-			'Begeleiding tot en met het definitieve besluit van het college van B&amp;W of de gemeenteraad. Inclusief eventuele bezwaar- en beroepsfase.',
+		descriptionHtml: 'Begeleiding tot het definitieve besluit, inclusief bezwaar en beroep.',
 	},
 ];
 
@@ -117,7 +109,7 @@ const faqItems = [
 	<Hero label={`${business.name} — ${business.tagline}`}>
 		<h1>Van initiatief<br /><em>tot vergunning</em></h1>
 		<p class="hero-lead">
-			Uw plan realiseren? Donkers Advies helpt initiatiefnemers bij het verkrijgen van planologische medewerking, <a href="/omgevingsplanactiviteit/">omgevingsvergunningen</a> en <a href="/wijziging-omgevingsplan/">wijzigingen van het omgevingsplan</a>.
+			Een extra woning, bedrijfsuitbreiding of functiewijziging? Donkers Advies helpt u uw plan ruimtelijk mogelijk te maken en begeleidt u van eerste idee tot vergunning.
 		</p>
 		<div class="hero-actions">
 			<a href="#contact" class="btn btn-primary btn-expand">
@@ -151,7 +143,7 @@ const faqItems = [
 				<h2>Van initiatief tot vergunning</h2>
 				<p style="color: rgba(255,255,255,.7);">
 					Een ruimtelijk traject bestaat uit meerdere stappen. Donkers Advies begeleidt het volledige proces:
-					van de eerste haalbaarheidsbeoordeling tot de definitieve besluitvorming door de gemeente of
+					van het eerste idee tot de definitieve besluitvorming door de gemeente of
 					gemeenteraad.
 				</p>
 			</div>
@@ -159,67 +151,38 @@ const faqItems = [
 		</div>
 	</section>
 
-	<div
-		class="landscape-band"
-		role="img"
-		aria-label="Luchtfoto van Nederlands polderlandschap met weilanden en bewoning"
-		style={`background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, var(--paper) 100%), url(${optimizedLandscape.src})`}
-	>
-	</div>
-
-	<section id="about" class="section">
+	<section id="voor-wie" class="section">
 		<div class="container">
-			<div class="grid-2">
-				<div class="about-text" data-fade>
-					<p class="label">Over Donkers Advies</p>
-					<h2>Specialist in ruimtelijke ordening</h2>
-					<p>
-						Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Wij begeleiden
-						particulieren, ondernemers en projectontwikkelaars bij alle planologische procedures: van een eerste
-						haalbaarheidsanalyse tot het verkrijgen van een
-						<a href="/buitenplanse-omgevingsplanactiviteit/">omgevingsvergunning</a> of een
-						<a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>.
-					</p>
-					<p>
-						Dankzij ervaring binnen de gemeentelijke praktijk krijgt u snel inzicht in de planologische
-						mogelijkheden en de kans van slagen van uw initiatief. Wij werken met een vaste adviseur, korte
-						lijnen en heldere communicatie gedurende het hele traject.
-					</p>
-					<p>Actief in {business.areaServed.join(', ')}.</p>
-					<div class="usps">
-						<div class="usp-item">Persoonlijk contact en korte lijnen</div>
-						<div class="usp-item">Ervaring met gemeentelijke besluitvorming</div>
-						<div class="usp-item">Specialist in ruimtelijke onderbouwingen</div>
-						<div class="usp-item">Van initiatief tot definitieve vergunning</div>
-					</div>
+			<div class="section-header" data-fade>
+				<h2>Voor wie werkt Donkers Advies?</h2>
+				<p>
+					Donkers Advies begeleidt particulieren en ondernemers bij uiteenlopende ruimtelijke ontwikkelingen, zoals woningbouw, verbouw, bedrijfsuitbreiding en functiewijziging. Hieronder vindt u enkele voorbeelden.
+				</p>
+			</div>
+
+			<div class="voor-wie-grid">
+				<div class="voor-wie-card" data-fade>
+					<div class="vw-label">Particulieren</div>
+					<h3>Wonen, bouwen en verbouwen</h3>
+					<ul>
+						<li>Een extra woning bouwen op uw perceel</li>
+						<li>Woningsplitsing of het toevoegen van een woning</li>
+						<li>Een woning uitbreiden of een bijgebouw realiseren</li>
+						<li>Een agrarische of andere locatie veranderen naar wonen</li>
+						<li>Een mantelzorgwoning of andere woonfunctie realiseren</li>
+					</ul>
 				</div>
 
-				<div class="about-visual" data-fade>
-					<div class="stat-block">
-						<div class="num"><a href="/principeverzoek/">Principeverzoek</a></div>
-						<p>
-							Toets uw initiatief vooraf bij de gemeente. Zo weet u of uw plan planologisch haalbaar is voordat u
-							investeert in een formele procedure.
-						</p>
-					</div>
-					<div class="stat-divider"></div>
-					<div class="stat-block">
-						<div class="num">
-							<a href="/omgevingsplanactiviteit/">OPA</a> &amp; <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a>
-						</div>
-						<p>
-							Omgevingsvergunning voor activiteiten die passen binnen het omgevingsplan (OPA) of daarvan afwijken
-							(BOPA). Donkers Advies verzorgt de volledige aanvraag.
-						</p>
-					</div>
-					<div class="stat-divider"></div>
-					<div class="stat-block">
-						<div class="num"><a href="/wijziging-omgevingsplan/">Wijziging omgevingsplan</a></div>
-						<p>
-							Voor structurele en grootschalige ontwikkelingen die planologisch verankerd moeten worden in het
-							omgevingsplan van de gemeente.
-						</p>
-					</div>
+				<div class="voor-wie-card" data-fade>
+					<div class="vw-label">Ondernemers</div>
+					<h3>Bedrijf uitbreiden of functie veranderen</h3>
+					<ul>
+						<li>Bedrijfsuitbreiding op een bestaande locatie</li>
+						<li>Functiewijziging van agrarisch naar bedrijvigheid of wonen</li>
+						<li>Herontwikkeling van leegstaand vastgoed</li>
+						<li>Eén- of meerdere woningen toevoegen</li>
+						<li>Een agrarische of bedrijfslocatie veranderen naar wonen</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -229,44 +192,76 @@ const faqItems = [
 		<div class="container">
 			<div class="section-header" data-fade>
 				<p class="label">Waarom Donkers Advies</p>
-				<h2>Waarom initiatiefnemers kiezen voor Donkers Advies</h2>
+				<h2>Waarom initiatiefnemers voor ons kiezen</h2>
 			</div>
 			<div class="why-grid">
 				<div class="why-card" data-fade>
-					<h3>Specialist in de Omgevingswet</h3>
-					<p>
-						Diepgaande kennis van het omgevingsplan, ETFAL-toetsing, planologische procedures en de vereisten van
-						het bevoegd gezag.
-					</p>
+					<h3>Specialist in ruimtelijke ordening</h3>
+					<p>Kennis van de Omgevingswet, het omgevingsplan en de procedures die nodig zijn om uw plan mogelijk te maken.</p>
 				</div>
 				<div class="why-card" data-fade>
-					<h3>Gemeentelijke ervaring</h3>
-					<p>
-						Inzicht in hoe gemeenten plannen beoordelen, welke argumenten werken en hoe bestuurlijk draagvlak
-						wordt opgebouwd.
-					</p>
+					<h3>Ervaring met gemeentelijke besluitvorming</h3>
+					<p>Wij weten hoe gemeenten plannen beoordelen en welke stappen nodig zijn om tot een goed onderbouwd besluit te komen.</p>
 				</div>
 				<div class="why-card" data-fade>
 					<h3>Eén vast aanspreekpunt</h3>
-					<p>Geen wisselende contactpersonen. Gedurende het hele traject werkt u samen met dezelfde adviseur.</p>
+					<p>U heeft gedurende het hele traject direct contact met dezelfde adviseur. Dat zorgt voor korte lijnen en duidelijke communicatie.</p>
 				</div>
 				<div class="why-card" data-fade>
-					<h3>Maatwerk per initiatief</h3>
+					<h3>Maatwerk voor uw initiatief</h3>
+					<p>Geen standaardaanpak. Wij kijken naar uw plan, locatie en situatie en bepalen samen met u de meest passende aanpak.</p>
+				</div>
+				<div class="why-card" data-fade>
+					<h3>Duidelijk en transparant</h3>
+					<p>Geen onnodig vakjargon, maar begrijpelijk advies. U weet waar u aan toe bent en wat u van ons kunt verwachten.</p>
+				</div>
+				<div class="why-card" data-fade>
+					<h3>Van idee tot besluit</h3>
+					<p>Van de eerste haalbaarheidsanalyse tot en met de vergunning of het definitieve besluit. Wij begeleiden het volledige traject.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="section">
+		<div class="container">
+			<div class="grid-2">
+				<div class="about-text" data-fade>
+					<p class="label">Over Donkers Advies</p>
+					<h2>Specialist in ruimtelijke ordening</h2>
 					<p>
-						Iedere locatie en ontwikkeling is anders. Donkers Advies past de aanpak aan op uw specifieke
-						situatie, gemeente en planologische context.
+						Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Wij begeleiden particulieren, ondernemers en projectontwikkelaars bij alle planologische procedures.
 					</p>
-				</div>
-				<div class="why-card" data-fade>
-					<h3>Heldere communicatie</h3>
-					<p>Geen onnodige jargon of dikke rapporten. Duidelijke uitleg, korte lijnen en transparantie over kosten en doorlooptijd.</p>
-				</div>
-				<div class="why-card" data-fade>
-					<h3>Volledig ontzorgd</h3>
 					<p>
-						Van haalbaarheidsanalyse en strategisch advies tot de volledige procedurebegeleiding. Donkers Advies
-						regelt het traject van begin tot eind.
+						Dankzij ervaring binnen de gemeentelijke praktijk krijgt u snel inzicht in de planologische mogelijkheden en de kans van slagen van uw initiatief.
 					</p>
+					<a href="#contact" class="btn btn-forest btn-expand">
+						Plan een kennismaking
+						<span class="btn-expand-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
+					</a>
+				</div>
+
+				<div class="about-grid" data-fade>
+					<div class="about-card">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+						<h3>Specialist Omgevingswet</h3>
+						<p>Omgevingsplan, ETFAL-toetsing en procedures.</p>
+					</div>
+					<div class="about-card">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 21 8 3 8"></polygon><line x1="5" y1="21" x2="5" y2="10"></line><line x1="9" y1="21" x2="9" y2="10"></line><line x1="15" y1="21" x2="15" y2="10"></line><line x1="19" y1="21" x2="19" y2="10"></line><line x1="3" y1="21" x2="21" y2="21"></line></svg>
+						<h3>Gemeentelijke ervaring</h3>
+						<p>Inzicht in beoordeling en draagvlak.</p>
+					</div>
+					<div class="about-card">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+						<h3>Eén aanspreekpunt</h3>
+						<p>Eén adviseur van begin tot eind.</p>
+					</div>
+					<div class="about-card">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+						<h3>Heldere communicatie</h3>
+						<p>Geen jargon, transparant over kosten.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -292,52 +287,40 @@ const faqItems = [
 			<div class="contact-inner">
 				<div class="contact-text" data-fade>
 					<p class="label">Contact</p>
-					<h2>Bespreek uw ruimtelijke initiatief</h2>
-					<span class="contact-heading-rule" aria-hidden="true"></span>
+					<h2>Bespreek uw initiatief</h2>
 					<p>
-						Heeft u plannen voor het toevoegen van een woning, functiewijziging of andere ruimtelijke ontwikkeling? Donkers Advies beoordeelt uw initiatief, denkt mee over de mogelijkheden en adviseert welke procedure nodig is.
+						Wilt u weten of uw plan haalbaar is of welke procedure u nodig heeft? Neem vrijblijvend contact op. U ontvangt binnen één werkdag een reactie.
 					</p>
 
-					<div class="contact-direct">
-						<div class="contact-direct-text">
-							<strong>Liever direct contact?</strong>
-							<span>Bel of mail ons, we denken graag met u mee.</span>
+					<a href={`mailto:${business.email}`} class="contact-card">
+						<div class="contact-card-icon">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
 						</div>
-						<div class="contact-direct-links">
-							<a href={business.phoneHref}>
-								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.91 6.91l.76-.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-								{business.phoneDisplay}
-							</a>
-							<a href={`mailto:${business.email}`}>
-								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-								{business.email}
-							</a>
+						<div>
+							<span class="contact-card-label">E-mail</span>
+							<span class="contact-card-value">{business.email}</span>
+						</div>
+					</a>
+
+					<a href={business.phoneHref} class="contact-card">
+						<div class="contact-card-icon">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.91 6.91l.76-.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+						</div>
+						<div>
+							<span class="contact-card-label">Telefoon</span>
+							<span class="contact-card-value">{business.phoneDisplay}</span>
+						</div>
+					</a>
+
+					<div class="contact-card">
+						<div class="contact-card-icon">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+						</div>
+						<div>
+							<span class="contact-card-label">Werkgebied</span>
+							<strong class="contact-card-value">{business.areaServed.join(' · ')}</strong>
 						</div>
 					</div>
-
-					<ul class="contact-points">
-						<li>
-							<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15.5 14"></polyline></svg>
-							<div>
-								<strong>Reactie binnen één werkdag</strong>
-								<span>U ontvangt binnen één werkdag een reactie op uw aanvraag.</span>
-							</div>
-						</li>
-						<li>
-							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-							<div>
-								<strong>Eén vast aanspreekpunt</strong>
-								<span>U heeft altijd direct contact met uw adviseur.</span>
-							</div>
-						</li>
-						<li>
-							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-							<div>
-								<strong>{business.areaServedText}</strong>
-								<span>Wij kennen de regels én de praktijk in uw regio.</span>
-							</div>
-						</li>
-					</ul>
 				</div>
 
 				<ContactForm />
