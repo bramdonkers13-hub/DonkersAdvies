@@ -13,9 +13,7 @@ import { dienstenDropdownHref, primaryNav, navCta } from '../data/navigation';
 			{
 				services.map((service) => (
 					<li>
-						<a href={service.path}>
-							{service.navLabel} <span class="dd-badge">{service.navBadge}</span>
-						</a>
+						<a href={service.path}>{service.navLabel}</a>
 					</li>
 				))
 			}

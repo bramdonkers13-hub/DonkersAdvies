@@ -56,7 +56,7 @@ faq:
 
 Toch is een afgewezen principeverzoek zelden een gesloten deur. Het is een tussenstand, geen eindoordeel. Een principe-uitspraak is namelijk geen besluit waartegen u naar de rechter kunt, maar juist daardoor houdt u meer bewegingsruimte dan u denkt: u kunt onderhandelen, uw plan aanpassen, een ander beleidsspoor zoeken, of de gemeente op haar eigen afwegingsplicht wijzen. Welke route kansrijk is, hangt volledig af van de werkelijke reden achter het nee, en die reden staat lang niet altijd volledig in de brief.
 
-Deze pagina legt uit wat een afwijzing juridisch betekent, hoe u de echte reden achterhaalt, welke vijf routes u heeft en in welke volgorde u ze het beste probeert, wanneer een gemeente van haar eigen beleid moet afwijken, en welke fouten ervoor zorgen dat een op zich kansrijk plan alsnog strandt. Geschreven vanuit de vergunningpraktijk, met de blik van iemand die aan de gemeentelijke kant heeft gezien waaróm verzoeken worden afgewezen en welke van die redenen onderhandelbaar zijn.
+Deze pagina legt uit wat een afwijzing juridisch betekent, hoe u de echte reden achterhaalt, welke vijf routes u heeft en in welke volgorde u ze het beste probeert, wanneer een gemeente van haar eigen beleid moet afwijken, en welke fouten ervoor zorgen dat een op zich kansrijk plan alsnog strandt. Geschreven vanuit de vergunningpraktijk, met de blik van iemand die aan de gemeentelijke kant heeft gezien waaróm verzoeken worden afgewezen en welke van die redenen onderhandelbaar zijn. Twijfelt u over de vervolgstap? Ik help u <a href="/principeverzoek/">een nieuw of aangepast principeverzoek op te stellen</a> dat wél overtuigt.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -252,7 +252,7 @@ Een afgewezen principeverzoek voelt als een eindpunt, maar is het zelden. Omdat 
 
 Drie dingen bepalen of u alsnog verder komt. Achterhaal eerst de werkelijke reden, want die staat zelden volledig in de brief en bepaalt of de belemmering hard of onderhandelbaar is. Kies dan de lichtste route die kans maakt: pas het plan aan of zoek een ander spoor voordat u naar de zware formele aanvraag grijpt. En weet dat een gemeente van haar eigen beleid moet afwijken als uw geval werkelijk bijzonder is, een aanknopingspunt dat vaak onbenut blijft.
 
-In Noord-Brabant komt daar één ding bij. Veel afwijzingen die op het gemeentelijke spoor stranden, blijken haalbaar via een provinciaal spoor als Ruimte voor Ruimte of via een serieuze investering in de kwaliteit van het landschap. Wat als losse woning wordt geweigerd, kan als kwaliteitsontwikkeling wel kunnen.
+In Noord-Brabant komt daar één ding bij. Veel afwijzingen die op het gemeentelijke spoor stranden, blijken haalbaar via een provinciaal spoor als Ruimte voor Ruimte of via een serieuze investering in de kwaliteit van het landschap. Wat als losse woning wordt geweigerd, kan als kwaliteitsontwikkeling wel kunnen. Leg uw afgewezen plan aan mij voor, dan help ik u bepalen of <a href="/principeverzoek/">een hernieuwd principeverzoek</a> zinvol is.
 
 <h2 id="bronnen">Bronnen</h2>
 

@@ -61,7 +61,7 @@ faq:
 
 Dat komt door drie dingen die zich in dit type plan opstapelen. Uw woning was juridisch een bedrijfswoning, en een bedrijfswoning is iets anders dan een burgerwoning. De provincie stelt in het buitengebied eisen die de gemeente moet naleven, van sloop tot een investering in het landschap. En een naburig agrarisch bedrijf, of uw eigen restactiviteit, kan uw woonplan blokkeren via de geurregels, precies op het moment dat u denkt dat u er bijna bent.
 
-Deze pagina legt uit hoe de functiewijziging werkt: wanneer het kan, welke route u nodig heeft, wat het Brabantse provinciale beleid van u vraagt, welke onderzoeken nodig zijn, en waar de trajecten in de praktijk op stranden. Geschreven vanuit de vergunningpraktijk, met de blik van iemand die dagelijks met dit soort dossiers in Noord-Brabant werkt.
+Deze pagina legt uit hoe de functiewijziging werkt: wanneer het kan, welke route u nodig heeft, wat het Brabantse provinciale beleid van u vraagt, welke onderzoeken nodig zijn, en waar de trajecten in de praktijk op stranden. Geschreven vanuit de vergunningpraktijk, met de blik van iemand die dagelijks met dit soort dossiers in Noord-Brabant werkt. Wilt u dat ik uw dossier opstel? Meestal loopt dit via <a href="/buitenplanse-omgevingsplanactiviteit/">een BOPA-aanvraag</a>.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -350,7 +350,7 @@ De functiewijziging van agrarisch naar wonen is geen administratieve handeling m
 
 Drie dingen bepalen of het traject slaagt. Regel de beëindiging van het bedrijf op tijd, want zonder dat is er geen grond voor een woonfunctie. Neem de geursituatie serieus, inclusief de omgekeerde werking op naburige bedrijven, want daar stranden de meeste plannen. En reken het Brabantse provinciale spoor vanaf het begin mee: de sloopeis en de kwaliteitsverbetering van het landschap zijn geen bijzaak maar een randvoorwaarde, en met een slimme opzet kunnen ze in uw voordeel werken.
 
-Begin met een principeverzoek. Het is de goedkoopste manier om te weten of uw plan haalbaar is en welke route en voorwaarden gelden, en het bepaalt welke onderzoeken u werkelijk nodig heeft.
+Begin met <a href="/principeverzoek/">een principeverzoek laten opstellen</a>. Het is de goedkoopste manier om te weten of uw plan haalbaar is en welke route en voorwaarden gelden, en het bepaalt welke onderzoeken u werkelijk nodig heeft.
 
 <h2 id="bronnen">Bronnen</h2>
 

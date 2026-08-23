@@ -229,17 +229,6 @@ footer .nav-wordmark .wm-sub { color: rgba(255,255,255,.7); }
 
 .dropdown li a:hover { background: var(--sage-xl); color: var(--forest); }
 
-.dd-badge {
-  font-size: .65rem;
-  font-weight: 700;
-  letter-spacing: .06em;
-  background: var(--sand-lt);
-  color: var(--forest);
-  padding: .15rem .45rem;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-
 /* ─── Hamburger ────────────────────────────────────────────── */
 .nav-toggle {
   display: none;
@@ -427,10 +416,13 @@ footer .nav-wordmark .wm-sub { color: rgba(255,255,255,.7); }
 .about-text .btn { margin-top: .75rem; }
 
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.about-card { background: var(--white); border: 1px solid var(--sage-xl); border-radius: 12px; padding: 1.5rem 1.1rem; }
+.about-card { background: var(--white); border: 1px solid var(--sage-xl); border-radius: 12px; padding: 1.5rem 1.1rem; min-width: 0; }
 .about-card svg { width: 24px; height: 24px; stroke: var(--sage); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 1rem; }
 .about-card h3 { color: var(--forest); font-size: .95rem; white-space: nowrap; margin-bottom: .5rem; }
 .about-card p { color: var(--text-md); font-size: .875rem; margin: 0; }
+@media (max-width: 640px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
 
 /* ─── DIENSTEN ─────────────────────────────────────────────── */
 #diensten { background: var(--white); }
@@ -680,7 +672,7 @@ footer { background: var(--forest); color: rgba(255,255,255,.6); padding-block: 
 .page-hero .page-sub { font-size: 1.1rem; color: rgba(255,255,255,.7); max-width: 52ch; }
 
 /* ─── SERVICE PAGE CONTENT ─────────────────────────────────── */
-.sp-section { padding-block: clamp(2.5rem, 5vw, 4.5rem); }
+.sp-section { padding-block: clamp(1.5rem, 2.5vw, 2.5rem); }
 .sp-section.bg-white { background: var(--white); }
 .sp-section.bg-paper { background: var(--white); }
 .sp-section.bg-sand  { background: var(--sand-lt); }
@@ -700,6 +692,15 @@ footer { background: var(--forest); color: rgba(255,255,255,.6); padding-block: 
 
 .intro-text p { margin-bottom: 1rem; }
 .intro-text p:last-child { margin-bottom: 0; }
+.intro-text ul { margin: 0 0 1.15rem 1.25rem; color: var(--text-md); }
+.intro-text li { margin-bottom: .5rem; line-height: 1.65; }
+.intro-text .source-date { font-size: .85rem; color: var(--text-lt); margin-top: 1.5rem; }
+
+.plain-checklist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: .75rem; }
+.plain-checklist li { padding-left: 1.6rem; position: relative; color: var(--text-md); line-height: 1.6; }
+.plain-checklist li::before { content: '\2713'; position: absolute; left: 0; top: 0; color: var(--sage); font-weight: 700; }
+.plain-checklist li a { color: var(--forest); font-weight: 600; }
+.plain-checklist li a:hover { text-decoration: underline; }
 
 .info-box {
   background: var(--forest);
@@ -998,8 +999,9 @@ footer { background: var(--forest); color: rgba(255,255,255,.6); padding-block: 
 
 /* Datatabellen binnen artikelinhoud */
 .post-content .table-wrap { max-width: 72ch; margin: 0 auto 1.5rem; overflow-x: auto; border: 1px solid var(--sage-xl); border-radius: 8px; }
-.post-content table { width: 100%; border-collapse: collapse; font-size: .875rem; min-width: 440px; }
-.post-content table th {
+.sp-section .table-wrap { max-width: 72ch; margin: 0 0 1.5rem; overflow-x: auto; border: 1px solid var(--sage-xl); border-radius: 8px; }
+.post-content table, .sp-section table { width: 100%; border-collapse: collapse; font-size: .875rem; min-width: 440px; }
+.post-content table th, .sp-section table th {
   background: var(--paper);
   text-align: left;
   padding: .75rem 1rem;
@@ -1011,9 +1013,9 @@ footer { background: var(--forest); color: rgba(255,255,255,.6); padding-block: 
   border-bottom: 1px solid var(--sage-xl);
   white-space: nowrap;
 }
-.post-content table td { padding: .75rem 1rem; border-bottom: 1px solid var(--sage-xl); color: var(--text-md); vertical-align: top; }
-.post-content table tr:last-child td { border-bottom: none; }
-.post-content table strong { color: var(--forest); }
+.post-content table td, .sp-section table td { padding: .75rem 1rem; border-bottom: 1px solid var(--sage-xl); color: var(--text-md); vertical-align: top; }
+.post-content table tr:last-child td, .sp-section table tr:last-child td { border-bottom: none; }
+.post-content table strong, .sp-section table strong { color: var(--forest); }
 
 /* Bronnenlijst */
 .sources-list { max-width: 72ch; margin: 0 auto 1.5rem; padding-left: 1.25rem; }

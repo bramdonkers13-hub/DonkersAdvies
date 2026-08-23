@@ -58,7 +58,7 @@ faq:
     answer: "Een negatieve reactie is niet altijd het einde. Vaak gaat het om de omvang, de situering of de onderbouwing, en niet om het principe. Weegt u een vervolg af, houd dan rekening met de kosten die een tweede ronde met zich meebrengt."
 ---
 
-Overbetuwe rekent niet alleen leges voor de behandeling van uw verzoek, maar ook per beoordeeld onderzoeksrapport. Bij een plan met meerdere onderzoeken loopt dat op, bovenop de kosten van de onderzoeken zelf. Wie weet welke onderzoeken werkelijk nodig zijn, bespaart hier dus twee keer.
+Overbetuwe rekent niet alleen leges voor de behandeling van uw verzoek, maar ook per beoordeeld onderzoeksrapport. Bij een plan met meerdere onderzoeken loopt dat op, bovenop de kosten van de onderzoeken zelf. Wie weet welke onderzoeken werkelijk nodig zijn, bespaart hier dus twee keer. Ik help u <a href="/principeverzoek/">een principeverzoek</a> of <a href="/buitenplanse-omgevingsplanactiviteit/">een BOPA-aanvraag</a> in Overbetuwe met precies die set onderzoeken op te stellen.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -152,7 +152,7 @@ Daarnaast geldt het provinciale spoor. De Omgevingsverordening Gelderland stelt 
 2. **De onderzoeksset bepalen.** Er wordt vastgesteld welke onderzoeken werkelijk nodig zijn, zodat u niet onnodig rapporten laat opstellen én laat beoordelen.
 3. **De rekensom.** Leges, beoordelingskosten en de gevolgen van de routekeuze komen in beeld voordat u begint.
 4. **Conceptverzoek indienen.** Het verzoek gaat via het Omgevingsloket, met een onderbouwing die op de beoordeling aansluit.
-5. **Formele procedure en begeleiding** tot en met de vergunning of vaststelling, inclusief het advies om tijdig in te trekken als een plan onverhoopt vastloopt.
+5. **Formele procedure en begeleiding** tot en met de vergunning of vaststelling, inclusief het advies om tijdig in te trekken als een plan onverhoopt vastloopt. Wilt u dat ik <a href="/principeverzoek/">uw conceptverzoek voor Overbetuwe opstel</a>? Neem gerust contact op.
 
 <h2 id="faq">Veelgestelde vragen over bouwplannen in Overbetuwe</h2>
 

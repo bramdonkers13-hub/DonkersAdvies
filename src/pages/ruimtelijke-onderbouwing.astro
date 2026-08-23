@@ -1,0 +1,500 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import FeatureGrid from '../components/FeatureGrid.astro';
+import StepList from '../components/StepList.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+import { serviceSchema } from '../lib/schema';
+import { business } from '../data/business';
+
+const title = 'Ruimtelijke onderbouwing laten opstellen';
+const description =
+	'Heeft de gemeente gezegd dat u een ruimtelijke onderbouwing nodig heeft? Ik stel het document op, regel de onderzoeken en begeleid uw aanvraag tot het besluit.';
+
+const service = serviceSchema({
+	name: 'Ruimtelijke onderbouwing laten opstellen',
+	description:
+		'Opstellen van de ruimtelijke onderbouwing, coördinatie van de benodigde onderzoeken en begeleiding van de aanvraag tot het besluit.',
+	path: '/ruimtelijke-onderbouwing/',
+});
+
+const watIkOpstelItems = [
+	'De ruimtelijke onderbouwing bij een aanvraag voor een <a href="/buitenplanse-omgevingsplanactiviteit/">buitenplanse omgevingsplanactiviteit</a>, het document dat bij verreweg de meeste plannen nodig is.',
+	'De planologische onderbouwing bij een <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>, inclusief de motivering die de gemeenteraad bij zijn besluit gebruikt.',
+	'De coördinatie van de onderzoeken: ik bepaal welke nodig zijn, stem de vraagstelling af met de gemeente en stuur de bureaus aan.',
+	'De toets aan de provinciale regels, die bij plannen in het buitengebied vaak zwaarder wegen dan het gemeentelijk beleid.',
+	'De afstemming met de behandelend ambtenaar en de omgevingsdienst tijdens de beoordeling, zodat vragen worden opgelost in plaats van dat ze uw aanvraag stilleggen.',
+];
+
+const situatiesItems = [
+	'Een woning toevoegen, in de kern of in het buitengebied',
+	'Een woning bouwen buiten het bouwvlak of buiten de bebouwingscontour',
+	'Een functiewijziging van agrarisch naar wonen of naar bedrijvigheid',
+	'Herbestemming van vrijkomende agrarische bebouwing of een leegstaand pand',
+	'Bedrijfsbebouwing uitbreiden boven de oppervlakte die het omgevingsplan toestaat',
+	'Een woning splitsen of een woning toevoegen binnen bestaande bebouwing',
+	'Een gebiedsontwikkeling waarvoor het omgevingsplan moet worden gewijzigd',
+];
+
+const stuklopenItems = [
+	{
+		title: 'Beleid samenvatten in plaats van eraan toetsen.',
+		descriptionHtml:
+			'Pagina\'s beleidscitaten zonder de zin die ertoe doet: en daarom past dit plan daarbinnen.',
+	},
+	{
+		title: 'De provinciale regels overslaan.',
+		descriptionHtml:
+			'Een gemeentelijk ja is niet altijd genoeg. Provinciale regels werken door in de beoordeling van uw aanvraag. In Noord-Brabant gaat het dan bijvoorbeeld om het onderscheid tussen stedelijk en landelijk gebied en om de verplichte investering in kwaliteitsverbetering van het landschap, een reële kostenpost die vaak te laat in beeld komt. In Gelderland en Limburg gelden eigen regels.',
+	},
+	{
+		title: 'Inventariseren zonder wegen.',
+		descriptionHtml:
+			'Tien aspecten netjes beschreven, maar nergens de afweging die de wet vraagt. De gemeente moet dan zelf de conclusie trekken, en die tijd heeft zij niet.',
+	},
+	{
+		title: 'Participatie als sluitstuk.',
+		descriptionHtml: 'Wie de buren pas benadert als de aanvraag klaar is, hoort hun bezwaren voor het eerst in de bezwaarprocedure.',
+	},
+	{
+		title: 'Kostenverhaal niet geregeld.',
+		descriptionHtml: 'Dan ligt uw traject stil op iets wat niets met uw plan te maken heeft.',
+	},
+	{
+		title: 'Een verouderd sjabloon.',
+		descriptionHtml:
+			'Een onderbouwing die nog spreekt van een goede ruimtelijke ordening, een bestemmingsplan of een geluidsgevoelige bestemming, verraadt dat het document is overgeschreven van vóór 2024. Voor een behandelaar is dat een direct signaal om de rest kritisch te lezen.',
+	},
+];
+
+const werkwijzeSteps = [
+	{
+		number: '01',
+		title: 'Kennismaking en haalbaarheid',
+		descriptionHtml:
+			'U vertelt wat u wilt; ik toets uw plan aan het omgevingsplan, het gemeentelijk beleid en de provinciale regels, en zeg u eerlijk of het kansrijk is en of het lichter kan.',
+	},
+	{
+		number: '02',
+		title: 'Route en afstemming',
+		descriptionHtml:
+			'Ik bepaal welke procedure past en welke onderzoeken nodig zijn, en stem de vraagstelling af met de gemeente. Waar dat verstandig is, gaat hier eerst <a href="/principeverzoek/">het principeverzoek</a> doorheen.',
+	},
+	{
+		number: '03',
+		title: 'Opstellen en coördineren',
+		descriptionHtml: 'Ik schrijf de onderbouwing en stuur de onderzoeksbureaus aan, zodat de rapporten op elkaar aansluiten en op tijd binnen zijn.',
+	},
+	{
+		number: '04',
+		title: 'Indienen en begeleiden',
+		descriptionHtml: 'Ik dien de aanvraag namens u in en houd contact met de behandelaar tot het besluit er ligt.',
+	},
+];
+
+const faqItems = [
+	{
+		question: 'Is een ruimtelijke onderbouwing wettelijk verplicht?',
+		answerHtml:
+			'<p>Het document als zodanig niet; de term komt in de Omgevingswet niet meer voor. Wat wel verplicht is, zijn de gegevens. Artikel 7.207b lid 2 van de Omgevingsregeling zegt dat u bij uw aanvraag alles verstrekt wat nodig is om de gevolgen van uw plan te beoordelen, zowel voor de evenwichtige toedeling van functies aan locaties als voor de regels van Rijk en provincie. In de praktijk levert u dat als één samenhangend document, en dat noemen gemeenten nog steeds een ruimtelijke onderbouwing.</p>',
+		answerText:
+			'Het document als zodanig niet; de term komt in de Omgevingswet niet meer voor. Wat wel verplicht is, zijn de gegevens (artikel 7.207b lid 2 Omgevingsregeling): u verstrekt bij uw aanvraag alles wat nodig is om de gevolgen van uw plan te beoordelen. In de praktijk levert u dat als één samenhangend document.',
+	},
+	{
+		question: 'Wat is het verschil met een principeverzoek?',
+		answerHtml:
+			'<p>Een principeverzoek is een verkenning: u vraagt de gemeente vóór de formele procedure of zij in beginsel wil meewerken, met een beknopte beschrijving van uw plan. De ruimtelijke onderbouwing is het volledige document bij de formele aanvraag, inclusief de onderzoeken. Het principeverzoek kost een fractie en beschermt u tegen een investering in een plan waar de gemeente toch niet in meegaat.</p>',
+		answerText:
+			'Een principeverzoek is een verkenning: u vraagt de gemeente vóór de formele procedure of zij in beginsel wil meewerken. De ruimtelijke onderbouwing is het volledige document bij de formele aanvraag, inclusief de onderzoeken. Het principeverzoek kost een fractie en beschermt u tegen een investering in een plan waar de gemeente toch niet in meegaat.',
+	},
+	{
+		question: 'Krijg ik met een goede onderbouwing zeker een vergunning?',
+		answerHtml:
+			'<p>Nee, en iedereen die dat belooft, overdrijft. Bij een plan dat afwijkt van het omgevingsplan heeft de gemeente beoordelingsruimte: zij mag afwijken van haar eigen plan, maar zij hoeft niet. Een sterke onderbouwing en goede afstemming vooraf vergroten uw kans aanzienlijk, en zorgen ervoor dat een positief besluit ook standhoudt als iemand bezwaar maakt. Een garantie bestaat niet.</p>',
+		answerText:
+			'Nee, en iedereen die dat belooft, overdrijft. De gemeente heeft beoordelingsruimte: zij mag afwijken van haar eigen plan, maar hoeft niet. Een sterke onderbouwing en goede afstemming vooraf vergroten uw kans aanzienlijk, maar een garantie bestaat niet.',
+	},
+	{
+		question: 'Moet ik participatie organiseren?',
+		answerHtml:
+			'<p>Bij uw aanvraag moet u melden of en hoe u de omgeving heeft betrokken; dat aanvraagvereiste staat in artikel 7.4 van de Omgevingsregeling. Daadwerkelijk participeren is alleen verplicht als de gemeenteraad uw type plan daarvoor heeft aangewezen, wat hij kan doen op grond van artikel 16.55 lid 7 van de Omgevingswet. De gemeente mag de vorm niet voorschrijven; die keuze is aan u. Los van de verplichting verkleint vroeg contact met de buren de kans op zienswijzen en bezwaren.</p>',
+		answerText:
+			'Bij uw aanvraag moet u melden of en hoe u de omgeving heeft betrokken (artikel 7.4 Omgevingsregeling). Daadwerkelijk participeren is alleen verplicht als de gemeenteraad uw type plan daarvoor heeft aangewezen. De gemeente mag de vorm niet voorschrijven; die keuze is aan u.',
+	},
+	{
+		question: 'Welke onderzoeken heb ik nodig?',
+		answerHtml:
+			'<p>Dat volgt uit uw plan en uw locatie. Een standaardlijst bestaat niet, en een gemeente mag er ook geen afdwingen die losstaat van uw plan. Ik bepaal welke onderzoeken nodig zijn en stem dat vooraf af, zodat u niet betaalt voor rapporten die niemand nodig had.</p>',
+		answerText:
+			'Dat volgt uit uw plan en uw locatie. Een standaardlijst bestaat niet, en een gemeente mag er ook geen afdwingen die losstaat van uw plan. Ik bepaal welke onderzoeken nodig zijn en stem dat vooraf af.',
+	},
+	{
+		question: 'Ik heb al een onderbouwing, maar de gemeente vraagt aanvullingen. Kunt u daar iets mee?',
+		answerHtml:
+			'<p>Ja. Meestal zit het probleem niet in het plan maar in de motivering: een beleidstoets die is blijven steken in samenvatten, een ontbrekende afweging, of een aspect dat de omgevingsdienst anders leest dan bedoeld. Leg uw stuk en de reactie van de gemeente aan mij voor, dan kijk ik wat er nodig is om het alsnog rond te krijgen.</p>',
+		answerText:
+			'Ja. Meestal zit het probleem niet in het plan maar in de motivering: een beleidstoets die is blijven steken in samenvatten, een ontbrekende afweging, of een aspect dat de omgevingsdienst anders leest dan bedoeld. Leg uw stuk en de reactie van de gemeente aan mij voor.',
+	},
+	{
+		question: 'Werkt u ook buiten Noord-Brabant?',
+		answerHtml:
+			'<p>Ja. Ik werk in Noord-Brabant, Gelderland en Limburg. De provinciale regels verschillen per provincie, en dat is een van de punten waarop plannen stuklopen. Bij een plan net over een provinciegrens is dat de eerste vraag die ik uitzoek.</p>',
+		answerText:
+			'Ja. Ik werk in Noord-Brabant, Gelderland en Limburg. De provinciale regels verschillen per provincie, en dat is een van de punten waarop plannen stuklopen.',
+	},
+];
+---
+
+<BaseLayout title={title} description={description} path="/ruimtelijke-onderbouwing/" jsonLd={[service]}>
+	<PageHero
+		breadcrumbs={[
+			{ name: 'Home', path: '/' },
+			{ name: 'Diensten', path: '/#diensten' },
+			{ name: 'Ruimtelijke onderbouwing', path: '/ruimtelijke-onderbouwing/' },
+		]}
+		title="Ruimtelijke onderbouwing laten opstellen"
+		subtitle="Heeft de gemeente gezegd dat u een ruimtelijke onderbouwing nodig heeft? Dan is dit het document waarmee uw plan staat of valt. Ik stel het op, regel de onderzoeken die erbij horen en begeleid uw aanvraag tot het besluit."
+		showBreadcrumbs={false}
+	>
+		<p class="page-sub" style="margin-top:1rem;">
+			Het is geen invuloefening. De gemeente moet met uw stuk kunnen uitleggen waarom zij een uitzondering op haar
+			eigen regels maakt, en die uitleg moet overeind blijven als een buurman naar de rechter stapt. Wat u aanlevert,
+			bepaalt of dat lukt.
+		</p>
+		<a href="/#contact" class="btn btn-primary" style="margin-top:1.5rem;">Vraag een offerte voor uw onderbouwing</a>
+		<p style="margin-top: .85rem;"><a href={business.phoneHref} style="color: rgba(255,255,255,.75); text-decoration: underline; text-underline-offset: 2px;">Of bel direct: {business.phoneDisplay}</a></p>
+	</PageHero>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">In het kort</p>
+				<h2>In het kort</h2>
+			</div>
+			<div class="table-wrap" data-fade style="margin-top: 1.5rem;">
+				<table>
+					<tbody>
+						<tr>
+							<td><strong>Wat u krijgt</strong></td>
+							<td>Het volledige document, de coördinatie van de onderzoeken en begeleiding tot het besluit</td>
+						</tr>
+						<tr>
+							<td><strong>Wanneer u dit nodig heeft</strong></td>
+							<td>
+								Als uw plan afwijkt van het omgevingsplan en u toch een vergunning wilt, of als het omgevingsplan
+								wordt gewijzigd
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Wat het kost</strong></td>
+							<td>Advieskosten, onderzoekskosten, gemeentelijke leges en soms kostenverhaal</td>
+						</tr>
+						<tr>
+							<td><strong>Hoe lang het duurt</strong></td>
+							<td>Eenvoudig plan: vier tot zes maanden tot vergunning. Plan met zwaar onderzoek: twaalf tot achttien maanden</td>
+						</tr>
+						<tr>
+							<td><strong>Eerste stap</strong></td>
+							<td>Een gesprek waarin ik u zeg of uw plan kansrijk is en of het lichter kan</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Aanbod</p>
+				<h2>Wat ik voor u opstel</h2>
+			</div>
+			<ul class="plain-checklist" data-fade style="max-width: 68ch; margin-top: 1.5rem;">
+				{watIkOpstelItems.map((item) => <li set:html={item} />)}
+			</ul>
+			<p data-fade style="max-width: 68ch; margin-top: 1.5rem;">U heeft in dat hele traject één aanspreekpunt: mij.</p>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Toepassingsgebied</p>
+				<h2>Wanneer heeft u een ruimtelijke onderbouwing nodig?</h2>
+				<p>Zodra uw plan afwijkt van het omgevingsplan en u toch een vergunning wilt. De situaties die ik het vaakst tegenkom:</p>
+			</div>
+			<ul class="plain-checklist" data-fade style="max-width: 68ch; margin-top: 1.5rem;">
+				{situatiesItems.map((item) => <li>{item}</li>)}
+			</ul>
+			<div class="intro-text" data-fade style="max-width: 68ch; margin-top: 1.5rem;">
+				<p>
+					Past uw plan wél binnen het omgevingsplan en is er alleen een vergunning nodig, dan is een volledige
+					onderbouwing niet aan de orde. Dat scheelt aanzienlijk in tijd en geld, en het is de eerste vraag die ik
+					uitzoek: kan het lichter? Zie <a href="/omgevingsplanactiviteit/">zo verloopt een OPA-aanvraag</a>.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Wat is het</p>
+				<h2>Wat is een ruimtelijke onderbouwing?</h2>
+				<p>
+					Het document waarin u aantoont dat uw plan aanvaardbaar is op de plek waar u het wilt uitvoeren, ook al
+					past het niet binnen het omgevingsplan. Het beantwoordt één vraag, en die vraag is de kern van de
+					Omgevingswet: leidt uw plan tot een evenwichtige toedeling van functies aan locaties? Voor een vergunning
+					staat dat criterium in artikel 8.0a lid 2 van het Besluit kwaliteit leefomgeving.
+				</p>
+				<p>
+					In gewone taal: de gemeente moet kunnen opschrijven waarom uw plan op deze plek past naast alles wat er al
+					is, met alle belangen afgewogen. Uw onderbouwing levert haar die tekst aan. Is die goed, dan kan de
+					behandelaar uw motivering grotendeels overnemen in het besluit. Is die zwak, dan moet hij het zelf
+					uitzoeken, en dan duurt het langer of komt het er niet.
+				</p>
+				<p>
+					Wilt u de volledige uitleg, inclusief wat er precies in het document hoort en hoe het zit met de
+					terminologie onder de Omgevingswet? Die staat in het artikel over
+					<a href="/blog/ruimtelijke-onderbouwing-bopa/">de ruimtelijke onderbouwing bij een BOPA</a>.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Kerncijfers</p>
+				<h2>Wat kost het?</h2>
+				<p>De kosten bestaan uit vier posten, en het loont ze los van elkaar te bekijken.</p>
+				<p>
+					<strong>Advieskosten</strong> zijn mijn werkzaamheden: de analyse, het schrijven van de onderbouwing, de
+					coördinatie en de begeleiding. Die hangen af van de complexiteit van uw plan en van hoeveel er al ligt.
+				</p>
+				<p>
+					<strong>Onderzoekskosten</strong> zijn meestal de grootste en de minst voorspelbare post. Precies daarom
+					toets ik eerst de haalbaarheid: het is zonde om deze kosten te maken voor een plan dat er toch niet komt.
+				</p>
+				<p>
+					<strong>Gemeentelijke leges</strong> betaalt u voor de behandeling van de aanvraag. Die verschillen per
+					gemeente en zijn verschuldigd ongeacht de uitkomst.
+				</p>
+				<p>
+					<strong>Kostenverhaal</strong> komt erbij als uw plan een aangewezen bouwactiviteit betreft, zoals het
+					bouwen van woningen of bedrijfspanden. De gemeente verhaalt dan haar kosten voor de ontwikkeling, bij
+					voorkeur via een overeenkomst die u vooraf sluit. Let erop dat plankosten die onder het kostenverhaal
+					vallen niet ook nog eens via de leges worden gerekend, en vraag de gemeente hoe zij die twee scheidt.
+				</p>
+				<p><a href="/#contact">Vraag een indicatie van doorlooptijd en kosten.</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Kerncijfers</p>
+				<h2>Hoe lang duurt het?</h2>
+				<p>Het schrijven zelf is zelden de vertragende factor; de onderzoeken zijn dat.</p>
+				<p>
+					Een eenvoudig plan zonder zware onderzoeken loopt van eerste gesprek tot vergunning doorgaans in vier tot
+					zes maanden. Een plan met ecologisch onderzoek, een stikstofberekening en een gevoelige omgeving duurt
+					eerder twaalf tot achttien maanden. Dat verschil zit vrijwel volledig in de onderzoekskant, en in het
+					seizoen waarin u begint.
+				</p>
+				<p>
+					Op de onderbouwing volgt de procedure zelf. Bij de gewone procedure beslist de gemeente binnen acht weken
+					na een complete aanvraag, met een eenmalige verlenging van maximaal zes weken, dus ten hoogste veertien
+					weken. In aangewezen gevallen geldt de uitgebreide procedure met een wettelijke beslistermijn van zes
+					maanden; in de praktijk loopt zo'n traject vaak op tot 26 tot 32 weken.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Praktijkervaring</p>
+				<h2>Waar onderbouwingen op stuklopen</h2>
+				<p>Ik heb vanuit de gemeentelijke praktijk aanvragen beoordeeld. Dit zijn de patronen die ik daar zag, en ze zijn allemaal te voorkomen.</p>
+			</div>
+			<FeatureGrid items={stuklopenItems} />
+		</div>
+	</section>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Praktijkervaring</p>
+				<h2>Hoe een gemeente uw onderbouwing leest</h2>
+				<p>Het helpt om te weten wat er met uw stuk gebeurt nadat u het heeft ingediend.</p>
+				<p>
+					Eerst wordt gekeken of de aanvraag compleet is. Ontbreekt er iets, dan pauzeert de beslistermijn totdat u
+					aanvult. Dat kost u zo enkele weken, en het is volledig te voorkomen.
+				</p>
+				<p>
+					Daarna gaat uw dossier naar de inhoudelijke adviseurs: de omgevingsdienst voor de milieuaspecten, het
+					waterschap voor water, soms de veiligheidsregio of de erfgoedcommissie. Elk van hen leest alleen zijn eigen
+					stuk. Een onderbouwing waarin de aspecten netjes gescheiden en vindbaar zijn, gaat sneller door die molen
+					dan een doorlopend betoog.
+				</p>
+				<p>Vervolgens komt de beleidsmatige toets en de weging van alle belangen. Dit is de stap waarin uw tekst in het conceptbesluit terechtkomt.</p>
+				<p>
+					En dan is er nog een stap die veel initiatiefnemers verrast. De gemeenteraad kan vooraf gevallen aanwijzen
+					waarin hij over uw type plan een bindend advies uitbrengt, en woningbouw staat vaak op die lijst. Adviseert
+					de raad negatief, dan mag het college de vergunning niet verlenen. De beslistermijn wordt er niet door
+					verlengd, terwijl de raad niet wekelijks vergadert. Ik zoek daarom aan het begin uit of uw plan onder dat
+					adviesrecht valt.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Inhoud</p>
+				<h2>Wat staat er in een goede onderbouwing?</h2>
+				<p>
+					Er is geen wettelijk voorgeschreven inhoudsopgave. Een onderbouwing die werkt, bevat in de praktijk zes
+					onderdelen: een beschrijving van uw plan en de locatie, een toets aan het beleid van Rijk, provincie en
+					gemeente, de weging van alle betrokken belangen, de omgevingsaspecten met de bijbehorende onderzoeken, wat u
+					met de omgeving heeft gedaan, en de uitvoerbaarheid.
+				</p>
+				<p>
+					Het derde onderdeel is het hart en tegelijk het onderdeel dat het vaakst tekortschiet. Aspecten opsommen is
+					niet genoeg; er moet een afweging staan met een conclusie. Wat er per onderdeel in hoort, staat uitgebreid
+					in <a href="/blog/ruimtelijke-onderbouwing-bopa/">het artikel over de ruimtelijke onderbouwing</a>.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Onderzoeken</p>
+				<h2>Welke onderzoeken horen erbij?</h2>
+				<p>
+					Er bestaat geen standaardlijst. Welke onderzoeken nodig zijn, volgt uit uw plan en uw locatie, en een
+					gemeente mag geen rapporten eisen die met uw plan niets te maken hebben. In de praktijk gaat het om een
+					selectie uit bodem, geluid, geur, luchtkwaliteit, externe veiligheid, milieuzonering, water, archeologie,
+					natuur, stikstof en verkeer.
+				</p>
+				<p>Drie dingen gaan hier het vaakst mis.</p>
+				<p>
+					<strong>De volgorde.</strong> Onderzoek dat te vroeg wordt uitgevoerd, veroudert voordat het besluit valt.
+					Onderzoek dat te laat komt, houdt de hele aanvraag op.
+				</p>
+				<p><strong>De vraagstelling.</strong> Een rapport dat een net iets andere vraag beantwoordt dan de gemeente stelt, moet over. Ik stem de vraagstelling daarom vooraf af.</p>
+				<p>
+					<strong>Het seizoen.</strong> Ecologisch onderzoek is aan seizoenen gebonden. Een vleermuisonderzoek dat pas
+					in oktober wordt aangevraagd, kost u een jaar. Dit is de meest onderschatte vertragingsbron bij plannen
+					waarin wordt gesloopt of verbouwd, en de reden dat ik dit punt in het eerste gesprek aan de orde stel.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sp-section bg-forest">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Werkwijze</p>
+				<h2 style="color:var(--white); margin-bottom: 2.5rem;">Zo werkt het</h2>
+			</div>
+			<StepList items={werkwijzeSteps} variant="vertical" dark />
+		</div>
+	</section>
+
+	<section class="sp-section bg-white">
+		<div class="container">
+			<div data-fade>
+				<p class="label">Veelgestelde vragen</p>
+				<h2>Veelgestelde vragen</h2>
+			</div>
+			<FAQ items={faqItems} />
+		</div>
+	</section>
+
+	<section class="sp-section bg-paper">
+		<div class="container">
+			<div class="intro-text" data-fade style="max-width: 68ch;">
+				<p class="label">Naslag</p>
+				<h2>De juridische grondslagen op een rij</h2>
+				<p>Voor wie het naadje van de kous wil weten, of het wil kunnen nazoeken.</p>
+			</div>
+			<div class="faq-list" data-fade style="max-width: 68ch; margin-top: 1.5rem;">
+				<details class="faq-item">
+					<summary>Bekijk de juridische grondslagen</summary>
+					<div class="faq-body">
+						<div class="table-wrap" style="margin-top: 1rem;">
+							<table>
+								<thead>
+									<tr>
+										<th>Onderwerp</th>
+										<th>Grondslag</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Het beoordelingscriterium bij een vergunning die afwijkt van het omgevingsplan</td>
+										<td>Artikel 8.0a lid 2 Bkl</td>
+									</tr>
+									<tr>
+										<td>Hetzelfde criterium bij een wijziging van het omgevingsplan</td>
+										<td>Artikel 4.2 lid 1 Ow</td>
+									</tr>
+									<tr>
+										<td>Doorwerking van provinciale regels in de beoordeling</td>
+										<td>Artikel 8.0b Bkl, en artikel 8.0c bij een activiteit van provinciaal belang</td>
+									</tr>
+									<tr>
+										<td>De gegevens die u bij uw aanvraag verstrekt</td>
+										<td>Artikel 7.207b lid 2 Omgevingsregeling</td>
+									</tr>
+									<tr>
+										<td>Melden of u aan participatie heeft gedaan</td>
+										<td>Artikel 7.4 Omgevingsregeling</td>
+									</tr>
+									<tr>
+										<td>Aanwijzing door de raad van gevallen met verplichte participatie</td>
+										<td>Artikel 16.55 lid 7 Ow</td>
+									</tr>
+									<tr>
+										<td>Bindend advies van de gemeenteraad</td>
+										<td>Artikel 4.21 Omgevingsbesluit voor de aanwijzing, artikel 16.15b Ow voor de doorwerking</td>
+									</tr>
+									<tr>
+										<td>Bouwactiviteiten waarvoor kostenverhaal geldt</td>
+										<td>Artikel 8.13 Omgevingsbesluit</td>
+									</tr>
+									<tr>
+										<td>Aangewezen gevallen voor de uitgebreide procedure</td>
+										<td>Artikel 10.24 Omgevingsbesluit</td>
+									</tr>
+									<tr>
+										<td>Wanneer woningbouw een mer-beoordeling vergt</td>
+										<td>Categorie J11 van bijlage V bij het Omgevingsbesluit; de aard en omvang zijn bepalend, niet alleen het aantal woningen</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</details>
+			</div>
+		</div>
+	</section>
+
+	<CTA
+		title="Laat uw onderbouwing opstellen"
+		description="Heeft u van de gemeente gehoord dat u een ruimtelijke onderbouwing nodig heeft, of wilt u weten of het bij uw plan lichter kan? Leg uw plan aan mij voor. U hoort binnen één werkdag wat er nodig is, welke route past en wat dat ongeveer vraagt aan tijd en kosten."
+		buttonLabel="Vraag een offerte voor uw onderbouwing"
+		buttonHref="/#contact"
+	>
+		<p style="margin-top: 1rem;">Of bel direct: <a href={business.phoneHref}>{business.phoneDisplay}</a></p>
+		<p style="margin-top: .5rem; font-size: .875rem;">Werkgebied: {business.areaServed.join(', ')}.</p>
+	</CTA>
+</BaseLayout>

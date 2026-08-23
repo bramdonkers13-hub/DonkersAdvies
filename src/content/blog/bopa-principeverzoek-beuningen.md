@@ -64,7 +64,7 @@ Wettelijke stand: 24 juli 2026.
 
 <h2 id="tijdelijke-beperking">Let op: tijdelijk geen vooroverleg voor nieuwe woningen</h2>
 
-Dit is de belangrijkste actuele informatie voor iedereen met een woningbouwplan in deze gemeente. Beuningen geeft prioriteit aan enkele grote woningbouwlocaties, en heeft daarom de behandeling van andere woningbouwinitiatieven tijdelijk stilgelegd.
+Dit is de belangrijkste actuele informatie voor iedereen met een woningbouwplan in deze gemeente. Beuningen geeft prioriteit aan enkele grote woningbouwlocaties, en heeft daarom de behandeling van andere woningbouwinitiatieven tijdelijk stilgelegd. Voor andere plannen help ik u graag met <a href="/principeverzoek/">een principeverzoek</a> of, wijkt uw plan af van het omgevingsplan, met <a href="/buitenplanse-omgevingsplanactiviteit/">een BOPA-aanvraag</a>.
 
 Concreet betekent dat: voor de nieuwbouw van één of meer woningen is er tot en met 31 december 2026 geen vooroverleg mogelijk. Ook nieuwe principeverzoeken neemt de gemeente voorlopig niet meteen in behandeling. De gemeente geeft aan dit via haar website te melden zodra daar verandering in komt.
 
@@ -150,7 +150,7 @@ Daarnaast geldt het provinciale spoor. De Omgevingsverordening Gelderland stelt 
 2. **Haalbaarheidstoets.** Uw plan wordt getoetst aan het omgevingsplan, de omgevingsvisie en het overige gemeentelijk beleid, plus de provinciale instructieregels.
 3. **De stappen kiezen.** Omdat u per stap betaalt, wordt vooraf bepaald welke stappen u werkelijk nodig heeft en waar u kunt stoppen.
 4. **Principeverzoek indienen.** Het verzoek wordt compleet ingediend, met de locatie, vorm en uitstraling van de nieuwe bebouwing en de te behouden gebouwen op tekening.
-5. **Formele procedure en begeleiding** tot en met de vergunning of de wijziging van het omgevingsplan.
+5. **Formele procedure en begeleiding** tot en met de vergunning of de wijziging van het omgevingsplan. Wilt u dat ik <a href="/principeverzoek/">uw principeverzoek voor Beuningen opstel</a>? Neem gerust contact op.
 
 <h2 id="faq">Veelgestelde vragen over bouwplannen in Beuningen</h2>
 

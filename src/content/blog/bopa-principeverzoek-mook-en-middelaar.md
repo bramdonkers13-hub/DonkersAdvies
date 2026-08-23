@@ -57,7 +57,7 @@ faq:
     answer: "Een negatieve reactie is niet altijd het einde. Vaak gaat het om de omvang, de situering of de landschappelijke inpassing, en niet om het principe. Zeker in een gemeente met hoge natuur- en landschapswaarden kan een aangepast ontwerp het verschil maken."
 ---
 
-Mook en Middelaar is met ruim achtduizend inwoners een kleine gemeente, en dat werkt in uw voordeel: de lijnen zijn kort en een gesprek vooraf is eenvoudig te regelen. Tegelijk ligt vrijwel de hele gemeente in of tegen waardevol natuurgebied, waardoor de ruimtelijke onderbouwing zwaarder weegt dan de omvang van een plan doet vermoeden. <a href="/#contact">Vraag een vrijblijvend adviesgesprek aan.</a>
+Mook en Middelaar is met ruim achtduizend inwoners een kleine gemeente, en dat werkt in uw voordeel: de lijnen zijn kort en een gesprek vooraf is eenvoudig te regelen. Tegelijk ligt vrijwel de hele gemeente in of tegen waardevol natuurgebied, waardoor <a href="/ruimtelijke-onderbouwing/">de ruimtelijke onderbouwing</a> zwaarder weegt dan de omvang van een plan doet vermoeden. Ik help u met <a href="/principeverzoek/">een principeverzoek</a> of <a href="/buitenplanse-omgevingsplanactiviteit/">een BOPA-aanvraag</a>.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -137,7 +137,7 @@ Voor een BOPA geldt de reguliere procedure: binnen acht weken bericht, met een m
 2. **Haalbaarheidstoets.** Uw plan wordt getoetst aan het omgevingsplan, het gemeentelijk beleid en de Limburgse instructieregels, met natuur en landschap expliciet in beeld.
 3. **Eventueel een oriënterend gesprek.** Bij een nog niet uitgekristalliseerd plan levert een gesprek vooraf vaak meer op dan een vroegtijdig principeverzoek.
 4. **Principeverzoek indienen.** Het verzoek gaat compleet en helder naar het omgevingsloket, met indicatieve maatvoering en een onderbouwing die op de beoordeling aansluit.
-5. **Formele procedure en begeleiding.** Binnen de geldigheidstermijn wordt de BOPA of de wijziging van het omgevingsplan opgesteld en begeleid tot en met het besluit.
+5. **Formele procedure en begeleiding.** Binnen de geldigheidstermijn wordt <a href="/buitenplanse-omgevingsplanactiviteit/">de BOPA</a> of <a href="/wijziging-omgevingsplan/">de wijziging van het omgevingsplan</a> opgesteld en begeleid tot en met het besluit.
 
 <h2 id="faq">Veelgestelde vragen over bouwplannen in Mook en Middelaar</h2>
 

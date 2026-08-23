@@ -65,7 +65,7 @@ faq:
 
 De meeste initiatiefnemers gebruiken het verkeerd. Zij sturen een schets met de vraag "kan dit?" en krijgen een antwoord dat juridisch niets waard blijkt te zijn. Of zij vragen niets, dienen direct een aanvraag in, en ontdekken na drie maanden dat het provinciale beleid hun plan al bij voorbaat uitsloot.
 
-Een goed principeverzoek doet twee dingen tegelijk. Het haalt de randvoorwaarden op waarbinnen u kunt werken, en het legt een reactie vast die u later daadwerkelijk kunt gebruiken. Dat tweede is waar het juridisch interessant wordt, en waar deze pagina uitgebreider op ingaat dan gebruikelijk. Want de vraag "hoe hard is een positieve principe-uitspraak?" heeft een concreet antwoord, en dat antwoord bepaalt hoe u uw verzoek moet opstellen.
+Een goed principeverzoek doet twee dingen tegelijk. Het haalt de randvoorwaarden op waarbinnen u kunt werken, en het legt een reactie vast die u later daadwerkelijk kunt gebruiken. Dat tweede is waar het juridisch interessant wordt, en waar deze pagina uitgebreider op ingaat dan gebruikelijk. Want de vraag "hoe hard is een positieve principe-uitspraak?" heeft een concreet antwoord, en dat antwoord bepaalt hoe u uw verzoek moet opstellen. Wilt u dat ik <a href="/principeverzoek/">uw principeverzoek opstel en indien</a>? Dat scherpt precies die vraag.
 
 Hieronder het volledige traject: wat een principeverzoek is, hoe het onder de Omgevingswet heet, wat het kost, wat erin moet, hoe de gemeente het beoordeelt, wat u met elk type antwoord doet, en welke fouten het vaakst terugkomen. Met bijzondere aandacht voor Noord-Brabant, waar een positief gemeentelijk antwoord bepaald niet het laatste woord is.
 
@@ -451,7 +451,7 @@ Het principeverzoek is het goedkoopste moment in een ruimtelijk traject om erach
 
 Drie dingen bepalen wat u aan uw principeverzoek heeft. Stel een concrete vraag, want een vage vraag levert een onbruikbaar antwoord op. Vraag om een uitspraak van het college in plaats van een ambtelijke mail, want dat verschil telt zwaar in de tweede stap van de vertrouwenstoets. En beschrijf uw plan volledig en eerlijk, inclusief de lastige punten, omdat u anders uw eigen positie ondermijnt op het moment dat u haar nodig heeft.
 
-In Noord-Brabant komt daar één ding bij. Een gemeentelijk ja is niet het laatste woord. Toets uw plan aan de Omgevingsverordening Noord-Brabant voordat u indient, en reken de kwaliteitsverbetering van het landschap in uw businesscase mee.
+In Noord-Brabant komt daar één ding bij. Een gemeentelijk ja is niet het laatste woord. Toets uw plan aan de Omgevingsverordening Noord-Brabant voordat u indient, en reken de kwaliteitsverbetering van het landschap in uw businesscase mee. Wilt u dit niet zelf uitzoeken? <a href="/principeverzoek/">Laat uw principeverzoek opstellen</a> en u weet het na één gesprek.
 
 <h2 id="bronnen">Bronnen</h2>
 

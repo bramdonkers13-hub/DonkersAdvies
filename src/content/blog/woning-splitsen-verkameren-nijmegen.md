@@ -58,7 +58,7 @@ faq:
     answer: "Een negatieve reactie is niet altijd het einde. Bij splitsing en verkamering gaat het vaak om de ligging ten opzichte van bestaande zwaartepunten of om de voorzieningen in het pand, en dat is soms met een aangepast plan op te lossen."
 ---
 
-In een stad met een grote studentenpopulatie en een gespannen woningmarkt gaan de meeste ruimtelijke initiatieven niet over nieuwbouw in het buitengebied, maar over bestaand vastgoed: splitsen, verkameren, transformeren en verdichten. Nijmegen stuurt daar strak op, met eigen beleidsregels en begrippen die de haalbaarheid van uw plan grotendeels bepalen. <a href="/#contact">Vraag een vrijblijvend adviesgesprek aan.</a>
+In een stad met een grote studentenpopulatie en een gespannen woningmarkt gaan de meeste ruimtelijke initiatieven niet over nieuwbouw in het buitengebied, maar over bestaand vastgoed: splitsen, verkameren, transformeren en verdichten. Nijmegen stuurt daar strak op, met eigen beleidsregels en begrippen die de haalbaarheid van uw plan grotendeels bepalen. Ik help u met <a href="/principeverzoek/">een conceptverzoek</a> of <a href="/buitenplanse-omgevingsplanactiviteit/">een BOPA-aanvraag</a> die op dat Nijmeegse beleid is toegesneden.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -155,7 +155,7 @@ Voor participatie hecht de gemeente aan vroege betrokkenheid van de omgeving. In
 3. **Haalbaarheidstoets.** Uw plan wordt getoetst aan het omgevingsplan, de beleidsregels en waar relevant het provinciale spoor.
 4. **Conceptverzoek indienen.** Het verzoek gaat via het Omgevingsloket, met een onderbouwing die aansluit op de wijze van beoordelen.
 5. **Participatie inrichten.** In een dichtbebouwde omgeving wordt de omgeving vroeg betrokken, om zienswijzen en bezwaren te beperken.
-6. **Formele procedure en begeleiding** tot en met het besluit.
+6. **Formele procedure en begeleiding** tot en met het besluit. Wilt u dat ik <a href="/buitenplanse-omgevingsplanactiviteit/">uw aanvraag voor Nijmegen opstel</a>? Neem gerust contact op.
 
 <h2 id="faq">Veelgestelde vragen over bouwplannen in Nijmegen</h2>
 

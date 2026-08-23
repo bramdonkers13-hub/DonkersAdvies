@@ -7,14 +7,16 @@ interface Props {
 	label?: string;
 	title: string;
 	subtitle?: string;
+	/** Zet op false om de zichtbare broodkruimel te verbergen; de BreadcrumbList JSON-LD blijft altijd staan. */
+	showBreadcrumbs?: boolean;
 }
 
-const { breadcrumbs, label, title, subtitle } = Astro.props;
+const { breadcrumbs, label, title, subtitle, showBreadcrumbs = true } = Astro.props;
 ---
 
 <section class="page-hero">
 	<div class="container page-hero-inner">
-		<Breadcrumbs items={breadcrumbs} />
+		<Breadcrumbs items={breadcrumbs} visible={showBreadcrumbs} />
 		{label && <p class="label">{label}</p>}
 		<h1>{title}</h1>
 		{subtitle && <p class="page-sub">{subtitle}</p>}

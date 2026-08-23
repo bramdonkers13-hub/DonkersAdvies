@@ -61,7 +61,7 @@ faq:
     answer: "Blijkt uw initiatief op voorhand niet kansrijk, dan informeert de gemeente u daarover. Dat is niet altijd het einde: vaak gaat het om de omvang, de situering of de aangetoonde kwaliteitswinst, en niet om het principe."
 ---
 
-De gemeente werkt met een getrapte beoordeling waarbij elke stap geld kost. Dat maakt de voorbereiding belangrijker dan elders: een plan dat bij de eerste behandeling onvoldoende is uitgewerkt, kost u een ronde zonder resultaat. Wie weet welke informatie op welk moment nodig is, doorloopt het traject in minder stappen.
+De gemeente werkt met een getrapte beoordeling waarbij elke stap geld kost. Dat maakt de voorbereiding belangrijker dan elders: een plan dat bij de eerste behandeling onvoldoende is uitgewerkt, kost u een ronde zonder resultaat. Wie weet welke informatie op welk moment nodig is, doorloopt het traject in minder stappen. Ik bereid <a href="/principeverzoek/">uw vooroverleg of principeverzoek</a> zo voor dat u geen ronde verspilt.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -160,7 +160,7 @@ Daarnaast ligt Lingewaard in de invloedssfeer van twee steden, met de Waalsprong
 2. **Haalbaarheidstoets.** Uw plan wordt getoetst aan het omgevingsplan, het gemeentelijk beleid en de provinciale instructieregels.
 3. **De rekensom.** Bij functieverandering worden de exploitatiebijdrage, de bijdrage ruimtelijke ontwikkelingen en de leges vroeg in beeld gebracht.
 4. **Intaketafel of vooroverleg.** Het dossier wordt zo opgesteld dat één behandeling volstaat, met de ruimtelijke kwaliteitswinst helder geduid.
-5. **Formele procedure en begeleiding** tot en met de vergunning of de vaststelling door de raad.
+5. **Formele procedure en begeleiding** tot en met de vergunning of de vaststelling door de raad, via <a href="/buitenplanse-omgevingsplanactiviteit/">een BOPA-aanvraag</a> of <a href="/wijziging-omgevingsplan/">een wijziging van het omgevingsplan</a>.
 
 <h2 id="faq">Veelgestelde vragen over bouwplannen in Lingewaard</h2>
 

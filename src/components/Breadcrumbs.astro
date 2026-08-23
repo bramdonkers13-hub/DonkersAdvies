@@ -3,24 +3,28 @@ import { breadcrumbSchema, type BreadcrumbItem } from '../lib/schema';
 
 interface Props {
 	items: BreadcrumbItem[];
+	/** Zet op false om de zichtbare broodkruimel te verbergen; de BreadcrumbList JSON-LD blijft altijd staan. */
+	visible?: boolean;
 }
 
-const { items } = Astro.props;
+const { items, visible = true } = Astro.props;
 ---
 
-<nav class="breadcrumb" aria-label="Broodkruimel">
-	{
-		items.map((item, i) => (
-			<>
-				{i > 0 && (
-					<span class="breadcrumb-sep" aria-hidden="true">
-						/
-					</span>
-				)}
-				{i === items.length - 1 ? <span>{item.name}</span> : <a href={item.path}>{item.name}</a>}
-			</>
-		))
-	}
-</nav>
+{
+	visible && (
+		<nav class="breadcrumb" aria-label="Broodkruimel">
+			{items.map((item, i) => (
+				<>
+					{i > 0 && (
+						<span class="breadcrumb-sep" aria-hidden="true">
+							/
+						</span>
+					)}
+					{i === items.length - 1 ? <span>{item.name}</span> : <a href={item.path}>{item.name}</a>}
+				</>
+			))}
+		</nav>
+	)
+}
 
 <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema(items))} />

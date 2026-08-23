@@ -58,7 +58,7 @@ faq:
     answer: "Een negatieve reactie is niet altijd het einde. Bij een kleinschalig woningbouwinitiatief gaat het vaak om de score op een van de vier thema's, en dat is soms met een aangepast ontwerp of een betere onderbouwing te verbeteren."
 ---
 
-Wijchen werkt met een uitgesproken systematiek. Voor kleinschalige woningbouw geldt een eigen toetsingskader met een puntensysteem waarmee u vooraf kunt inschatten of uw plan kans maakt, en de gemeente heeft haar kostenverhaal in concrete bedragen vastgelegd. Wie die kaders kent, weet vroeg of een plan haalbaar en betaalbaar is. <a href="/#contact">Vraag een vrijblijvend adviesgesprek aan.</a>
+Wijchen werkt met een uitgesproken systematiek. Voor kleinschalige woningbouw geldt een eigen toetsingskader met een puntensysteem waarmee u vooraf kunt inschatten of uw plan kans maakt, en de gemeente heeft haar kostenverhaal in concrete bedragen vastgelegd. Wie die kaders kent, weet vroeg of een plan haalbaar en betaalbaar is. Ik toets dat vooraf en stel <a href="/principeverzoek/">uw principeverzoek</a> op dat puntensysteem af.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -156,7 +156,7 @@ Batenburg verdient aparte aandacht. Het is formeel een stad, met een kasteelruï
 2. **Scoren op de vier thema's.** Gaat het om een kleinschalig woningbouwinitiatief, dan wordt het plan vooraf tegen ruimtelijke kwaliteit, duurzaam ruimtegebruik, passende ontwikkeling en behoefte gezet.
 3. **De rekensom.** Exploitatiebijdrage, plankosten en leges komen in beeld voordat u verder investeert.
 4. **Principeverzoek indienen.** Het verzoek wordt opgesteld met een heldere motivering van waarom het plan afwijkt en waarom medewerking gerechtvaardigd is.
-5. **Formele procedure en begeleiding.** Binnen de geldigheidstermijn van twaalf maanden wordt de vervolgprocedure opgestart en begeleid tot en met het besluit, inclusief de anterieure overeenkomst.
+5. **Formele procedure en begeleiding.** Binnen de geldigheidstermijn van twaalf maanden wordt <a href="/buitenplanse-omgevingsplanactiviteit/">de BOPA-aanvraag</a> opgestart en begeleid tot en met het besluit, inclusief de anterieure overeenkomst.
 
 <h2 id="faq">Veelgestelde vragen over bouwplannen in Wijchen</h2>
 

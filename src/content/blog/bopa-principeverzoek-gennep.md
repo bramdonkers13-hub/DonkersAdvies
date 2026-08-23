@@ -59,7 +59,7 @@ faq:
     answer: "U betaalt in dat geval wel de leges, want de gemeente heeft het verzoek behandeld. Een negatieve reactie is echter niet altijd het einde: vaak gaat het om de omvang, de situering of de aangetoonde kwaliteitswinst, en niet om het principe. Zeker bij een kaderregeling als het VAB-beleid kan een aangepast plan met een sterkere onderbouwing alsnog kansrijk zijn."
 ---
 
-Gennep heeft één regeling die deze gemeente voor veel initiatiefnemers bijzonder aantrekkelijk maakt: wie leegstaande agrarische bebouwing sloopt, kan daar bouwrechten voor woningen mee verdienen. Per duizend vierkante meter sloop één woning, tot maximaal twee per locatie. Dat is concreter dan wat de meeste gemeenten bieden.
+Gennep heeft één regeling die deze gemeente voor veel initiatiefnemers bijzonder aantrekkelijk maakt: wie leegstaande agrarische bebouwing sloopt, kan daar bouwrechten voor woningen mee verdienen. Per duizend vierkante meter sloop één woning, tot maximaal twee per locatie. Dat is concreter dan wat de meeste gemeenten bieden. Ik help u <a href="/principeverzoek/">een principeverzoek</a> of <a href="/buitenplanse-omgevingsplanactiviteit/">een BOPA-aanvraag</a> op deze regeling toesnijden.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -147,7 +147,7 @@ Gennep valt onder de Omgevingsverordening Limburg, die instructieregels stelt di
 2. **Haalbaarheidstoets.** Uw plan wordt getoetst aan het omgevingsplan, het VAB-beleid, het overige gemeentelijk beleid en de provinciale regels.
 3. **De kwaliteitswinst onderbouwen.** Omdat het VAB-beleid een kaderregeling is, wordt de ruimtelijke kwaliteitswinst expliciet uitgewerkt.
 4. **Principeverzoek indienen** via het proces Dialoog ruimtelijke initiatieven, compleet en met een heldere beschrijving van het initiatief.
-5. **Formele procedure en begeleiding** tot en met de vergunning of vaststelling.
+5. **Formele procedure en begeleiding** tot en met de vergunning of vaststelling. Wilt u dat ik <a href="/principeverzoek/">uw principeverzoek voor Gennep opstel</a>? Neem gerust contact op.
 
 <h2 id="faq">Veelgestelde vragen over bouwplannen in Gennep</h2>
 

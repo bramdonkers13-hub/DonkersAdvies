@@ -51,7 +51,7 @@ faq:
     answer: "Een principeverzoek is een informele toets vooraf waarmee u peilt of de gemeente in beginsel wil meewerken. Het is niet verplicht, maar bij een BOPA vrijwel altijd verstandig: het beperkt de onderzoekskosten en maakt de randvoorwaarden vroeg zichtbaar."
 ---
 
-Een BOPA is geen formaliteit. De gemeente moet gemotiveerd besluiten waarom zij een uitzondering op haar eigen plan wil maken, en dat besluit moet een bezwaar- of beroepsprocedure kunnen doorstaan. Wat u aanlevert, bepaalt of dat lukt. Deze pagina legt uit wat een BOPA is, wanneer u er een nodig heeft, hoe de procedure verloopt, wat het kost, en welke twee dingen in de praktijk het vaakst worden onderschat: het adviesrecht van de gemeenteraad en, in Noord-Brabant, het provinciale beleid.
+Een BOPA is geen formaliteit. De gemeente moet gemotiveerd besluiten waarom zij een uitzondering op haar eigen plan wil maken, en dat besluit moet een bezwaar- of beroepsprocedure kunnen doorstaan. Wat u aanlevert, bepaalt of dat lukt. Deze pagina legt uit wat een BOPA is, wanneer u er een nodig heeft, hoe de procedure verloopt, wat het kost, en welke twee dingen in de praktijk het vaakst worden onderschat: het adviesrecht van de gemeenteraad en, in Noord-Brabant, het provinciale beleid. Wilt u dat ik <a href="/buitenplanse-omgevingsplanactiviteit/">uw BOPA-aanvraag opstel en begeleid</a>, lees dan gerust verder.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -248,7 +248,7 @@ Een [principeverzoek](/blog/principeverzoek-indienen/) is een informele toets vo
 
 Een BOPA is de omgevingsvergunning voor activiteiten die afwijken van het omgevingsplan. De reguliere procedure duurt acht tot veertien weken, de uitgebreide zes maanden. De kern van een succesvolle aanvraag is een goede ruimtelijke onderbouwing waarin u aantoont dat het plan past binnen een evenwichtige toedeling van functies aan locaties, en waarin participatie en kostenverhaal zichtbaar zijn geregeld.
 
-Drie dingen worden in de praktijk het vaakst onderschat. Toets vooraf of uw plan werkelijk een BOPA vereist, want soms volstaat een lichtere route. Zoek uit of uw plan onder het bindend adviesrecht van de gemeenteraad valt, want dat bepaalt uw planning en kan een onzorgvuldig verleende vergunning ongeldig maken. En in Noord-Brabant: toets uw plan aan de Omgevingsverordening, want een gemeentelijk ja is niet genoeg als de provincie in de weg staat.
+Drie dingen worden in de praktijk het vaakst onderschat. Toets vooraf of uw plan werkelijk een BOPA vereist, want soms volstaat een lichtere route. Zoek uit of uw plan onder het bindend adviesrecht van de gemeenteraad valt, want dat bepaalt uw planning en kan een onzorgvuldig verleende vergunning ongeldig maken. En in Noord-Brabant: toets uw plan aan de Omgevingsverordening, want een gemeentelijk ja is niet genoeg als de provincie in de weg staat. Twijfelt u of uw plan een BOPA vereist? <a href="/buitenplanse-omgevingsplanactiviteit/">Zo verloopt een BOPA-aanvraag</a> met mijn begeleiding.
 
 <h2 id="bronnen">Bronnen</h2>
 

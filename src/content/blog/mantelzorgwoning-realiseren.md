@@ -54,7 +54,7 @@ faq:
 
 Het verschil zit hem in twee dingen: is er nú een zorgrelatie, en past de woning binnen de vergunningvrije voorwaarden? Voor een bestaande mantelzorgsituatie is veel mogelijk zonder vergunning. Voor een woning die vooruitloopt op toekomstige zorg, de zogenoemde pré-mantelzorgwoning, gelden andere regels en is doorgaans wél een vergunning nodig.
 
-Deze pagina legt beknopt uit wat een mantelzorgwoning is, wanneer u vergunningvrij mag bouwen, wanneer u een vergunning nodig heeft, wat er gebeurt als de zorg eindigt, en waar u in Noord-Brabant op moet letten. Geschreven vanuit de vergunningpraktijk, zodat u vooraf weet waar u aan toe bent.
+Deze pagina legt beknopt uit wat een mantelzorgwoning is, wanneer u vergunningvrij mag bouwen, wanneer u een vergunning nodig heeft, wat er gebeurt als de zorg eindigt, en waar u in Noord-Brabant op moet letten. Geschreven vanuit de vergunningpraktijk, zodat u vooraf weet waar u aan toe bent. Blijkt een vergunning nodig, dan stel ik <a href="/omgevingsplanactiviteit/">uw OPA-</a> of <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA-aanvraag</a> op.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -177,7 +177,7 @@ Voor een eenvoudige, vergunningvrije mantelzorgwoning binnen de bebouwde kom vaa
 
 Een mantelzorgwoning is vaker vergunningvrij dan mensen denken, maar de vergunningvrije route kent duidelijke grenzen. De sleutel is of er nú een aantoonbare zorgrelatie is en of de woning binnen de voorwaarden past: in het achtererfgebied, binnen de maatvoering, met bewijs van de zorgbehoefte. Is dat het geval, dan volstaat meestal een melding.
 
-Op twee punten loont het om vooraf te toetsen. De pré-mantelzorgwoning, die vooruitloopt op toekomstige zorg, is doorgaans wél vergunningplichtig, en dat verrast veel initiatiefnemers. En in het buitengebied van Noord-Brabant kan een vergunningplichtige mantelzorgwoning tegen provinciaal beleid aanlopen. Wie dat vooraf uitzoekt, voorkomt dat een geplaatste unit achteraf moet worden verwijderd.
+Op twee punten loont het om vooraf te toetsen. De pré-mantelzorgwoning, die vooruitloopt op toekomstige zorg, is doorgaans wél vergunningplichtig, en dat verrast veel initiatiefnemers. En in het buitengebied van Noord-Brabant kan een vergunningplichtige mantelzorgwoning tegen provinciaal beleid aanlopen. Wie dat vooraf uitzoekt, voorkomt dat een geplaatste unit achteraf moet worden verwijderd. Twijfelt u of uw mantelzorgwoning vergunningplichtig is? <a href="/principeverzoek/">Een principeverzoek</a> geeft daar snel duidelijkheid over.
 
 <h2 id="bronnen">Bronnen</h2>
 

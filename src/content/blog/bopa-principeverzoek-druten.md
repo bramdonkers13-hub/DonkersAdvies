@@ -59,7 +59,7 @@ faq:
     answer: "Een negatieve reactie is niet altijd het einde. Vaak gaat het om de omvang, de situering of de onvoldoende aangetoonde toegevoegde waarde, en niet om het principe."
 ---
 
-Druten maakt ongewoon expliciet waarop uw verzoek wordt beoordeeld. Het aanvraagformulier stelt drie vragen, en wie die drie overtuigend beantwoordt, heeft het grootste deel van het werk gedaan. Wie ze afraffelt, krijgt een afwijzing op een plan dat inhoudelijk misschien prima was.
+Druten maakt ongewoon expliciet waarop uw verzoek wordt beoordeeld. Het aanvraagformulier stelt drie vragen, en wie die drie overtuigend beantwoordt, heeft het grootste deel van het werk gedaan. Wie ze afraffelt, krijgt een afwijzing op een plan dat inhoudelijk misschien prima was. Ik help u <a href="/principeverzoek/">een principeverzoek voor Druten opstellen</a> dat op die drie vragen is toegesneden.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -161,7 +161,7 @@ Daarnaast geldt het provinciale spoor. De Omgevingsverordening Gelderland stelt 
 2. **De drie vragen uitwerken.** Plan en aanleiding, de effecten op de omgeving en de toegevoegde waarde worden onderbouwd in plaats van weggeschreven.
 3. **De schets op orde.** De inrichtingsschets van de huidige en toekomstige situatie, inclusief parkeren en ontsluiting, wordt op de gevraagde schaal aangeleverd.
 4. **Principeverzoek indienen.** Het verzoek gaat digitaal in, compleet, zodat een vragenronde niet nodig is.
-5. **Formele procedure en begeleiding** tot en met de vergunning of de vaststelling door de raad.
+5. **Formele procedure en begeleiding** tot en met de vergunning of de vaststelling door de raad. Wijkt uw plan af van het omgevingsplan, dan via <a href="/buitenplanse-omgevingsplanactiviteit/">een BOPA-aanvraag</a>.
 
 <h2 id="faq">Veelgestelde vragen over bouwplannen in Druten</h2>
 

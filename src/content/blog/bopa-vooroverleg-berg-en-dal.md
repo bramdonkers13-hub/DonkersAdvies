@@ -54,7 +54,7 @@ faq:
     answer: "Een negatieve reactie is niet altijd het einde. Vaak gaat het om de omvang, de situering of de landschappelijke inpassing, en niet om het principe. Zeker in een gemeente die zoveel waarde hecht aan het landschapsbeeld, kan een aangepast ontwerp het verschil maken."
 ---
 
-Berg en Dal stelt hogere eisen aan de landschappelijke inpassing dan de meeste gemeenten. Dat is geen toeval: de gemeente ligt in het Nationaal Landschap de Gelderse Poort, tussen stuwwal en rivier, en beschermt in haar omgevingsvisie een reeks met name genoemde vergezichten. Wie dat vanaf het begin meeneemt, voorkomt dat een plan er inhoudelijk op sneuvelt. <a href="/#contact">Vraag een vrijblijvend adviesgesprek aan.</a>
+Berg en Dal stelt hogere eisen aan de landschappelijke inpassing dan de meeste gemeenten. Dat is geen toeval: de gemeente ligt in het Nationaal Landschap de Gelderse Poort, tussen stuwwal en rivier, en beschermt in haar omgevingsvisie een reeks met name genoemde vergezichten. Wie dat vanaf het begin meeneemt, voorkomt dat een plan er inhoudelijk op sneuvelt. Ik neem dat mee in <a href="/principeverzoek/">uw principeverzoek</a> of <a href="/buitenplanse-omgevingsplanactiviteit/">uw BOPA-aanvraag</a>.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -140,7 +140,7 @@ Voor deze gemeente zijn vooral van belang de regels rond het Gelders Natuurnetwe
 2. **De rekensom vooraf.** Gaat het om een woning in het buitengebied, dan wordt de sloopopgave doorgerekend voordat u verder investeert.
 3. **Conceptverzoek indienen.** Het verzoek gaat compleet en helder naar de ODGM, zodat de eerste toets niet op vormfouten strandt.
 4. **Begeleiding per stap.** Volgt een gemeentelijke beoordeling of een bespreking in de Regiekamer, dan wordt het plan daarop toegesneden toegelicht.
-5. **Formele aanvraag en begeleiding.** De BOPA of de wijziging van het omgevingsplan wordt opgesteld en ingediend, met begeleiding tot en met het besluit.
+5. **Formele aanvraag en begeleiding.** <a href="/buitenplanse-omgevingsplanactiviteit/">De BOPA</a> of <a href="/wijziging-omgevingsplan/">de wijziging van het omgevingsplan</a> wordt opgesteld en ingediend, met begeleiding tot en met het besluit.
 
 <h2 id="faq">Veelgestelde vragen over bouwplannen in Berg en Dal</h2>
 

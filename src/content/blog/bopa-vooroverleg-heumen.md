@@ -56,7 +56,7 @@ faq:
     answer: "Een negatieve reactie is niet altijd het einde. Vaak gaat het om de omvang, de situering of de landschappelijke inpassing, en niet om het principe."
 ---
 
-Heumen heeft één praktisch voordeel dat u niet onbenut moet laten: het verkennen van uw plan bij het loket Bouwen is gratis. Pas daarna volgen betaalde stappen. Wie die eerste gratis stap goed voorbereidt, weet vroeg waar hij staat zonder dat het geld heeft gekost. <a href="/#contact">Vraag een vrijblijvend adviesgesprek aan.</a>
+Heumen heeft één praktisch voordeel dat u niet onbenut moet laten: het verkennen van uw plan bij het loket Bouwen is gratis. Pas daarna volgen betaalde stappen. Wie die eerste gratis stap goed voorbereidt, weet vroeg waar hij staat zonder dat het geld heeft gekost. Ik bereid die stap voor u voor, als opmaat naar <a href="/principeverzoek/">uw principeverzoek</a> of <a href="/buitenplanse-omgevingsplanactiviteit/">uw BOPA-aanvraag</a>.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -145,7 +145,7 @@ Voor uw onderbouwing is de cultuurhistorische waardering relevant. De gemeente k
 3. **Haalbaarheidstoets.** Uw plan wordt getoetst aan het omgevingsplan, het gemeentelijk beleid en de provinciale instructieregels, met natuur, landschap en archeologie in beeld.
 4. **Conceptaanvraag via de ODGM.** Het vooroverleg wordt opgesteld en ingediend, met een onderbouwing die op de beoordeling aansluit.
 5. **Participatie inrichten.** Het traject wordt zo opgezet dat u een bruikbaar verslag heeft op het moment dat u de aanvraag indient.
-6. **Formele procedure en begeleiding** tot en met het besluit.
+6. **Formele procedure en begeleiding** tot en met het besluit. Wilt u dat ik <a href="/principeverzoek/">uw vooroverleg voor Heumen opstel</a>? Neem gerust contact op.
 
 <h2 id="faq">Veelgestelde vragen over bouwplannen in Heumen</h2>
 

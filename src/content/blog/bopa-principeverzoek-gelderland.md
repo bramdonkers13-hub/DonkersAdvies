@@ -53,7 +53,7 @@ faq:
     answer: "Dat is niet altijd het einde. Soms is het plan aan te passen zodat het buiten de betreffende zone valt of alsnog aan de voorwaarden voldoet, bijvoorbeeld door de situering te wijzigen of de versterkingsopgave serieus in te vullen. In uitzonderlijke gevallen bestaat er een maatwerkroute via Gedeputeerde Staten. Laat eerst uitzoeken op welke regel het precies vastloopt; dat bepaalt of er ruimte is."
 ---
 
-Veel initiatiefnemers ontdekken pas laat dat een positief antwoord van de gemeente niet het laatste woord is. Provinciale regels werken rechtstreeks door in de beoordeling van uw aanvraag, en in Gelderland zijn die op sommige punten strikter dan mensen verwachten. Wie ze vanaf het begin meeneemt, voorkomt dat een plan na maanden alsnog strandt. <a href="/#contact">Vraag een vrijblijvend adviesgesprek aan.</a>
+Veel initiatiefnemers ontdekken pas laat dat een positief antwoord van de gemeente niet het laatste woord is. Provinciale regels werken rechtstreeks door in de beoordeling van uw aanvraag, en in Gelderland zijn die op sommige punten strikter dan mensen verwachten. Wie ze vanaf het begin meeneemt, voorkomt dat een plan na maanden alsnog strandt. Ik neem dat spoor mee in <a href="/principeverzoek/">uw principeverzoek</a> of <a href="/buitenplanse-omgevingsplanactiviteit/">uw BOPA-aanvraag</a>.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -162,7 +162,7 @@ Staat uw gemeente er niet bij? Donkers Advies begeleidt initiatieven in de hele 
 2. **Haalbaarheidstoets.** Uw plan wordt getoetst aan het omgevingsplan, het gemeentelijk beleid en de Omgevingsverordening Gelderland, met kansen en risico's in beeld.
 3. **De opgave doorrekenen.** Ligt uw plan in de Groene Ontwikkelingszone, dan wordt de versterkingsopgave vroeg in beeld gebracht.
 4. **Principeverzoek of vooroverleg.** Het verzoek wordt opgesteld volgens de werkwijze van uw gemeente, met het provinciale spoor erin verwerkt.
-5. **Formele procedure en begeleiding** tot en met de vergunning of vaststelling.
+5. **Formele procedure en begeleiding** tot en met de vergunning of vaststelling. Wilt u dat ik <a href="/principeverzoek/">uw principeverzoek voor Gelderland opstel</a>? Neem gerust contact op.
 
 <h2 id="faq">Veelgestelde vragen over bouwen in Gelderland</h2>
 

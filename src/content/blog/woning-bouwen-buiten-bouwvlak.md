@@ -59,7 +59,7 @@ faq:
 
 Meestal niet. Bouwen buiten het bouwvlak kan, maar niet zomaar. Het vraagt om de juiste route, een goede onderbouwing en, in Noord-Brabant, om rekening te houden met een provinciaal spoor dat vaak strenger is dan de gemeente. Tegelijk zijn er meer mogelijkheden dan initiatiefnemers denken: een deel van wat mensen "bouwen buiten het bouwvlak" noemen, mag zelfs vergunningvrij.
 
-Deze pagina legt uit wat het bouwvlak is en waarom het zo bepalend is, wanneer u wél en niet vergunningvrij buiten dat vlak mag bouwen, welke route u nodig heeft voor een echte nieuwe woning, hoe de gemeente uw plan beoordeelt, en waar de trajecten in de praktijk op stranden. Geschreven vanuit de vergunningpraktijk, met de blik van iemand die dagelijks met dit soort plannen in Noord-Brabant werkt.
+Deze pagina legt uit wat het bouwvlak is en waarom het zo bepalend is, wanneer u wél en niet vergunningvrij buiten dat vlak mag bouwen, welke route u nodig heeft voor een echte nieuwe woning, hoe de gemeente uw plan beoordeelt, en waar de trajecten in de praktijk op stranden. Geschreven vanuit de vergunningpraktijk, met de blik van iemand die dagelijks met dit soort plannen in Noord-Brabant werkt. Wilt u weten wat er voor uw perceel mogelijk is? Ik stel <a href="/buitenplanse-omgevingsplanactiviteit/">uw BOPA-aanvraag</a> op en begeleid de procedure.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -329,7 +329,7 @@ Een woning bouwen buiten het bouwvlak is geen verloren zaak, maar ook geen vanze
 
 Drie dingen bepalen of het lukt. Toets in het buitengebied vanaf het begin het provinciale spoor, want de provincie staat nieuwe burgerwoningen in het landelijk gebied in beginsel niet toe en de realistische routes lopen via Ruimte voor Ruimte, een kernrandzone of herbestemming na sloop. Neem de geursituatie serieus, inclusief de omgekeerde werking op naburige bedrijven. En reken de landschapsinvestering vanaf het begin mee, want in het Brabantse buitengebied is die een randvoorwaarde, geen bijzaak.
 
-Begin met een principeverzoek. Het is de goedkoopste manier om te weten of uw plan haalbaar is en welke route en voorwaarden gelden, en het bepaalt welke onderzoeken u werkelijk nodig heeft.
+Begin met <a href="/principeverzoek/">een principeverzoek laten opstellen</a>. Het is de goedkoopste manier om te weten of uw plan haalbaar is en welke route en voorwaarden gelden, en het bepaalt welke onderzoeken u werkelijk nodig heeft.
 
 <h2 id="bronnen">Bronnen</h2>
 

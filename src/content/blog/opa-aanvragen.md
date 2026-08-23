@@ -53,7 +53,7 @@ faq:
 
 Toch is "binnenplans" niet hetzelfde als "vanzelfsprekend". De gemeente toetst uw aanvraag aan de regels van het omgevingsplan, en die toets kent een bijzonder karakter dat in uw voordeel werkt zodra u weet hoe het zit: de gemeente mag uw aanvraag alleen weigeren op grond van de regels die in het plan zelf staan, en niet op grond van een bredere belangenafweging. Wie dat kader kent, staat sterker in de aanvraag en herkent eerder wanneer een gemeente buiten haar boekje gaat.
 
-Hieronder leest u wat een OPA precies is, hoe die zich verhoudt tot een BOPA, hoe de knip tussen ruimtelijk en technisch bouwen uitpakt, hoe de procedure verloopt en wat u aan termijnen en kosten kunt verwachten. Met de blik van een adviseur die dagelijks in de Noord-Brabantse vergunningpraktijk werkt.
+Hieronder leest u wat een OPA precies is, hoe die zich verhoudt tot een BOPA, hoe de knip tussen ruimtelijk en technisch bouwen uitpakt, hoe de procedure verloopt en wat u aan termijnen en kosten kunt verwachten, met de blik van een adviseur die dagelijks in de Noord-Brabantse vergunningpraktijk werkt. Wilt u dat niet zelf uitzoeken? Ik kan <a href="/omgevingsplanactiviteit/">uw OPA-aanvraag opstellen en begeleiden</a>, van eerste toets tot vergunning.
 
 Wettelijke stand: 24 juli 2026.
 
@@ -234,7 +234,7 @@ Dan komt u in het buitenplanse spoor terecht en heeft u een [BOPA](/buitenplanse
 
 De binnenplanse omgevingsplanactiviteit is de snelste en meest voorspelbare vergunningroute onder de Omgevingswet. De kracht ervan zit in het beoordelingskader: de toets is limitatief en imperatief, wat betekent dat de gemeente uw aanvraag alleen aan de planregels mag toetsen en de vergunning moet verlenen zodra u daaraan voldoet. Dat geeft u een aanzienlijk sterkere uitgangspositie dan bij een BOPA.
 
-Twee dingen bepalen of het traject soepel loopt. Zoek vooraf uit of uw plan werkelijk binnenplans is, want een verkeerde routekeuze naar de BOPA kost onnodig geld en tijd. En controleer bij bouwen beide kanten van de knip apart, want vergunningvrij aan de ene kant zegt niets over de andere. Een complete aanvraag doet de rest, zeker nu de vergunning van rechtswege is verdwenen.
+Twee dingen bepalen of het traject soepel loopt. Zoek vooraf uit of uw plan werkelijk binnenplans is, want een verkeerde routekeuze naar de BOPA kost onnodig geld en tijd. En controleer bij bouwen beide kanten van de knip apart, want vergunningvrij aan de ene kant zegt niets over de andere. Een complete aanvraag doet de rest, zeker nu de vergunning van rechtswege is verdwenen. Twijfelt u over uw eigen plan? <a href="/omgevingsplanactiviteit/">Laat uw OPA-aanvraag opstellen</a> en u weet het na één gesprek.
 
 <h2 id="bronnen">Bronnen</h2>
 

@@ -41,7 +41,7 @@ faq:
 
 <h2 id="wat-is-het">Wat is een wijziging van het omgevingsplan?</h2>
 
-Het omgevingsplan bevat de regels die de gemeente stelt voor het gebruik en de bebouwing van gronden: het wijst functies toe aan locaties. Past uw initiatief structureel niet binnen die regels, dan kan de gemeenteraad besluiten het omgevingsplan zelf aan te passen — in plaats van per geval [een individueel initiatief via een BOPA](/blog/wat-is-een-bopa/) te vergunnen. Het is een politiek-bestuurlijk traject: niet het college, maar de gemeenteraad neemt uiteindelijk het besluit tot vaststelling. Daarom weegt naast de inhoudelijke onderbouwing ook het bestuurlijk draagvlak zwaar mee.
+Het omgevingsplan bevat de regels die de gemeente stelt voor het gebruik en de bebouwing van gronden: het wijst functies toe aan locaties. Past uw initiatief structureel niet binnen die regels, dan kan de gemeenteraad besluiten het omgevingsplan zelf aan te passen — in plaats van per geval [een individueel initiatief via een BOPA](/blog/wat-is-een-bopa/) te vergunnen. Het is een politiek-bestuurlijk traject: niet het college, maar de gemeenteraad neemt uiteindelijk het besluit tot vaststelling. Daarom weegt naast de inhoudelijke onderbouwing ook het bestuurlijk draagvlak zwaar mee. Ik begeleid dat hele traject; <a href="/wijziging-omgevingsplan/">zo verloopt een wijziging van het omgevingsplan</a>.
 
 <h2 id="wanneer-nodig">Wanneer kiest u voor deze route?</h2>
 
@@ -89,4 +89,4 @@ Kies voor een wijziging van het omgevingsplan bij grootschalige, gebiedsgerichte
 
 <h2 id="samenvatting">Samenvatting</h2>
 
-Een wijziging van het omgevingsplan is de aangewezen route voor grootschalige of structurele initiatieven. De procedure duurt gemiddeld één tot twee jaar, kent een verplichte terinzagelegging van zes weken en een beroepstermijn van zes weken bij de Afdeling bestuursrechtspraak van de Raad van State. Een sterke ruimtelijke onderbouwing en breed bestuurlijk draagvlak zijn doorslaggevend voor een succesvol traject.
+Een wijziging van het omgevingsplan is de aangewezen route voor grootschalige of structurele initiatieven. De procedure duurt gemiddeld één tot twee jaar, kent een verplichte terinzagelegging van zes weken en een beroepstermijn van zes weken bij de Afdeling bestuursrechtspraak van de Raad van State. Een sterke ruimtelijke onderbouwing en breed bestuurlijk draagvlak zijn doorslaggevend voor een succesvol traject. Wilt u weten of uw plan deze route nodig heeft? <a href="/wijziging-omgevingsplan/">Bespreek uw plan</a> en u hoort waar u aan toe bent.

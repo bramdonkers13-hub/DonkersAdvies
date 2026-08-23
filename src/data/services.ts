@@ -67,7 +67,7 @@ export const services: Service[] = [
 		path: '/wijziging-omgevingsplan/',
 		navLabel: 'Wijziging omgevingsplan',
 		navBadge: 'WOP',
-		title: 'Wijziging omgevingsplan (WOP)',
+		title: 'Wijziging omgevingsplan',
 		cardDescription:
 			'Voor grootschalige of permanente ontwikkelingen die structurele planologische verankering vereisen. Donkers Advies begeleidt het traject tot en met vaststelling door de gemeenteraad.',
 		tags: ['Omgevingsplan', 'Gemeenteraad'],
@@ -75,6 +75,21 @@ export const services: Service[] = [
 		duration: '1 – 2 jaar',
 		checklist: ['Haalbaarheidsanalyse', 'Planologische onderbouwing', 'Afstemming gemeente en provincie', 'Procedurebegeleiding tot vaststelling'],
 		ctaQuestion: 'Wilt u het omgevingsplan laten wijzigen?',
+	},
+	{
+		slug: 'ruimtelijke-onderbouwing',
+		path: '/ruimtelijke-onderbouwing/',
+		navLabel: 'Ruimtelijke onderbouwing',
+		navBadge: 'Onderbouwing',
+		title: 'Ruimtelijke onderbouwing laten opstellen',
+		cardDescription:
+			'Heeft de gemeente gezegd dat u een ruimtelijke onderbouwing nodig heeft? Donkers Advies stelt het document op, regelt de onderzoeken en begeleidt uw aanvraag tot het besluit.',
+		tags: ['Onderbouwing', 'Onderzoeken'],
+		icon: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>',
+		duration: 'Eenvoudig plan: 4 – 6 maanden',
+		durationNote: 'Met zwaar onderzoek: 12 – 18 maanden',
+		checklist: ['Ruimtelijke onderbouwing', 'Coördinatie onderzoeken', 'Toets provinciale regels', 'Begeleiding tot besluit'],
+		ctaQuestion: 'Heeft u een ruimtelijke onderbouwing nodig?',
 	},
 ];
 

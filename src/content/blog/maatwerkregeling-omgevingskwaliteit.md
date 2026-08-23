@@ -45,7 +45,7 @@ faq:
     answer: "Dat hangt af van de omvang en complexiteit. Advieskosten en leges tellen niet mee als fysieke tegenprestatie, dus reken ze apart in uw businesscase. In een haalbaarheidsgesprek geven wij een realistische indicatie."
 ---
 
-Die route is kansrijk, maar ook technisch. U krijgt te maken met artikel 5.14 van de Omgevingsverordening, met paragraaf 7.1 van de Beleidsregel omgevingsrecht, met een provinciale rekenmodule en met een gemeentelijke procedure die meestal via een [BOPA](/blog/wat-is-een-bopa/) (buitenplanse omgevingsplanactiviteit) of een [wijziging van het omgevingsplan](/blog/omgevingsplan-wijzigen/) loopt. In dit artikel leest u precies hoe de regeling in elkaar zit, welke bedragen gelden en waar plannen in de praktijk op stuklopen.
+Die route is kansrijk, maar ook technisch. U krijgt te maken met artikel 5.14 van de Omgevingsverordening, met paragraaf 7.1 van de Beleidsregel omgevingsrecht, met een provinciale rekenmodule en met een gemeentelijke procedure die meestal via <a href="/buitenplanse-omgevingsplanactiviteit/">een BOPA-aanvraag</a> (buitenplanse omgevingsplanactiviteit) of een [wijziging van het omgevingsplan](/blog/omgevingsplan-wijzigen/) loopt. In dit artikel leest u precies hoe de regeling in elkaar zit, welke bedragen gelden en waar plannen in de praktijk op stuklopen.
 
 Donkers Advies begeleidt initiatiefnemers, agrariërs en ontwikkelaars in heel Noord-Brabant bij deze aanvragen. [Vraag een vrijblijvend haalbaarheidsgesprek aan](/#contact) en u weet binnen een week of uw locatie kansrijk is.
 
@@ -201,7 +201,7 @@ Een maatwerkaanvraag is geen invuloefening. Het is een samenspel tussen provinci
 3. Vooroverleg met gemeente en provincie. Vroegtijdig overleg is volgens de beleidsregel altijd nodig. Wij voeren dat gesprek, kennen de vraagstelling van de provincie en voorkomen dat uw plan halverwege spaak loopt.
 4. Ruimtelijke onderbouwing en milieuonderzoek. Wij stellen de [ruimtelijke onderbouwing](/blog/ruimtelijke-onderbouwing-bopa/) op voor de BOPA of de omgevingsplanwijziging, inclusief de milieuparagrafen en de afstemming met bijlagen zoals AERIUS-berekeningen.
 5. Juridische borging. Sloop, herbestemming, perceelsverkleining en instandhouding van landschapselementen moeten juridisch geborgd worden. Wij regelen de anterieure overeenkomst, kettingbedingen en planregels.
-6. Begeleiding tot en met het besluit. Van indiening tot besluit, inclusief reactie op zienswijzen en aanvullende vragen van het bevoegd gezag.
+6. Begeleiding tot en met het besluit. Van indiening tot besluit, inclusief reactie op zienswijzen en aanvullende vragen van het bevoegd gezag. Meestal loopt dat via <a href="/buitenplanse-omgevingsplanactiviteit/">een BOPA-aanvraag</a>; wijkt uw plan verder af, dan via <a href="/wijziging-omgevingsplan/">een wijziging van het omgevingsplan</a>.
 
 <h2 id="faq">Veelgestelde vragen</h2>
 
