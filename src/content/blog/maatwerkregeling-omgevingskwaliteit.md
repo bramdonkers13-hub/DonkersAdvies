@@ -1,5 +1,5 @@
 ---
-metaTitle: "Maatwerkregeling omgevingskwaliteit Noord-Brabant | Donkers Advies"
+metaTitle: "Maatwerkregeling omgevingskwaliteit Noord-Brabant"
 title: "Maatwerkwoning bouwen in het Brabantse buitengebied: zo werkt de Maatwerkregeling omgevingskwaliteit"
 description: "Een maatwerkwoning bouwen in het Brabantse buitengebied? Zo werkt de Maatwerkregeling omgevingskwaliteit: voorwaarden, bedragen en de BOPA-procedure."
 cardExcerpt: "Voorwaarden, bedragen en de BOPA-procedure van de Maatwerkregeling omgevingskwaliteit, uitgelegd door Donkers Advies."

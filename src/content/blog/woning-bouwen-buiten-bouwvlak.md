@@ -1,7 +1,7 @@
 ---
-metaTitle: "Woning bouwen buiten het bouwvlak: kan dat? | Brabant"
+metaTitle: "Woning bouwen buiten het bouwvlak: kan dat?"
 title: "Een woning bouwen buiten het bouwvlak: kan dat, en hoe?"
-description: "Kunt u een woning bouwen buiten het bouwvlak? Lees wanneer het vergunningvrij is, wanneer u een BOPA nodig heeft en welke Brabantse regels gelden in het buitengebied."
+description: "Een woning bouwen buiten het bouwvlak kan soms vergunningvrij, anders is een BOPA nodig. Dit legt de geldende Brabantse regels voor het buitengebied uit."
 cardExcerpt: "Kunt u een woning bouwen buiten het bouwvlak? Wanneer het vergunningvrij is en wanneer u een BOPA nodig heeft."
 lead: "U heeft een stuk grond, of een ruim perceel bij uw woning, en u wilt er een woning bouwen. Op de plek waar u die woning wilt neerzetten, staat in het omgevingsplan geen bouwvlak. En zonder bouwvlak, zo hoort u van de gemeente, mag u niet bouwen. Betekent dat het einde van uw plan?"
 toc:

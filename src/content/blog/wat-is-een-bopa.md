@@ -1,7 +1,7 @@
 ---
 metaTitle: "Wat is een BOPA? Procedure, kosten en wanneer nodig"
 title: "Wat is een BOPA? Uitleg, procedure, kosten en wanneer u er een nodig heeft"
-description: "Wat is een BOPA, wanneer heeft u er een nodig en hoe verloopt de procedure? Uitleg over termijnen, kosten en het adviesrecht van de raad door een Omgevingswet-adviseur."
+description: "Een BOPA is de vergunning voor een plan dat afwijkt van het omgevingsplan. Dit legt de procedure, termijnen, kosten en het adviesrecht van de raad uit."
 cardExcerpt: "Wat is een BOPA, wanneer heeft u er een nodig en hoe verloopt de procedure?"
 lead: "Wilt u een woning bouwen buiten het bouwvlak, een leegstaande stal een woonfunctie geven of een bedrijf uitbreiden op een plek die daar niet voor bedoeld is? Dan past uw plan niet binnen het omgevingsplan, en heeft u in de meeste gevallen een BOPA nodig: een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit. Sinds de Omgevingswet is dit de gangbare route om af te wijken van het omgevingsplan voor een individueel initiatief."
 toc:

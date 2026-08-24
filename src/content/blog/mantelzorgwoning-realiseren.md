@@ -1,7 +1,7 @@
 ---
-metaTitle: "Mantelzorgwoning: vergunningvrij of niet? | Brabant"
+metaTitle: "Mantelzorgwoning: vergunningvrij of niet?"
 title: "Een mantelzorgwoning realiseren: wanneer mag het vergunningvrij en wanneer niet?"
-description: "Mag u een mantelzorgwoning vergunningvrij plaatsen? Lees wanneer het wel en niet mag, wat een pré-mantelzorgwoning anders maakt, en wat er geldt in het buitengebied."
+description: "Een mantelzorgwoning plaatsen kan vergunningvrij, mits u aan de voorwaarden voldoet. Dit legt uit wat een pré-mantelzorgwoning juridisch anders maakt."
 cardExcerpt: "Mag u een mantelzorgwoning vergunningvrij plaatsen, en wat maakt een pré-mantelzorgwoning anders?"
 lead: "U wilt een ouder of een kind met een zorgbehoefte dichtbij hebben, in een aparte wooneenheid bij uw huis of in de tuin. Een mantelzorgwoning maakt dat mogelijk, en in veel gevallen mag u die zelfs zonder vergunning plaatsen. Maar niet altijd, en juist op dat punt gaat het vaak mis: mensen bestellen een unit, plaatsen die, en horen achteraf dat het toch vergunningplichtig was."
 toc:

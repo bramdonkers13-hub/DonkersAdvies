@@ -1,7 +1,7 @@
 ---
 metaTitle: "Omgevingsvergunning en principeverzoek gemeente Druten"
 title: "Omgevingsvergunning en principeverzoek in gemeente Druten"
-description: "Bouwplan in Druten of Afferden dat niet past in het omgevingsplan? Lees welke drie vragen de gemeente stelt, wat een principeverzoek kost en hoe lang het duurt."
+description: "Voor een bouwplan in Druten of Afferden dat afwijkt van het omgevingsplan stelt de gemeente drie vragen. Dit legt de kosten en de doorlooptijd uit."
 cardExcerpt: "Welke drie vragen de gemeente Druten stelt bij een principeverzoek, en hoe u ze overtuigend beantwoordt."
 lead: "Heeft u een bouwplan of functiewijziging in Druten, Afferden, Deest, Horssen of Puiflijk dat niet binnen het omgevingsplan past? Dan dient u een principeverzoek in. Donkers Advies begeleidt dat traject van eerste toets tot vergunning."
 toc:

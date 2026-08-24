@@ -1,7 +1,7 @@
 ---
 metaTitle: "Principeverzoek afgewezen? Dit kunt u nu nog doen"
 title: "Uw principeverzoek is afgewezen: wat kunt u nu nog doen?"
-description: "Uw principeverzoek is afgewezen? Een afwijzing is zelden definitief. Lees hoe u de echte reden achterhaalt en welke vijf routes u nog heeft om uw plan alsnog rond te krijgen."
+description: "Een afgewezen principeverzoek is zelden definitief. Zo achterhaalt u de echte reden en welke vijf routes u nog heeft om uw plan alsnog rond te krijgen."
 cardExcerpt: "Uw principeverzoek is afgewezen? Lees hoe u de echte reden achterhaalt en welke vijf routes u nog heeft."
 lead: "De brief van de gemeente is helder: geen medewerking. Uw plan past niet binnen het beleid, en het college ziet geen mogelijkheden. Voor veel initiatiefnemers voelt dat als het einde van de rit. U heeft een schets laten maken, misschien al een adviseur ingeschakeld, en nu ligt er een nee."
 toc:

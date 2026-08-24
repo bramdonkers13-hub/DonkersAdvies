@@ -1,7 +1,7 @@
 ---
 metaTitle: "BOPA en principeverzoek in Gelderland: de regels"
 title: "BOPA en principeverzoek in Gelderland"
-description: "Bouwplan in Gelderland dat niet past in het omgevingsplan? Lees welke provinciale regels doorwerken, wat de Groene Ontwikkelingszone van u vraagt en welke route past."
+description: "Voor een bouwplan in Gelderland dat afwijkt van het omgevingsplan gelden provinciale regels, zoals de Groene Ontwikkelingszone. Dit legt de route uit."
 cardExcerpt: "Welke provinciale regels gelden voor een BOPA of principeverzoek in Gelderland, en welke route past bij uw plan?"
 lead: "Heeft u een bouwplan of functiewijziging in Gelderland dat niet binnen het omgevingsplan past? Dan heeft u te maken met twee lagen: het beleid van uw gemeente en de instructieregels van de provincie. Donkers Advies begeleidt ruimtelijke initiatieven in heel Gelderland, van eerste haalbaarheidstoets tot vergunning."
 toc:

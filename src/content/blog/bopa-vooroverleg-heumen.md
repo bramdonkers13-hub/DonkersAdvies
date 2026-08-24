@@ -1,7 +1,7 @@
 ---
 metaTitle: "Omgevingsvergunning en vooroverleg gemeente Heumen"
 title: "Omgevingsvergunning en vooroverleg in gemeente Heumen"
-description: "Bouwplan in Malden, Overasselt of Nederasselt dat niet past in het omgevingsplan? De verkenning bij de gemeente is gratis. Lees hoe het traject in Heumen verloopt."
+description: "Voor een bouwplan in Malden, Overasselt of Nederasselt dat afwijkt van het omgevingsplan is gratis vooroverleg mogelijk bij de gemeente Heumen zelf."
 cardExcerpt: "Hoe de gratis verkenning bij het loket Bouwen en het vooroverleg in Heumen werken, en waar u op moet letten."
 lead: "Heeft u een bouwplan of functiewijziging in Malden, Overasselt, Nederasselt, Heumen of het Heumense deel van Molenhoek dat niet binnen het omgevingsplan past? Dan begint dat met een verkenning bij de gemeente en daarna een vooroverleg via de omgevingsdienst. Donkers Advies begeleidt dat traject van eerste toets tot vergunning."
 toc:

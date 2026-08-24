@@ -1,5 +1,5 @@
 ---
-metaTitle: "Agrarische bestemming wijzigen naar wonen | Brabant"
+metaTitle: "Agrarische bestemming wijzigen naar wonen"
 title: "Van agrarische bestemming naar wonen: de functiewijziging stap voor stap"
 description: "Uw agrarische bedrijf stopt en u wilt de boerderij als woning gebruiken? Lees welke route, welke sloopeis en welk Brabants beleid gelden, en hoe u begint."
 cardExcerpt: "Uw agrarische bedrijf stopt en u wilt in de boerderij blijven wonen? Welke route, sloopeis en Brabants beleid gelden."

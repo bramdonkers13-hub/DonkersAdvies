@@ -1,7 +1,7 @@
 ---
 metaTitle: "OPA aanvragen: procedure, kosten en verschil met BOPA"
 title: "Binnenplanse omgevingsplanactiviteit (OPA) aanvragen: procedure, kosten en het verschil met een BOPA"
-description: "Wat is een binnenplanse omgevingsplanactiviteit (OPA), wanneer heeft u er een nodig en wat is het verschil met een BOPA? Uitgelegd door een Omgevingswet-adviseur."
+description: "Een OPA is nodig als uw plan past binnen het omgevingsplan maar wel een vergunning vereist. Dit legt de procedure, kosten en het verschil met een BOPA uit."
 cardExcerpt: "Wat is een binnenplanse omgevingsplanactiviteit (OPA), wanneer heeft u er een nodig en wat is het verschil met een BOPA?"
 lead: "Past uw bouwplan of functiewijziging binnen het omgevingsplan, maar vraagt de gemeente er tóch een vergunning voor? Dan gaat het om een binnenplanse omgevingsplanactiviteit, in de praktijk kortweg OPA genoemd. Dat is de lichtste en snelste route onder de Omgevingswet, en de route waar de meeste initiatiefnemers ten onrechte een BOPA voor vrezen."
 toc:
