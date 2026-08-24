@@ -208,8 +208,11 @@ markdown-in-props.
 
 - Content images go in `src/assets/images/` and are **imported**, so Astro optimises and hashes
   them (`<Image>` from `astro:assets`, or `getImage()` when a URL string is needed for OG tags).
-- Only truly static files (favicons, `brand_assets/`, `robots.txt`, the blog OG image) live in
-  `public/` and are referenced by absolute path.
+- Only truly static files (favicons, `brand_assets/`) live in `public/` and are referenced by
+  absolute path. OG images (including the blog overview's) go through `src/assets/images/` and
+  `getImage()` so they can be forced to the 1200×630 og:image size — see
+  `src/pages/open-graph/[...route].ts` for the generated brand cards and `blog/index.astro` /
+  `blog/[slug].astro` for the photo-based ones.
 
 ## Code style
 
