@@ -49,6 +49,7 @@
 			"source": "/blog/omgevingsvergunning-opa-aanvragen.html",
 			"destination": "/blog/opa-aanvragen/",
 			"permanent": true
-		}
+		},
+		{ "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true }
 	]
 }
