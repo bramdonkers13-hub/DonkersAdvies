@@ -20,6 +20,8 @@ interface Props {
 	/** Pagina-specifieke JSON-LD-schema's (Organization, Service, BlogPosting, …). */
 	jsonLd?: object[];
 	noindex?: boolean;
+	/** Absolute URL van de LCP-afbeelding van deze pagina; krijgt een <link rel="preload">. */
+	preloadImage?: string;
 }
 
 const {
@@ -32,6 +34,7 @@ const {
 	articleModifiedTime,
 	jsonLd = [],
 	noindex = false,
+	preloadImage,
 } = Astro.props;
 
 const canonical = absoluteUrl(path, Astro.site);
@@ -63,6 +66,8 @@ const resolvedOgImage = absoluteUrl(ogImage ?? defaultOgImage, Astro.site);
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={resolvedOgImage} />
+
+		{preloadImage && <link rel="preload" as="image" href={preloadImage} />}
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
