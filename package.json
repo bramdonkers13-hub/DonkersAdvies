@@ -7,9 +7,10 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/check-seo-lengths.mjs",
     "preview": "astro preview",
     "check:content": "node scripts/check-content.mjs",
+    "check:seo": "node scripts/check-seo-lengths.mjs",
     "astro": "astro"
   },
   "dependencies": {
