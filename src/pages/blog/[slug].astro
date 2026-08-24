@@ -37,7 +37,7 @@ function toCompactCardProps(relatedPost: CollectionEntry<'blog'>): PostCardProps
 }
 
 const path = `/blog/${post.id}/`;
-const ogImage = await getImage({ src: post.data.image, width: 1200 });
+const ogImage = await getImage({ src: post.data.image, width: 1200, height: 630, fit: 'cover' });
 
 const postingSchema = blogPostingSchema({
 	headline: post.data.title,
@@ -60,6 +60,7 @@ const showUpdated = post.data.updatedDate.getTime() !== post.data.publishedDate.
 	path={path}
 	ogType="article"
 	ogImage={ogImage.src}
+	ogImageAlt={post.data.imageAlt}
 	articlePublishedTime={post.data.publishedDate.toISOString()}
 	articleModifiedTime={post.data.updatedDate.toISOString()}
 	jsonLd={[postingSchema, faq]}

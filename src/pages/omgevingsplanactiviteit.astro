@@ -112,7 +112,14 @@ const faqItems = [
 ];
 ---
 
-<BaseLayout title={title} description={description} path="/omgevingsplanactiviteit/" jsonLd={[service]}>
+<BaseLayout
+	title={title}
+	description={description}
+	path="/omgevingsplanactiviteit/"
+	jsonLd={[service]}
+	ogImage="/open-graph/omgevingsplanactiviteit.png"
+	ogImageAlt="OPA aanvragen, omgevingsvergunning en begeleiding, Donkers Advies"
+>
 	<PageHero
 		breadcrumbs={[
 			{ name: 'Home', path: '/' },

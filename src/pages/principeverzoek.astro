@@ -138,7 +138,14 @@ const faqItems = [
 ];
 ---
 
-<BaseLayout title={title} description={description} path="/principeverzoek/" jsonLd={[service]}>
+<BaseLayout
+	title={title}
+	description={description}
+	path="/principeverzoek/"
+	jsonLd={[service]}
+	ogImage="/open-graph/principeverzoek.png"
+	ogImageAlt="Principeverzoek opstellen en indienen bij de gemeente, Donkers Advies"
+>
 	<PageHero
 		breadcrumbs={[
 			{ name: 'Home', path: '/' },

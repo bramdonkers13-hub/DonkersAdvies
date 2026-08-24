@@ -15,6 +15,8 @@ interface Props {
 	ogType?: 'website' | 'article';
 	/** Site-relatief pad naar de OG/Twitter-afbeelding. Valt terug op het favicon-beeldmerk. */
 	ogImage?: string;
+	/** Beschrijving van de og:image voor og:image:alt. Valt terug op de paginatitel. */
+	ogImageAlt?: string;
 	articlePublishedTime?: string;
 	articleModifiedTime?: string;
 	/** Pagina-specifieke JSON-LD-schema's (Organization, Service, BlogPosting, …). */
@@ -30,6 +32,7 @@ const {
 	path,
 	ogType = 'website',
 	ogImage,
+	ogImageAlt,
 	articlePublishedTime,
 	articleModifiedTime,
 	jsonLd = [],
@@ -57,6 +60,9 @@ const resolvedOgImage = absoluteUrl(ogImage ?? defaultOgImage, Astro.site);
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={resolvedOgImage} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content={ogImageAlt ?? title} />
 		<meta property="og:site_name" content={business.name} />
 		<meta property="og:locale" content="nl_NL" />
 		{articlePublishedTime && <meta property="article:published_time" content={articlePublishedTime} />}
