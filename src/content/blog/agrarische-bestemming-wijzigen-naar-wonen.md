@@ -5,7 +5,7 @@ description: "Uw agrarische bedrijf stopt en u wilt de boerderij als woning gebr
 cardExcerpt: "Uw agrarische bedrijf stopt en u wilt in de boerderij blijven wonen? Welke route, sloopeis en Brabants beleid gelden."
 lead: "Uw agrarische bedrijf stopt, of is al gestopt, en u wilt in de boerderij blijven wonen. Of u heeft een voormalig boerenerf op het oog en wilt er wonen, niet boeren. Op papier lijkt dat eenvoudig: het pand staat er al, u verandert alleen het gebruik. In de praktijk is de functiewijziging van agrarisch naar wonen een van de meest onderschatte trajecten in het omgevingsrecht, en in Noord-Brabant zelden een kwestie van een formulier invullen."
 toc:
-  - { label: "Wat betekent een functiewijziging?", anchor: "wat-is-het" }
+  - { label: "Functiewijziging agrarisch vastgoed: wat betekent het?", anchor: "wat-is-het" }
   - { label: "Wanneer kan het, en wanneer niet?", anchor: "wanneer-kan-het" }
   - { label: "Welke route: BOPA of wijziging omgevingsplan?", anchor: "welke-route" }
   - { label: "Het VAB-beleid van uw gemeente", anchor: "vab-beleid" }
@@ -65,7 +65,7 @@ Deze pagina legt uit hoe de functiewijziging werkt: wanneer het kan, welke route
 
 Wettelijke stand: 24 juli 2026.
 
-<h2 id="wat-is-het">Wat betekent een functiewijziging van agrarisch naar wonen?</h2>
+<h2 id="wat-is-het">Functiewijziging agrarisch vastgoed: wat betekent het?</h2>
 
 Een functiewijziging betekent dat u de toegelaten functie van uw locatie verandert. Het omgevingsplan kent aan uw perceel nu een agrarische functie toe, vaak met een bedrijfswoning die hoort bij dat agrarische bedrijf. U wilt daar een woonfunctie van maken, los van enige agrarische activiteit.
 
