@@ -140,8 +140,6 @@ footer .nav-wordmark .wm-sub { color: rgba(255,255,255,.7); }
 
 .nav-links a:hover { color: var(--forest); }
 
-.nav-phone { font-weight: 700 !important; color: var(--forest) !important; white-space: nowrap; }
-
 .nav-cta {
   background: var(--forest);
   color: var(--white) !important;
