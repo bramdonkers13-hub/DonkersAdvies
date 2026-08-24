@@ -5,7 +5,7 @@ import ServiceTabs from '../components/ServiceTabs.astro';
 import StepList from '../components/StepList.astro';
 import FAQ from '../components/FAQ.astro';
 import ContactForm from '../components/ContactForm.astro';
-import { organizationSchema, professionalServiceSchema, websiteSchema } from '../lib/schema';
+import { organizationSchema, websiteSchema } from '../lib/schema';
 import { business } from '../data/business';
 
 const title = 'Donkers Advies | Ruimtelijk adviesbureau Omgevingswet';
@@ -83,7 +83,7 @@ const faqItems = [
 	title={title}
 	description={description}
 	path="/"
-	jsonLd={[organizationSchema(), professionalServiceSchema(), websiteSchema()]}
+	jsonLd={[organizationSchema(), websiteSchema()]}
 >
 	<Hero label={`${business.name} — ${business.tagline}`}>
 		<h1>Van initiatief<br /><em>tot vergunning</em></h1>

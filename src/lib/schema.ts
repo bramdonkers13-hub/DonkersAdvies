@@ -2,12 +2,20 @@ import { business } from '../data/business';
 import { services } from '../data/services';
 
 /** JSON-LD-builders. Elke pagina verzamelt de schema's die het nodig heeft
- * in een array en rendert die als één <script type="application/ld+json">. */
+ * in een array; BaseLayout rendert die als één <script type="application/ld+json">,
+ * als @graph zodra een pagina meer dan één schema meegeeft.
+ *
+ * ORGANIZATION_ID is de stabiele @id waarmee elke pagina naar dezelfde
+ * organisatie-entiteit verwijst (auteur, publisher, provider), zodat
+ * Donkers Advies overal als één entiteit gelezen wordt in plaats van als
+ * losse, niet-gekoppelde nodes. */
+export const ORGANIZATION_ID = business.url + '/#organisatie';
 
 export function organizationSchema() {
 	return {
 		'@context': 'https://schema.org',
-		'@type': 'Organization',
+		'@type': ['ProfessionalService', 'Organization'],
+		'@id': ORGANIZATION_ID,
 		name: business.name,
 		url: business.url,
 		email: business.email,
@@ -15,26 +23,12 @@ export function organizationSchema() {
 		identifier: business.kvk,
 		description:
 			'Ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Donkers Advies begeleidt particulieren en ondernemers bij principeverzoeken, omgevingsvergunningen (OPA en BOPA) en wijzigingen van het omgevingsplan.',
+		serviceType: 'Ruimtelijke ordening advies',
 		address: {
 			'@type': 'PostalAddress',
 			addressCountry: 'NL',
 			addressRegion: 'Noord-Brabant',
 		},
-		areaServed: business.areaServed,
-	};
-}
-
-export function professionalServiceSchema() {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'ProfessionalService',
-		name: business.name,
-		url: business.url,
-		email: business.email,
-		telephone: business.phoneIntl,
-		description:
-			'Specialist in ruimtelijke ordening en de Omgevingswet. Begeleiding bij principeverzoeken, OPA, BOPA en wijzigingen van het omgevingsplan.',
-		serviceType: 'Ruimtelijke ordening advies',
 		areaServed: business.areaServed,
 		hasOfferCatalog: {
 			'@type': 'OfferCatalog',
@@ -55,9 +49,11 @@ export function websiteSchema() {
 	return {
 		'@context': 'https://schema.org',
 		'@type': 'WebSite',
+		'@id': business.url + '/#website',
 		url: business.url,
 		name: business.name,
 		description: 'Ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet',
+		publisher: { '@id': ORGANIZATION_ID },
 	};
 }
 
@@ -98,6 +94,7 @@ export function serviceSchema(params: { name: string; description: string; path:
 		description: params.description,
 		provider: {
 			'@type': 'Organization',
+			'@id': ORGANIZATION_ID,
 			name: business.name,
 			url: business.url,
 			email: business.email,
@@ -118,6 +115,7 @@ export function blogSchema() {
 		url: business.url + '/blog/',
 		publisher: {
 			'@type': 'Organization',
+			'@id': ORGANIZATION_ID,
 			name: business.name,
 			url: business.url,
 			email: business.email,
@@ -148,9 +146,10 @@ export function blogPostingSchema(params: {
 		wordCount: params.wordCount,
 		timeRequired: params.timeRequired,
 		mainEntityOfPage: { '@type': 'WebPage', '@id': business.url + params.path },
-		author: { '@type': 'Organization', name: business.name, url: business.url },
+		author: { '@type': 'Organization', '@id': ORGANIZATION_ID, name: business.name, url: business.url },
 		publisher: {
 			'@type': 'Organization',
+			'@id': ORGANIZATION_ID,
 			name: business.name,
 			url: business.url,
 			logo: { '@type': 'ImageObject', url: business.url + '/brand_assets/favicon-192x192.png' },
