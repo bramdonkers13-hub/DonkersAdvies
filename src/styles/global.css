@@ -357,6 +357,7 @@ footer .nav-wordmark .wm-sub { color: rgba(255,255,255,.7); }
 .hero-label { margin-bottom: 1.25rem; color: rgba(255,255,255,.75); }
 #hero h1 { color: var(--white); max-width: 16ch; margin-bottom: 1.5rem; }
 #hero h1 em { font-style: normal; color: var(--white); }
+.hero-tagline { font-size: 1.35rem; font-weight: 600; color: var(--white); margin-bottom: 1rem; }
 .hero-lead { font-size: 1.1rem; color: rgba(255,255,255,.75); max-width: 52ch; margin-bottom: 2.5rem; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 .hero-deco { position: absolute; right: -2%; top: 50%; transform: translateY(-50%); opacity: .06; width: min(420px, 45vw); z-index: 2; pointer-events: none; }

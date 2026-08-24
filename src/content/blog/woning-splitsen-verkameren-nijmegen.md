@@ -1,6 +1,6 @@
 ---
 metaTitle: "Omgevingsvergunning en conceptverzoek in Nijmegen"
-title: "Omgevingsvergunning en conceptverzoek in gemeente Nijmegen"
+title: "Woning splitsen of verkameren in Nijmegen: vergunning en beleid"
 description: "Woning splitsen of verkameren in Nijmegen? Lees hoe de 30-metercirkel werkt, wanneer u twee vergunningen nodig heeft en hoe het conceptverzoek verloopt."
 cardExcerpt: "Hoe de 30-metercirkel en het vergunningstelsel voor woningsplitsing en verkamering in Nijmegen werken."
 lead: "Heeft u een bouwplan, een functiewijziging of een splitsings- of verkameringsplan in Nijmegen dat niet binnen het omgevingsplan past? Dan begint dat met een conceptverzoek, en bij woningsplitsing en kamerbewoning met een stelsel van regels dat u vooraf moet kennen. Donkers Advies begeleidt dat traject van eerste toets tot vergunning."
