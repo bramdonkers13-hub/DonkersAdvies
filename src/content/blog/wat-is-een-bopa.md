@@ -29,7 +29,7 @@ relatedSlugs: ["ruimtelijke-onderbouwing-bopa", "principeverzoek-indienen", "omg
 breadcrumbLabel: "Wat is een BOPA?"
 ctaTitle: "Uw BOPA laten voorbereiden"
 ctaDescription: "Donkers Advies beoordeelt uw initiatief, stelt de ruimtelijke onderbouwing op en begeleidt de volledige procedure, van principeverzoek tot vergunning, in Noord-Brabant, Gelderland en Limburg. Dankzij ervaring binnen de gemeentelijke praktijk weet u vroeg waar uw plan sterk staat, of het onder het adviesrecht van de raad valt, en welke route het snelst tot een vergunning leidt."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Meer over de afzonderlijke onderdelen: <a href="/blog/ruimtelijke-onderbouwing-bopa/">een ruimtelijke onderbouwing opstellen</a>, <a href="/blog/principeverzoek-indienen/">een principeverzoek indienen</a>, <a href="/blog/opa-aanvragen/">een OPA aanvragen</a> en <a href="/blog/omgevingsplan-wijzigen/">het omgevingsplan wijzigen</a>.'
 faq:

@@ -140,6 +140,8 @@ footer .nav-wordmark .wm-sub { color: rgba(255,255,255,.7); }
 
 .nav-links a:hover { color: var(--forest); }
 
+.nav-phone { font-weight: 700 !important; color: var(--forest) !important; white-space: nowrap; }
+
 .nav-cta {
   background: var(--forest);
   color: var(--white) !important;
@@ -606,6 +608,7 @@ a.contact-card:hover .contact-card-value { color: var(--forest); text-decoration
 
 .contact-form { display: flex; flex-direction: column; background: var(--white); border-radius: 8px; padding: clamp(1.5rem, 4vw, 2.5rem); border: 1px solid var(--sage-xl); }
 .contact-form form { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.contact-form-note { margin-top: 1.25rem; font-size: .85rem; color: var(--text-lt); text-align: center; }
 .form-row { margin-bottom: 1.1rem; }
 label { display: block; font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-md); margin-bottom: .4rem; }
 input, textarea, select { width: 100%; padding: .65rem .9rem; border: 1.5px solid var(--sage-xl); border-radius: var(--radius); background: var(--white); font-family: inherit; font-size: .9rem; color: var(--text); transition: border-color .2s; outline: none; }
@@ -814,6 +817,7 @@ footer { background: var(--forest); color: rgba(255,255,255,.6); padding-block: 
 .cta-bar .btn-primary { font-size: 1rem; padding: .85rem 2rem; }
 .cta-bar p a { color: var(--sage-lt); text-decoration: underline; text-underline-offset: 2px; }
 .cta-bar p a:hover { color: var(--white); }
+.cta-bar .cta-phone { margin-top: 1.25rem; margin-bottom: 0; font-size: .95rem; }
 
 /* ─── Scroll animations ────────────────────────────────────── */
 [data-fade] { opacity: 0; transform: translateY(20px); transition: opacity 1.1s ease, transform 1.1s ease; }

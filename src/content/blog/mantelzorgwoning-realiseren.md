@@ -26,7 +26,7 @@ relatedSlugs: ["opa-aanvragen", "wat-is-een-bopa", "principeverzoek-indienen"]
 breadcrumbLabel: "Mantelzorgwoning realiseren"
 ctaTitle: "Uw mantelzorgwoning laten toetsen"
 ctaDescription: "Donkers Advies beoordeelt of uw mantelzorgwoning vergunningvrij kan of dat een vergunning nodig is, en begeleidt zo nodig de aanvraag, in Noord-Brabant, Gelderland en Limburg. Dankzij ervaring binnen de gemeentelijke praktijk weet u snel welke route past, zeker bij een pré-mantelzorgwoning of een locatie in het buitengebied."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Meer over de aangrenzende procedures: <a href="/blog/opa-aanvragen/">een OPA aanvragen</a>, <a href="/blog/wat-is-een-bopa/">wat is een BOPA</a> en <a href="/blog/principeverzoek-indienen/">een principeverzoek indienen</a>.'
 faq:

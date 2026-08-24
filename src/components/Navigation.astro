@@ -1,6 +1,7 @@
 ---
 import { services } from '../data/services';
 import { dienstenDropdownHref, primaryNav, navCta } from '../data/navigation';
+import { business } from '../data/business';
 ---
 
 <ul class="nav-links" id="navLinks">
@@ -28,5 +29,8 @@ import { dienstenDropdownHref, primaryNav, navCta } from '../data/navigation';
 		))
 	}
 
+	<li>
+		<a href={business.phoneHref} class="nav-phone">{business.phoneDisplay}</a>
+	</li>
 	<li><a href={navCta.href} class="nav-cta">{navCta.label}</a></li>
 </ul>

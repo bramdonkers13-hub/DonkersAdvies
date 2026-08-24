@@ -34,7 +34,7 @@ relatedSlugs: ["wat-is-een-bopa", "omgevingsplan-wijzigen", "opa-aanvragen"]
 breadcrumbLabel: "Ruimtelijke onderbouwing"
 ctaTitle: "Uw ruimtelijke onderbouwing laten opstellen"
 ctaDescription: "Heeft u van de gemeente gehoord dat u een ruimtelijke onderbouwing nodig heeft, of wilt u weten of het bij uw plan lichter kan? Ik stel het document op, coördineer de onderzoeken en begeleid uw aanvraag tot het besluit, met kennis van de kant waar die stukken worden beoordeeld."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een offerte voor uw onderbouwing"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Meer over de aangrenzende procedures: <a href="/buitenplanse-omgevingsplanactiviteit/">zo verloopt een BOPA-aanvraag</a> en <a href="/principeverzoek/">het principeverzoek als eerste stap</a>.'
 faq:

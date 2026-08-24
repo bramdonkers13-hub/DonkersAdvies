@@ -26,7 +26,7 @@ relatedSlugs: ["wat-is-een-bopa", "ruimtelijke-onderbouwing-bopa", "principeverz
 breadcrumbLabel: "Omgevingsplan wijzigen"
 ctaTitle: "Werkt u aan een grootschalig of structureel initiatief in Noord-Brabant?"
 ctaDescription: "Donkers Advies begeleidt het volledige traject, van haalbaarheidsanalyse en ruimtelijke onderbouwing tot de vaststelling door de gemeenteraad."
-ctaButtonLabel: "Meer over wijziging omgevingsplan"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/wijziging-omgevingsplan/"
 faq:
   - question: "Hoe lang duurt een wijziging van het omgevingsplan?"

@@ -31,7 +31,7 @@ relatedSlugs: ["wat-is-een-bopa", "maatwerkregeling-omgevingskwaliteit", "princi
 breadcrumbLabel: "Agrarische bestemming naar wonen"
 ctaTitle: "Uw functiewijziging laten begeleiden"
 ctaDescription: "Donkers Advies begeleidt functiewijzigingen van agrarisch naar wonen in Noord-Brabant, Gelderland en Limburg, van de eerste haalbaarheidstoets tot de vergunning of planwijziging. Dankzij ervaring binnen de gemeentelijke praktijk weet u vroeg of uw plan kansrijk is, welke route past, en hoe u de sloopeis en de landschapsinvestering het beste invult."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Of laat ons een <a href="/blog/principeverzoek-indienen/">principeverzoek</a> voor u opstellen. Meer over de procedures en het Brabantse beleid: <a href="/blog/wat-is-een-bopa/">wat is een BOPA</a>, <a href="/blog/omgevingsplan-wijzigen/">het omgevingsplan wijzigen</a>, <a href="/blog/ruimtelijke-onderbouwing-bopa/">de ruimtelijke onderbouwing</a> en <a href="/blog/maatwerkregeling-omgevingskwaliteit/">de maatwerkregeling omgevingskwaliteit</a>.'
 faq:

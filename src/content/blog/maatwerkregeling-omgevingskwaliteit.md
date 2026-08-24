@@ -27,7 +27,7 @@ relatedSlugs: ["wat-is-een-bopa", "ruimtelijke-onderbouwing-bopa", "omgevingspla
 breadcrumbLabel: "Maatwerkregeling omgevingskwaliteit"
 ctaTitle: "Vrijblijvend haalbaarheidsgesprek"
 ctaDescription: "Overweegt u een maatwerkwoning in het buitengebied van Noord-Brabant? De eerste vraag is altijd of uw locatie en uw tegenprestatie kansrijk zijn. Die vraag beantwoorden wij graag voordat u kosten maakt. U ontvangt een heldere eerste inschatting van de kansen, de benodigde tegenprestatie en het te verwachten traject."
-ctaButtonLabel: "Vraag een vrijblijvend haalbaarheidsgesprek aan"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: "Donkers Advies werkt in heel Noord-Brabant, van de Peel tot West-Brabant en van de Kempen tot het Land van Heusden en Altena."
 faq:

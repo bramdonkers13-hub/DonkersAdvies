@@ -29,7 +29,7 @@ relatedSlugs: ["wat-is-een-bopa", "principeverzoek-indienen", "ruimtelijke-onder
 breadcrumbLabel: "OPA aanvragen"
 ctaTitle: "Uw aanvraag laten opstellen"
 ctaDescription: "Donkers Advies stelt aanvragen voor omgevingsplanactiviteiten compleet op en begeleidt de vergunningprocedure van begin tot eind, in Noord-Brabant, Gelderland en Limburg. Wij toetsen eerst welke route op uw plan van toepassing is, zodat u niet de zware procedure inslaat waar de lichte volstaat, en zodat uw aanvraag in één keer compleet de deur uit gaat."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Meer over de aangrenzende procedures: <a href="/blog/wat-is-een-bopa/">wat is een BOPA</a>, <a href="/blog/principeverzoek-indienen/">een principeverzoek indienen</a>, <a href="/blog/ruimtelijke-onderbouwing-bopa/">een ruimtelijke onderbouwing opstellen</a> en <a href="/blog/omgevingsplan-wijzigen/">het omgevingsplan wijzigen</a>.'
 faq:
