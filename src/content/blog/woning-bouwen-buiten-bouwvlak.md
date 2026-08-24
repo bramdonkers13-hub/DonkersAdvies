@@ -1,7 +1,7 @@
 ---
-metaTitle: "Woning bouwen buiten het bouwvlak: kan dat? | Brabant"
+metaTitle: "Woning bouwen buiten het bouwvlak: kan dat?"
 title: "Een woning bouwen buiten het bouwvlak: kan dat, en hoe?"
-description: "Kunt u een woning bouwen buiten het bouwvlak? Lees wanneer het vergunningvrij is, wanneer u een BOPA nodig heeft en welke Brabantse regels gelden in het buitengebied."
+description: "Een woning bouwen buiten het bouwvlak kan soms vergunningvrij, anders is een BOPA nodig. Dit legt de geldende Brabantse regels voor het buitengebied uit."
 cardExcerpt: "Kunt u een woning bouwen buiten het bouwvlak? Wanneer het vergunningvrij is en wanneer u een BOPA nodig heeft."
 lead: "U heeft een stuk grond, of een ruim perceel bij uw woning, en u wilt er een woning bouwen. Op de plek waar u die woning wilt neerzetten, staat in het omgevingsplan geen bouwvlak. En zonder bouwvlak, zo hoort u van de gemeente, mag u niet bouwen. Betekent dat het einde van uw plan?"
 toc:
@@ -31,7 +31,7 @@ relatedSlugs: ["wat-is-een-bopa", "agrarische-bestemming-wijzigen-naar-wonen", "
 breadcrumbLabel: "Woning bouwen buiten bouwvlak"
 ctaTitle: "Uw bouwplan laten toetsen"
 ctaDescription: "Donkers Advies beoordeelt bouwplannen buiten het bouwvlak, stelt de ruimtelijke onderbouwing op en begeleidt de procedure, in Noord-Brabant, Gelderland en Limburg. Dankzij ervaring binnen de gemeentelijke praktijk weet u vroeg of uw plan kansrijk is, of het binnen een provinciaal spoor past, en welke route het snelst tot een vergunning leidt."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Of laat ons een <a href="/blog/principeverzoek-indienen/">principeverzoek</a> voor u opstellen. Meer over de procedures en het Brabantse beleid: <a href="/blog/wat-is-een-bopa/">wat is een BOPA</a>, <a href="/blog/omgevingsplan-wijzigen/">het omgevingsplan wijzigen</a>, <a href="/blog/ruimtelijke-onderbouwing-bopa/">de ruimtelijke onderbouwing</a> en <a href="/blog/maatwerkregeling-omgevingskwaliteit/">de maatwerkregeling omgevingskwaliteit</a>.'
 faq:

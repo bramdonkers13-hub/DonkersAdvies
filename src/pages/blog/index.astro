@@ -1,5 +1,6 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { getImage } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import PostCard, { type PostCardProps } from '../../components/PostCard.astro';
@@ -7,6 +8,9 @@ import PostGrid from '../../components/PostGrid.astro';
 import { formatDateNL } from '../../utils/formatDate';
 import { blogSchema } from '../../lib/schema';
 import { business } from '../../data/business';
+import blogOgImage from '../../assets/images/blog-og-city-aerial.webp';
+
+const ogImage = await getImage({ src: blogOgImage, width: 1200, height: 630, fit: 'cover' });
 
 const allPosts = (await getCollection('blog')).sort(
 	(a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf()
@@ -51,10 +55,11 @@ const categories = [
 ---
 
 <BaseLayout
-	title="Blog | Ruimtelijke ordening en de Omgevingswet — Donkers Advies"
-	description="Praktische kennis over BOPA, principeverzoeken, omgevingsvergunningen (OPA) en wijzigingen van het omgevingsplan. Actuele inzichten van Donkers Advies, specialist in de Omgevingswet."
+	title="Blog | Ruimtelijke ordening en de Omgevingswet"
+	description="Praktische kennis over BOPA, principeverzoeken, OPA en wijzigingen van het omgevingsplan, geschreven door een adviseur uit de Omgevingswet-praktijk."
 	path="/blog/"
-	ogImage="/images/blog-og-city-aerial.webp"
+	ogImage={ogImage.src}
+	ogImageAlt="Luchtfoto van een Nederlandse stad, bij het blogoverzicht van Donkers Advies"
 	jsonLd={[blogSchema()]}
 >
 	<PageHero
@@ -63,7 +68,7 @@ const categories = [
 			{ name: 'Blog', path: '/blog/' },
 		]}
 		title="Blog"
-		subtitle="Praktische kennis en actuele inzichten over BOPA, principeverzoeken, omgevingsvergunningen en wijzigingen van het omgevingsplan — geschreven door Donkers Advies."
+		subtitle="Praktische kennis en actuele inzichten over BOPA, principeverzoeken, omgevingsvergunningen en wijzigingen van het omgevingsplan, geschreven door Donkers Advies."
 	>
 		<form class="blog-search" role="search" onsubmit="return false;">
 			<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>

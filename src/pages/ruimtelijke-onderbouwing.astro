@@ -10,7 +10,7 @@ import { business } from '../data/business';
 
 const title = 'Ruimtelijke onderbouwing laten opstellen';
 const description =
-	'Heeft de gemeente gezegd dat u een ruimtelijke onderbouwing nodig heeft? Ik stel het document op, regel de onderzoeken en begeleid uw aanvraag tot het besluit.';
+	'Heeft de gemeente gezegd dat u een ruimtelijke onderbouwing nodig heeft? Ik stel het document op, regel de onderzoeken en begeleid uw aanvraag tot besluit.';
 
 const service = serviceSchema({
 	name: 'Ruimtelijke onderbouwing laten opstellen',
@@ -146,7 +146,14 @@ const faqItems = [
 ];
 ---
 
-<BaseLayout title={title} description={description} path="/ruimtelijke-onderbouwing/" jsonLd={[service]}>
+<BaseLayout
+	title={title}
+	description={description}
+	path="/ruimtelijke-onderbouwing/"
+	jsonLd={[service]}
+	ogImage="/open-graph/ruimtelijke-onderbouwing.png"
+	ogImageAlt="Ruimtelijke onderbouwing laten opstellen, Donkers Advies"
+>
 	<PageHero
 		breadcrumbs={[
 			{ name: 'Home', path: '/' },
@@ -494,7 +501,6 @@ const faqItems = [
 		buttonLabel="Vraag een offerte voor uw onderbouwing"
 		buttonHref="/#contact"
 	>
-		<p style="margin-top: 1rem;">Of bel direct: <a href={business.phoneHref}>{business.phoneDisplay}</a></p>
 		<p style="margin-top: .5rem; font-size: .875rem;">Werkgebied: {business.areaServed.join(', ')}.</p>
 	</CTA>
 </BaseLayout>

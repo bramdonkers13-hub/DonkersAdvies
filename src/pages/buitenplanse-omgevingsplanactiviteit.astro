@@ -137,7 +137,14 @@ const faqItems = [
 ];
 ---
 
-<BaseLayout title={title} description={description} path="/buitenplanse-omgevingsplanactiviteit/" jsonLd={[service]}>
+<BaseLayout
+	title={title}
+	description={description}
+	path="/buitenplanse-omgevingsplanactiviteit/"
+	jsonLd={[service]}
+	ogImage="/open-graph/buitenplanse-omgevingsplanactiviteit.png"
+	ogImageAlt="BOPA aanvragen, onderbouwing, procedure en kosten, Donkers Advies"
+>
 	<PageHero
 		breadcrumbs={[
 			{ name: 'Home', path: '/' },
@@ -444,10 +451,9 @@ const faqItems = [
 	<CTA
 		title="Bespreek uw plan"
 		description="Wilt u weten of uw plan kansrijk is, welke route het snelst tot een vergunning leidt en wat u aan doorlooptijd en kosten kunt verwachten? Leg uw plan aan mij voor. U hoort binnen één werkdag wat ik ervan denk, en of een BOPA de route is die bij u past."
-		buttonLabel="Bespreek uw plan"
+		buttonLabel="Vraag een vrijblijvend adviesgesprek aan"
 		buttonHref="/#contact"
 	>
-		<p style="margin-top: 1rem;">Of bel direct: <a href={business.phoneHref}>{business.phoneDisplay}</a></p>
 		<p style="margin-top: .5rem; font-size: .875rem;">Werkgebied: {business.areaServed.join(', ')}.</p>
 	</CTA>
 </BaseLayout>

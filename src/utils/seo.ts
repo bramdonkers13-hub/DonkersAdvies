@@ -6,4 +6,5 @@ export function absoluteUrl(path: string, site: URL | undefined): string {
 	return new URL(path, base).toString();
 }
 
-export const defaultOgImage = '/brand_assets/favicon-192x192.png';
+/** 1200×630 fallback OG-afbeelding, gegenereerd door src/pages/open-graph/[...route].ts. */
+export const defaultOgImage = '/open-graph/default.png';

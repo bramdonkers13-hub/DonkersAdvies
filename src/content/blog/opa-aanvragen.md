@@ -1,7 +1,7 @@
 ---
 metaTitle: "OPA aanvragen: procedure, kosten en verschil met BOPA"
 title: "Binnenplanse omgevingsplanactiviteit (OPA) aanvragen: procedure, kosten en het verschil met een BOPA"
-description: "Wat is een binnenplanse omgevingsplanactiviteit (OPA), wanneer heeft u er een nodig en wat is het verschil met een BOPA? Uitgelegd door een Omgevingswet-adviseur."
+description: "Een OPA is nodig als uw plan past binnen het omgevingsplan maar wel een vergunning vereist. Dit legt de procedure, kosten en het verschil met een BOPA uit."
 cardExcerpt: "Wat is een binnenplanse omgevingsplanactiviteit (OPA), wanneer heeft u er een nodig en wat is het verschil met een BOPA?"
 lead: "Past uw bouwplan of functiewijziging binnen het omgevingsplan, maar vraagt de gemeente er tóch een vergunning voor? Dan gaat het om een binnenplanse omgevingsplanactiviteit, in de praktijk kortweg OPA genoemd. Dat is de lichtste en snelste route onder de Omgevingswet, en de route waar de meeste initiatiefnemers ten onrechte een BOPA voor vrezen."
 toc:
@@ -29,7 +29,7 @@ relatedSlugs: ["wat-is-een-bopa", "principeverzoek-indienen", "ruimtelijke-onder
 breadcrumbLabel: "OPA aanvragen"
 ctaTitle: "Uw aanvraag laten opstellen"
 ctaDescription: "Donkers Advies stelt aanvragen voor omgevingsplanactiviteiten compleet op en begeleidt de vergunningprocedure van begin tot eind, in Noord-Brabant, Gelderland en Limburg. Wij toetsen eerst welke route op uw plan van toepassing is, zodat u niet de zware procedure inslaat waar de lichte volstaat, en zodat uw aanvraag in één keer compleet de deur uit gaat."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Meer over de aangrenzende procedures: <a href="/blog/wat-is-een-bopa/">wat is een BOPA</a>, <a href="/blog/principeverzoek-indienen/">een principeverzoek indienen</a>, <a href="/blog/ruimtelijke-onderbouwing-bopa/">een ruimtelijke onderbouwing opstellen</a> en <a href="/blog/omgevingsplan-wijzigen/">het omgevingsplan wijzigen</a>.'
 faq:

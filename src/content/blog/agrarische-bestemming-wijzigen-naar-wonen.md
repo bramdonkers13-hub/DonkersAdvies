@@ -1,11 +1,11 @@
 ---
-metaTitle: "Agrarische bestemming wijzigen naar wonen | Brabant"
+metaTitle: "Agrarische bestemming wijzigen naar wonen"
 title: "Van agrarische bestemming naar wonen: de functiewijziging stap voor stap"
 description: "Uw agrarische bedrijf stopt en u wilt de boerderij als woning gebruiken? Lees welke route, welke sloopeis en welk Brabants beleid gelden, en hoe u begint."
 cardExcerpt: "Uw agrarische bedrijf stopt en u wilt in de boerderij blijven wonen? Welke route, sloopeis en Brabants beleid gelden."
 lead: "Uw agrarische bedrijf stopt, of is al gestopt, en u wilt in de boerderij blijven wonen. Of u heeft een voormalig boerenerf op het oog en wilt er wonen, niet boeren. Op papier lijkt dat eenvoudig: het pand staat er al, u verandert alleen het gebruik. In de praktijk is de functiewijziging van agrarisch naar wonen een van de meest onderschatte trajecten in het omgevingsrecht, en in Noord-Brabant zelden een kwestie van een formulier invullen."
 toc:
-  - { label: "Wat betekent een functiewijziging?", anchor: "wat-is-het" }
+  - { label: "Functiewijziging agrarisch vastgoed: wat betekent het?", anchor: "wat-is-het" }
   - { label: "Wanneer kan het, en wanneer niet?", anchor: "wanneer-kan-het" }
   - { label: "Welke route: BOPA of wijziging omgevingsplan?", anchor: "welke-route" }
   - { label: "Het VAB-beleid van uw gemeente", anchor: "vab-beleid" }
@@ -31,7 +31,7 @@ relatedSlugs: ["wat-is-een-bopa", "maatwerkregeling-omgevingskwaliteit", "princi
 breadcrumbLabel: "Agrarische bestemming naar wonen"
 ctaTitle: "Uw functiewijziging laten begeleiden"
 ctaDescription: "Donkers Advies begeleidt functiewijzigingen van agrarisch naar wonen in Noord-Brabant, Gelderland en Limburg, van de eerste haalbaarheidstoets tot de vergunning of planwijziging. Dankzij ervaring binnen de gemeentelijke praktijk weet u vroeg of uw plan kansrijk is, welke route past, en hoe u de sloopeis en de landschapsinvestering het beste invult."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Of laat ons een <a href="/blog/principeverzoek-indienen/">principeverzoek</a> voor u opstellen. Meer over de procedures en het Brabantse beleid: <a href="/blog/wat-is-een-bopa/">wat is een BOPA</a>, <a href="/blog/omgevingsplan-wijzigen/">het omgevingsplan wijzigen</a>, <a href="/blog/ruimtelijke-onderbouwing-bopa/">de ruimtelijke onderbouwing</a> en <a href="/blog/maatwerkregeling-omgevingskwaliteit/">de maatwerkregeling omgevingskwaliteit</a>.'
 faq:
@@ -65,7 +65,7 @@ Deze pagina legt uit hoe de functiewijziging werkt: wanneer het kan, welke route
 
 Wettelijke stand: 24 juli 2026.
 
-<h2 id="wat-is-het">Wat betekent een functiewijziging van agrarisch naar wonen?</h2>
+<h2 id="wat-is-het">Functiewijziging agrarisch vastgoed: wat betekent het?</h2>
 
 Een functiewijziging betekent dat u de toegelaten functie van uw locatie verandert. Het omgevingsplan kent aan uw perceel nu een agrarische functie toe, vaak met een bedrijfswoning die hoort bij dat agrarische bedrijf. U wilt daar een woonfunctie van maken, los van enige agrarische activiteit.
 

@@ -1,7 +1,7 @@
 ---
 metaTitle: "Omgevingsvergunning en vooroverleg gemeente Berg en Dal"
 title: "Omgevingsvergunning en vooroverleg in gemeente Berg en Dal"
-description: "Bouwplan in Groesbeek, Ooij of Millingen dat niet past in het omgevingsplan? Zo werkt het vooroverleg via de ODGM, en wat de sloopverplichting voor u betekent."
+description: "Voor een bouwplan in Groesbeek, Ooij of Millingen dat afwijkt van het omgevingsplan verloopt vooroverleg via de ODGM. Dit legt de sloopverplichting uit."
 cardExcerpt: "Hoe het vooroverleg via de ODGM werkt in Berg en Dal, en wat de sloopverplichting van 750 m² voor uw bouwplan betekent."
 lead: "Heeft u een bouwplan of functiewijziging in Groesbeek, Beek, Ooij, Millingen aan de Rijn of een van de andere dorpen dat niet binnen het omgevingsplan past? In Berg en Dal begint dat met een vooroverleg via de omgevingsdienst, en verloopt de beoordeling in stappen met kosten per stap. Donkers Advies begeleidt dat traject van eerste toets tot vergunning."
 toc:

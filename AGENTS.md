@@ -139,9 +139,14 @@ Every page renders through `BaseLayout` and passes its own metadata:
 ```
 
 `jsonLd` is an array of plain objects built by the helpers in `src/lib/schema.ts`
-(`organizationSchema`, `professionalServiceSchema`, `websiteSchema`, `breadcrumbSchema`,
-`faqSchema`, `serviceSchema`, `blogSchema`, `blogPostingSchema`). They are serialised into a
-single `<script type="application/ld+json">`. Never hand-write JSON-LD in a page — add or extend
+(`organizationSchema`, `websiteSchema`, `breadcrumbSchema`, `faqSchema`, `serviceSchema`,
+`blogSchema`, `blogPostingSchema`). `organizationSchema` covers both the `Organization` and
+`ProfessionalService` aspects of the business as one node (`@type: ['ProfessionalService',
+'Organization']`) under the stable id `ORGANIZATION_ID` exported from that module; `serviceSchema`,
+`blogSchema` and `blogPostingSchema` reference that same id on their `provider`/`publisher`/`author`
+field so every page describes the same organisation entity. BaseLayout serialises the array into a
+single `<script type="application/ld+json">`, wrapped as `{ "@context": ..., "@graph": [...] }`
+whenever a page passes more than one schema. Never hand-write JSON-LD in a page — add or extend
 a builder so business details stay sourced from `data/business.ts`.
 
 Two components emit their own JSON-LD from the props they receive: `FAQ.astro` renders
@@ -203,8 +208,11 @@ markdown-in-props.
 
 - Content images go in `src/assets/images/` and are **imported**, so Astro optimises and hashes
   them (`<Image>` from `astro:assets`, or `getImage()` when a URL string is needed for OG tags).
-- Only truly static files (favicons, `brand_assets/`, `robots.txt`, the blog OG image) live in
-  `public/` and are referenced by absolute path.
+- Only truly static files (favicons, `brand_assets/`) live in `public/` and are referenced by
+  absolute path. OG images (including the blog overview's) go through `src/assets/images/` and
+  `getImage()` so they can be forced to the 1200×630 og:image size — see
+  `src/pages/open-graph/[...route].ts` for the generated brand cards and `blog/index.astro` /
+  `blog/[slug].astro` for the photo-based ones.
 
 ## Code style
 

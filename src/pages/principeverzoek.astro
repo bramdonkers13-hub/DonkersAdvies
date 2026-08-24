@@ -138,7 +138,14 @@ const faqItems = [
 ];
 ---
 
-<BaseLayout title={title} description={description} path="/principeverzoek/" jsonLd={[service]}>
+<BaseLayout
+	title={title}
+	description={description}
+	path="/principeverzoek/"
+	jsonLd={[service]}
+	ogImage="/open-graph/principeverzoek.png"
+	ogImageAlt="Principeverzoek opstellen en indienen bij de gemeente, Donkers Advies"
+>
 	<PageHero
 		breadcrumbs={[
 			{ name: 'Home', path: '/' },
@@ -249,13 +256,14 @@ const faqItems = [
 		<div class="container">
 			<div class="intro-text" data-fade style="max-width: 68ch;">
 				<p class="label">Kerncijfers</p>
-				<h2>Wat kost het en hoe lang duurt het?</h2>
+				<h2>Hoe lang duurt een principeverzoek?</h2>
 				<p>
-					De behandeltijd is gemiddeld vier tot twaalf weken, afhankelijk van de complexiteit en van de interne
-					afstemming binnen de gemeente. Er is geen wettelijke termijn, dus een gemeente die het druk heeft, kan er
-					langer over doen. Moet het college of zelfs de raad zich er formeel over uitspreken, dan loopt het verder
-					op.
+					Een principeverzoek duurt gemiddeld vier tot twaalf weken, afhankelijk van de complexiteit en van de
+					interne afstemming binnen de gemeente. Er is geen wettelijke termijn, dus een gemeente die het druk
+					heeft, kan er langer over doen. Moet het college of zelfs de raad zich er formeel over uitspreken, dan
+					loopt het verder op.
 				</p>
+				<h3>Wat kost een principeverzoek?</h3>
 				<p>
 					De kosten bestaan uit twee posten. De gemeentelijke leges betaalt u voor de behandeling; die verschillen
 					per gemeente en bent u verschuldigd zodra de gemeente uw verzoek oppakt, ook als het antwoord nee is. Veel
@@ -376,10 +384,9 @@ const faqItems = [
 	<CTA
 		title="Laat uw principeverzoek opstellen"
 		description="Wilt u weten of uw plan kansrijk is, voordat u er geld in steekt? Leg het aan mij voor. U hoort binnen één werkdag wat ik ervan denk en of een principeverzoek in uw situatie de verstandige eerste stap is."
-		buttonLabel="Laat uw principeverzoek opstellen"
+		buttonLabel="Vraag een vrijblijvend adviesgesprek aan"
 		buttonHref="/#contact"
 	>
-		<p style="margin-top: 1rem;">Of bel direct: <a href={business.phoneHref}>{business.phoneDisplay}</a></p>
 		<p style="margin-top: .5rem; font-size: .875rem;">Werkgebied: {business.areaServed.join(', ')}.</p>
 	</CTA>
 </BaseLayout>

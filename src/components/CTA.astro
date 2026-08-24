@@ -1,4 +1,6 @@
 ---
+import { business } from '../data/business';
+
 interface Props {
 	title: string;
 	description: string;
@@ -14,6 +16,9 @@ const { title, description, buttonLabel, buttonHref } = Astro.props;
 		<h2>{title}</h2>
 		<p>{description}</p>
 		<a href={buttonHref} class="btn btn-primary">{buttonLabel}</a>
+		<p class="cta-phone">
+			Of bel direct: <a href={business.phoneHref}>{business.phoneDisplay}</a>
+		</p>
 		<slot />
 	</div>
 </section>

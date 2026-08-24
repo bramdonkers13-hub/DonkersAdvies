@@ -1,7 +1,7 @@
 ---
-metaTitle: "Omgevingsplan wijzigen: procedure en kosten | Noord-Brabant"
+metaTitle: "Omgevingsplan wijzigen: procedure en kosten"
 title: "Omgevingsplan wijzigen: procedure, doorlooptijd en kosten"
-description: "Wanneer wijzigt u het omgevingsplan in plaats van een BOPA aan te vragen, en wat zijn de procedure, doorlooptijd en kosten? Uitgelegd door een adviseur in Noord-Brabant."
+description: "Een omgevingsplan wijzigen is vaak het alternatief voor een BOPA. Bekijk de procedure, doorlooptijd en kosten bij een adviseur uit Noord-Brabant."
 cardExcerpt: "Wanneer wijzigt u het omgevingsplan in plaats van een BOPA aan te vragen, en wat zijn de procedure, doorlooptijd en kosten?"
 lead: "Sommige initiatieven zijn te grootschalig of te structureel voor een individuele omgevingsvergunning. Denk aan gebiedsontwikkeling, de herontwikkeling van een bedrijventerrein of een structurele functiewijziging. In die gevallen is een wijziging van het omgevingsplan de aangewezen route. In dit artikel leest u wat zo'n wijziging inhoudt, wanneer u ervoor kiest en wat de procedure, de doorlooptijd en de kosten zijn — met de blik van een adviseur die dagelijks in Noord-Brabant werkt."
 toc:
@@ -26,7 +26,7 @@ relatedSlugs: ["wat-is-een-bopa", "ruimtelijke-onderbouwing-bopa", "principeverz
 breadcrumbLabel: "Omgevingsplan wijzigen"
 ctaTitle: "Werkt u aan een grootschalig of structureel initiatief in Noord-Brabant?"
 ctaDescription: "Donkers Advies begeleidt het volledige traject, van haalbaarheidsanalyse en ruimtelijke onderbouwing tot de vaststelling door de gemeenteraad."
-ctaButtonLabel: "Meer over wijziging omgevingsplan"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/wijziging-omgevingsplan/"
 faq:
   - question: "Hoe lang duurt een wijziging van het omgevingsplan?"

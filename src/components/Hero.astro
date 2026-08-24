@@ -1,17 +1,14 @@
 ---
-import { getImage } from 'astro:assets';
-import heroImage from '../assets/images/hero-buitengebied.jpg';
-
 interface Props {
 	label: string;
+	/** Geoptimaliseerde achtergrondafbeelding; door de pagina berekend zodat dezelfde URL ook voor de preload-hint gebruikt kan worden. */
+	backgroundImage: string;
 }
 
-const { label } = Astro.props;
-
-const optimizedHero = await getImage({ src: heroImage, width: 1920, format: 'webp', quality: 80 });
+const { label, backgroundImage } = Astro.props;
 ---
 
-<section id="hero" style={`background-image:url(${optimizedHero.src})`}>
+<section id="hero" style={`background-image:url(${backgroundImage})`}>
 	<div class="boxes-wrapper" id="heroBoxes"></div>
 	<div class="boxes-overlay"></div>
 

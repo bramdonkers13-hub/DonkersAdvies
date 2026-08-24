@@ -1,7 +1,7 @@
 ---
 metaTitle: "Wat is een BOPA? Procedure, kosten en wanneer nodig"
 title: "Wat is een BOPA? Uitleg, procedure, kosten en wanneer u er een nodig heeft"
-description: "Wat is een BOPA, wanneer heeft u er een nodig en hoe verloopt de procedure? Uitleg over termijnen, kosten en het adviesrecht van de raad door een Omgevingswet-adviseur."
+description: "Een BOPA is de vergunning voor een plan dat afwijkt van het omgevingsplan. Dit legt de procedure, termijnen, kosten en het adviesrecht van de raad uit."
 cardExcerpt: "Wat is een BOPA, wanneer heeft u er een nodig en hoe verloopt de procedure?"
 lead: "Wilt u een woning bouwen buiten het bouwvlak, een leegstaande stal een woonfunctie geven of een bedrijf uitbreiden op een plek die daar niet voor bedoeld is? Dan past uw plan niet binnen het omgevingsplan, en heeft u in de meeste gevallen een BOPA nodig: een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit. Sinds de Omgevingswet is dit de gangbare route om af te wijken van het omgevingsplan voor een individueel initiatief."
 toc:
@@ -29,7 +29,7 @@ relatedSlugs: ["ruimtelijke-onderbouwing-bopa", "principeverzoek-indienen", "omg
 breadcrumbLabel: "Wat is een BOPA?"
 ctaTitle: "Uw BOPA laten voorbereiden"
 ctaDescription: "Donkers Advies beoordeelt uw initiatief, stelt de ruimtelijke onderbouwing op en begeleidt de volledige procedure, van principeverzoek tot vergunning, in Noord-Brabant, Gelderland en Limburg. Dankzij ervaring binnen de gemeentelijke praktijk weet u vroeg waar uw plan sterk staat, of het onder het adviesrecht van de raad valt, en welke route het snelst tot een vergunning leidt."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Meer over de afzonderlijke onderdelen: <a href="/blog/ruimtelijke-onderbouwing-bopa/">een ruimtelijke onderbouwing opstellen</a>, <a href="/blog/principeverzoek-indienen/">een principeverzoek indienen</a>, <a href="/blog/opa-aanvragen/">een OPA aanvragen</a> en <a href="/blog/omgevingsplan-wijzigen/">het omgevingsplan wijzigen</a>.'
 faq:

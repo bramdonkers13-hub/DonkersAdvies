@@ -1,5 +1,5 @@
 ---
-metaTitle: "Maatwerkregeling omgevingskwaliteit Noord-Brabant | Donkers Advies"
+metaTitle: "Maatwerkregeling omgevingskwaliteit Noord-Brabant"
 title: "Maatwerkwoning bouwen in het Brabantse buitengebied: zo werkt de Maatwerkregeling omgevingskwaliteit"
 description: "Een maatwerkwoning bouwen in het Brabantse buitengebied? Zo werkt de Maatwerkregeling omgevingskwaliteit: voorwaarden, bedragen en de BOPA-procedure."
 cardExcerpt: "Voorwaarden, bedragen en de BOPA-procedure van de Maatwerkregeling omgevingskwaliteit, uitgelegd door Donkers Advies."
@@ -26,8 +26,8 @@ wordCount: 2030
 relatedSlugs: ["wat-is-een-bopa", "ruimtelijke-onderbouwing-bopa", "omgevingsplan-wijzigen"]
 breadcrumbLabel: "Maatwerkregeling omgevingskwaliteit"
 ctaTitle: "Vrijblijvend haalbaarheidsgesprek"
-ctaDescription: "Overweegt u een maatwerkwoning in het buitengebied van Noord-Brabant? De eerste vraag is altijd of uw locatie en uw tegenprestatie kansrijk zijn. Die vraag beantwoorden wij graag voordat u kosten maakt. U ontvangt een heldere eerste inschatting van de kansen, de benodigde tegenprestatie en het te verwachten traject."
-ctaButtonLabel: "Vraag een vrijblijvend haalbaarheidsgesprek aan"
+ctaDescription: "Overweegt u een maatwerkwoning in het buitengebied van Noord-Brabant? De eerste vraag is altijd of uw locatie en uw tegenprestatie kansrijk zijn. Die vraag beantwoordt Donkers Advies graag voordat u kosten maakt. U ontvangt een heldere eerste inschatting van de kansen, de benodigde tegenprestatie en het te verwachten traject."
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: "Donkers Advies werkt in heel Noord-Brabant, van de Peel tot West-Brabant en van de Kempen tot het Land van Heusden en Altena."
 faq:

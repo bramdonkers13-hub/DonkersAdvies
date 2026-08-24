@@ -35,7 +35,7 @@ relatedSlugs: ["wat-is-een-bopa", "opa-aanvragen", "ruimtelijke-onderbouwing-bop
 breadcrumbLabel: "Principeverzoek indienen"
 ctaTitle: "Uw plan laten toetsen"
 ctaDescription: "Donkers Advies stelt principeverzoeken op voor initiatiefnemers in Noord-Brabant, Gelderland en Limburg, en begeleidt het traject van eerste haalbaarheidstoets tot de formele aanvraag. Dankzij ervaring binnen de gemeentelijke praktijk weet u vroeg waar uw plan sterk staat, waar het risico zit, en welke vraag u aan het college moet stellen om een bruikbaar antwoord te krijgen."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Meer over de vervolgstappen: <a href="/blog/wat-is-een-bopa/">wat is een BOPA</a>, <a href="/blog/ruimtelijke-onderbouwing-bopa/">een ruimtelijke onderbouwing opstellen</a>, <a href="/blog/opa-aanvragen/">een OPA aanvragen</a> en <a href="/blog/omgevingsplan-wijzigen/">het omgevingsplan wijzigen</a>.'
 faq:

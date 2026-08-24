@@ -1,16 +1,20 @@
 ---
+import { getImage } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import ServiceTabs from '../components/ServiceTabs.astro';
 import StepList from '../components/StepList.astro';
 import FAQ from '../components/FAQ.astro';
 import ContactForm from '../components/ContactForm.astro';
-import { organizationSchema, professionalServiceSchema, websiteSchema } from '../lib/schema';
+import { organizationSchema, websiteSchema } from '../lib/schema';
 import { business } from '../data/business';
+import heroImage from '../assets/images/hero-buitengebied.jpg';
 
 const title = 'Donkers Advies | Ruimtelijk adviesbureau Omgevingswet';
 const description =
 	'Ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Donkers Advies begeleidt principeverzoeken, OPA, BOPA en wijzigingen van het omgevingsplan.';
+
+const optimizedHero = await getImage({ src: heroImage, width: 1920, format: 'webp', quality: 80 });
 
 const werkwijzeSteps = [
 	{
@@ -83,10 +87,14 @@ const faqItems = [
 	title={title}
 	description={description}
 	path="/"
-	jsonLd={[organizationSchema(), professionalServiceSchema(), websiteSchema()]}
+	jsonLd={[organizationSchema(), websiteSchema()]}
+	preloadImage={optimizedHero.src}
+	ogImage="/open-graph/home.png"
+	ogImageAlt="Donkers Advies, adviesbureau ruimtelijke ordening en Omgevingswet"
 >
-	<Hero label={`${business.name} — ${business.tagline}`}>
-		<h1>Van initiatief<br /><em>tot vergunning</em></h1>
+	<Hero label={`${business.name} — ${business.tagline}`} backgroundImage={optimizedHero.src}>
+		<h1>Adviesbureau ruimtelijke ordening<br /><em>en Omgevingswet</em></h1>
+		<p class="hero-tagline">Van initiatief tot vergunning</p>
 		<p class="hero-lead">
 			Een extra woning, bedrijfsuitbreiding of functiewijziging? Donkers Advies helpt u uw plan ruimtelijk mogelijk te maken en begeleidt u van eerste idee tot vergunning.
 		</p>
@@ -119,7 +127,7 @@ const faqItems = [
 		<div class="container">
 			<div class="section-header" data-fade>
 				<p class="label">Onze aanpak</p>
-				<h2>Van initiatief tot vergunning</h2>
+				<h2>Zo werkt het traject</h2>
 				<p style="color: rgba(255,255,255,.7);">
 					Een ruimtelijk traject bestaat uit meerdere stappen. Donkers Advies begeleidt het volledige proces: van het eerste idee tot de definitieve besluitvorming door de gemeente.
 				</p>

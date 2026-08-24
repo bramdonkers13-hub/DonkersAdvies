@@ -1,7 +1,7 @@
 ---
 metaTitle: "Omgevingsvergunning en conceptverzoek gemeente Overbetuwe"
 title: "Omgevingsvergunning en conceptverzoek in gemeente Overbetuwe"
-description: "Bouwplan in Elst, Zetten of Heteren dat niet past in het omgevingsplan? Lees wat een conceptverzoek kost, waarom elk rapport apart geld kost en welke route past."
+description: "Voor een bouwplan in Elst, Zetten of Heteren dat afwijkt van het omgevingsplan is een conceptverzoek de eerste, verstandige stap. Dit legt de kosten uit."
 cardExcerpt: "Waarom in Overbetuwe elk onderzoeksrapport apart geld kost, en welke route bij uw bouwplan past."
 lead: "Heeft u een bouwplan of functiewijziging in Elst, Zetten, Heteren, Driel of een van de andere kernen dat niet binnen het omgevingsplan past? Dan begint dat met een conceptverzoek, en met een kostenstructuur die u vooraf moet kennen. Donkers Advies begeleidt dat traject van eerste toets tot vergunning."
 toc:

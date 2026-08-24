@@ -1,7 +1,7 @@
 ---
 metaTitle: "Principeverzoek afgewezen? Dit kunt u nu nog doen"
 title: "Uw principeverzoek is afgewezen: wat kunt u nu nog doen?"
-description: "Uw principeverzoek is afgewezen? Een afwijzing is zelden definitief. Lees hoe u de echte reden achterhaalt en welke vijf routes u nog heeft om uw plan alsnog rond te krijgen."
+description: "Een afgewezen principeverzoek is zelden definitief. Zo achterhaalt u de echte reden en welke vijf routes u nog heeft om uw plan alsnog rond te krijgen."
 cardExcerpt: "Uw principeverzoek is afgewezen? Lees hoe u de echte reden achterhaalt en welke vijf routes u nog heeft."
 lead: "De brief van de gemeente is helder: geen medewerking. Uw plan past niet binnen het beleid, en het college ziet geen mogelijkheden. Voor veel initiatiefnemers voelt dat als het einde van de rit. U heeft een schets laten maken, misschien al een adviseur ingeschakeld, en nu ligt er een nee."
 toc:
@@ -28,7 +28,7 @@ relatedSlugs: ["principeverzoek-indienen", "wat-is-een-bopa", "woning-bouwen-bui
 breadcrumbLabel: "Principeverzoek afgewezen"
 ctaTitle: "Uw afgewezen plan laten beoordelen"
 ctaDescription: "Donkers Advies beoordeelt afgewezen principeverzoeken en bepaalt of uw plan alsnog haalbaar is, in Noord-Brabant, Gelderland en Limburg. Dankzij ervaring binnen de gemeentelijke praktijk herkent u snel of de belemmering hard of onderhandelbaar is, welk alternatief spoor kans maakt, en hoe u de gemeente tot een echte heroverweging brengt zonder de verhoudingen te verharden."
-ctaButtonLabel: "Neem vrijblijvend contact op"
+ctaButtonLabel: "Vraag een vrijblijvend adviesgesprek aan"
 ctaButtonHref: "/#contact"
 ctaExtra: 'Meer over het traject en de vervolgstappen: <a href="/blog/principeverzoek-indienen/">een principeverzoek indienen</a>, <a href="/blog/wat-is-een-bopa/">wat is een BOPA</a>, <a href="/blog/ruimtelijke-onderbouwing-bopa/">de ruimtelijke onderbouwing</a> en <a href="/blog/omgevingsplan-wijzigen/">het omgevingsplan wijzigen</a>.'
 faq:
