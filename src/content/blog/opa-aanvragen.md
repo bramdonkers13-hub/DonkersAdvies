@@ -115,7 +115,7 @@ Precies daarom loont het om vóór alles uit te zoeken welke route werkelijk van
 
 ### Let op het tijdelijke deel van het omgevingsplan
 
-Sinds 1 januari 2024 bestaat elk omgevingsplan uit een nieuw deel en een tijdelijk deel. Dat tijdelijke deel bevat de van rechtswege omgezette bestemmingsplannen en de bruidsschat: de regels die het Rijk aan gemeenten heeft overgedragen. De vergunningplicht voor het bouwen valt in veel gevallen nog onder dat tijdelijke deel, met de beoordelingsregel in artikel 22.281 van de bruidsschat.
+Sinds 1 januari 2024 bestaat elk omgevingsplan uit een nieuw deel en een tijdelijk deel. Dat tijdelijke deel bevat de van rechtswege omgezette bestemmingsplannen en de bruidsschat: de regels die het Rijk aan gemeenten heeft overgedragen. Zie voor de opbouw van die twee delen de uitleg over [het verschil tussen het omgevingsplan en het bestemmingsplan](/blog/bestemmingsplan-wijzigen-omgevingswet/). De vergunningplicht voor het bouwen valt in veel gevallen nog onder dat tijdelijke deel, met de beoordelingsregel in artikel 22.281 van de bruidsschat.
 
 Voor uw praktijk betekent dit dat u niet mag uitgaan van het oude bestemmingsplan zoals u dat kende, en ook niet van een op het eerste gezicht strijdige planverbeelding. Ga altijd uit van de actuele regels zoals die in het Omgevingsloket staan. Een plan dat op papier lijkt af te wijken, kan binnen de overgangsregels of binnen een binnenplanse afwijkmogelijkheid alsnog binnenplans vergunbaar zijn.
 

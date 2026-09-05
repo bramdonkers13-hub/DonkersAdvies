@@ -107,7 +107,7 @@ Voordat u van een BOPA uitgaat, is het de moeite waard om de route te toetsen. E
 
 Twijfelt u welke route op uw situatie van toepassing is? Een [principeverzoek](/blog/principeverzoek-indienen/) geeft daar vooraf duidelijkheid over, zonder dat u meteen de formele procedure hoeft te starten. Het scheelt bovendien onderzoekskosten: pas na de gemeentelijke reactie weet u welke onderzoeken werkelijk nodig zijn.
 
-Let op het tijdelijke deel van het omgevingsplan. Sinds 1 januari 2024 bevat elk omgevingsplan de van rechtswege omgezette bestemmingsplannen en de bruidsschat. Uw plan kan binnen die overgangsregels of binnen een binnenplanse afwijkmogelijkheid passen, ook al lijkt het op het eerste gezicht in strijd met het oude bestemmingsplan. Ga daarom altijd uit van de actuele regels in het Omgevingsloket.
+Let op het tijdelijke deel van het omgevingsplan. Sinds 1 januari 2024 bevat elk omgevingsplan de van rechtswege omgezette bestemmingsplannen en de bruidsschat. Wat er precies met [het bestemmingsplan is gebeurd](/blog/bestemmingsplan-wijzigen-omgevingswet/) en waar de regels voor uw perceel nu staan, leest u apart. Uw plan kan binnen die overgangsregels of binnen een binnenplanse afwijkmogelijkheid passen, ook al lijkt het op het eerste gezicht in strijd met het oude bestemmingsplan. Ga daarom altijd uit van de actuele regels in het Omgevingsloket.
 
 <h2 id="procedures">De twee procedures: regulier en uitgebreid</h2>
 
