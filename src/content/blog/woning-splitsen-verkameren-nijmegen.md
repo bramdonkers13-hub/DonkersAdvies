@@ -1,8 +1,8 @@
 ---
 metaTitle: "Omgevingsvergunning en conceptverzoek in Nijmegen"
-title: "Woning splitsen of verkameren in Nijmegen: vergunning en beleid"
-description: "Woning splitsen of verkameren in Nijmegen? Lees hoe de 30-metercirkel werkt, wanneer u twee vergunningen nodig heeft en hoe het conceptverzoek verloopt."
-cardExcerpt: "Hoe de 30-metercirkel en het vergunningstelsel voor woningsplitsing en verkamering in Nijmegen werken."
+title: "Omgevingsvergunning en conceptverzoek in gemeente Nijmegen"
+description: "Bouwplan of functiewijziging in Nijmegen dat niet in het omgevingsplan past? Lees hoe het conceptverzoek werkt en welke route bij uw plan hoort."
+cardExcerpt: "Hoe het conceptverzoek in Nijmegen werkt, en wat de regels voor splitsing en verkamering voor uw plan betekenen."
 lead: "Heeft u een bouwplan, een functiewijziging of een splitsings- of verkameringsplan in Nijmegen dat niet binnen het omgevingsplan past? Dan begint dat met een conceptverzoek, en bij woningsplitsing en kamerbewoning met een stelsel van regels dat u vooraf moet kennen. Donkers Advies begeleidt dat traject van eerste toets tot vergunning."
 toc:
   - { label: "Woningsplitsing en kamerbewoning", anchor: "splitsing-verkamering" }
@@ -17,7 +17,7 @@ toc:
   - { label: "Bronnen", anchor: "bronnen" }
 category: "gemeenten"
 categoryLabel: "Gemeenten"
-searchTags: ["nijmegen", "woning splitsen nijmegen", "verkameren nijmegen", "omzettingsvergunning nijmegen", "30-metercirkel", "zwaartepunt pand", "conceptverzoek nijmegen", "kamerverhuur nijmegen", "huisvestingsverordening", "odgm"]
+searchTags: ["nijmegen", "omgevingsvergunning nijmegen", "principeverzoek nijmegen", "conceptverzoek nijmegen", "bopa nijmegen", "vooroverleg nijmegen", "woning splitsen nijmegen", "verkameren nijmegen", "30-metercirkel", "odgm"]
 image: "../../assets/images/landscape-buitengebied.jpg"
 imageAlt: "Luchtfoto van Nederlands stedelijk gebied met woonbebouwing"
 publishedDate: 2026-08-13
