@@ -14,7 +14,7 @@ export const navCta = { label: 'Contact', href: '/#contact' };
 
 export const footerNav: { label: string; href: string }[] = [
 	{ label: 'Blog', href: '/blog/' },
-	{ label: 'Over ons', href: '/#about' },
+	{ label: 'Over Donkers Advies', href: '/#about' },
 	{ label: 'Werkwijze', href: '/#werkwijze' },
 	{ label: 'Waarom Donkers', href: '/#waarom' },
 	{ label: 'Veelgestelde vragen', href: '/#faq' },

@@ -5,7 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import PostCard, { type PostCardProps } from '../../components/PostCard.astro';
 import CTA from '../../components/CTA.astro';
-import { formatDateNL } from '../../utils/formatDate';
+import { formatDateNL, isoDate } from '../../utils/formatDate';
 import { absoluteUrl } from '../../utils/seo';
 import { blogPostingSchema, faqSchema } from '../../lib/schema';
 
@@ -76,12 +76,14 @@ const showUpdated = post.data.updatedDate.getTime() !== post.data.publishedDate.
 	>
 		<div class="post-meta-row">
 			<span>Donkers Advies</span><span class="dot">&middot;</span>
-			<span>Gepubliceerd {formatDateNL(post.data.publishedDate)}</span>
+			<span>Gepubliceerd <time datetime={isoDate(post.data.publishedDate)}>{formatDateNL(post.data.publishedDate)}</time></span>
 			{
 				showUpdated && (
 					<>
 						<span class="dot">&middot;</span>
-						<span>Laatst bijgewerkt {formatDateNL(post.data.updatedDate)}</span>
+						<span>
+							Laatst bijgewerkt <time datetime={isoDate(post.data.updatedDate)}>{formatDateNL(post.data.updatedDate)}</time>
+						</span>
 					</>
 				)
 			}

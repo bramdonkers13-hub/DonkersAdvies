@@ -14,7 +14,13 @@ const title = 'Donkers Advies | Ruimtelijk adviesbureau Omgevingswet';
 const description =
 	'Ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Donkers Advies begeleidt principeverzoeken, OPA, BOPA en wijzigingen van het omgevingsplan.';
 
-const optimizedHero = await getImage({ src: heroImage, width: 1920, format: 'webp', quality: 80 });
+// Meerdere breedtes, zodat een telefoon niet dezelfde afbeelding laadt als een breed scherm.
+const optimizedHero = await getImage({
+	src: heroImage,
+	widths: [768, 1024, 1440, 1920],
+	format: 'webp',
+	quality: 80,
+});
 
 const werkwijzeSteps = [
 	{
@@ -48,9 +54,9 @@ const faqItems = [
 	{
 		question: 'Wat doet Donkers Advies?',
 		answerHtml:
-			'<p>Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Wij begeleiden particulieren, ondernemers en projectontwikkelaars bij alle planologische procedures: van <a href="/principeverzoek/">principeverzoek</a> en <a href="/omgevingsplanactiviteit/">OPA</a> tot <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> en <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>. Van eerste haalbaarheidsanalyse tot definitieve vergunningverlening.</p>',
+			'<p>Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Ik begeleid particulieren, ondernemers en projectontwikkelaars bij alle planologische procedures: van <a href="/principeverzoek/">principeverzoek</a> en <a href="/omgevingsplanactiviteit/">OPA</a> tot <a href="/buitenplanse-omgevingsplanactiviteit/">BOPA</a> en <a href="/wijziging-omgevingsplan/">wijziging van het omgevingsplan</a>. Van eerste haalbaarheidsanalyse tot definitieve vergunningverlening.</p>',
 		answerText:
-			'Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Wij begeleiden particulieren, ondernemers en projectontwikkelaars bij principeverzoeken, omgevingsvergunningen (OPA en BOPA) en wijzigingen van het omgevingsplan. Van eerste haalbaarheidsanalyse tot definitieve vergunningverlening.',
+			'Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Ik begeleid particulieren, ondernemers en projectontwikkelaars bij principeverzoeken, omgevingsvergunningen (OPA en BOPA) en wijzigingen van het omgevingsplan. Van eerste haalbaarheidsanalyse tot definitieve vergunningverlening.',
 	},
 	{
 		question: 'Wanneer heb ik een principeverzoek nodig?',
@@ -89,11 +95,16 @@ const faqItems = [
 	path="/"
 	jsonLd={[organizationSchema(), websiteSchema()]}
 	preloadImage={optimizedHero.src}
+	preloadImageSrcSet={optimizedHero.srcSet.attribute}
 	ogImage="/open-graph/home.png"
 	ogImageAlt="Donkers Advies, adviesbureau ruimtelijke ordening en Omgevingswet"
 >
-	<Hero label={`${business.name} — ${business.tagline}`} backgroundImage={optimizedHero.src}>
-		<h1>Adviesbureau ruimtelijke ordening<br /><em>en Omgevingswet</em></h1>
+	<Hero
+		label={`${business.name} — ${business.tagline}`}
+		backgroundImage={optimizedHero.src}
+		backgroundSrcSet={optimizedHero.srcSet.attribute}
+	>
+		<h1>Adviesbureau ruimtelijke ordening <br /><em>en Omgevingswet</em></h1>
 		<p class="hero-tagline">Van initiatief tot vergunning</p>
 		<p class="hero-lead">
 			Een extra woning, bedrijfsuitbreiding of functiewijziging? Donkers Advies helpt u uw plan ruimtelijk mogelijk te maken en begeleidt u van eerste idee tot vergunning.
@@ -104,7 +115,7 @@ const faqItems = [
 				<span class="btn-expand-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
 			</a>
 			<a href="#diensten" class="btn btn-outline btn-expand">
-				Bekijk onze diensten
+				Bekijk de diensten
 				<span class="btn-expand-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
 			</a>
 		</div>
@@ -126,7 +137,7 @@ const faqItems = [
 	<section id="werkwijze" class="section">
 		<div class="container">
 			<div class="section-header" data-fade>
-				<p class="label">Onze aanpak</p>
+				<p class="label">De aanpak</p>
 				<h2>Zo werkt het traject</h2>
 				<p style="color: rgba(255,255,255,.7);">
 					Een ruimtelijk traject bestaat uit meerdere stappen. Donkers Advies begeleidt het volledige proces: van het eerste idee tot de definitieve besluitvorming door de gemeente.
@@ -177,7 +188,7 @@ const faqItems = [
 		<div class="container">
 			<div class="section-header" data-fade>
 				<p class="label">Waarom Donkers Advies</p>
-				<h2>Waarom initiatiefnemers voor ons kiezen</h2>
+				<h2>Waarom initiatiefnemers voor Donkers Advies kiezen</h2>
 			</div>
 			<div class="why-grid">
 				<div class="why-card" data-fade>
@@ -186,7 +197,7 @@ const faqItems = [
 				</div>
 				<div class="why-card" data-fade>
 					<h3>Ervaring met gemeentelijke besluitvorming</h3>
-					<p>Wij weten hoe gemeenten plannen beoordelen en welke stappen nodig zijn om tot een goed onderbouwd besluit te komen.</p>
+					<p>Ik weet hoe gemeenten plannen beoordelen en welke stappen nodig zijn om tot een goed onderbouwd besluit te komen.</p>
 				</div>
 				<div class="why-card" data-fade>
 					<h3>Eén vast aanspreekpunt</h3>
@@ -194,15 +205,15 @@ const faqItems = [
 				</div>
 				<div class="why-card" data-fade>
 					<h3>Maatwerk voor uw initiatief</h3>
-					<p>Geen standaardaanpak. Wij kijken naar uw plan, locatie en situatie en bepalen samen met u de meest passende aanpak.</p>
+					<p>Geen standaardaanpak. Ik kijk naar uw plan, locatie en situatie en bepaal samen met u de meest passende aanpak.</p>
 				</div>
 				<div class="why-card" data-fade>
 					<h3>Duidelijk en transparant</h3>
-					<p>Geen onnodig vakjargon, maar begrijpelijk advies. U weet waar u aan toe bent en wat u van ons kunt verwachten.</p>
+					<p>Geen onnodig vakjargon, maar begrijpelijk advies. U weet waar u aan toe bent en wat u van Donkers Advies kunt verwachten.</p>
 				</div>
 				<div class="why-card" data-fade>
 					<h3>Van idee tot besluit</h3>
-					<p>Van de eerste haalbaarheidsanalyse tot en met de vergunning of het definitieve besluit. Wij begeleiden het volledige traject.</p>
+					<p>Van de eerste haalbaarheidsanalyse tot en met de vergunning of het definitieve besluit. Ik begeleid het volledige traject.</p>
 				</div>
 			</div>
 		</div>
@@ -215,7 +226,7 @@ const faqItems = [
 					<p class="label">Over Donkers Advies</p>
 					<h2>Specialist in ruimtelijke ordening</h2>
 					<p>
-						Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Wij begeleiden particulieren, ondernemers en projectontwikkelaars bij alle planologische procedures.
+						Donkers Advies is een ruimtelijk adviesbureau gespecialiseerd in de Omgevingswet. Ik begeleid particulieren, ondernemers en projectontwikkelaars bij alle planologische procedures.
 					</p>
 					<p>
 						Dankzij ervaring binnen de gemeentelijke praktijk krijgt u snel inzicht in de planologische mogelijkheden en de kans van slagen van uw initiatief.
@@ -259,7 +270,7 @@ const faqItems = [
 				<h2>Vragen over ruimtelijke ordening en de Omgevingswet</h2>
 				<p>
 					Hieronder vindt u antwoord op veelgestelde vragen over planologische procedures, de Omgevingswet en de
-					dienstverlening van Donkers Advies. Meer weten? Bekijk onze <a href="/blog/">blog</a> voor uitgebreide
+					dienstverlening van Donkers Advies. Meer weten? Bekijk de <a href="/blog/">blog</a> voor uitgebreide
 					artikelen per procedure.
 				</p>
 			</div>
