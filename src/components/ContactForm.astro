@@ -3,16 +3,33 @@ import { business } from '../data/business';
 ---
 
 <div class="contact-form" data-fade>
-	<form id="contactForm" data-formspree-endpoint={business.formspreeEndpoint} data-redirect="/bedankt/">
+	<!--
+		action/method staan bewust ingevuld: valt het script hieronder uit, dan post de browser
+		rechtstreeks naar Formspree in plaats van een GET naar de eigen pagina te doen (waarbij de
+		ingevulde gegevens in de URL zouden belanden en de aanvraag verloren gaat).
+	-->
+	<form
+		id="contactForm"
+		action={business.formspreeEndpoint}
+		method="post"
+		data-formspree-endpoint={business.formspreeEndpoint}
+		data-redirect="/bedankt/"
+	>
 		<input type="hidden" name="_subject" value={`Nieuwe aanvraag via ${business.url.replace('https://www.', '')}`} />
+		<input type="hidden" name="_next" value={`${business.url}/bedankt/`} />
+		<!-- Spamval van Formspree: bots vullen dit veld, mensen zien het niet. -->
+		<p class="form-gotcha" aria-hidden="true">
+			<label for="bedrijfsnaam">Laat dit veld leeg</label>
+			<input type="text" id="bedrijfsnaam" name="_gotcha" tabindex="-1" autocomplete="off" />
+		</p>
 		<div class="form-row-2">
 			<div class="form-row">
 				<label for="naam">Naam</label>
-				<input type="text" id="naam" name="naam" placeholder="Uw naam" required />
+				<input type="text" id="naam" name="naam" placeholder="Uw naam" autocomplete="name" required />
 			</div>
 			<div class="form-row">
 				<label for="email">E-mailadres</label>
-				<input type="email" id="email" name="email" placeholder="uw@email.nl" required />
+				<input type="email" id="email" name="email" placeholder="uw@email.nl" autocomplete="email" required />
 			</div>
 		</div>
 		<div class="form-row">
@@ -38,10 +55,15 @@ import { business } from '../data/business';
 			<span class="btn-submit-text">Vraag een vrijblijvend adviesgesprek aan</span>
 			<svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
 		</button>
+		<p class="form-status" id="formStatus" role="status" aria-live="polite" hidden>
+			Het verzenden is niet gelukt. Probeer het opnieuw, of mail rechtstreeks naar
+			<a href={`mailto:${business.email}`}>{business.email}</a> of bel <a href={business.phoneHref}>{business.phoneDisplay}</a>.
+		</p>
 	</form>
 	<p class="contact-form-note">
 		U ontvangt binnen één werkdag een reactie. In een eerste gesprek bespreken we of uw plan kansrijk is. Daar zijn
-		geen kosten aan verbonden.
+		geen kosten aan verbonden. Uw gegevens gebruikt Donkers Advies alleen om uw aanvraag te beantwoorden, zoals
+		beschreven in de <a href="/privacy/">privacyverklaring</a>.
 	</p>
 </div>
 
@@ -50,6 +72,7 @@ import { business } from '../data/business';
 	if (form) {
 		const endpoint = form.dataset.formspreeEndpoint!;
 		const redirect = form.dataset.redirect!;
+		const status = document.getElementById('formStatus');
 		form.addEventListener('submit', async (e) => {
 			e.preventDefault();
 			const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
@@ -58,7 +81,13 @@ import { business } from '../data/business';
 				if (btnText) btnText.textContent = text;
 				else btn.textContent = text;
 			};
+			const fail = () => {
+				setText('Verzenden mislukt, probeer opnieuw');
+				if (status) status.hidden = false;
+				btn.disabled = false;
+			};
 			setText('Verzenden…');
+			if (status) status.hidden = true;
 			btn.disabled = true;
 			try {
 				const res = await fetch(endpoint, {
@@ -69,12 +98,10 @@ import { business } from '../data/business';
 				if (res.ok) {
 					window.location.href = redirect;
 				} else {
-					setText('Er ging iets mis, probeer opnieuw');
-					btn.disabled = false;
+					fail();
 				}
 			} catch {
-				setText('Er ging iets mis, probeer opnieuw');
-				btn.disabled = false;
+				fail();
 			}
 		});
 	}

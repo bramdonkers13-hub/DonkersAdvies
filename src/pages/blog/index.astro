@@ -5,7 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import PostCard, { type PostCardProps } from '../../components/PostCard.astro';
 import PostGrid from '../../components/PostGrid.astro';
-import { formatDateNL } from '../../utils/formatDate';
+import { formatDateNL, isoDate } from '../../utils/formatDate';
 import { blogSchema } from '../../lib/schema';
 import { business } from '../../data/business';
 import blogOgImage from '../../assets/images/blog-og-city-aerial.webp';
@@ -26,6 +26,7 @@ function toPostCardProps(post: CollectionEntry<'blog'>, filterable = false): Pos
 		title: post.data.title,
 		excerpt: post.data.cardExcerpt,
 		date: formatDateNL(post.data.publishedDate),
+		dateTime: isoDate(post.data.publishedDate),
 		readingTime: `${post.data.readingTimeMinutes} min leestijd`,
 		filter: filterable
 			? {
@@ -167,15 +168,25 @@ const categories = [
 		const resetBtn = document.getElementById('resetFilters');
 		const PER_PAGE = 6;
 
-		const params = new URLSearchParams(location.search);
-		let state = {
-			category: params.get('categorie') || 'alle',
-			query: (params.get('zoeken') || '').toLowerCase(),
-			page: 1,
-		};
+		function stateFromUrl() {
+			const params = new URLSearchParams(location.search);
+			const page = Number.parseInt(params.get('pagina') ?? '1', 10);
+			return {
+				category: params.get('categorie') || 'alle',
+				query: (params.get('zoeken') || '').toLowerCase(),
+				page: Number.isFinite(page) && page > 0 ? page : 1,
+			};
+		}
 
-		if (searchInput) searchInput.value = params.get('zoeken') || '';
-		chips.forEach((chip) => chip.classList.toggle('active', chip.dataset.category === state.category));
+		let state = stateFromUrl();
+
+		/** Zet de zichtbare besturing gelijk aan de state (ook na een terug-navigatie). */
+		function syncControls() {
+			if (searchInput) searchInput.value = state.query;
+			chips.forEach((chip) => chip.classList.toggle('active', chip.dataset.category === state.category));
+		}
+
+		syncControls();
 
 		function matches(card: HTMLElement) {
 			const inCategory = state.category === 'alle' || card.dataset.category === state.category;
@@ -184,7 +195,7 @@ const categories = [
 			return inCategory && inQuery;
 		}
 
-		function render() {
+		function render(push = false) {
 			const filtered = cards.filter(matches);
 			const hasFilter = state.category !== 'alle' || !!state.query;
 			if (featuredSection) (featuredSection as HTMLElement).hidden = hasFilter;
@@ -201,10 +212,18 @@ const categories = [
 
 			renderPagination(totalPages);
 
+			writeUrl(push);
+		}
+
+		/** Schrijft de huidige state naar de URL, zodat een filter of pagina deelbaar is. */
+		function writeUrl(push: boolean) {
 			const url = new URL(location.href);
 			state.category === 'alle' ? url.searchParams.delete('categorie') : url.searchParams.set('categorie', state.category);
 			state.query ? url.searchParams.set('zoeken', state.query) : url.searchParams.delete('zoeken');
-			history.replaceState(null, '', url.pathname + url.search);
+			state.page > 1 ? url.searchParams.set('pagina', String(state.page)) : url.searchParams.delete('pagina');
+			const next = url.pathname + url.search;
+			if (next === location.pathname + location.search) return;
+			push ? history.pushState(null, '', next) : history.replaceState(null, '', next);
 		}
 
 		function renderPagination(totalPages: number) {
@@ -220,7 +239,7 @@ const categories = [
 				b.disabled = !!opts.disabled;
 				b.addEventListener('click', () => {
 					state.page = page;
-					render();
+					render(true);
 					pagination.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 				});
 				return b;
@@ -238,7 +257,7 @@ const categories = [
 				state.category = chip.dataset.category ?? 'alle';
 				state.page = 1;
 				chips.forEach((c) => c.classList.toggle('active', c === chip));
-				render();
+				render(true);
 			});
 		});
 
@@ -259,9 +278,16 @@ const categories = [
 				state = { category: 'alle', query: '', page: 1 };
 				if (searchInput) searchInput.value = '';
 				chips.forEach((c) => c.classList.toggle('active', c.dataset.category === 'alle'));
-				render();
+				render(true);
 			});
 		}
+
+		// Terug- en vooruitknop van de browser laten werken op filter, zoekterm en pagina.
+		window.addEventListener('popstate', () => {
+			state = stateFromUrl();
+			syncControls();
+			render();
+		});
 
 		render();
 	}

@@ -3,12 +3,27 @@ interface Props {
 	label: string;
 	/** Geoptimaliseerde achtergrondafbeelding; door de pagina berekend zodat dezelfde URL ook voor de preload-hint gebruikt kan worden. */
 	backgroundImage: string;
+	/** srcset met dezelfde afbeelding op meerdere breedtes, zodat een telefoon niet de desktopvariant laadt. */
+	backgroundSrcSet?: string;
+	backgroundSizes?: string;
 }
 
-const { label, backgroundImage } = Astro.props;
+const { label, backgroundImage, backgroundSrcSet, backgroundSizes = '100vw' } = Astro.props;
 ---
 
-<section id="hero" style={`background-image:url(${backgroundImage})`}>
+<section id="hero">
+	<!-- Decoratieve achtergrondfoto als <img> in plaats van een CSS-background: alleen zo
+	     kan de browser via srcset de juiste breedte kiezen en hem als LCP prioriteren. -->
+	<img
+		class="hero-bg"
+		src={backgroundImage}
+		srcset={backgroundSrcSet}
+		sizes={backgroundSizes}
+		alt=""
+		aria-hidden="true"
+		fetchpriority="high"
+		decoding="async"
+	/>
 	<div class="boxes-wrapper" id="heroBoxes"></div>
 	<div class="boxes-overlay"></div>
 

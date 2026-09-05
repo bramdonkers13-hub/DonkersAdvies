@@ -24,6 +24,9 @@ interface Props {
 	noindex?: boolean;
 	/** Absolute URL van de LCP-afbeelding van deze pagina; krijgt een <link rel="preload">. */
 	preloadImage?: string;
+	/** srcset van diezelfde afbeelding, zodat de preload dezelfde variant kiest als de <img>. */
+	preloadImageSrcSet?: string;
+	preloadImageSizes?: string;
 }
 
 const {
@@ -38,6 +41,8 @@ const {
 	jsonLd = [],
 	noindex = false,
 	preloadImage,
+	preloadImageSrcSet,
+	preloadImageSizes = '100vw',
 } = Astro.props;
 
 const canonical = absoluteUrl(path, Astro.site);
@@ -73,7 +78,16 @@ const resolvedOgImage = absoluteUrl(ogImage ?? defaultOgImage, Astro.site);
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={resolvedOgImage} />
 
-		{preloadImage && <link rel="preload" as="image" href={preloadImage} />}
+		{preloadImage && (
+			<link
+				rel="preload"
+				as="image"
+				href={preloadImage}
+				imagesrcset={preloadImageSrcSet}
+				imagesizes={preloadImageSrcSet ? preloadImageSizes : undefined}
+				fetchpriority="high"
+			/>
+		)}
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -98,8 +112,9 @@ const resolvedOgImage = absoluteUrl(ogImage ?? defaultOgImage, Astro.site);
 		)}
 	</head>
 	<body>
+		<a class="skip-link" href="#hoofdinhoud">Naar de hoofdinhoud</a>
 		<Header />
-		<main>
+		<main id="hoofdinhoud" tabindex="-1">
 			<slot />
 		</main>
 		<Footer />

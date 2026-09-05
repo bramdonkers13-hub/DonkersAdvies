@@ -17,13 +17,15 @@ export interface PostCardProps {
 	title: string;
 	excerpt?: string;
 	date?: string;
+	/** Machineleesbare datum (YYYY-MM-DD) voor het datetime-attribuut van <time>. */
+	dateTime?: string;
 	readingTime?: string;
 	filter?: FilterData;
 }
 
 type Props = PostCardProps;
 
-const { href, image, imageAlt, tag, title, excerpt, date, readingTime, filter } = Astro.props;
+const { href, image, imageAlt, tag, title, excerpt, date, dateTime, readingTime, filter } = Astro.props;
 ---
 
 <article
@@ -43,7 +45,7 @@ const { href, image, imageAlt, tag, title, excerpt, date, readingTime, filter } 
 		{
 			(date || readingTime) && (
 				<div class="post-card-meta">
-					{date && <span>{date}</span>}
+					{date && <time datetime={dateTime}>{date}</time>}
 					{date && readingTime && <span>&middot;</span>}
 					{readingTime && <span>{readingTime}</span>}
 				</div>

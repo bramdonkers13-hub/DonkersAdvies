@@ -12,7 +12,7 @@ export type Service = {
 	duration: string;
 	/** Optionele tweede regel, bv. voor de uitgebreide procedure naast de reguliere. */
 	durationNote?: string;
-	/** "Wat wij verzorgen"-checklist voor de dienstentabs op de homepage (4 items). */
+	/** "Wat ik verzorg"-checklist voor de dienstentabs op de homepage (4 items). */
 	checklist: [string, string, string, string];
 	/** Korte vraag boven de call-to-action-knop in de dienstentabs op de homepage. */
 	ctaQuestion: string;
