@@ -1,5 +1,5 @@
 ---
-metaTitle: "Bestemmingsplan wijzigen? Zo werkt het nu"
+metaTitle: "Bestemmingsplan wijzigen: procedure en kosten (Omgevingswet)"
 title: "Bestemmingsplan wijzigen: wat er sinds de Omgevingswet werkelijk geldt"
 description: "Het bestemmingsplan bestaat niet meer. Lees wat er met uw regels is gebeurd, welke procedure de herziening vervangt en welke route bij uw plan past."
 cardExcerpt: "Wat er met uw bestemmingsplan is gebeurd sinds de Omgevingswet, en welke procedure de herziening of wijziging ervan heeft vervangen."

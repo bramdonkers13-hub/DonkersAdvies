@@ -1,5 +1,5 @@
 ---
-metaTitle: "Wat is een BOPA? Procedure, kosten en wanneer nodig"
+metaTitle: "BOPA-procedure: wat het is, kosten en doorlooptijd"
 title: "Wat is een BOPA? Uitleg, procedure, kosten en wanneer u er een nodig heeft"
 description: "Een BOPA is de vergunning voor een plan dat afwijkt van het omgevingsplan. Dit legt de procedure, termijnen, kosten en het adviesrecht van de raad uit."
 cardExcerpt: "Wat is een BOPA, wanneer heeft u er een nodig en hoe verloopt de procedure?"
