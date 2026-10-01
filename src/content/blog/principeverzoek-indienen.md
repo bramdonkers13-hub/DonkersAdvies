@@ -1,8 +1,8 @@
 ---
-metaTitle: "Principeverzoek indienen bij de gemeente: stappenplan"
-title: "Principeverzoek indienen bij de gemeente: het complete stappenplan"
-description: "Hoe dient u een principeverzoek in, wat kost het en hoe hard is een positief antwoord? Compleet stappenplan van een Omgevingswet-adviseur in Noord-Brabant."
-cardExcerpt: "Hoe dient u een principeverzoek in, wat kost het en hoe hard is een positief antwoord? Het complete stappenplan."
+metaTitle: "Principeverzoek indienen: stappenplan en voorbeeld"
+title: "Principeverzoek indienen bij de gemeente: stappenplan en voorbeeld"
+description: "Hoe dient u een principeverzoek in, wat moet erin en wat kost het? Stappenplan met een uitgewerkt voorbeeld, opgesteld door een Omgevingswet-adviseur."
+cardExcerpt: "Hoe dient u een principeverzoek in, wat moet erin en wat kost het? Het complete stappenplan, met een uitgewerkt voorbeeld."
 lead: "Voordat u geld uitgeeft aan onderzoeken, tekeningen en een formele aanvraag, wilt u één ding weten: wil de gemeente hier eigenlijk aan meewerken? Het principeverzoek is het instrument waarmee u dat vroeg uitzoekt, tegen een fractie van de kosten van een volledig traject."
 toc:
   - { label: "Wat is een principeverzoek?", anchor: "wat-is-het" }
@@ -11,6 +11,7 @@ toc:
   - { label: "Hoe hard is een positieve reactie juridisch?", anchor: "vertrouwensbeginsel" }
   - { label: "Wat kost een principeverzoek?", anchor: "kosten" }
   - { label: "Wat moet er in een principeverzoek staan?", anchor: "inhoud" }
+  - { label: "Voorbeeld van een principeverzoek", anchor: "voorbeeld" }
   - { label: "Stap voor stap: van idee tot principe-uitspraak", anchor: "stappenplan" }
   - { label: "Hoe beoordeelt de gemeente uw principeverzoek?", anchor: "beoordeling" }
   - { label: "Hoe lang duurt het?", anchor: "doorlooptijd" }
@@ -24,13 +25,13 @@ toc:
   - { label: "Bronnen", anchor: "bronnen" }
 category: "principeverzoek"
 categoryLabel: "Principeverzoek"
-searchTags: ["principeverzoek", "haalbaarheid", "omgevingswet", "noord-brabant", "vertrouwensbeginsel", "vooroverleg", "conceptverzoek", "kosten"]
+searchTags: ["principeverzoek", "voorbeeld", "haalbaarheid", "omgevingswet", "noord-brabant", "vertrouwensbeginsel", "vooroverleg", "conceptverzoek", "kosten"]
 image: "../../assets/images/blog/principeverzoek-laptop.jpg"
 imageAlt: "Tablet met de principeverzoek-pagina van Donkers Advies, met een handgetekende situatieschets ernaast"
 publishedDate: 2026-06-16
-updatedDate: 2026-07-24
-readingTimeMinutes: 24
-wordCount: 5290
+updatedDate: 2026-10-01
+readingTimeMinutes: 26
+wordCount: 5740
 relatedSlugs: ["wat-is-een-bopa", "opa-aanvragen", "ruimtelijke-onderbouwing-bopa"]
 breadcrumbLabel: "Principeverzoek indienen"
 ctaTitle: "Uw plan laten toetsen"
@@ -236,6 +237,26 @@ Beschrijf wat u al met de omgeving heeft gedaan of van plan bent te doen. In dez
 ### 9. Uitvoerbaarheid op hoofdlijnen
 
 Kort: is het plan financieel realiseerbaar en op welke termijn? Benoem dat u bereid bent afspraken te maken over kostenverhaal. Dat neemt bij het college een bekende zorg weg.
+
+<h2 id="voorbeeld">Voorbeeld van een principeverzoek</h2>
+
+Een voorbeeld maakt de opbouw hierboven concreet. Hieronder staat een verkorte, fictieve uitwerking voor een plan dat in het buitengebied veel voorkomt: een vrijgekomen agrarische bedrijfslocatie die een woonbestemming krijgt, met sloop van de stallen. De nummering volgt de negen onderdelen uit de vorige paragraaf.
+
+<div class="callout">
+<p class="callout-label">Voorbeeld (fictief en verkort)</p>
+<p>Aan het college van burgemeester en wethouders van de gemeente [naam]<br />Onderwerp: principeverzoek functiewijziging [adres]</p>
+<p>1. Vraagstelling. Is het college bereid medewerking te verlenen aan de functiewijziging van de voormalige agrarische bedrijfslocatie aan [adres] naar wonen, met sloop van circa 1.200 m2 aan stallen en de bouw van één vrijstaande woning, en zo ja, onder welke voorwaarden?</p>
+<p>2. Het initiatief. De agrarische bedrijfsvoering is in [jaar] beëindigd. De bestaande bedrijfswoning blijft in gebruik als burgerwoning. Alle stallen en de mestsilo worden gesloopt. Op het erf komt één nieuwe woning van maximaal [x] m3, binnen het bestaande bebouwingscluster.</p>
+<p>3. Locatie en bestaande situatie. Het perceel is kadastraal bekend als [gemeente, sectie, nummer]. In de omgeving liggen twee burgerwoningen en op circa 300 meter een akkerbouwbedrijf. Foto's van de huidige situatie zijn bijgevoegd.</p>
+<p>4. Toetsing aan het omgevingsplan. Het perceel heeft een agrarische functie met een bouwvlak. Wonen buiten de bedrijfswoning is niet toegestaan en het omgevingsplan biedt hiervoor geen binnenplanse afwijkmogelijkheid. Het plan vraagt daarom om een buitenplanse omgevingsplanactiviteit.</p>
+<p>5. Beleid. Het plan sluit aan op het VAB-beleid van de gemeente en op de regels voor kwaliteitsverbetering van het landschap uit de Omgevingsverordening Noord-Brabant. De sloop en een landschappelijk inpassingsplan vormen samen de tegenprestatie.</p>
+<p>6. Evenwichtige toedeling van functies aan locaties. Geur, geluid, bodem, water en natuur zijn op hoofdlijnen beoordeeld. Gelet op de afstand tot omliggende bedrijven verwachten wij geen belemmeringen. Een verkennend bodemonderzoek en een quickscan flora en fauna volgen na een positieve reactie.</p>
+<p>7. Tekeningen. Bijgevoegd zijn een situatietekening van de bestaande en de nieuwe situatie en een schets van de landschappelijke inpassing.</p>
+<p>8. Participatie. De direct omwonenden zijn over het plan geïnformeerd. Hun reacties zijn als bijlage toegevoegd.</p>
+<p>9. Uitvoerbaarheid. De initiatiefnemer financiert het plan zelf en is bereid een overeenkomst over kostenverhaal te sluiten.</p>
+</div>
+
+Gebruik dit voorbeeld als opbouw, niet als tekst om over te nemen. Wat er in uw verzoek moet staan, hangt af van uw locatie, het beleid van uw gemeente en de provinciale regels. Werkt uw gemeente met een eigen formulier, vul dat dan in en voeg dezelfde onderdelen als bijlage toe. Wilt u dat ik het voor uw plan uitwerk? Dan <a href="/principeverzoek/">stel ik uw principeverzoek op</a> en dien ik het in.
 
 <h2 id="stappenplan">Stap voor stap: van idee tot principe-uitspraak</h2>
 
