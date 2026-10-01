@@ -66,6 +66,17 @@
 			"destination": "/blog/opa-aanvragen/",
 			"permanent": true
 		},
+		{ "source": "/blog/wat-is-egy-bopa/", "destination": "/blog/wat-is-een-bopa/", "permanent": true },
+		{ "source": "/blog/wat-is-en-bopa/", "destination": "/blog/wat-is-een-bopa/", "permanent": true },
+		{ "source": "/blog/wat-is-ena-bopa/", "destination": "/blog/wat-is-een-bopa/", "permanent": true },
+		{ "source": "/blog/wat-is-een-enbopa/", "destination": "/blog/wat-is-een-bopa/", "permanent": true },
+		{ "source": "/blog/wat-is-a-bopa.html", "destination": "/blog/wat-is-een-bopa/", "permanent": true },
+		{ "source": "/blog/wat-is-a-bopa/", "destination": "/blog/wat-is-een-bopa/", "permanent": true },
+		{
+			"source": "/blog/wat-is-een-bopa-procedure-termijnen-en-kosten-uitgelegd/",
+			"destination": "/blog/wat-is-een-bopa/",
+			"permanent": true
+		},
 		{ "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true }
 	]
 }
