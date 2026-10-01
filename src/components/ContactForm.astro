@@ -17,6 +17,9 @@ import { business } from '../data/business';
 	>
 		<input type="hidden" name="_subject" value={`Nieuwe aanvraag via ${business.url.replace('https://www.', '')}`} />
 		<input type="hidden" name="_next" value={`${business.url}/bedankt/`} />
+		<!-- Bronvermelding voor de eigenaar: vanaf welke pagina de aanvraag komt. Gevuld door het script hieronder. -->
+		<input type="hidden" name="pagina" id="formPagina" />
+		<input type="hidden" name="vorige_pagina" id="formVorigePagina" />
 		<!-- Spamval van Formspree: bots vullen dit veld, mensen zien het niet. -->
 		<p class="form-gotcha" aria-hidden="true">
 			<label for="bedrijfsnaam">Laat dit veld leeg</label>
@@ -32,14 +35,26 @@ import { business } from '../data/business';
 				<input type="email" id="email" name="email" placeholder="uw@email.nl" autocomplete="email" required />
 			</div>
 		</div>
+		<div class="form-row-2">
+			<div class="form-row">
+				<label for="gemeente">Gemeente of plaats</label>
+				<input type="text" id="gemeente" name="gemeente" placeholder="Bijvoorbeeld Wijchen" autocomplete="address-level2" />
+			</div>
+			<div class="form-row">
+				<label for="telefoon">Telefoonnummer (optioneel)</label>
+				<input type="tel" id="telefoon" name="telefoon" placeholder="06 12 34 56 78" autocomplete="tel" />
+			</div>
+		</div>
 		<div class="form-row">
 			<label for="dienst">Dienst</label>
+			<!-- data-path: de dienst wordt voorgeselecteerd als de bezoeker van die dienstpagina komt. -->
 			<select id="dienst" name="dienst">
 				<option value="">Selecteer een dienst</option>
-				<option>Principeverzoek</option>
-				<option>OPA – Omgevingsplanactiviteit</option>
-				<option>BOPA – Buitenplanse omgevingsplanactiviteit</option>
-				<option>WOP – Wijziging omgevingsplan</option>
+				<option data-path="/principeverzoek/">Principeverzoek</option>
+				<option data-path="/omgevingsplanactiviteit/">OPA – Omgevingsplanactiviteit</option>
+				<option data-path="/buitenplanse-omgevingsplanactiviteit/">BOPA – Buitenplanse omgevingsplanactiviteit</option>
+				<option data-path="/ruimtelijke-onderbouwing/">Ruimtelijke onderbouwing</option>
+				<option data-path="/wijziging-omgevingsplan/">WOP – Wijziging omgevingsplan</option>
 				<option>Overig / Algemeen advies</option>
 			</select>
 		</div>
@@ -70,6 +85,24 @@ import { business } from '../data/business';
 <script>
 	const form = document.getElementById('contactForm') as HTMLFormElement | null;
 	if (form) {
+		// Bron van de aanvraag: de huidige pagina en, als de bezoeker van een andere pagina op deze
+		// site kwam (bijvoorbeeld via een "neem contact op"-knop), die vorige pagina. Er wordt niets
+		// opgeslagen; de referrer wordt alleen op het moment zelf uitgelezen.
+		const pagina = document.getElementById('formPagina') as HTMLInputElement | null;
+		const vorigePagina = document.getElementById('formVorigePagina') as HTMLInputElement | null;
+		if (pagina) pagina.value = window.location.pathname;
+		let vorigPad = '';
+		try {
+			const ref = document.referrer ? new URL(document.referrer) : null;
+			if (ref && ref.origin === window.location.origin) vorigPad = ref.pathname;
+			if (vorigePagina) vorigePagina.value = ref ? (vorigPad || ref.hostname) : 'direct';
+		} catch {
+			// Ongeldige referrer: veld blijft leeg.
+		}
+		const dienst = form.querySelector<HTMLSelectElement>('#dienst');
+		const match = dienst?.querySelector<HTMLOptionElement>(`option[data-path="${vorigPad}"]`);
+		if (dienst && match && !dienst.value) match.selected = true;
+
 		const endpoint = form.dataset.formspreeEndpoint!;
 		const redirect = form.dataset.redirect!;
 		const status = document.getElementById('formStatus');
