@@ -17,10 +17,7 @@ const DESCRIPTION_MAX = 158;
 
 // Bewuste, met de eigenaar afgestemde uitzonderingen. Alleen hier toevoegen
 // na expliciete instructie, met de reden erbij.
-const TITLE_EXCEPTIONS = {
-	'/wijziging-omgevingsplan/':
-		'Titel bevat bewust "bestemmingsplan" naast "omgevingsplan", voor een zoekopdracht met 855 vertoningen (taak 6); expliciet zo gekozen ondanks de 60-tekensgrens.',
-};
+const TITLE_EXCEPTIONS = {};
 
 function htmlFiles(dir, prefix = '/') {
 	const found = [];
