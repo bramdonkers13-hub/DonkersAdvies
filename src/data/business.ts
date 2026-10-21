@@ -8,6 +8,8 @@ export const business = {
 	phoneHref: 'tel:0644848772',
 	phoneIntl: '+31644848772',
 	kvk: '42100373',
+	addressLocality: 'Nijmegen',
+	addressRegion: 'Gelderland',
 	areaServed: ['Noord-Brabant', 'Gelderland', 'Limburg'],
 	areaServedText: 'Actief in Noord-Brabant, Gelderland en Limburg',
 	formspreeEndpoint: 'https://formspree.io/f/mykrwldd',

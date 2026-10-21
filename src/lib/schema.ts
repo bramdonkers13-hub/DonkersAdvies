@@ -27,7 +27,8 @@ export function organizationSchema() {
 		address: {
 			'@type': 'PostalAddress',
 			addressCountry: 'NL',
-			addressRegion: 'Noord-Brabant',
+			addressLocality: business.addressLocality,
+			addressRegion: business.addressRegion,
 		},
 		areaServed: business.areaServed,
 		hasOfferCatalog: {
