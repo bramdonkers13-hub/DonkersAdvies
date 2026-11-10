@@ -112,6 +112,8 @@ Bij bepaalde locaties. Bij een bedrijfswoning, een agrarische woning of een loca
 
 In deze gevallen dient u de aanvraag in via het Omgevingsloket. Past de mantelzorgwoning binnen de regels van het omgevingsplan, dan gaat het om een binnenplanse [omgevingsplanactiviteit (OPA)](/blog/opa-aanvragen/). Wijkt zij daarvan af, dan is een [buitenplanse omgevingsplanactiviteit (BOPA)](/blog/wat-is-een-bopa/) nodig, met een ruimtelijke onderbouwing. Twijfelt u of uw plan haalbaar is, dan geeft een [principeverzoek](/blog/principeverzoek-indienen/) vooraf duidelijkheid.
 
+Staat de vergunning, of is duidelijk dat het vergunningvrij kan? Dan is de volgende stap de woning zelf. Wie een mantelzorgwoning wil kopen, kan kiezen uit kant-en-klare modellen of een woning op maat. Villea bouwt modulaire houten mantelzorgwoningen en plaatst ze compleet op het erf. Meer daarover leest u bij <a href="https://villea.nl/mantelzorgwoning-kopen/">mantelzorgwoning kopen</a>.
+
 <h2 id="einde-zorg">Wat gebeurt er als de mantelzorg eindigt?</h2>
 
 Omdat een mantelzorgwoning aan de zorgrelatie is gekoppeld, vervalt de grondslag zodra die relatie eindigt, bijvoorbeeld door herstel, verhuizing of overlijden. Neemt niemand in de mantelzorgwoning of de hoofdwoning de zorg over, dan mag de wooneenheid niet meer als zelfstandige woning worden gebruikt.
